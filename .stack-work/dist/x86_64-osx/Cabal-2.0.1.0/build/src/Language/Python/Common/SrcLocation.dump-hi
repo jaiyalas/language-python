@@ -1,0 +1,2786 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 07:27:24.31758 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.SrcLocation 8022
+  interface hash: 3f581a2834e4fbc3ae99ae130bb07423
+  ABI hash: 8f143931064eb388f1f2a6dd7f644740
+  export-list hash: 53449eeea761b903564548d6dcb5e6f4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: fd56aaef16e52fe6b0c656e79add95fc
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Python.Common.SrcLocation.combineSrcSpans
+  Language.Python.Common.SrcLocation.decColumn
+  Language.Python.Common.SrcLocation.endCol
+  Language.Python.Common.SrcLocation.endRow
+  Language.Python.Common.SrcLocation.incColumn
+  Language.Python.Common.SrcLocation.incLine
+  Language.Python.Common.SrcLocation.incTab
+  Language.Python.Common.SrcLocation.initialSrcLocation
+  Language.Python.Common.SrcLocation.mkSrcSpan
+  Language.Python.Common.SrcLocation.spanStartPoint
+  Language.Python.Common.SrcLocation.spanning
+  Language.Python.Common.SrcLocation.startCol
+  Language.Python.Common.SrcLocation.startRow
+  Language.Python.Common.SrcLocation.Span{Language.Python.Common.SrcLocation.getSpan}
+  Language.Python.Common.SrcLocation.SrcLocation{Language.Python.Common.SrcLocation.NoLocation Language.Python.Common.SrcLocation.Sloc sloc_column sloc_filename sloc_row}
+  Language.Python.Common.SrcLocation.SrcSpan{Language.Python.Common.SrcLocation.SpanCoLinear Language.Python.Common.SrcLocation.SpanEmpty Language.Python.Common.SrcLocation.SpanMultiLine Language.Python.Common.SrcLocation.SpanPoint span_column span_end_column span_end_row span_filename span_row span_start_column span_start_row}
+module dependencies: Language.Python.Common.Pretty
+package dependencies: array-0.5.2.0 base-4.10.1.0* deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 pretty-1.1.3.3
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  base-4.10.1.0:Data.Data c16c1b59ecdb12037d0296eaec32afef
+import  -/  base-4.10.1.0:Data.Either d7dae5d9bf298dee616e465c14b5d60e
+import  -/  base-4.10.1.0:Data.Typeable.Internal b31684019ac02e3213b270a8482ac844
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  Language.Python.Common.Pretty 6e21c42aa69bc1ddac81ab1aa974965d
+  exports: 08b6e8d2393383892c529fbfae3c772e
+  Pretty 966791a55bc80a3e5958da97a36c9f4e
+  pretty 3cc14f812a2b3939276efb7c8cc0a981
+import  -/  pretty-1.1.3.3:Text.PrettyPrint.HughesPJ 5687246d91968c1419197b2e272e319d
+addDependentFile "/Users/jaiyalas/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+7faabbb13c040f6a1e4a5e9a1f04a3e1
+  $cNoLocation :: Data.Data.Constr
+  {- Strictness: m -}
+f9867545029837d945c22d6062e24c30
+  $cSloc :: Data.Data.Constr
+  {- Strictness: m -}
+9bca06a964f1e2396a00f8f3d9476fc8
+  $cSpanCoLinear :: Data.Data.Constr
+  {- Strictness: m -}
+10e2a1f81426f483d657d069e8ea7e54
+  $cSpanEmpty :: Data.Data.Constr
+  {- Strictness: m -}
+97f9b5f66ad47906c19491705f5a8e8c
+  $cSpanMultiLine :: Data.Data.Constr
+  {- Strictness: m -}
+18dc08775bc857cc33ef77ce5bccf519
+  $cSpanPoint :: Data.Data.Constr
+  {- Strictness: m -}
+4a3f1a3ffd2153e99004f70f0475ea0a
+  $dmgetSpan ::
+    Language.Python.Common.SrcLocation.Span a =>
+    a -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ a
+                   ($dSpan :: Language.Python.Common.SrcLocation.Span a)
+                   (x :: a) ->
+                 Language.Python.Common.SrcLocation.SpanEmpty) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation ::
+    Data.Data.Data Language.Python.Common.SrcLocation.SrcLocation
+  DFunId
+  {- Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.SrcLocation.SrcLocation
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation3
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <Language.Python.Common.SrcLocation.SrcLocation>_N)
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cgfoldl
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cgunfold
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$ctoConstr
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cdataTypeOf
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cdataCast1
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cdataCast2
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation2
+                    `cast`
+                  (<forall b. Data.Data.Data b => b -> b>_R
+                   ->_R <Language.Python.Common.SrcLocation.SrcLocation>_R
+                   ->_R Data.Functor.Identity.N:Identity[0]
+                            <Language.Python.Common.SrcLocation.SrcLocation>_R)
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation1
+                    `cast`
+                  (forall (r :: <*>_N) (r' :: <*>_N).
+                   <r -> r' -> r>_R
+                   ->_R <r>_R
+                   ->_R <forall d. Data.Data.Data d => d -> r'>_R
+                   ->_R <Language.Python.Common.SrcLocation.SrcLocation>_R
+                   ->_R Data.Functor.Const.N:Const[0]
+                            <*>_N <r>_R <Language.Python.Common.SrcLocation.SrcLocation>_P)
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cgmapQr
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cgmapQ
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cgmapQi
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cgmapM
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cgmapMp
+                  Language.Python.Common.SrcLocation.$fDataSrcLocation_$cgmapMo -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation1 ::
+    (r -> r' -> r)
+    -> r
+    -> (forall d. Data.Data.Data d => d -> r')
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> Data.Functor.Const.Const
+         r Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 4, Strictness: <L,C(C1(U))><L,U><L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ r
+                   @ r'
+                   (ds :: r -> r' -> r)
+                   (ds1 :: r)
+                   (ds2 :: forall d. Data.Data.Data d => d -> r')
+                   (eta :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case eta of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> (ds
+                         (ds
+                            (ds ds1 (ds2 @ GHC.Base.String Data.Data.$fData[]_$s$fData[] a1))
+                            (ds2 @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt)))
+                         (ds2 @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt1)))
+                        `cast`
+                      (Sym (Data.Functor.Const.N:Const[0]
+                                <*>_N <r>_R <Language.Python.Common.SrcLocation.SrcLocation>_P))
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> ds1
+                        `cast`
+                      (Sym (Data.Functor.Const.N:Const[0]
+                                <*>_N
+                                <r>_R
+                                <Language.Python.Common.SrcLocation.SrcLocation>_P)) }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation2 ::
+    (forall b. Data.Data.Data b => b -> b)
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> Data.Functor.Identity.Identity
+         Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ (ds :: forall b. Data.Data.Data b => b -> b)
+                   (x0 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case x0 of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case ds
+                             @ GHC.Base.String
+                             Data.Data.$fData[]_$s$fData[]
+                             a1 of dt2 { DEFAULT ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt) of dt3 { GHC.Types.I# dt4 ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt1) of dt5 { GHC.Types.I# dt6 ->
+                      (Language.Python.Common.SrcLocation.Sloc dt2 dt4 dt6)
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <Language.Python.Common.SrcLocation.SrcLocation>_R)) } } }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.NoLocation
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <Language.Python.Common.SrcLocation.SrcLocation>_R)) }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation3 ::
+    Data.Typeable.Internal.TypeRep
+      Language.Python.Common.SrcLocation.SrcLocation
+  {- Unfolding: (case GHC.Magic.noinline
+                        @ ([GHC.Fingerprint.Type.Fingerprint]
+                           -> GHC.Fingerprint.Type.Fingerprint)
+                        GHC.Fingerprint.fingerprintFingerprints
+                        Language.Python.Common.SrcLocation.$fDataSrcLocation4 of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TrTyCon
+                   @ *
+                   @ Language.Python.Common.SrcLocation.SrcLocation
+                   dt1
+                   dt2
+                   Language.Python.Common.SrcLocation.$tcSrcLocation
+                   (GHC.Types.[] @ Data.Typeable.Internal.SomeTypeRep) }) -}
+22c8e2a9afd75f6c1d78a48de5185528
+  $fDataSrcLocation4 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   Language.Python.Common.SrcLocation.$fDataSrcLocation6
+                   Language.Python.Common.SrcLocation.$fDataSrcLocation5) -}
+345a65977c0f514d556067a975152582
+  $fDataSrcLocation5 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Base.map
+                   @ Data.Typeable.Internal.SomeTypeRep
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   Data.Typeable.Internal.someTypeRepFingerprint
+                   (GHC.Types.[] @ Data.Typeable.Internal.SomeTypeRep)) -}
+e260d568a4390391c3393bb8f13c2dbb
+  $fDataSrcLocation6 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   8534671150760250537##
+                   18366218346648670035##) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cdataCast1 ::
+    Data.Typeable.Internal.Typeable t =>
+    (forall d. Data.Data.Data d => c (t d))
+    -> GHC.Base.Maybe
+         (c Language.Python.Common.SrcLocation.SrcLocation)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ t :: * -> *
+                   @ c :: * -> *
+                   ($dTypeable :: Data.Typeable.Internal.Typeable t)
+                   (ds :: forall d. Data.Data.Data d => c (t d)) ->
+                 GHC.Base.Nothing
+                   @ (c Language.Python.Common.SrcLocation.SrcLocation)) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cdataCast2 ::
+    Data.Typeable.Internal.Typeable t =>
+    (forall d e. (Data.Data.Data d, Data.Data.Data e) => c (t d e))
+    -> GHC.Base.Maybe
+         (c Language.Python.Common.SrcLocation.SrcLocation)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ t :: * -> * -> *
+                   @ c :: * -> *
+                   ($dTypeable :: Data.Typeable.Internal.Typeable t)
+                   (ds :: forall d e.
+                          (Data.Data.Data d, Data.Data.Data e) =>
+                          c (t d e)) ->
+                 GHC.Base.Nothing
+                   @ (c Language.Python.Common.SrcLocation.SrcLocation)) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cdataTypeOf ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Data.Data.DataType
+  {- Arity: 1, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 Language.Python.Common.SrcLocation.$tSrcLocation) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cgfoldl ::
+    (forall d b. Data.Data.Data d => c (d -> b) -> d -> c b)
+    -> (forall g. g -> c g)
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> c Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 3, Strictness: <L,C(C1(C1(U)))><L,1*C1(U)><S,1*U>,
+     Unfolding: (\ @ c :: * -> *
+                   (k :: forall d b. Data.Data.Data d => c (d -> b) -> d -> c b)
+                   (z :: forall g. g -> c g)
+                   (ds :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> k @ GHC.Types.Int
+                        @ Language.Python.Common.SrcLocation.SrcLocation
+                        Data.Data.$fDataInt
+                        (k @ GHC.Types.Int
+                           @ (GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcLocation)
+                           Data.Data.$fDataInt
+                           (k @ GHC.Base.String
+                              @ (GHC.Types.Int
+                                 -> GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcLocation)
+                              Data.Data.$fData[]_$s$fData[]
+                              (z @ (GHC.Base.String
+                                    -> GHC.Types.Int
+                                    -> GHC.Types.Int
+                                    -> Language.Python.Common.SrcLocation.SrcLocation)
+                                 Language.Python.Common.SrcLocation.$WSloc)
+                              a1)
+                           (GHC.Types.I# dt))
+                        (GHC.Types.I# dt1)
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> z @ Language.Python.Common.SrcLocation.SrcLocation
+                        Language.Python.Common.SrcLocation.NoLocation }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cgmapM ::
+    GHC.Base.Monad m =>
+    (forall d. Data.Data.Data d => d -> m d)
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> m Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 3,
+     Strictness: <S,U(A,C(C1(U)),A,C(U),A)><L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ m :: * -> *
+                   ($dMonad :: GHC.Base.Monad m)
+                   (ds :: forall d. Data.Data.Data d => d -> m d)
+                   (eta :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case eta of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> let {
+                        $sk :: forall b. m (GHC.Types.Int -> b) -> GHC.Types.Int -> m b
+                          {- Arity: 2, Strictness: <L,U><L,U> -}
+                        = \ @ b
+                            (c :: m (GHC.Types.Int -> b))
+                            (x :: GHC.Types.Int)[OneShot] ->
+                          let {
+                            lvl41 :: m GHC.Types.Int = ds @ GHC.Types.Int Data.Data.$fDataInt x
+                          } in
+                          GHC.Base.>>=
+                            @ m
+                            $dMonad
+                            @ (GHC.Types.Int -> b)
+                            @ b
+                            c
+                            (\ (c' :: GHC.Types.Int -> b) ->
+                             GHC.Base.>>=
+                               @ m
+                               $dMonad
+                               @ GHC.Types.Int
+                               @ b
+                               lvl41
+                               (\ (x' :: GHC.Types.Int) ->
+                                GHC.Base.return @ m $dMonad @ b (c' x')))
+                      } in
+                      $sk
+                        @ Language.Python.Common.SrcLocation.SrcLocation
+                        ($sk
+                           @ (GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcLocation)
+                           (let {
+                              lvl41 :: m GHC.Base.String
+                              = ds @ GHC.Base.String Data.Data.$fData[]_$s$fData[] a1
+                            } in
+                            GHC.Base.>>=
+                              @ m
+                              $dMonad
+                              @ (GHC.Base.String
+                                 -> GHC.Types.Int
+                                 -> GHC.Types.Int
+                                 -> Language.Python.Common.SrcLocation.SrcLocation)
+                              @ (GHC.Types.Int
+                                 -> GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcLocation)
+                              (GHC.Base.return
+                                 @ m
+                                 $dMonad
+                                 @ (GHC.Base.String
+                                    -> GHC.Types.Int
+                                    -> GHC.Types.Int
+                                    -> Language.Python.Common.SrcLocation.SrcLocation)
+                                 Language.Python.Common.SrcLocation.$WSloc)
+                              (\ (c' :: GHC.Base.String
+                                        -> GHC.Types.Int
+                                        -> GHC.Types.Int
+                                        -> Language.Python.Common.SrcLocation.SrcLocation) ->
+                               GHC.Base.>>=
+                                 @ m
+                                 $dMonad
+                                 @ GHC.Base.String
+                                 @ (GHC.Types.Int
+                                    -> GHC.Types.Int
+                                    -> Language.Python.Common.SrcLocation.SrcLocation)
+                                 lvl41
+                                 (\ (x' :: GHC.Base.String) ->
+                                  GHC.Base.return
+                                    @ m
+                                    $dMonad
+                                    @ (GHC.Types.Int
+                                       -> GHC.Types.Int
+                                       -> Language.Python.Common.SrcLocation.SrcLocation)
+                                    (c' x'))))
+                           (GHC.Types.I# dt))
+                        (GHC.Types.I# dt1)
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> GHC.Base.return
+                        @ m
+                        $dMonad
+                        @ Language.Python.Common.SrcLocation.SrcLocation
+                        Language.Python.Common.SrcLocation.NoLocation }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cgmapMo ::
+    GHC.Base.MonadPlus m =>
+    (forall d. Data.Data.Data d => d -> m d)
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> m Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 3,
+     Strictness: <S(LS(LC(C(S))LLL)LL),U(A,1*U(A,C(C1(U)),A,C(U),A),1*U,C(C1(U)))><L,C(C1(U))><L,1*U> -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cgmapMp ::
+    GHC.Base.MonadPlus m =>
+    (forall d. Data.Data.Data d => d -> m d)
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> m Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 3,
+     Strictness: <S(LS(LC(C(S))LLL)LL),U(A,1*U(A,C(C1(U)),A,C(U),A),1*U,C(C1(U)))><L,C(C1(U))><L,1*U> -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cgmapQ ::
+    (forall d. Data.Data.Data d => d -> u)
+    -> Language.Python.Common.SrcLocation.SrcLocation -> [u]
+  {- Arity: 2, Strictness: <L,C(C1(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ u (ds :: forall d. Data.Data.Data d => d -> u) ->
+                 Language.Python.Common.SrcLocation.$fDataSrcLocation_$cgmapQr
+                   @ [u]
+                   @ u
+                   (GHC.Types.: @ u)
+                   (GHC.Types.[] @ u)
+                   ds) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cgmapQi ::
+    GHC.Types.Int
+    -> (forall d. Data.Data.Data d => d -> u)
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> u
+  {- Arity: 3,
+     Strictness: <S(S),1*U(1*U)><C(C(S)),1*C1(C1(U))><S,1*U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ u
+                   (w :: GHC.Types.Int)
+                   (w11 :: forall d. Data.Data.Data d => d -> u)
+                   (w12 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.Python.Common.SrcLocation.$w$cgmapQi @ u ww1 w11 w12 }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cgmapQr ::
+    (r' -> r -> r)
+    -> r
+    -> (forall d. Data.Data.Data d => d -> r')
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> r
+  {- Arity: 4, Strictness: <L,C(C1(U))><L,U><L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ r
+                   @ r'
+                   (ds :: r' -> r -> r)
+                   (ds1 :: r)
+                   (ds2 :: forall d. Data.Data.Data d => d -> r')
+                   (x0 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case x0 of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> ds
+                        (ds2 @ GHC.Base.String Data.Data.$fData[]_$s$fData[] a1)
+                        (ds
+                           (ds2 @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt))
+                           (ds
+                              (ds2 @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt1))
+                              ds1))
+                   Language.Python.Common.SrcLocation.NoLocation -> ds1 }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$cgunfold ::
+    (forall b r. Data.Data.Data b => c (b -> r) -> c r)
+    -> (forall r. r -> c r)
+    -> Data.Data.Constr
+    -> c Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 3,
+     Strictness: <L,C(C1(U))><L,1*C1(U)><S(SLLLL),1*U(1*U,A,A,A,1*U(1*U,A))>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ c :: * -> *
+                   (w :: forall b r. Data.Data.Data b => c (b -> r) -> c r)
+                   (w11 :: forall r. r -> c r)
+                   (w12 :: Data.Data.Constr) ->
+                 case w12 of ww { Data.Data.Constr ww1 ww2 ww3 ww4 ww5 ->
+                 Language.Python.Common.SrcLocation.$w$cgunfold
+                   @ c
+                   w
+                   w11
+                   ww1
+                   ww5 }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fDataSrcLocation_$ctoConstr ::
+    Language.Python.Common.SrcLocation.SrcLocation -> Data.Data.Constr
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.Sloc ds1 dt dt1
+                   -> Language.Python.Common.SrcLocation.$cSloc
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.$cNoLocation }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan ::
+    Data.Data.Data Language.Python.Common.SrcLocation.SrcSpan
+  DFunId
+  {- Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.SrcLocation.SrcSpan
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan3
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <Language.Python.Common.SrcLocation.SrcSpan>_N)
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cgfoldl
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cgunfold
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$ctoConstr
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cdataTypeOf
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cdataCast1
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cdataCast2
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan2
+                    `cast`
+                  (<forall b. Data.Data.Data b => b -> b>_R
+                   ->_R <Language.Python.Common.SrcLocation.SrcSpan>_R
+                   ->_R Data.Functor.Identity.N:Identity[0]
+                            <Language.Python.Common.SrcLocation.SrcSpan>_R)
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan1
+                    `cast`
+                  (forall (r :: <*>_N) (r' :: <*>_N).
+                   <r -> r' -> r>_R
+                   ->_R <r>_R
+                   ->_R <forall d. Data.Data.Data d => d -> r'>_R
+                   ->_R <Language.Python.Common.SrcLocation.SrcSpan>_R
+                   ->_R Data.Functor.Const.N:Const[0]
+                            <*>_N <r>_R <Language.Python.Common.SrcLocation.SrcSpan>_P)
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cgmapQr
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cgmapQ
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cgmapQi
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cgmapM
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cgmapMp
+                  Language.Python.Common.SrcLocation.$fDataSrcSpan_$cgmapMo -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan1 ::
+    (r -> r' -> r)
+    -> r
+    -> (forall d. Data.Data.Data d => d -> r')
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> Data.Functor.Const.Const
+         r Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 4, Strictness: <L,C(C1(U))><L,U><L,C(C1(U))><S,1*U> -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan2 ::
+    (forall b. Data.Data.Data b => b -> b)
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> Data.Functor.Identity.Identity
+         Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ (ds :: forall b. Data.Data.Data b => b -> b)
+                   (x0 :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case x0 of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear a1 dt dt1 dt2
+                   -> case ds
+                             @ GHC.Base.String
+                             Data.Data.$fData[]_$s$fData[]
+                             a1 of dt3 { DEFAULT ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt) of dt4 { GHC.Types.I# dt5 ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt1) of dt6 { GHC.Types.I# dt7 ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt2) of dt8 { GHC.Types.I# dt9 ->
+                      (Language.Python.Common.SrcLocation.SpanCoLinear dt3 dt5 dt7 dt9)
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <Language.Python.Common.SrcLocation.SrcSpan>_R)) } } } }
+                   Language.Python.Common.SrcLocation.SpanMultiLine a1 dt dt1 dt2 dt3
+                   -> case ds
+                             @ GHC.Base.String
+                             Data.Data.$fData[]_$s$fData[]
+                             a1 of dt4 { DEFAULT ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt) of dt5 { GHC.Types.I# dt6 ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt1) of dt7 { GHC.Types.I# dt8 ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt2) of dt9 { GHC.Types.I# dt10 ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt3) of dt11 { GHC.Types.I# dt12 ->
+                      (Language.Python.Common.SrcLocation.SpanMultiLine
+                         dt4
+                         dt6
+                         dt8
+                         dt10
+                         dt12)
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <Language.Python.Common.SrcLocation.SrcSpan>_R)) } } } } }
+                   Language.Python.Common.SrcLocation.SpanPoint a1 dt dt1
+                   -> case ds
+                             @ GHC.Base.String
+                             Data.Data.$fData[]_$s$fData[]
+                             a1 of dt2 { DEFAULT ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt) of dt3 { GHC.Types.I# dt4 ->
+                      case ds
+                             @ GHC.Types.Int
+                             Data.Data.$fDataInt
+                             (GHC.Types.I# dt1) of dt5 { GHC.Types.I# dt6 ->
+                      (Language.Python.Common.SrcLocation.SpanPoint dt2 dt4 dt6)
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <Language.Python.Common.SrcLocation.SrcSpan>_R)) } } }
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> Language.Python.Common.SrcLocation.SpanEmpty
+                        `cast`
+                      (Sym (Data.Functor.Identity.N:Identity[0]
+                                <Language.Python.Common.SrcLocation.SrcSpan>_R)) }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan3 ::
+    Data.Typeable.Internal.TypeRep
+      Language.Python.Common.SrcLocation.SrcSpan
+  {- Unfolding: (case GHC.Magic.noinline
+                        @ ([GHC.Fingerprint.Type.Fingerprint]
+                           -> GHC.Fingerprint.Type.Fingerprint)
+                        GHC.Fingerprint.fingerprintFingerprints
+                        Language.Python.Common.SrcLocation.$fDataSrcSpan4 of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TrTyCon
+                   @ *
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   dt1
+                   dt2
+                   Language.Python.Common.SrcLocation.$tcSrcSpan
+                   (GHC.Types.[] @ Data.Typeable.Internal.SomeTypeRep) }) -}
+c91b80fb459226e1aa1747e8a191cab5
+  $fDataSrcSpan4 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   Language.Python.Common.SrcLocation.$fDataSrcSpan5
+                   Language.Python.Common.SrcLocation.$fDataSrcLocation5) -}
+03b6fb5acf267928aa050a9aba3d748e
+  $fDataSrcSpan5 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   15112098904081710236##
+                   756244904248595699##) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cdataCast1 ::
+    Data.Typeable.Internal.Typeable t =>
+    (forall d. Data.Data.Data d => c (t d))
+    -> GHC.Base.Maybe (c Language.Python.Common.SrcLocation.SrcSpan)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ t :: * -> *
+                   @ c :: * -> *
+                   ($dTypeable :: Data.Typeable.Internal.Typeable t)
+                   (ds :: forall d. Data.Data.Data d => c (t d)) ->
+                 GHC.Base.Nothing
+                   @ (c Language.Python.Common.SrcLocation.SrcSpan)) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cdataCast2 ::
+    Data.Typeable.Internal.Typeable t =>
+    (forall d e. (Data.Data.Data d, Data.Data.Data e) => c (t d e))
+    -> GHC.Base.Maybe (c Language.Python.Common.SrcLocation.SrcSpan)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ t :: * -> * -> *
+                   @ c :: * -> *
+                   ($dTypeable :: Data.Typeable.Internal.Typeable t)
+                   (ds :: forall d e.
+                          (Data.Data.Data d, Data.Data.Data e) =>
+                          c (t d e)) ->
+                 GHC.Base.Nothing
+                   @ (c Language.Python.Common.SrcLocation.SrcSpan)) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cdataTypeOf ::
+    Language.Python.Common.SrcLocation.SrcSpan -> Data.Data.DataType
+  {- Arity: 1, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 Language.Python.Common.SrcLocation.$tSrcSpan) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cgfoldl ::
+    (forall d b. Data.Data.Data d => c (d -> b) -> d -> c b)
+    -> (forall g. g -> c g)
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> c Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 3, Strictness: <L,C(C1(C1(U)))><L,1*C1(U)><S,1*U>,
+     Unfolding: (\ @ c :: * -> *
+                   (k :: forall d b. Data.Data.Data d => c (d -> b) -> d -> c b)
+                   (z :: forall g. g -> c g)
+                   (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear a1 dt dt1 dt2
+                   -> k @ GHC.Types.Int
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        Data.Data.$fDataInt
+                        (k @ GHC.Types.Int
+                           @ (GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcSpan)
+                           Data.Data.$fDataInt
+                           (k @ GHC.Types.Int
+                              @ (GHC.Types.Int
+                                 -> GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcSpan)
+                              Data.Data.$fDataInt
+                              (k @ GHC.Base.String
+                                 @ (GHC.Types.Int
+                                    -> GHC.Types.Int
+                                    -> GHC.Types.Int
+                                    -> Language.Python.Common.SrcLocation.SrcSpan)
+                                 Data.Data.$fData[]_$s$fData[]
+                                 (z @ (GHC.Base.String
+                                       -> GHC.Types.Int
+                                       -> GHC.Types.Int
+                                       -> GHC.Types.Int
+                                       -> Language.Python.Common.SrcLocation.SrcSpan)
+                                    Language.Python.Common.SrcLocation.$WSpanCoLinear)
+                                 a1)
+                              (GHC.Types.I# dt))
+                           (GHC.Types.I# dt1))
+                        (GHC.Types.I# dt2)
+                   Language.Python.Common.SrcLocation.SpanMultiLine a1 dt dt1 dt2 dt3
+                   -> k @ GHC.Types.Int
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        Data.Data.$fDataInt
+                        (k @ GHC.Types.Int
+                           @ (GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcSpan)
+                           Data.Data.$fDataInt
+                           (k @ GHC.Types.Int
+                              @ (GHC.Types.Int
+                                 -> GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcSpan)
+                              Data.Data.$fDataInt
+                              (k @ GHC.Types.Int
+                                 @ (GHC.Types.Int
+                                    -> GHC.Types.Int
+                                    -> GHC.Types.Int
+                                    -> Language.Python.Common.SrcLocation.SrcSpan)
+                                 Data.Data.$fDataInt
+                                 (k @ GHC.Base.String
+                                    @ (GHC.Types.Int
+                                       -> GHC.Types.Int
+                                       -> GHC.Types.Int
+                                       -> GHC.Types.Int
+                                       -> Language.Python.Common.SrcLocation.SrcSpan)
+                                    Data.Data.$fData[]_$s$fData[]
+                                    (z @ (GHC.Base.String
+                                          -> GHC.Types.Int
+                                          -> GHC.Types.Int
+                                          -> GHC.Types.Int
+                                          -> GHC.Types.Int
+                                          -> Language.Python.Common.SrcLocation.SrcSpan)
+                                       Language.Python.Common.SrcLocation.$WSpanMultiLine)
+                                    a1)
+                                 (GHC.Types.I# dt))
+                              (GHC.Types.I# dt1))
+                           (GHC.Types.I# dt2))
+                        (GHC.Types.I# dt3)
+                   Language.Python.Common.SrcLocation.SpanPoint a1 dt dt1
+                   -> k @ GHC.Types.Int
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        Data.Data.$fDataInt
+                        (k @ GHC.Types.Int
+                           @ (GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcSpan)
+                           Data.Data.$fDataInt
+                           (k @ GHC.Base.String
+                              @ (GHC.Types.Int
+                                 -> GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcSpan)
+                              Data.Data.$fData[]_$s$fData[]
+                              (z @ (GHC.Base.String
+                                    -> GHC.Types.Int
+                                    -> GHC.Types.Int
+                                    -> Language.Python.Common.SrcLocation.SrcSpan)
+                                 Language.Python.Common.SrcLocation.$WSpanPoint)
+                              a1)
+                           (GHC.Types.I# dt))
+                        (GHC.Types.I# dt1)
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> z @ Language.Python.Common.SrcLocation.SrcSpan
+                        Language.Python.Common.SrcLocation.SpanEmpty }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cgmapM ::
+    GHC.Base.Monad m =>
+    (forall d. Data.Data.Data d => d -> m d)
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> m Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 3,
+     Strictness: <S,U(A,C(C1(U)),A,C(U),A)><L,C(C1(U))><S,1*U> -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cgmapMo ::
+    GHC.Base.MonadPlus m =>
+    (forall d. Data.Data.Data d => d -> m d)
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> m Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 3,
+     Strictness: <S(LS(LC(C(S))LLL)LL),U(A,1*U(A,C(C1(U)),A,C(U),A),1*U,C(C1(U)))><L,C(C1(U))><L,1*U> -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cgmapMp ::
+    GHC.Base.MonadPlus m =>
+    (forall d. Data.Data.Data d => d -> m d)
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> m Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 3,
+     Strictness: <S(LS(LC(C(S))LLL)LL),U(A,1*U(A,C(C1(U)),A,C(U),A),1*U,C(C1(U)))><L,C(C1(U))><L,1*U> -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cgmapQ ::
+    (forall d. Data.Data.Data d => d -> u)
+    -> Language.Python.Common.SrcLocation.SrcSpan -> [u]
+  {- Arity: 2, Strictness: <L,C(C1(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ u (ds :: forall d. Data.Data.Data d => d -> u) ->
+                 Language.Python.Common.SrcLocation.$fDataSrcSpan_$cgmapQr
+                   @ [u]
+                   @ u
+                   (GHC.Types.: @ u)
+                   (GHC.Types.[] @ u)
+                   ds) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cgmapQi ::
+    GHC.Types.Int
+    -> (forall d. Data.Data.Data d => d -> u)
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> u
+  {- Arity: 3,
+     Strictness: <S(S),1*U(1*U)><C(C(S)),1*C1(C1(U))><S,1*U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ u
+                   (w :: GHC.Types.Int)
+                   (w11 :: forall d. Data.Data.Data d => d -> u)
+                   (w12 :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.Python.Common.SrcLocation.$w$cgmapQi1
+                   @ u
+                   ww1
+                   w11
+                   w12 }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cgmapQr ::
+    (r' -> r -> r)
+    -> r
+    -> (forall d. Data.Data.Data d => d -> r')
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> r
+  {- Arity: 4, Strictness: <L,C(C1(U))><L,U><L,C(C1(U))><S,1*U> -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$cgunfold ::
+    (forall b r. Data.Data.Data b => c (b -> r) -> c r)
+    -> (forall r. r -> c r)
+    -> Data.Data.Constr
+    -> c Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 3,
+     Strictness: <L,C(C1(U))><L,1*C1(U)><S(SLLLL),1*U(1*U,A,A,A,1*U(1*U,A))>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ c :: * -> *
+                   (w :: forall b r. Data.Data.Data b => c (b -> r) -> c r)
+                   (w11 :: forall r. r -> c r)
+                   (w12 :: Data.Data.Constr) ->
+                 case w12 of ww { Data.Data.Constr ww1 ww2 ww3 ww4 ww5 ->
+                 Language.Python.Common.SrcLocation.$w$cgunfold1
+                   @ c
+                   w
+                   w11
+                   ww1
+                   ww5 }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fDataSrcSpan_$ctoConstr ::
+    Language.Python.Common.SrcLocation.SrcSpan -> Data.Data.Constr
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> Language.Python.Common.SrcLocation.$cSpanCoLinear
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> Language.Python.Common.SrcLocation.$cSpanMultiLine
+                   Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   -> Language.Python.Common.SrcLocation.$cSpanPoint
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> Language.Python.Common.SrcLocation.$cSpanEmpty }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fEqSrcLocation ::
+    GHC.Classes.Eq Language.Python.Common.SrcLocation.SrcLocation
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.SrcLocation.SrcLocation
+                  Language.Python.Common.SrcLocation.$fEqSrcLocation_$c==
+                  Language.Python.Common.SrcLocation.$fEqSrcLocation_$c/= -}
+a741649da2405f2d01d7327e5bc28811
+  $fEqSrcLocation_$c/= ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (b :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case a of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case b of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc b1 dt2 dt3
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# dt dt2) of wild3 {
+                                  GHC.Types.False -> GHC.Types.True
+                                  GHC.Types.True
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt1 dt3) of wild4 {
+                                       GHC.Types.False -> GHC.Types.True
+                                       GHC.Types.True -> GHC.Types.False } } }
+                        Language.Python.Common.SrcLocation.NoLocation -> GHC.Types.True }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> case b of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc ipv ipv1 ipv2
+                        -> GHC.Types.True
+                        Language.Python.Common.SrcLocation.NoLocation
+                        -> GHC.Types.False } }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fEqSrcLocation_$c== ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (ds1 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case ds1 of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc b1 dt2 dt3
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# dt dt2) of wild3 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True
+                                  -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==# dt1 dt3) } }
+                        Language.Python.Common.SrcLocation.NoLocation -> GHC.Types.False }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> case ds1 of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc ipv ipv1 ipv2
+                        -> GHC.Types.False
+                        Language.Python.Common.SrcLocation.NoLocation
+                        -> GHC.Types.True } }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fEqSrcSpan ::
+    GHC.Classes.Eq Language.Python.Common.SrcLocation.SrcSpan
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.SrcLocation.SrcSpan
+                  Language.Python.Common.SrcLocation.$fEqSrcSpan_$c==
+                  Language.Python.Common.SrcLocation.$fEqSrcSpan_$c/= -}
+7855650ba5477745c617b1d6a2c60117
+  $fEqSrcSpan_$c/= ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (b :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case Language.Python.Common.SrcLocation.$fEqSrcSpan_$c==
+                        a
+                        b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fEqSrcSpan_$c== ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (ds1 :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear a1 dt dt1 dt2
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.Python.Common.SrcLocation.SpanCoLinear b1 dt3 dt4 dt5
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# dt dt3) of wild3 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt1 dt4) of wild4 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True
+                                       -> GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt2 dt5) } } } }
+                   Language.Python.Common.SrcLocation.SpanMultiLine a1 dt dt1 dt2 dt3
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.Python.Common.SrcLocation.SpanMultiLine b1 dt4 dt5 dt6 dt7
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# dt dt4) of wild3 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt1 dt5) of wild4 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True
+                                       -> case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.==# dt2 dt6) of wild5 {
+                                            GHC.Types.False -> GHC.Types.False
+                                            GHC.Types.True
+                                            -> GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.==# dt3 dt7) } } } } }
+                   Language.Python.Common.SrcLocation.SpanPoint a1 dt dt1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.Python.Common.SrcLocation.SpanPoint b1 dt2 dt3
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# dt dt2) of wild3 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True
+                                  -> GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# dt1 dt3) } } }
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.Python.Common.SrcLocation.SpanEmpty
+                        -> GHC.Types.True } }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fOrdSrcLocation ::
+    GHC.Classes.Ord Language.Python.Common.SrcLocation.SrcLocation
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.SrcLocation.SrcLocation
+                  Language.Python.Common.SrcLocation.$fEqSrcLocation
+                  Language.Python.Common.SrcLocation.$fOrdSrcLocation_$ccompare
+                  Language.Python.Common.SrcLocation.$fOrdSrcLocation_$c<
+                  Language.Python.Common.SrcLocation.$fOrdSrcLocation_$c<=
+                  Language.Python.Common.SrcLocation.$fOrdSrcLocation_$c>
+                  Language.Python.Common.SrcLocation.$fOrdSrcLocation_$c>=
+                  Language.Python.Common.SrcLocation.$fOrdSrcLocation_$cmax
+                  Language.Python.Common.SrcLocation.$fOrdSrcLocation_$cmin -}
+a741649da2405f2d01d7327e5bc28811
+  $fOrdSrcLocation_$c< ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (b :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case a of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case b of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc b1 dt2 dt3
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.True
+                             GHC.Types.EQ
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<# dt dt2) of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt dt2) of wild4 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True
+                                       -> GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.<# dt1 dt3) }
+                                  GHC.Types.True -> GHC.Types.True }
+                             GHC.Types.GT -> GHC.Types.False }
+                        Language.Python.Common.SrcLocation.NoLocation -> GHC.Types.True }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fOrdSrcLocation_$c<= ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (b :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case b of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case a of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc b1 dt2 dt3
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.False
+                             GHC.Types.EQ
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<# dt dt2) of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt dt2) of wild4 {
+                                       GHC.Types.False -> GHC.Types.True
+                                       GHC.Types.True
+                                       -> case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.<# dt1 dt3) of wild5 {
+                                            GHC.Types.False -> GHC.Types.True
+                                            GHC.Types.True -> GHC.Types.False } }
+                                  GHC.Types.True -> GHC.Types.False }
+                             GHC.Types.GT -> GHC.Types.True }
+                        Language.Python.Common.SrcLocation.NoLocation -> GHC.Types.False }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> case a of wild1 { DEFAULT -> GHC.Types.True } }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fOrdSrcLocation_$c> ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (b :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 Language.Python.Common.SrcLocation.$fOrdSrcLocation_$c< b a) -}
+a741649da2405f2d01d7327e5bc28811
+  $fOrdSrcLocation_$c>= ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (b :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case a of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case b of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc b1 dt2 dt3
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.False
+                             GHC.Types.EQ
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<# dt dt2) of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt dt2) of wild4 {
+                                       GHC.Types.False -> GHC.Types.True
+                                       GHC.Types.True
+                                       -> case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.<# dt1 dt3) of wild5 {
+                                            GHC.Types.False -> GHC.Types.True
+                                            GHC.Types.True -> GHC.Types.False } }
+                                  GHC.Types.True -> GHC.Types.False }
+                             GHC.Types.GT -> GHC.Types.True }
+                        Language.Python.Common.SrcLocation.NoLocation -> GHC.Types.False }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> case b of wild1 { DEFAULT -> GHC.Types.True } }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fOrdSrcLocation_$ccompare ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (b :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case a of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case b of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc b1 dt2 dt3
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.LT
+                             GHC.Types.EQ
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<# dt dt2) of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt dt2) of wild4 {
+                                       GHC.Types.False -> GHC.Types.GT
+                                       GHC.Types.True -> GHC.Classes.compareInt# dt1 dt3 }
+                                  GHC.Types.True -> GHC.Types.LT }
+                             GHC.Types.GT -> GHC.Types.GT }
+                        Language.Python.Common.SrcLocation.NoLocation -> GHC.Types.LT }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> case b of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc ipv ipv1 ipv2
+                        -> GHC.Types.GT
+                        Language.Python.Common.SrcLocation.NoLocation
+                        -> GHC.Types.EQ } }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fOrdSrcLocation_$cmax ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (y :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case y of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case x of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc b1 dt2 dt3
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> wild1
+                             GHC.Types.EQ
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<# dt dt2) of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt dt2) of wild4 {
+                                       GHC.Types.False -> wild
+                                       GHC.Types.True
+                                       -> case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.<# dt1 dt3) of wild5 {
+                                            GHC.Types.False -> wild GHC.Types.True -> wild1 } }
+                                  GHC.Types.True -> wild1 }
+                             GHC.Types.GT -> wild }
+                        Language.Python.Common.SrcLocation.NoLocation
+                        -> Language.Python.Common.SrcLocation.NoLocation }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> case x of wild1 { DEFAULT ->
+                      Language.Python.Common.SrcLocation.NoLocation } }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fOrdSrcLocation_$cmin ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (y :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case y of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case x of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc b1 dt2 dt3
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> wild
+                             GHC.Types.EQ
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<# dt dt2) of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt dt2) of wild4 {
+                                       GHC.Types.False -> wild1
+                                       GHC.Types.True
+                                       -> case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.<# dt1 dt3) of wild5 {
+                                            GHC.Types.False -> wild1 GHC.Types.True -> wild } }
+                                  GHC.Types.True -> wild }
+                             GHC.Types.GT -> wild1 }
+                        Language.Python.Common.SrcLocation.NoLocation -> wild }
+                   Language.Python.Common.SrcLocation.NoLocation -> x }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fOrdSrcSpan ::
+    GHC.Classes.Ord Language.Python.Common.SrcLocation.SrcSpan
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.SrcLocation.SrcSpan
+                  Language.Python.Common.SrcLocation.$fEqSrcSpan
+                  Language.Python.Common.SrcLocation.$fOrdSrcSpan_$ccompare
+                  Language.Python.Common.SrcLocation.$fOrdSrcSpan_$c<
+                  Language.Python.Common.SrcLocation.$fOrdSrcSpan_$c<=
+                  Language.Python.Common.SrcLocation.$fOrdSrcSpan_$c>
+                  Language.Python.Common.SrcLocation.$fOrdSrcSpan_$c>=
+                  Language.Python.Common.SrcLocation.$fOrdSrcSpan_$cmax
+                  Language.Python.Common.SrcLocation.$fOrdSrcSpan_$cmin -}
+7855650ba5477745c617b1d6a2c60117
+  $fOrdSrcSpan_$c< ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (y :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case Language.Python.Common.SrcLocation.$fOrdSrcSpan_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fOrdSrcSpan_$c<= ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (y :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case Language.Python.Common.SrcLocation.$fOrdSrcSpan_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fOrdSrcSpan_$c> ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (y :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case Language.Python.Common.SrcLocation.$fOrdSrcSpan_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fOrdSrcSpan_$c>= ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (y :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case Language.Python.Common.SrcLocation.$fOrdSrcSpan_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fOrdSrcSpan_$ccompare ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (b :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case a of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear a1 dt dt1 dt2
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.LT
+                        Language.Python.Common.SrcLocation.SpanCoLinear b1 dt3 dt4 dt5
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.LT
+                             GHC.Types.EQ
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<# dt dt3) of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt dt3) of wild4 {
+                                       GHC.Types.False -> GHC.Types.GT
+                                       GHC.Types.True
+                                       -> case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.<# dt1 dt4) of wild5 {
+                                            GHC.Types.False
+                                            -> case GHC.Prim.tagToEnum#
+                                                      @ GHC.Types.Bool
+                                                      (GHC.Prim.==# dt1 dt4) of wild6 {
+                                                 GHC.Types.False -> GHC.Types.GT
+                                                 GHC.Types.True -> GHC.Classes.compareInt# dt2 dt5 }
+                                            GHC.Types.True -> GHC.Types.LT } }
+                                  GHC.Types.True -> GHC.Types.LT }
+                             GHC.Types.GT -> GHC.Types.GT } }
+                   Language.Python.Common.SrcLocation.SpanMultiLine a1 dt dt1 dt2 dt3
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.LT
+                        Language.Python.Common.SrcLocation.SpanCoLinear ds dt4 dt5 dt6
+                        -> GHC.Types.GT
+                        Language.Python.Common.SrcLocation.SpanMultiLine b1 dt4 dt5 dt6 dt7
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.LT
+                             GHC.Types.EQ
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<# dt dt4) of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt dt4) of wild4 {
+                                       GHC.Types.False -> GHC.Types.GT
+                                       GHC.Types.True
+                                       -> case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.<# dt1 dt5) of wild5 {
+                                            GHC.Types.False
+                                            -> case GHC.Prim.tagToEnum#
+                                                      @ GHC.Types.Bool
+                                                      (GHC.Prim.==# dt1 dt5) of wild6 {
+                                                 GHC.Types.False -> GHC.Types.GT
+                                                 GHC.Types.True
+                                                 -> case GHC.Prim.tagToEnum#
+                                                           @ GHC.Types.Bool
+                                                           (GHC.Prim.<# dt2 dt6) of wild7 {
+                                                      GHC.Types.False
+                                                      -> case GHC.Prim.tagToEnum#
+                                                                @ GHC.Types.Bool
+                                                                (GHC.Prim.==# dt2 dt6) of wild8 {
+                                                           GHC.Types.False -> GHC.Types.GT
+                                                           GHC.Types.True
+                                                           -> GHC.Classes.compareInt# dt3 dt7 }
+                                                      GHC.Types.True -> GHC.Types.LT } }
+                                            GHC.Types.True -> GHC.Types.LT } }
+                                  GHC.Types.True -> GHC.Types.LT }
+                             GHC.Types.GT -> GHC.Types.GT } }
+                   Language.Python.Common.SrcLocation.SpanPoint a1 dt dt1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Language.Python.Common.SrcLocation.SpanPoint b1 dt2 dt3
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.LT
+                             GHC.Types.EQ
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<# dt dt2) of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# dt dt2) of wild4 {
+                                       GHC.Types.False -> GHC.Types.GT
+                                       GHC.Types.True -> GHC.Classes.compareInt# dt1 dt3 }
+                                  GHC.Types.True -> GHC.Types.LT }
+                             GHC.Types.GT -> GHC.Types.GT }
+                        Language.Python.Common.SrcLocation.SpanEmpty -> GHC.Types.LT }
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Language.Python.Common.SrcLocation.SpanEmpty
+                        -> GHC.Types.EQ } }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fOrdSrcSpan_$cmax ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (y :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case Language.Python.Common.SrcLocation.$fOrdSrcSpan_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fOrdSrcSpan_$cmin ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (y :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case Language.Python.Common.SrcLocation.$fOrdSrcSpan_$ccompare
+                        x
+                        y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fPrettySrcLocation ::
+    Language.Python.Common.Pretty.Pretty
+      Language.Python.Common.SrcLocation.SrcLocation
+  DFunId
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Python.Common.SrcLocation.$fPrettySrcLocation_$cpretty
+                  `cast`
+                (Sym (Language.Python.Common.Pretty.N:Pretty[0]
+                          <Language.Python.Common.SrcLocation.SrcLocation>_N)) -}
+a741649da2405f2d01d7327e5bc28811
+  $fPrettySrcLocation_$cpretty ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Text.PrettyPrint.HughesPJ.Doc
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case x of wild {
+                   Language.Python.Common.SrcLocation.Sloc ds dt dt1
+                   -> Language.Python.Common.SrcLocation.$fPrettySrcLocation_$cpretty1
+                        (Language.Python.Common.SrcLocation.SpanPoint ds dt dt1)
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.$fPrettySrcLocation_$cpretty1
+                        Language.Python.Common.SrcLocation.SpanEmpty }) -}
+7855650ba5477745c617b1d6a2c60117
+  $fPrettySrcLocation_$cpretty1 ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Text.PrettyPrint.HughesPJ.Doc
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+7855650ba5477745c617b1d6a2c60117
+  $fPrettySrcSpan ::
+    Language.Python.Common.Pretty.Pretty
+      Language.Python.Common.SrcLocation.SrcSpan
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Python.Common.SrcLocation.$fPrettySrcLocation_$cpretty1
+                  `cast`
+                (Sym (Language.Python.Common.Pretty.N:Pretty[0]
+                          <Language.Python.Common.SrcLocation.SrcSpan>_N)) -}
+a741649da2405f2d01d7327e5bc28811
+  $fShowSrcLocation ::
+    GHC.Show.Show Language.Python.Common.SrcLocation.SrcLocation
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.SrcLocation.SrcLocation
+                  Language.Python.Common.SrcLocation.$fShowSrcLocation_$cshowsPrec
+                  Language.Python.Common.SrcLocation.$fShowSrcLocation_$cshow
+                  Language.Python.Common.SrcLocation.$fShowSrcLocation_$cshowList -}
+a741649da2405f2d01d7327e5bc28811
+  $fShowSrcLocation1 ::
+    Language.Python.Common.SrcLocation.SrcLocation -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Language.Python.Common.SrcLocation.$fShowSrcLocation_$cshowsPrec
+                   Language.Python.Common.SrcLocation.$fShowSrcLocation2) -}
+00727090c6b9e9064f32f48b7aa75425
+  $fShowSrcLocation2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+06b3bc600ab3481365e811b2e9265c94
+  $fShowSrcLocation3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NoLocation"#) -}
+fcfd950028e9c1eda9cf2b7436fb44ed
+  $fShowSrcLocation4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("}"#) -}
+df0c0dd03676b5ece1b263f6e95003d4
+  $fShowSrcLocation5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("sloc_column = "#) -}
+1df6832ea81d19df8c2a1ad5448ef403
+  $fShowSrcLocation6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("sloc_row = "#) -}
+3fffe3dc08ed7932fe183712fd00a082
+  $fShowSrcLocation7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("sloc_filename = "#) -}
+227c83a53cb24193b13af9dabe2e3c42
+  $fShowSrcLocation8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Sloc {"#) -}
+bfafab626b90b49a90449b5bfc07de20
+  $fShowSrcLocation9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   Language.Python.Common.SrcLocation.$fShowSrcLocation4
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a741649da2405f2d01d7327e5bc28811
+  $fShowSrcLocation_$cshow ::
+    Language.Python.Common.SrcLocation.SrcLocation -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case x of wild {
+                   Language.Python.Common.SrcLocation.Sloc b1 dt dt1
+                   -> GHC.CString.unpackAppendCString#
+                        Language.Python.Common.SrcLocation.$fShowSrcLocation8
+                        (GHC.CString.unpackAppendCString#
+                           Language.Python.Common.SrcLocation.$fShowSrcLocation7
+                           (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.$fShow(,)3
+                              (GHC.Show.showLitString
+                                 b1
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.$fShow(,)3
+                                    (GHC.Base.++
+                                       @ GHC.Types.Char
+                                       GHC.Show.showCommaSpace1
+                                       (GHC.CString.unpackAppendCString#
+                                          Language.Python.Common.SrcLocation.$fShowSrcLocation6
+                                          (case GHC.Show.$wshowSignedInt
+                                                  0#
+                                                  dt
+                                                  (GHC.Base.++
+                                                     @ GHC.Types.Char
+                                                     GHC.Show.showCommaSpace1
+                                                     (GHC.CString.unpackAppendCString#
+                                                        Language.Python.Common.SrcLocation.$fShowSrcLocation5
+                                                        (case GHC.Show.$wshowSignedInt
+                                                                0#
+                                                                dt1
+                                                                Language.Python.Common.SrcLocation.$fShowSrcLocation9 of ww4 { (#,#) ww5 ww6 ->
+                                                         GHC.Types.:
+                                                           @ GHC.Types.Char
+                                                           ww5
+                                                           ww6 }))) of ww4 { (#,#) ww5 ww6 ->
+                                           GHC.Types.: @ GHC.Types.Char ww5 ww6 })))))))
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.$fShowSrcLocation_w1 }) -}
+a741649da2405f2d01d7327e5bc28811
+  $fShowSrcLocation_$cshowList ::
+    [Language.Python.Common.SrcLocation.SrcLocation] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Language.Python.Common.SrcLocation.SrcLocation
+                   Language.Python.Common.SrcLocation.$fShowSrcLocation1) -}
+a741649da2405f2d01d7327e5bc28811
+  $fShowSrcLocation_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.Python.Common.SrcLocation.SrcLocation -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U>,
+     Unfolding: (\ (a :: GHC.Types.Int)
+                   (ds :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.Sloc b1 dt dt1
+                   -> case a of wild1 { GHC.Types.I# x ->
+                      let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Base.String)[OneShot] ->
+                          GHC.CString.unpackAppendCString#
+                            Language.Python.Common.SrcLocation.$fShowSrcLocation8
+                            (GHC.CString.unpackAppendCString#
+                               Language.Python.Common.SrcLocation.$fShowSrcLocation7
+                               (GHC.Types.:
+                                  @ GHC.Types.Char
+                                  GHC.Show.$fShow(,)3
+                                  (GHC.Show.showLitString
+                                     b1
+                                     (GHC.Types.:
+                                        @ GHC.Types.Char
+                                        GHC.Show.$fShow(,)3
+                                        (GHC.Base.++
+                                           @ GHC.Types.Char
+                                           GHC.Show.showCommaSpace1
+                                           (GHC.CString.unpackAppendCString#
+                                              Language.Python.Common.SrcLocation.$fShowSrcLocation6
+                                              (case GHC.Show.$wshowSignedInt
+                                                      0#
+                                                      dt
+                                                      (GHC.Base.++
+                                                         @ GHC.Types.Char
+                                                         GHC.Show.showCommaSpace1
+                                                         (GHC.CString.unpackAppendCString#
+                                                            Language.Python.Common.SrcLocation.$fShowSrcLocation5
+                                                            (case GHC.Show.$wshowSignedInt
+                                                                    0#
+                                                                    dt1
+                                                                    (GHC.CString.unpackAppendCString#
+                                                                       Language.Python.Common.SrcLocation.$fShowSrcLocation4
+                                                                       x1) of ww4 { (#,#) ww5 ww6 ->
+                                                             GHC.Types.:
+                                                               @ GHC.Types.Char
+                                                               ww5
+                                                               ww6 }))) of ww4 { (#,#) ww5 ww6 ->
+                                               GHC.Types.: @ GHC.Types.Char ww5 ww6 })))))))
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False -> p eta
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 eta)) } }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.Python.Common.SrcLocation.$fShowSrcLocation_w1
+                        eta }) -}
+1e3b511fef5b444e428c331ab52b595b
+  $fShowSrcLocation_w1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.SrcLocation.$fShowSrcLocation3) -}
+7855650ba5477745c617b1d6a2c60117
+  $fShowSrcSpan ::
+    GHC.Show.Show Language.Python.Common.SrcLocation.SrcSpan
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.SrcLocation.SrcSpan
+                  Language.Python.Common.SrcLocation.$fShowSrcSpan_$cshowsPrec
+                  Language.Python.Common.SrcLocation.$fShowSrcSpan_$cshow
+                  Language.Python.Common.SrcLocation.$fShowSrcSpan_$cshowList -}
+7855650ba5477745c617b1d6a2c60117
+  $fShowSrcSpan1 ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Language.Python.Common.SrcLocation.$fShowSrcSpan_$cshowsPrec
+                   Language.Python.Common.SrcLocation.$fShowSrcLocation2) -}
+7855650ba5477745c617b1d6a2c60117
+  $fShowSrcSpan_$cshow ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 Language.Python.Common.SrcLocation.$fShowSrcSpan_$cshowsPrec
+                   Language.Python.Common.SrcLocation.$fShowSrcLocation2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+7855650ba5477745c617b1d6a2c60117
+  $fShowSrcSpan_$cshowList ::
+    [Language.Python.Common.SrcLocation.SrcSpan] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   Language.Python.Common.SrcLocation.$fShowSrcSpan1) -}
+7855650ba5477745c617b1d6a2c60117
+  $fShowSrcSpan_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.Python.Common.SrcLocation.SrcSpan -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpan(,) ::
+    (Language.Python.Common.SrcLocation.Span a,
+     Language.Python.Common.SrcLocation.Span b) =>
+    Language.Python.Common.SrcLocation.Span (a, b)
+  DFunId
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><C(S),1*C1(U)><S,1*U(U,U)>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (2, False, True)
+                Language.Python.Common.SrcLocation.$fSpan(,)_$cgetSpan
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Language.Python.Common.SrcLocation.Span a>_R
+                 ->_R <Language.Python.Common.SrcLocation.Span b>_R
+                 ->_R Sym (Language.Python.Common.SrcLocation.N:Span[0]
+                               <(a, b)>_N)) -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpan(,)_$cgetSpan ::
+    (Language.Python.Common.SrcLocation.Span a,
+     Language.Python.Common.SrcLocation.Span b) =>
+    (a, b) -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><C(S),1*C1(U)><S,1*U(U,U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dSpan :: Language.Python.Common.SrcLocation.Span a)
+                   ($dSpan1 :: Language.Python.Common.SrcLocation.Span b)
+                   (ds :: (a, b)) ->
+                 case ds of wild { (,) x y ->
+                 Language.Python.Common.SrcLocation.spanning
+                   @ a
+                   @ b
+                   $dSpan
+                   $dSpan1
+                   x
+                   y }) -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpanEither ::
+    (Language.Python.Common.SrcLocation.Span a,
+     Language.Python.Common.SrcLocation.Span b) =>
+    Language.Python.Common.SrcLocation.Span (Data.Either.Either a b)
+  DFunId
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><L,1*C1(U)><S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (2, False, True)
+                Language.Python.Common.SrcLocation.$fSpanEither_$cgetSpan
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <Language.Python.Common.SrcLocation.Span a>_R
+                 ->_R <Language.Python.Common.SrcLocation.Span b>_R
+                 ->_R Sym (Language.Python.Common.SrcLocation.N:Span[0]
+                               <Data.Either.Either a b>_N)) -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpanEither_$cgetSpan ::
+    (Language.Python.Common.SrcLocation.Span a,
+     Language.Python.Common.SrcLocation.Span b) =>
+    Data.Either.Either a b
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><L,1*C1(U)><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dSpan :: Language.Python.Common.SrcLocation.Span a)
+                   ($dSpan1 :: Language.Python.Common.SrcLocation.Span b)
+                   (ds :: Data.Either.Either a b) ->
+                 case ds of wild {
+                   Data.Either.Left x
+                   -> $dSpan
+                        `cast`
+                      (Language.Python.Common.SrcLocation.N:Span[0] <a>_N)
+                        x
+                   Data.Either.Right x
+                   -> $dSpan1
+                        `cast`
+                      (Language.Python.Common.SrcLocation.N:Span[0] <b>_N)
+                        x }) -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpanMaybe ::
+    Language.Python.Common.SrcLocation.Span a =>
+    Language.Python.Common.SrcLocation.Span (GHC.Base.Maybe a)
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (1, False, True)
+                Language.Python.Common.SrcLocation.$fSpanMaybe_$cgetSpan
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Language.Python.Common.SrcLocation.Span a>_R
+                 ->_R Sym (Language.Python.Common.SrcLocation.N:Span[0]
+                               <GHC.Base.Maybe a>_N)) -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpanMaybe_$cgetSpan ::
+    Language.Python.Common.SrcLocation.Span a =>
+    GHC.Base.Maybe a -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dSpan :: Language.Python.Common.SrcLocation.Span a)
+                   (ds :: GHC.Base.Maybe a) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> Language.Python.Common.SrcLocation.SpanEmpty
+                   GHC.Base.Just x
+                   -> $dSpan
+                        `cast`
+                      (Language.Python.Common.SrcLocation.N:Span[0] <a>_N)
+                        x }) -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpanSrcLocation ::
+    Language.Python.Common.SrcLocation.Span
+      Language.Python.Common.SrcLocation.SrcLocation
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Python.Common.SrcLocation.$fSpanSrcLocation_$cgetSpan
+                  `cast`
+                (Sym (Language.Python.Common.SrcLocation.N:Span[0]
+                          <Language.Python.Common.SrcLocation.SrcLocation>_N)) -}
+ef31e3e925d856be92225d152f93e302
+  $fSpanSrcLocation_$cgetSpan ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (loc12 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case loc12 of wild {
+                   Language.Python.Common.SrcLocation.Sloc ds dt dt1
+                   -> Language.Python.Common.SrcLocation.SpanPoint ds dt dt1
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.SpanEmpty }) -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpanSrcSpan ::
+    Language.Python.Common.SrcLocation.Span
+      Language.Python.Common.SrcLocation.SrcSpan
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                (GHC.Base.id @ Language.Python.Common.SrcLocation.SrcSpan)
+                  `cast`
+                (Sym (Language.Python.Common.SrcLocation.N:Span[0]
+                          <Language.Python.Common.SrcLocation.SrcSpan>_N)) -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpan[] ::
+    Language.Python.Common.SrcLocation.Span a =>
+    Language.Python.Common.SrcLocation.Span [a]
+  DFunId
+  {- Arity: 2, Strictness: <L,C(U)><S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (1, False, True)
+                Language.Python.Common.SrcLocation.$fSpan[]_$cgetSpan
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Language.Python.Common.SrcLocation.Span a>_R
+                 ->_R Sym (Language.Python.Common.SrcLocation.N:Span[0] <[a]>_N)) -}
+7c526519143f327e002908f11397f222
+  $fSpan[]1 :: [a] -> a -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+6745f4d7f5c89ca40c260953253bdbce
+  $fSpan[]_$cgetSpan ::
+    Language.Python.Common.SrcLocation.Span a =>
+    [a] -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 2, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ @ a
+                   ($dSpan :: Language.Python.Common.SrcLocation.Span a)
+                   (ds :: [a]) ->
+                 case ds of wild {
+                   [] -> Language.Python.Common.SrcLocation.SpanEmpty
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> $dSpan
+                             `cast`
+                           (Language.Python.Common.SrcLocation.N:Span[0] <a>_N)
+                             x
+                        : ipv ipv1
+                        -> Language.Python.Common.SrcLocation.combineSrcSpans
+                             ($dSpan `cast` (Language.Python.Common.SrcLocation.N:Span[0] <a>_N)
+                                x)
+                             ($dSpan `cast` (Language.Python.Common.SrcLocation.N:Span[0] <a>_N)
+                                (Language.Python.Common.SrcLocation.$fSpan[]1
+                                   @ a
+                                   wild
+                                   (GHC.List.lastError @ a))) } }) -}
+c727a18706daafbcadbc62ae241ebaf6
+  $tSrcLocation :: Data.Data.DataType
+  {- Strictness: m -}
+e487fbd877ae3df7e577de5317bb9e48
+  $tSrcSpan :: Data.Data.DataType
+  {- Strictness: m -}
+5ef63fdcf6b7581123bd5dcea21f9f7c
+  $tc'C:Span :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   932743899533949841##
+                   9313175934053212483##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tc'C:Span2
+                   1#
+                   Language.Python.Common.SrcLocation.$tc'C:Span1) -}
+74a76876b4d19e23e64f0e4ad0af8260
+  $tc'C:Span1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ca4525760025381776a687be727bd6d4
+  $tc'C:Span2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tc'C:Span3) -}
+406a45c8e0a772c3c124137562b9a86d
+  $tc'C:Span3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'C:Span"#) -}
+e4f1ccf29a5fe3848dfa251dca94f501
+  $tc'NoLocation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5229351413189673171##
+                   11595542443302563097##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tc'NoLocation2
+                   0#
+                   Language.Python.Common.SrcLocation.$tc'NoLocation1) -}
+763b85cd3cd02c073e7f2a9efe755502
+  $tc'NoLocation1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+de77b6ea7522ca29d11a502c87ec8cbe
+  $tc'NoLocation2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tc'NoLocation3) -}
+12ad93c1555b1d7798c951280856ac38
+  $tc'NoLocation3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NoLocation"#) -}
+40a8323964e1571a7baaddc9d39e9e65
+  $tc'Sloc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10417835850745646091##
+                   321642963184128786##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tc'Sloc2
+                   0#
+                   Language.Python.Common.SrcLocation.$tc'Sloc1) -}
+dca6e46c40fe9b8c657606f4dacdd52f
+  $tc'Sloc1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+88909707bb6dc99945511b387a74167b
+  $tc'Sloc2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tc'Sloc3) -}
+ae2584cdfc87551941c62d39191fb082
+  $tc'Sloc3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Sloc"#) -}
+81f37164bbf501df4a89b7ff01307c8a
+  $tc'SpanCoLinear :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13870762573761854242##
+                   15480621143413237919##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tc'SpanCoLinear2
+                   0#
+                   Language.Python.Common.SrcLocation.$tc'SpanCoLinear1) -}
+d55ff04c3d45e45414a58c80a1207d4e
+  $tc'SpanCoLinear1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+03c8371fb31e01fc26b1f16e293e17de
+  $tc'SpanCoLinear2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tc'SpanCoLinear3) -}
+09d0f7befd43210e63415c08087f2a8f
+  $tc'SpanCoLinear3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SpanCoLinear"#) -}
+6cacd2a06d4fbf6c6ecce1f19298b933
+  $tc'SpanEmpty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4413920036357755948##
+                   7292370722494797742##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tc'SpanEmpty2
+                   0#
+                   Language.Python.Common.SrcLocation.$tc'SpanEmpty1) -}
+62a264ffb535c91d71c0680e49f1d3a2
+  $tc'SpanEmpty1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+9d5c478cbfd375132691e057164287c0
+  $tc'SpanEmpty2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tc'SpanEmpty3) -}
+0bcee3480f02aebdc7ed056a7250db77
+  $tc'SpanEmpty3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SpanEmpty"#) -}
+8c0cd095516b3a870b9b6522c9db4156
+  $tc'SpanMultiLine :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11096414459330226218##
+                   2791692132927323362##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tc'SpanMultiLine2
+                   0#
+                   Language.Python.Common.SrcLocation.$tc'SpanMultiLine1) -}
+dcfe2d35be0792a8c0eb119e5ce71ef5
+  $tc'SpanMultiLine1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1cab8b4b2c9a0d667dbb77441adb94bc
+  $tc'SpanMultiLine2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tc'SpanMultiLine3) -}
+d4bf9ae196efc38a841dcfe864ea62ee
+  $tc'SpanMultiLine3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SpanMultiLine"#) -}
+ca1ae3c239bf9f417b9ada34628be415
+  $tc'SpanPoint :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6596414467028285916##
+                   17480823591125520882##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tc'SpanPoint2
+                   0#
+                   Language.Python.Common.SrcLocation.$tc'SpanPoint1) -}
+8df1e9980029f22a470d01c7154ca481
+  $tc'SpanPoint1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+fc4a9d493a8851bab7e8048b4f877a75
+  $tc'SpanPoint2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tc'SpanPoint3) -}
+f17e57dcbd6e7d6b7102facbfbdf833b
+  $tc'SpanPoint3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SpanPoint"#) -}
+1d64b0d0df48f2054f7506b0f6f049f2
+  $tcSpan :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5447923853858649106##
+                   10251391018454200938##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tcSpan2
+                   0#
+                   Language.Python.Common.SrcLocation.$tcSpan1) -}
+5c5332372da75e5d8a36ad8e5b841b46
+  $tcSpan1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+06b933769d9a6c011f3e841b141f4615
+  $tcSpan2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tcSpan3) -}
+a9f486fa9963915a3c1f2000fb417c0d
+  $tcSpan3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Span"#) -}
+fc8f815e9b0589ab80d319ca619e4df8
+  $tcSrcLocation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8534671150760250537##
+                   18366218346648670035##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tcSrcLocation1
+                   0#
+                   GHC.Types.krep$*) -}
+75c8b32a2d09f5bfc97f66494fdb57c8
+  $tcSrcLocation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tcSrcLocation2) -}
+9336b78c99f1fae83937a7ad99868b35
+  $tcSrcLocation2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SrcLocation"#) -}
+d22df999d1264040a5765f2af0d237a8
+  $tcSrcSpan :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15112098904081710236##
+                   756244904248595699##
+                   Language.Python.Common.SrcLocation.$trModule
+                   Language.Python.Common.SrcLocation.$tcSrcSpan1
+                   0#
+                   GHC.Types.krep$*) -}
+52b7905eb8bb443805552640b2a02cfa
+  $tcSrcSpan1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$tcSrcSpan2) -}
+161f43ef1a3d72f61b8afe69fd2a3465
+  $tcSrcSpan2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SrcSpan"#) -}
+6840bd0f9d3546258a01b98894266892
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Common.SrcLocation.$trModule3
+                   Language.Python.Common.SrcLocation.$trModule1) -}
+9795f52de3086f93984e2244235026ae
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$trModule2) -}
+6bfe537ab90cf860f11a56f0c4fc9139
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.Python.Common.SrcLocation"#) -}
+5bb7c054860f458aee22c2c9f3381136
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.SrcLocation.$trModule4) -}
+2e2853a1ae0f7e5713a4d06fbf260f67
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+a741649da2405f2d01d7327e5bc28811
+  $w$cgmapQi ::
+    GHC.Prim.Int#
+    -> (forall d. Data.Data.Data d => d -> u)
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> u
+  {- Arity: 3, Strictness: <S,1*U><C(C(S)),1*C1(C1(U))><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ u
+                   (ww :: GHC.Prim.Int#)
+                   (w :: forall d. Data.Data.Data d => d -> u)
+                   (w11 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case w11 of wild {
+                   Language.Python.Common.SrcLocation.Sloc a1 dt dt1
+                   -> case ww of wild1 {
+                        DEFAULT -> Data.Maybe.fromJust1 @ u
+                        0# -> w @ GHC.Base.String Data.Data.$fData[]_$s$fData[] a1
+                        1# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt)
+                        2# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt1) }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Data.Maybe.fromJust1 @ u }) -}
+7855650ba5477745c617b1d6a2c60117
+  $w$cgmapQi1 ::
+    GHC.Prim.Int#
+    -> (forall d. Data.Data.Data d => d -> u)
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> u
+  {- Arity: 3, Strictness: <S,1*U><C(C(S)),1*C1(C1(U))><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ u
+                   (ww :: GHC.Prim.Int#)
+                   (w :: forall d. Data.Data.Data d => d -> u)
+                   (w11 :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case w11 of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear a1 dt dt1 dt2
+                   -> case ww of wild1 {
+                        DEFAULT -> Data.Maybe.fromJust1 @ u
+                        0# -> w @ GHC.Base.String Data.Data.$fData[]_$s$fData[] a1
+                        1# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt)
+                        2# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt1)
+                        3# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt2) }
+                   Language.Python.Common.SrcLocation.SpanMultiLine a1 dt dt1 dt2 dt3
+                   -> case ww of wild1 {
+                        DEFAULT -> Data.Maybe.fromJust1 @ u
+                        0# -> w @ GHC.Base.String Data.Data.$fData[]_$s$fData[] a1
+                        1# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt)
+                        2# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt1)
+                        3# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt2)
+                        4# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt3) }
+                   Language.Python.Common.SrcLocation.SpanPoint a1 dt dt1
+                   -> case ww of wild1 {
+                        DEFAULT -> Data.Maybe.fromJust1 @ u
+                        0# -> w @ GHC.Base.String Data.Data.$fData[]_$s$fData[] a1
+                        1# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt)
+                        2# -> w @ GHC.Types.Int Data.Data.$fDataInt (GHC.Types.I# dt1) }
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> Data.Maybe.fromJust1 @ u }) -}
+a741649da2405f2d01d7327e5bc28811
+  $w$cgunfold ::
+    (forall b r. Data.Data.Data b => c (b -> r) -> c r)
+    -> (forall r. r -> c r)
+    -> Data.Data.ConstrRep
+    -> Data.Data.DataType
+    -> c Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 4,
+     Strictness: <L,C(C1(U))><L,1*C1(U)><S,1*U><L,1*U(1*U,A)>,
+     Inline: [0],
+     Unfolding: (\ @ c :: * -> *
+                   (w :: forall b r. Data.Data.Data b => c (b -> r) -> c r)
+                   (w11 :: forall r. r -> c r)
+                   (ww :: Data.Data.ConstrRep)
+                   (ww1 :: Data.Data.DataType) ->
+                 case ww of wild1 {
+                   DEFAULT
+                   -> case ww1 of ww6 { Data.Data.DataType ww7 ww8 ->
+                      case Data.Data.$wlvl ww7
+                      ret_ty (c Language.Python.Common.SrcLocation.SrcLocation)
+                      of {} }
+                   Data.Data.AlgConstr idx
+                   -> case idx of wild { GHC.Types.I# ds ->
+                      case ds of ds1 {
+                        DEFAULT
+                        -> w11
+                             @ Language.Python.Common.SrcLocation.SrcLocation
+                             Language.Python.Common.SrcLocation.NoLocation
+                        1#
+                        -> w @ GHC.Types.Int
+                             @ Language.Python.Common.SrcLocation.SrcLocation
+                             Data.Data.$fDataInt
+                             (w @ GHC.Types.Int
+                                @ (GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcLocation)
+                                Data.Data.$fDataInt
+                                (w @ GHC.Base.String
+                                   @ (GHC.Types.Int
+                                      -> GHC.Types.Int
+                                      -> Language.Python.Common.SrcLocation.SrcLocation)
+                                   Data.Data.$fData[]_$s$fData[]
+                                   (w11
+                                      @ (GHC.Base.String
+                                         -> GHC.Types.Int
+                                         -> GHC.Types.Int
+                                         -> Language.Python.Common.SrcLocation.SrcLocation)
+                                      Language.Python.Common.SrcLocation.$WSloc))) } } }) -}
+7855650ba5477745c617b1d6a2c60117
+  $w$cgunfold1 ::
+    (forall b r. Data.Data.Data b => c (b -> r) -> c r)
+    -> (forall r. r -> c r)
+    -> Data.Data.ConstrRep
+    -> Data.Data.DataType
+    -> c Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 4,
+     Strictness: <L,C(C1(U))><L,1*C1(U)><S,1*U><L,1*U(1*U,A)>,
+     Inline: [0],
+     Unfolding: (\ @ c :: * -> *
+                   (w :: forall b r. Data.Data.Data b => c (b -> r) -> c r)
+                   (w11 :: forall r. r -> c r)
+                   (ww :: Data.Data.ConstrRep)
+                   (ww1 :: Data.Data.DataType) ->
+                 case ww of wild1 {
+                   DEFAULT
+                   -> case ww1 of ww6 { Data.Data.DataType ww7 ww8 ->
+                      case Data.Data.$wlvl ww7
+                      ret_ty (c Language.Python.Common.SrcLocation.SrcSpan)
+                      of {} }
+                   Data.Data.AlgConstr idx
+                   -> case idx of wild { GHC.Types.I# ds ->
+                      case ds of ds1 {
+                        DEFAULT
+                        -> w11
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             Language.Python.Common.SrcLocation.SpanEmpty
+                        1#
+                        -> w @ GHC.Types.Int
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             Data.Data.$fDataInt
+                             (w @ GHC.Types.Int
+                                @ (GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcSpan)
+                                Data.Data.$fDataInt
+                                (w @ GHC.Types.Int
+                                   @ (GHC.Types.Int
+                                      -> GHC.Types.Int
+                                      -> Language.Python.Common.SrcLocation.SrcSpan)
+                                   Data.Data.$fDataInt
+                                   (w @ GHC.Base.String
+                                      @ (GHC.Types.Int
+                                         -> GHC.Types.Int
+                                         -> GHC.Types.Int
+                                         -> Language.Python.Common.SrcLocation.SrcSpan)
+                                      Data.Data.$fData[]_$s$fData[]
+                                      (w11
+                                         @ (GHC.Base.String
+                                            -> GHC.Types.Int
+                                            -> GHC.Types.Int
+                                            -> GHC.Types.Int
+                                            -> Language.Python.Common.SrcLocation.SrcSpan)
+                                         Language.Python.Common.SrcLocation.$WSpanCoLinear))))
+                        2#
+                        -> w @ GHC.Types.Int
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             Data.Data.$fDataInt
+                             (w @ GHC.Types.Int
+                                @ (GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcSpan)
+                                Data.Data.$fDataInt
+                                (w @ GHC.Types.Int
+                                   @ (GHC.Types.Int
+                                      -> GHC.Types.Int
+                                      -> Language.Python.Common.SrcLocation.SrcSpan)
+                                   Data.Data.$fDataInt
+                                   (w @ GHC.Types.Int
+                                      @ (GHC.Types.Int
+                                         -> GHC.Types.Int
+                                         -> GHC.Types.Int
+                                         -> Language.Python.Common.SrcLocation.SrcSpan)
+                                      Data.Data.$fDataInt
+                                      (w @ GHC.Base.String
+                                         @ (GHC.Types.Int
+                                            -> GHC.Types.Int
+                                            -> GHC.Types.Int
+                                            -> GHC.Types.Int
+                                            -> Language.Python.Common.SrcLocation.SrcSpan)
+                                         Data.Data.$fData[]_$s$fData[]
+                                         (w11
+                                            @ (GHC.Base.String
+                                               -> GHC.Types.Int
+                                               -> GHC.Types.Int
+                                               -> GHC.Types.Int
+                                               -> GHC.Types.Int
+                                               -> Language.Python.Common.SrcLocation.SrcSpan)
+                                            Language.Python.Common.SrcLocation.$WSpanMultiLine)))))
+                        3#
+                        -> w @ GHC.Types.Int
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             Data.Data.$fDataInt
+                             (w @ GHC.Types.Int
+                                @ (GHC.Types.Int -> Language.Python.Common.SrcLocation.SrcSpan)
+                                Data.Data.$fDataInt
+                                (w @ GHC.Base.String
+                                   @ (GHC.Types.Int
+                                      -> GHC.Types.Int
+                                      -> Language.Python.Common.SrcLocation.SrcSpan)
+                                   Data.Data.$fData[]_$s$fData[]
+                                   (w11
+                                      @ (GHC.Base.String
+                                         -> GHC.Types.Int
+                                         -> GHC.Types.Int
+                                         -> Language.Python.Common.SrcLocation.SrcSpan)
+                                      Language.Python.Common.SrcLocation.$WSpanPoint))) } } }) -}
+6745f4d7f5c89ca40c260953253bdbce
+  class Span a where
+    getSpan :: a -> Language.Python.Common.SrcLocation.SrcSpan
+a741649da2405f2d01d7327e5bc28811
+  data SrcLocation
+    = Sloc {sloc_filename :: !GHC.Base.String,
+            sloc_row :: {-# UNPACK #-}GHC.Types.Int,
+            sloc_column :: {-# UNPACK #-}GHC.Types.Int}
+    | NoLocation
+7855650ba5477745c617b1d6a2c60117
+  data SrcSpan
+    = SpanCoLinear {span_filename :: !GHC.Base.String,
+                    span_row :: {-# UNPACK #-}GHC.Types.Int,
+                    span_start_column :: {-# UNPACK #-}GHC.Types.Int,
+                    span_end_column :: {-# UNPACK #-}GHC.Types.Int}
+    | SpanMultiLine {span_filename :: !GHC.Base.String,
+                     span_start_row :: {-# UNPACK #-}GHC.Types.Int,
+                     span_start_column :: {-# UNPACK #-}GHC.Types.Int,
+                     span_end_row :: {-# UNPACK #-}GHC.Types.Int,
+                     span_end_column :: {-# UNPACK #-}GHC.Types.Int}
+    | SpanPoint {span_filename :: !GHC.Base.String,
+                 span_row :: {-# UNPACK #-}GHC.Types.Int,
+                 span_column :: {-# UNPACK #-}GHC.Types.Int}
+    | SpanEmpty
+7963aa44893386d97f982d0c912e100a
+  combineSrcSpans ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+3be8f75ac6ccf4dbc38c1dd27777ff7b
+  decColumn ::
+    GHC.Types.Int
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (n :: GHC.Types.Int)
+                   (loc12 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case n of wild { GHC.Types.I# x ->
+                 case loc12 of wild1 {
+                   Language.Python.Common.SrcLocation.Sloc ds dt dt1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<# x dt1) of wild2 {
+                        GHC.Types.False -> wild1
+                        GHC.Types.True
+                        -> Language.Python.Common.SrcLocation.Sloc
+                             ds
+                             dt
+                             (GHC.Prim.-# dt1 x) }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> case Language.Python.Common.SrcLocation.decColumn1
+                      ret_ty Language.Python.Common.SrcLocation.SrcLocation
+                      of {} } }) -}
+18f1a4cea1f88a91ef8e2aefac249f25
+  decColumn1 :: GHC.Types.Int
+  {- Strictness: x -}
+2188b3c8a0804ff8649d0cf2d440562e
+  endCol ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> GHC.Types.I# dt2
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> GHC.Types.I# dt3
+                   Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   -> GHC.Types.I# dt1
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> Language.Python.Common.SrcLocation.endCol1 }) -}
+d090d33be26bd18b384506d1ff61fc28
+  endCol1 :: GHC.Types.Int
+  {- Strictness: x -}
+11851313e080c5978e608589af89fa9c
+  endRow ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> GHC.Types.I# dt
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> GHC.Types.I# dt2
+                   Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   -> GHC.Types.I# dt
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> Language.Python.Common.SrcLocation.endRow1 }) -}
+ec9dce09520f3e03773fab3e9bb6a2f7
+  endRow1 :: GHC.Types.Int
+  {- Strictness: x -}
+7e6d1cf0e067015ad0c94c0c7f84cf50
+  incColumn ::
+    GHC.Types.Int
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>m1,
+     Unfolding: InlineRule (2, True, False)
+                (\ (n :: GHC.Types.Int)
+                   (loc12 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case loc12 of wild {
+                   Language.Python.Common.SrcLocation.Sloc ds dt dt1
+                   -> case n of wild1 { GHC.Types.I# y ->
+                      Language.Python.Common.SrcLocation.Sloc ds dt (GHC.Prim.+# dt1 y) }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.incColumn1 }) -}
+bc75fc769ceb9b6d7c3e7de2b774db60
+  incColumn1 :: Language.Python.Common.SrcLocation.SrcLocation
+  {- Strictness: x -}
+0ca59f74853ae91994e3c2b0a6afa2a1
+  incLine ::
+    GHC.Types.Int
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>m1,
+     Unfolding: InlineRule (2, True, False)
+                (\ (n :: GHC.Types.Int)
+                   (loc12 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case loc12 of wild {
+                   Language.Python.Common.SrcLocation.Sloc ds dt dt1
+                   -> case n of wild1 { GHC.Types.I# y ->
+                      Language.Python.Common.SrcLocation.Sloc ds (GHC.Prim.+# dt y) 1# }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.incLine1 }) -}
+b72b4e0240b0f252f80b8cc4b4783fe5
+  incLine1 :: Language.Python.Common.SrcLocation.SrcLocation
+  {- Strictness: x -}
+ebd197a17f90b658b9b70d96ab3af1cc
+  incTab ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 1, Strictness: <S,1*U>m1,
+     Unfolding: InlineRule (1, True, False)
+                (\ (loc12 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case loc12 of wild {
+                   Language.Python.Common.SrcLocation.Sloc ds dt dt1
+                   -> Language.Python.Common.SrcLocation.Sloc
+                        ds
+                        dt
+                        (GHC.Prim.-#
+                           (GHC.Prim.+# dt1 8#)
+                           (GHC.Prim.andI# (GHC.Prim.-# dt1 1#) 7#))
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.incTab1 }) -}
+e51760a0d8bc355c215e0fecc44a424e
+  incTab1 :: Language.Python.Common.SrcLocation.SrcLocation
+  {- Strictness: x -}
+3092192d0486b5ee3b33946735df2f82
+  initialSrcLocation ::
+    GHC.Base.String -> Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m1,
+     Unfolding: InlineRule (1, True, False)
+                (\ (filename :: GHC.Base.String) ->
+                 case filename of dt { DEFAULT ->
+                 Language.Python.Common.SrcLocation.Sloc dt 1# 1# }) -}
+2d7fcc453e48fd76e9fc9f7ca027cc29
+  mkSrcSpan ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ (ds :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (ds1 :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.Sloc ipv ipv1 ipv2
+                   -> case ds1 of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc ipv3 ipv4 ipv5
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# ipv1 ipv4) of wild2 {
+                             GHC.Types.False
+                             -> Language.Python.Common.SrcLocation.SpanMultiLine
+                                  ipv
+                                  ipv1
+                                  ipv2
+                                  ipv4
+                                  ipv5
+                             GHC.Types.True
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<=# ipv5 ipv2) of wild3 {
+                                  GHC.Types.False
+                                  -> Language.Python.Common.SrcLocation.SpanCoLinear
+                                       ipv
+                                       ipv1
+                                       ipv2
+                                       ipv5
+                                  GHC.Types.True
+                                  -> Language.Python.Common.SrcLocation.SpanPoint ipv ipv1 ipv2 } }
+                        Language.Python.Common.SrcLocation.NoLocation
+                        -> Language.Python.Common.SrcLocation.SpanEmpty }
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.SpanEmpty }) -}
+a741649da2405f2d01d7327e5bc28811
+  sloc_column ::
+    Language.Python.Common.SrcLocation.SrcLocation -> GHC.Types.Int
+  RecSel Left Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.Sloc ds1 dt dt1
+                   -> GHC.Types.I# dt1
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.decColumn1 }) -}
+a741649da2405f2d01d7327e5bc28811
+  sloc_filename ::
+    Language.Python.Common.SrcLocation.SrcLocation -> GHC.Base.String
+  RecSel Left Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.Sloc ds1 dt dt1 -> ds1
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.sloc_filename1 }) -}
+e71c105098d753e2e987d26e0ea9bf71
+  sloc_filename1 :: GHC.Base.String
+  {- Strictness: x -}
+a741649da2405f2d01d7327e5bc28811
+  sloc_row ::
+    Language.Python.Common.SrcLocation.SrcLocation -> GHC.Types.Int
+  RecSel Left Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcLocation) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.Sloc ds1 dt dt1
+                   -> GHC.Types.I# dt
+                   Language.Python.Common.SrcLocation.NoLocation
+                   -> Language.Python.Common.SrcLocation.sloc_row1 }) -}
+c49aac0a441655e7427716ca4ddd6e20
+  sloc_row1 :: GHC.Types.Int
+  {- Strictness: x -}
+01df232a08fa954d8f8e7e7b897afb9b
+  spanStartPoint ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   -> Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> Language.Python.Common.SrcLocation.SpanEmpty }) -}
+7855650ba5477745c617b1d6a2c60117
+  span_column ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  RecSel Left Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.SrcLocation.span_column1
+                   Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   -> GHC.Types.I# dt1 }) -}
+ae98875da1f8cf6feec8260e10031fd8
+  span_column1 :: GHC.Types.Int
+  {- Strictness: x -}
+7855650ba5477745c617b1d6a2c60117
+  span_end_column ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  RecSel Left Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.SrcLocation.span_end_column1
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> GHC.Types.I# dt2
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> GHC.Types.I# dt3 }) -}
+54518333d9ea4b5c7081404f0944459f
+  span_end_column1 :: GHC.Types.Int
+  {- Strictness: x -}
+7855650ba5477745c617b1d6a2c60117
+  span_end_row ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  RecSel Left Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.SrcLocation.span_end_row1
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> GHC.Types.I# dt2 }) -}
+18654f6ae8e422e205b1775824ed190a
+  span_end_row1 :: GHC.Types.Int
+  {- Strictness: x -}
+7855650ba5477745c617b1d6a2c60117
+  span_filename ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Base.String
+  RecSel Left Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> ds1
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> ds1
+                   Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1 -> ds1
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> Language.Python.Common.SrcLocation.span_filename1 }) -}
+f5efe3bbe6cac33cbe25387aace011c5
+  span_filename1 :: GHC.Base.String
+  {- Strictness: x -}
+7855650ba5477745c617b1d6a2c60117
+  span_row ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  RecSel Left Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.SrcLocation.span_row1
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> GHC.Types.I# dt
+                   Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   -> GHC.Types.I# dt }) -}
+698ed22e6a74fa836a0cb8bbf12705db
+  span_row1 :: GHC.Types.Int
+  {- Strictness: x -}
+7855650ba5477745c617b1d6a2c60117
+  span_start_column ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  RecSel Left Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.SrcLocation.span_start_column1
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> GHC.Types.I# dt1
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> GHC.Types.I# dt1 }) -}
+68fe719006067fd6ec3c81df8d2a4dbc
+  span_start_column1 :: GHC.Types.Int
+  {- Strictness: x -}
+7855650ba5477745c617b1d6a2c60117
+  span_start_row ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  RecSel Left Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.SrcLocation.span_start_row1
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> GHC.Types.I# dt }) -}
+447cb6ddd0d8926ff3fb3f32e4ea161e
+  span_start_row1 :: GHC.Types.Int
+  {- Strictness: x -}
+6745f4d7f5c89ca40c260953253bdbce
+  spanning ::
+    (Language.Python.Common.SrcLocation.Span a,
+     Language.Python.Common.SrcLocation.Span b) =>
+    a -> b -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><C(S),1*C1(U)><L,U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   ($dSpan :: Language.Python.Common.SrcLocation.Span a)
+                   ($dSpan1 :: Language.Python.Common.SrcLocation.Span b)
+                   (x :: a)
+                   (y :: b) ->
+                 Language.Python.Common.SrcLocation.combineSrcSpans
+                   ($dSpan `cast` (Language.Python.Common.SrcLocation.N:Span[0] <a>_N)
+                      x)
+                   ($dSpan1
+                      `cast`
+                    (Language.Python.Common.SrcLocation.N:Span[0] <b>_N)
+                      y)) -}
+b5d6f96ca88d4103418d6db5c0aaf679
+  startCol ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> GHC.Types.I# dt1
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> GHC.Types.I# dt1
+                   Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   -> GHC.Types.I# dt1
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> Language.Python.Common.SrcLocation.startCol1 }) -}
+77a71656b4affd12b4ae362665f82891
+  startCol1 :: GHC.Types.Int
+  {- Strictness: x -}
+03380f4548aec822771fa58204fc49b7
+  startRow ::
+    Language.Python.Common.SrcLocation.SrcSpan -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Language.Python.Common.SrcLocation.SpanCoLinear ds1 dt dt1 dt2
+                   -> GHC.Types.I# dt
+                   Language.Python.Common.SrcLocation.SpanMultiLine ds1 dt dt1 dt2 dt3
+                   -> GHC.Types.I# dt
+                   Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt1
+                   -> GHC.Types.I# dt
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   -> Language.Python.Common.SrcLocation.startRow1 }) -}
+341f9a1a4a9b34745b144e3956afefeb
+  startRow1 :: GHC.Types.Int
+  {- Strictness: x -}
+instance [safe] Data.Data.Data [Language.Python.Common.SrcLocation.SrcLocation]
+  = Language.Python.Common.SrcLocation.$fDataSrcLocation
+instance [safe] Data.Data.Data [Language.Python.Common.SrcLocation.SrcSpan]
+  = Language.Python.Common.SrcLocation.$fDataSrcSpan
+instance [safe] GHC.Classes.Eq [Language.Python.Common.SrcLocation.SrcLocation]
+  = Language.Python.Common.SrcLocation.$fEqSrcLocation
+instance [safe] GHC.Classes.Eq [Language.Python.Common.SrcLocation.SrcSpan]
+  = Language.Python.Common.SrcLocation.$fEqSrcSpan
+instance [safe] GHC.Classes.Ord [Language.Python.Common.SrcLocation.SrcLocation]
+  = Language.Python.Common.SrcLocation.$fOrdSrcLocation
+instance [safe] GHC.Classes.Ord [Language.Python.Common.SrcLocation.SrcSpan]
+  = Language.Python.Common.SrcLocation.$fOrdSrcSpan
+instance [safe] Language.Python.Common.Pretty.Pretty [Language.Python.Common.SrcLocation.SrcLocation]
+  = Language.Python.Common.SrcLocation.$fPrettySrcLocation
+instance [safe] Language.Python.Common.Pretty.Pretty [Language.Python.Common.SrcLocation.SrcSpan]
+  = Language.Python.Common.SrcLocation.$fPrettySrcSpan
+instance [safe] GHC.Show.Show [Language.Python.Common.SrcLocation.SrcLocation]
+  = Language.Python.Common.SrcLocation.$fShowSrcLocation
+instance [safe] GHC.Show.Show [Language.Python.Common.SrcLocation.SrcSpan]
+  = Language.Python.Common.SrcLocation.$fShowSrcSpan
+instance [safe] Language.Python.Common.SrcLocation.Span [(,)]
+  = Language.Python.Common.SrcLocation.$fSpan(,)
+instance [safe] Language.Python.Common.SrcLocation.Span [Data.Either.Either]
+  = Language.Python.Common.SrcLocation.$fSpanEither
+instance [safe] Language.Python.Common.SrcLocation.Span [GHC.Base.Maybe]
+  = Language.Python.Common.SrcLocation.$fSpanMaybe
+instance [safe] Language.Python.Common.SrcLocation.Span [Language.Python.Common.SrcLocation.SrcLocation]
+  = Language.Python.Common.SrcLocation.$fSpanSrcLocation
+instance [safe] Language.Python.Common.SrcLocation.Span [Language.Python.Common.SrcLocation.SrcSpan]
+  = Language.Python.Common.SrcLocation.$fSpanSrcSpan
+instance [safe] Language.Python.Common.SrcLocation.Span [[]]
+  = Language.Python.Common.SrcLocation.$fSpan[]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,301 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 07:28:01.65015 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.PrettyParseError [orphan module] 8022
+  interface hash: 334f54fe4f686519d0783e0450fa2b39
+  ABI hash: 107c8e5389afeafb4187dbeb8b7c193f
+  export-list hash: 0d00d0019023ea068fd5a95c635d9b2a
+  orphan hash: 40e725d659f5768d3ab5d2dc5f96632c
+  flag hash: 9aabdec15547f7ae4d838f51788b53fe
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+module dependencies: Language.Python.Common.ParseError
+                     Language.Python.Common.Pretty Language.Python.Common.PrettyToken
+                     Language.Python.Common.SrcLocation Language.Python.Common.Token
+package dependencies: array-0.5.2.0 base-4.10.1.0* deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 monads-tf-0.1.0.3
+                      pretty-1.1.3.3 transformers-0.5.2.0
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.PrettyToken
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         monads-tf-0.1.0.3:Control.Monad.Error.Class
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  Language.Python.Common.ParseError 855377ed2b2e0b4786ce2bc295867d5f
+  exports: 50818e886d7fe171102ba6baa8dfe6d2
+  ParseError 69150014a963a0915aa041aac53345b0
+  StrError 36957af6cdc9a49097021e5273cbf546
+  UnexpectedChar 89e34faee08827a823864d3bdf3a1732
+  UnexpectedToken 971689c295c7da00c367bfb64716b310
+import  -/  Language.Python.Common.Pretty 6e21c42aa69bc1ddac81ab1aa974965d
+  exports: 08b6e8d2393383892c529fbfae3c772e
+  Pretty 966791a55bc80a3e5958da97a36c9f4e
+  pretty 3cc14f812a2b3939276efb7c8cc0a981
+import  -/  Language.Python.Common.PrettyToken bc741243f6c6b5b8d322f15ee3ad6d8d
+  exports: 0d3234b92dbf15a61a7f4ce8aa159ab3
+import  -/  Language.Python.Common.SrcLocation 8f143931064eb388f1f2a6dd7f644740
+  exports: 53449eeea761b903564548d6dcb5e6f4
+  getSpan 705afb86514220eddda721f71e34f0d3
+import  -/  pretty-1.1.3.3:Text.PrettyPrint.HughesPJ 5687246d91968c1419197b2e272e319d
+1b23239bcc9823baa85f8634ca6e04a7
+  $fPrettyParseError ::
+    Language.Python.Common.Pretty.Pretty
+      Language.Python.Common.ParseError.ParseError
+  DFunId
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Python.Common.PrettyParseError.$fPrettyParseError_$cpretty
+                  `cast`
+                (Sym (Language.Python.Common.Pretty.N:Pretty[0]
+                          <Language.Python.Common.ParseError.ParseError>_N)) -}
+fac02e0c3435798967e9580f41a889a6
+  $fPrettyParseError1 :: Text.PrettyPrint.HughesPJ.Doc
+  {- Unfolding: (Language.Python.Common.SrcLocation.$fPrettySrcLocation_$cpretty1
+                   Language.Python.Common.SrcLocation.SpanEmpty) -}
+669829f1f2e54a049609e4f5ba26f47c
+  $fPrettyParseError2 ::
+    Text.PrettyPrint.Annotated.HughesPJ.TextDetails
+  {- Strictness: m2,
+     Unfolding: (Text.PrettyPrint.Annotated.HughesPJ.Str
+                   Language.Python.Common.PrettyParseError.$fPrettyParseError_s) -}
+7f7f524e0881d92a41c237b4e9281fc5
+  $fPrettyParseError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("unexpected characer:"#) -}
+0884b8d51fcd9da63b163c1cd361cbb0
+  $fPrettyParseError4 :: GHC.Types.Int
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Language.Python.Common.PrettyParseError.$fPrettyParseError_s
+                        0# of v { DEFAULT ->
+                 GHC.Types.I# v }) -}
+63294c7fe8c82f7acce5ea3b5165b58b
+  $fPrettyParseError5 ::
+    Text.PrettyPrint.Annotated.HughesPJ.TextDetails
+  {- Strictness: m2,
+     Unfolding: (Text.PrettyPrint.Annotated.HughesPJ.Str
+                   Language.Python.Common.PrettyParseError.$fPrettyParseError_s1) -}
+97273565fb8e5ef994a31258bf84b476
+  $fPrettyParseError6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("unexpected token:"#) -}
+14c005c01c991b040a4f27bc32b6e067
+  $fPrettyParseError7 :: GHC.Types.Int
+  {- Unfolding: (case GHC.List.$wlenAcc
+                        @ GHC.Types.Char
+                        Language.Python.Common.PrettyParseError.$fPrettyParseError_s1
+                        0# of v { DEFAULT ->
+                 GHC.Types.I# v }) -}
+48a9f5ef56a30909d5c9c9c355835685
+  $fPrettyParseError_$cpretty ::
+    Language.Python.Common.ParseError.ParseError
+    -> Text.PrettyPrint.HughesPJ.Doc
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Language.Python.Common.ParseError.ParseError) ->
+                 case ds of wild {
+                   Language.Python.Common.ParseError.UnexpectedToken t
+                   -> case Language.Python.Common.PrettyParseError.$fPrettyParseError7 of v { GHC.Types.I# v1 ->
+                      let {
+                        p :: Text.PrettyPrint.Annotated.HughesPJ.Doc ()
+                        = case (Language.Python.Common.SrcLocation.$fPrettySrcLocation_$cpretty1
+                                  (Language.Python.Common.Token.token_span t))
+                                 `cast`
+                               (Text.PrettyPrint.HughesPJ.N:Doc[0]) of wild1 {
+                            DEFAULT
+                            -> Text.PrettyPrint.Annotated.HughesPJ.Beside
+                                 @ ()
+                                 wild1
+                                 GHC.Types.True
+                                 (Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                    @ ()
+                                    (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                       @ ()
+                                       Language.Python.Common.PrettyParseError.$fPrettyParseError5
+                                       v1)
+                                    (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ()))
+                            Text.PrettyPrint.Annotated.HughesPJ.Empty
+                            -> Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                 @ ()
+                                 (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                    @ ()
+                                    Language.Python.Common.PrettyParseError.$fPrettyParseError5
+                                    v1)
+                                 (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ()) }
+                      } in
+                      case (Language.Python.Common.PrettyToken.$fPrettyToken_$cpretty t)
+                             `cast`
+                           (Text.PrettyPrint.HughesPJ.N:Doc[0]) of wild1 {
+                        DEFAULT
+                        -> case p of wild2 {
+                             DEFAULT
+                             -> (Text.PrettyPrint.Annotated.HughesPJ.Beside
+                                   @ ()
+                                   wild2
+                                   GHC.Types.True
+                                   wild1)
+                                  `cast`
+                                (Sym (Text.PrettyPrint.HughesPJ.N:Doc[0]))
+                             Text.PrettyPrint.Annotated.HughesPJ.Empty
+                             -> wild1 `cast` (Sym (Text.PrettyPrint.HughesPJ.N:Doc[0])) }
+                        Text.PrettyPrint.Annotated.HughesPJ.Empty
+                        -> p `cast` (Sym (Text.PrettyPrint.HughesPJ.N:Doc[0])) } }
+                   Language.Python.Common.ParseError.UnexpectedChar c loc
+                   -> case c of dt1 { GHC.Types.C# dt2 ->
+                      case Language.Python.Common.PrettyParseError.$fPrettyParseError4 of v { GHC.Types.I# v1 ->
+                      case loc of wild1 {
+                        Language.Python.Common.SrcLocation.Sloc ds1 dt dt4
+                        -> case (Language.Python.Common.SrcLocation.$fPrettySrcLocation_$cpretty1
+                                   (Language.Python.Common.SrcLocation.SpanPoint ds1 dt dt4))
+                                  `cast`
+                                (Text.PrettyPrint.HughesPJ.N:Doc[0]) of wild2 {
+                             DEFAULT
+                             -> (Text.PrettyPrint.Annotated.HughesPJ.Beside
+                                   @ ()
+                                   (Text.PrettyPrint.Annotated.HughesPJ.Beside
+                                      @ ()
+                                      wild2
+                                      GHC.Types.True
+                                      (Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                         @ ()
+                                         (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                            @ ()
+                                            Language.Python.Common.PrettyParseError.$fPrettyParseError2
+                                            v1)
+                                         (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ())))
+                                   GHC.Types.True
+                                   (Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                      @ ()
+                                      (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                         @ ()
+                                         (Text.PrettyPrint.Annotated.HughesPJ.Chr dt2)
+                                         1#)
+                                      (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ())))
+                                  `cast`
+                                (Sym (Text.PrettyPrint.HughesPJ.N:Doc[0]))
+                             Text.PrettyPrint.Annotated.HughesPJ.Empty
+                             -> (Text.PrettyPrint.Annotated.HughesPJ.Beside
+                                   @ ()
+                                   (Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                      @ ()
+                                      (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                         @ ()
+                                         Language.Python.Common.PrettyParseError.$fPrettyParseError2
+                                         v1)
+                                      (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ()))
+                                   GHC.Types.True
+                                   (Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                      @ ()
+                                      (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                         @ ()
+                                         (Text.PrettyPrint.Annotated.HughesPJ.Chr dt2)
+                                         1#)
+                                      (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ())))
+                                  `cast`
+                                (Sym (Text.PrettyPrint.HughesPJ.N:Doc[0])) }
+                        Language.Python.Common.SrcLocation.NoLocation
+                        -> case Language.Python.Common.PrettyParseError.$fPrettyParseError1
+                                  `cast`
+                                (Text.PrettyPrint.HughesPJ.N:Doc[0]) of wild2 {
+                             DEFAULT
+                             -> (Text.PrettyPrint.Annotated.HughesPJ.Beside
+                                   @ ()
+                                   (Text.PrettyPrint.Annotated.HughesPJ.Beside
+                                      @ ()
+                                      wild2
+                                      GHC.Types.True
+                                      (Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                         @ ()
+                                         (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                            @ ()
+                                            Language.Python.Common.PrettyParseError.$fPrettyParseError2
+                                            v1)
+                                         (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ())))
+                                   GHC.Types.True
+                                   (Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                      @ ()
+                                      (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                         @ ()
+                                         (Text.PrettyPrint.Annotated.HughesPJ.Chr dt2)
+                                         1#)
+                                      (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ())))
+                                  `cast`
+                                (Sym (Text.PrettyPrint.HughesPJ.N:Doc[0]))
+                             Text.PrettyPrint.Annotated.HughesPJ.Empty
+                             -> (Text.PrettyPrint.Annotated.HughesPJ.Beside
+                                   @ ()
+                                   (Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                      @ ()
+                                      (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                         @ ()
+                                         Language.Python.Common.PrettyParseError.$fPrettyParseError2
+                                         v1)
+                                      (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ()))
+                                   GHC.Types.True
+                                   (Text.PrettyPrint.Annotated.HughesPJ.TextBeside
+                                      @ ()
+                                      (Text.PrettyPrint.Annotated.HughesPJ.NoAnnot
+                                         @ ()
+                                         (Text.PrettyPrint.Annotated.HughesPJ.Chr dt2)
+                                         1#)
+                                      (Text.PrettyPrint.Annotated.HughesPJ.Empty @ ())))
+                                  `cast`
+                                (Sym (Text.PrettyPrint.HughesPJ.N:Doc[0])) } } } }
+                   Language.Python.Common.ParseError.StrError str
+                   -> (Text.PrettyPrint.Annotated.HughesPJ.text @ () str)
+                        `cast`
+                      (Sym (Text.PrettyPrint.HughesPJ.N:Doc[0])) }) -}
+3416c3fb0126c2e6e92ae7fcf1a4dca9
+  $fPrettyParseError_s :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.PrettyParseError.$fPrettyParseError3) -}
+adbfdabbd25fdd28a1b67827483c6c1a
+  $fPrettyParseError_s1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.PrettyParseError.$fPrettyParseError6) -}
+0da3cba388966397413ff09a3bc2bae4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Common.PrettyParseError.$trModule3
+                   Language.Python.Common.PrettyParseError.$trModule1) -}
+23fc7288c9d7db0d809355f410ace00f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.PrettyParseError.$trModule2) -}
+215cd18bcb121d47d791ebe9006465b1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.Python.Common.PrettyParseError"#) -}
+8e758e8e024c9428fb8c7cf53c5b139f
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.PrettyParseError.$trModule4) -}
+ffd221f45c07f1bf79888c510c489be6
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+instance [safe] [orphan] Language.Python.Common.Pretty.Pretty [Language.Python.Common.ParseError.ParseError]
+  = Language.Python.Common.PrettyParseError.$fPrettyParseError
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,190 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 07:28:00.988543 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.PrettyToken [orphan module] 8022
+  interface hash: b740cf6d0d812c3c2efed89e9bb691ef
+  ABI hash: bc741243f6c6b5b8d322f15ee3ad6d8d
+  export-list hash: 0d3234b92dbf15a61a7f4ce8aa159ab3
+  orphan hash: 8c7ae0a1cfa0c7474493b4eff534da56
+  flag hash: 9aabdec15547f7ae4d838f51788b53fe
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+module dependencies: Language.Python.Common.Pretty
+                     Language.Python.Common.SrcLocation Language.Python.Common.Token
+package dependencies: array-0.5.2.0 base-4.10.1.0* deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 pretty-1.1.3.3
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  Language.Python.Common.Pretty 6e21c42aa69bc1ddac81ab1aa974965d
+  exports: 08b6e8d2393383892c529fbfae3c772e
+  Pretty 966791a55bc80a3e5958da97a36c9f4e
+  prettyPrefix 1de448da20e8c8f729f447b314cbfd6b
+import  -/  Language.Python.Common.Token d5076ddbfa147a7adfa845a047c4ec2b
+  exports: 989971a82f568d9688304166d774cea9
+  AndToken bce9c8edbcd5d465728823cc1739c7d4
+  AsToken 96fe3cfeeb967cf06a19b6fd80ee37d6
+  AssertToken 08d8a31a9b4b360cc5d40baed79a4b99
+  AssignToken 90cbda14cc6f27aba58cfa7b0f9046a0
+  AsyncToken 214c4822294d4e3df0cd338379ddfff8
+  AtToken a7dfe1d1ac7e5b0c7d4b45e79e184b11
+  AwaitToken 1c7ac69630ff851811c7844c62f8b76e
+  BackQuoteToken 9e841665ed88cbade176395f8f06834b
+  BinAndAssignToken 3b81f90aa225d174e94965452db18408
+  BinOrAssignToken 6643a8a78e786cbd2ea2837cfa7b85ec
+  BinXorAssignToken 7db12eb04e29f0985627f222ef8ff1e3
+  BinaryAndToken 5eb4e410690fe57750202406133ccae9
+  BinaryOrToken 7ae5c405bd25cb154d4d51b43ebf120e
+  BreakToken 59f6f60850766e0ffbcb5afe044e8d5a
+  ByteStringToken 8ed71ca430d8fd81a65296b0f242d1d6
+  ClassToken 0f70c7bc21536d33024932e7d1aff301
+  ColonToken 4061513d4dbaa88f2737a77ef56094d4
+  CommaToken 44ada8e9df755fe79ff3e5629d7e534d
+  CommentToken df6bdfa94fc5acffd8dadf57b31c4227
+  ContinueToken 16fd641b346eaa8a19d028223660a14a
+  DedentToken d88ae81e5dfafe5f22e03615b3b9afb9
+  DefToken b6e057e6167e5f1d735d9b5b98c07fd0
+  DeleteToken 3297524c3afb0e0f2158d84e9f45224e
+  DivAssignToken c310d8f2db30124c9c5f0502c0146065
+  DivToken 462b17bee82838812bc02a64f1a0025e
+  DotToken 003d9d4564a536435f9e80722ec86d3d
+  EOFToken 1cf80df53c67e36853da3c226a40c5e4
+  ElifToken 839e2a6d8ef776ba99a451112af7dfee
+  EllipsisToken d57d66112d934a9c41a298d428d79716
+  ElseToken 72c3434d31abb473ddf34e4261a06332
+  EqualityToken 08ddde846ce980c8c499db4ae68fc0c6
+  ExceptToken 238220cc11ce851dba08933f15363c33
+  ExecToken b738b9e8f1fe140e92d5af5e2c55b3de
+  ExponentToken 09f697be60b198fbfaf81cd79a2ce779
+  FalseToken 1f17dbac4445d041fdfca052e81ee897
+  FinallyToken ea75a81465ef50606e4bd90787e7c8a3
+  FloatToken c6c8144ddb699972c1b74dddc504c056
+  FloorDivAssignToken dcddffde2042e303c8cea3a925581f88
+  FloorDivToken 6e99009a41ace8a74730d51bd8327b2c
+  ForToken 59b1001aea44b8dc5cc23a1748e1d070
+  FromToken bea75cc33171ebc3c4c60a9d553de8b9
+  GlobalToken efac6585447e4190333d8352ea1f80bf
+  GreaterThanEqualsToken e783d490b095d815e947711cb5b6f5ec
+  GreaterThanToken e1e05bf37deccd8c8592cdd36cb16e73
+  IdentifierToken 8b13c0eed3b80d89b71ea9f79ae411b6
+  IfToken 3a93e34ef185993f7f4c6a91dbb2e1d3
+  ImaginaryToken 146a73d5fbc8ec23fda5be0442442cdc
+  ImportToken 8b9680cc98e8aa033fcc878f16016fb3
+  InToken 5447463b85d1aff2c356cc5227b3677b
+  IndentToken 3977f1b73d2288983e72233470a4e6bd
+  IntegerToken e71a57281f42e20860c67b540ddee222
+  IsToken a086e4d09c866c5a18db0cf2bc950d89
+  LambdaToken 1461fc1dbc0359ab4fc369875531e6d5
+  LeftBraceToken b95fd072d7d2e01fe836cd003b745326
+  LeftRoundBracketToken d11dbcb5363be70a2bdf7bdeac7f2ebc
+  LeftShiftAssignToken 6b47708d246959d20acdc54339528adc
+  LeftSquareBracketToken cdebfdc78e4d0d70ef126d6f2401a811
+  LessThanEqualsToken 13b1a5252b0ba146ce8c2cb210c89227
+  LessThanToken 5e4b00ed35a51458495ed70494d2d463
+  LineJoinToken 159d83201ed113091d4e795c670a0eba
+  LongIntegerToken ec7762f7f9526ee1697564b230c4f875
+  MatrixMultAssignToken 61f35f01d85e42cc35b163ffdef8dcf7
+  MinusAssignToken 23f36baf1e86a827390308cb2544e4da
+  MinusToken 59c24c04f0c25f648a42bf63de9d4189
+  ModAssignToken 234024f2c69436a80b46aeb42dbbf307
+  ModuloToken fc6bc20aa6094c9326578a984c8a7748
+  MultAssignToken 7c93f1a0c17b335cd511ad8482e53807
+  MultToken 135814f3f60efd00a5dde7bf307dfafa
+  NewlineToken 3f56dcc8b6ff151ce5b76ce9e3b85a30
+  NonLocalToken 1b517f2e00d22f07134c9805ff8bbaf4
+  NoneToken 20318e326a3cf81919f09221483bf9f8
+  NotEqualsToken 8af1806ae11edf967c2a42f0008b0946
+  NotEqualsV2Token 478d03914713d84fae4a5fbd262f3ba4
+  NotToken 1c1cb07b5238197fdf5d5016137f4050
+  OrToken 985b136ccee4dca9a24bdc602e5b3c14
+  PassToken a8acbbe3beebd423550d138b1d7b4a8d
+  PlusAssignToken 0454620aac0fd884e1176ede19bc7ef3
+  PlusToken 0d32b186967ad92c09457859ab4f303a
+  PowAssignToken 62bd64d1983fbfb6497f32bfa56de95b
+  PrintToken 5bc155d49af41169eb48c6234f4aafa3
+  RaiseToken d140aa3452518956bbf4d83c2a34943d
+  ReturnToken ff37467b6350979db788622ac3544224
+  RightArrowToken 6eeabdd23ad0885b1b3c1f607b894a1f
+  RightBraceToken 51416014b5288d7c6afbcc85099d8959
+  RightRoundBracketToken 651ae74c861ba43e674e18bf027ad9b6
+  RightShiftAssignToken 85116790f81adf1ac2fb57817d8f5602
+  RightSquareBracketToken 7620f90150ae1e3424d4dc9789df6a05
+  SemiColonToken c4783ac1a071940cf6848e4e0db24e79
+  ShiftLeftToken e01211439acde9e9a86fe3849b57df64
+  ShiftRightToken 5bd4c7bd5a78aeab44f44c78b9841241
+  StringToken a7ab32c6550b6c4e156e55510a109386
+  TildeToken 52e829bdee3f547795b44c1a0cf842c6
+  Token c26478989c7eb45d7c7d423358c5d58e
+  TrueToken d17639c7dbb8b81810b37a56eacc2369
+  TryToken 3eb8bb7324c5b5c0a7e54321738e550a
+  UnicodeStringToken 3a20dd20048b280b2b0ac129f0fa84b6
+  WhileToken 1b61ed17fd5df953b4d8715261f2dfe7
+  WithToken 575acef2dbf2f6c01be41be312faf9ea
+  XorToken a10af18317051a3c40da57e95a4dfd43
+  YieldToken 9bee54a9d91101a07c0b1532a02b0a4f
+  token_literal c26478989c7eb45d7c7d423358c5d58e
+import  -/  pretty-1.1.3.3:Text.PrettyPrint.HughesPJ 5687246d91968c1419197b2e272e319d
+996b111544de748bc77913fbe07403c5
+  $fPrettyToken ::
+    Language.Python.Common.Pretty.Pretty
+      Language.Python.Common.Token.Token
+  DFunId
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Python.Common.PrettyToken.$fPrettyToken_$cpretty
+                  `cast`
+                (Sym (Language.Python.Common.Pretty.N:Pretty[0]
+                          <Language.Python.Common.Token.Token>_N)) -}
+016b1017bc8b810287a11d1675e52b9b
+  $fPrettyToken_$cpretty ::
+    Language.Python.Common.Token.Token -> Text.PrettyPrint.HughesPJ.Doc
+  {- Arity: 1, Strictness: <S,1*U> -}
+a1ebe8a58b3e34df6ed087e57f434c64
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Common.PrettyToken.$trModule3
+                   Language.Python.Common.PrettyToken.$trModule1) -}
+62cf03a40c5632c1622fc2bca7e02025
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.PrettyToken.$trModule2) -}
+6ce25a85111900f8a4b1ea3af0fdacaf
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.Python.Common.PrettyToken"#) -}
+924dfd5037850acf87103c9bcaf30ef6
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.PrettyToken.$trModule4) -}
+a58b57e05c5ce81d546b525a61751b99
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+instance [safe] [orphan] Language.Python.Common.Pretty.Pretty [Language.Python.Common.Token.Token]
+  = Language.Python.Common.PrettyToken.$fPrettyToken
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

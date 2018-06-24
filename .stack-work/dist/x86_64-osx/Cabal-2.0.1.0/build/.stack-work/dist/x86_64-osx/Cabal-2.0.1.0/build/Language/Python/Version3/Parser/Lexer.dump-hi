@@ -1,0 +1,851 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 07:28:04.800932 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Version3.Parser.Lexer 8022
+  interface hash: d339e47937f93b426a9e5082722a913a
+  ABI hash: 396764c0f5f504316b88251e9f75508e
+  export-list hash: 7e1506f13bdcce57bdba9463f320e629
+  orphan hash: 8046a1017324e4b05f366d0457278a0c
+  flag hash: b4c9161ce1f96846ed7e42246a7fe54f
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Python.Common.LexerUtils.endOfFileToken
+  Language.Python.Version3.Parser.Lexer.initStartCodeStack
+  Language.Python.Version3.Parser.Lexer.lexCont
+  Language.Python.Version3.Parser.Lexer.lexToken
+module dependencies: Language.Python.Common.LexerUtils
+                     Language.Python.Common.ParseError
+                     Language.Python.Common.ParserMonad Language.Python.Common.Pretty
+                     Language.Python.Common.SrcLocation Language.Python.Common.Token
+package dependencies: array-0.5.2.0 base-4.10.1.0
+                      containers-0.5.10.2 deepseq-1.4.3.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0 monads-tf-0.1.0.3 pretty-1.1.3.3
+                      transformers-0.5.2.0 utf8-string-1.0.1.1
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Set.Internal
+                         monads-tf-0.1.0.3:Control.Monad.Error.Class
+                         monads-tf-0.1.0.3:Control.Monad.State.Class
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  array-0.5.2.0:Data.Array 903f272bb288bfc910741fa057ba2284
+import  -/  array-0.5.2.0:Data.Array.Base d445113aff311e796ea88b27376fbd46
+import  -/  base-4.10.1.0:Control.Monad ebed2e8e7444944e0c1d827c6faf40a4
+import  -/  base-4.10.1.0:Data.List 4ab7fa2a1b87502b23af891a384f0506
+import  -/  base-4.10.1.0:GHC.Arr cf4349fa30e5f82fdb67fa740927bec8
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.Exts 7dc7a2be934e058493541437800afa50
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:Numeric 21156732c42fc141a3fb4d889dca2ac6
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:Text.Read 9e862e012b3c71e83cb56fb456188f44
+import  -/  containers-0.5.10.2:Data.Map 938962634b7a30eebc77b8948269128a
+import  -/  containers-0.5.10.2:Data.Map.Internal 9c57d7e8180b3d401d116f2112d8715d
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  Language.Python.Common.LexerUtils 82979fa518fbf7a8d27d745ce3602ccc
+  exports: 11f4882e4f2acfc746031dbbc90feb39
+  AlexInput ddd10545ac21284fe451a254e58a1bf4
+  BOF 0d80319e4ad36c7da30d722a894fbd7b
+  BOL 344a8d4eefa9af476550f46d2714c1b2
+  alexGetByte 7ea77e98e3ddaad2fcaedfacec8aa43d
+  bolEndOfLine 8c03eff4ea8a967000244e8d0c96ceb4
+  byteStringToken af738cb8e0bc753873fd1275ad571dfc
+  closeParen dacd840715f103b71ca000e533563bcb
+  dedentToken 76cfcb9a17d4c1d921d1f5f756c5f30a
+  dedentation 9ec273b1fbc14a52f9e2125f4506f738
+  endOfFileToken b9dc248df05cba81318d8bea9e90cf16
+  endOfLine 914f790e83a51c361fa7375fbaf89dc3
+  formatRawStringToken 6256213ff9379abdb9bee2ec73d28535
+  formatStringToken a4fca1a89abf908ffd1bd3c9f3f0791c
+  indentation 5f936a24d2e5df84eb99aa6674d5bb3c
+  lexicalError 2ca19ed12bf0ef8c9ff38c2eadeab5a8
+  lineJoin 424435552f6475f2169aec56f3711c58
+  mkString 9fd039c09871868bd6ee8e8cbcc747bc
+  openParen 30c2b399115e7c97351f4998f89d9b3f
+  rawByteStringToken dea6ae558a4a53ea669444f3f92a57ca
+  rawStringToken a5d5d6d6fe5a0dba78851501bef97cf2
+  readBinary 0f657ec07445000322d246356f412084
+  readFloat 836da7e56943aed126720e30a838b917
+  stringToken bc81542571c0d2b2938eddf39704d379
+  symbolToken 534da63796a95a318d6c93f6f67659be
+  token 25cb8b66dae5d56d1fdba5a95d272d56
+  unicodeStringToken 0ac5d54872cb774e37d03118e5f4184e
+import  -/  Language.Python.Common.ParserMonad 5c66e785c6954a72ef7262d195f9a0e8
+  exports: e5cf6b15983cfb8cebe91f296cfdd496
+  P dbdcfebcbc6e82e600f0bd328659de1e
+  addComment 9d8da7b4f329ddd9625d4fde103787c3
+  getIndentStackDepth 534d582355112a41f723d218ca29939c
+  getInput 834ab7a324434f64659f92f9a63c6a70
+  getLastToken 1f5f1ce242b0eb2c270577dea33da5cd
+  getLocation d710ac7b0de62bab54f8b66387e0f29f
+  getStartCode 92ee95f32fecbd7a2efcbd14a7a1a74b
+  popIndent f373b6066887eceb4fe724fc36051f78
+  setInput bb52324ee33e7249ec279874ad4ffeb5
+  setLastToken 7ad569c9e33e25e26df99d29b5b9585f
+  setLocation ef7682f85fde76d3dfd0e6fa4de7ac29
+import  -/  Language.Python.Common.SrcLocation 8f143931064eb388f1f2a6dd7f644740
+  exports: 53449eeea761b903564548d6dcb5e6f4
+  SrcSpan 7855650ba5477745c617b1d6a2c60117
+  decColumn 3be8f75ac6ccf4dbc38c1dd27777ff7b
+  mkSrcSpan 2d7fcc453e48fd76e9fc9f7ca027cc29
+import  -/  Language.Python.Common.Token d5076ddbfa147a7adfa845a047c4ec2b
+  exports: 989971a82f568d9688304166d774cea9
+  AndToken bce9c8edbcd5d465728823cc1739c7d4
+  AsToken 96fe3cfeeb967cf06a19b6fd80ee37d6
+  AssertToken 08d8a31a9b4b360cc5d40baed79a4b99
+  AssignToken 90cbda14cc6f27aba58cfa7b0f9046a0
+  AsyncToken 214c4822294d4e3df0cd338379ddfff8
+  AtToken a7dfe1d1ac7e5b0c7d4b45e79e184b11
+  AwaitToken 1c7ac69630ff851811c7844c62f8b76e
+  BinAndAssignToken 3b81f90aa225d174e94965452db18408
+  BinOrAssignToken 6643a8a78e786cbd2ea2837cfa7b85ec
+  BinXorAssignToken 7db12eb04e29f0985627f222ef8ff1e3
+  BinaryAndToken 5eb4e410690fe57750202406133ccae9
+  BinaryOrToken 7ae5c405bd25cb154d4d51b43ebf120e
+  BreakToken 59f6f60850766e0ffbcb5afe044e8d5a
+  ClassToken 0f70c7bc21536d33024932e7d1aff301
+  ColonToken 4061513d4dbaa88f2737a77ef56094d4
+  CommaToken 44ada8e9df755fe79ff3e5629d7e534d
+  CommentToken df6bdfa94fc5acffd8dadf57b31c4227
+  ContinueToken 16fd641b346eaa8a19d028223660a14a
+  DefToken b6e057e6167e5f1d735d9b5b98c07fd0
+  DeleteToken 3297524c3afb0e0f2158d84e9f45224e
+  DivAssignToken c310d8f2db30124c9c5f0502c0146065
+  DivToken 462b17bee82838812bc02a64f1a0025e
+  DotToken 003d9d4564a536435f9e80722ec86d3d
+  ElifToken 839e2a6d8ef776ba99a451112af7dfee
+  EllipsisToken d57d66112d934a9c41a298d428d79716
+  ElseToken 72c3434d31abb473ddf34e4261a06332
+  EqualityToken 08ddde846ce980c8c499db4ae68fc0c6
+  ExceptToken 238220cc11ce851dba08933f15363c33
+  ExponentToken 09f697be60b198fbfaf81cd79a2ce779
+  FalseToken 1f17dbac4445d041fdfca052e81ee897
+  FinallyToken ea75a81465ef50606e4bd90787e7c8a3
+  FloatToken c6c8144ddb699972c1b74dddc504c056
+  FloorDivAssignToken dcddffde2042e303c8cea3a925581f88
+  FloorDivToken 6e99009a41ace8a74730d51bd8327b2c
+  ForToken 59b1001aea44b8dc5cc23a1748e1d070
+  FromToken bea75cc33171ebc3c4c60a9d553de8b9
+  GlobalToken efac6585447e4190333d8352ea1f80bf
+  GreaterThanEqualsToken e783d490b095d815e947711cb5b6f5ec
+  GreaterThanToken e1e05bf37deccd8c8592cdd36cb16e73
+  IdentifierToken 8b13c0eed3b80d89b71ea9f79ae411b6
+  IfToken 3a93e34ef185993f7f4c6a91dbb2e1d3
+  ImaginaryToken 146a73d5fbc8ec23fda5be0442442cdc
+  ImportToken 8b9680cc98e8aa033fcc878f16016fb3
+  InToken 5447463b85d1aff2c356cc5227b3677b
+  IntegerToken e71a57281f42e20860c67b540ddee222
+  IsToken a086e4d09c866c5a18db0cf2bc950d89
+  LambdaToken 1461fc1dbc0359ab4fc369875531e6d5
+  LeftBraceToken b95fd072d7d2e01fe836cd003b745326
+  LeftRoundBracketToken d11dbcb5363be70a2bdf7bdeac7f2ebc
+  LeftShiftAssignToken 6b47708d246959d20acdc54339528adc
+  LeftSquareBracketToken cdebfdc78e4d0d70ef126d6f2401a811
+  LessThanEqualsToken 13b1a5252b0ba146ce8c2cb210c89227
+  LessThanToken 5e4b00ed35a51458495ed70494d2d463
+  LineJoinToken 159d83201ed113091d4e795c670a0eba
+  MatrixMultAssignToken 61f35f01d85e42cc35b163ffdef8dcf7
+  MinusAssignToken 23f36baf1e86a827390308cb2544e4da
+  MinusToken 59c24c04f0c25f648a42bf63de9d4189
+  ModAssignToken 234024f2c69436a80b46aeb42dbbf307
+  ModuloToken fc6bc20aa6094c9326578a984c8a7748
+  MultAssignToken 7c93f1a0c17b335cd511ad8482e53807
+  MultToken 135814f3f60efd00a5dde7bf307dfafa
+  NewlineToken 3f56dcc8b6ff151ce5b76ce9e3b85a30
+  NonLocalToken 1b517f2e00d22f07134c9805ff8bbaf4
+  NoneToken 20318e326a3cf81919f09221483bf9f8
+  NotEqualsToken 8af1806ae11edf967c2a42f0008b0946
+  NotToken 1c1cb07b5238197fdf5d5016137f4050
+  OrToken 985b136ccee4dca9a24bdc602e5b3c14
+  PassToken a8acbbe3beebd423550d138b1d7b4a8d
+  PlusAssignToken 0454620aac0fd884e1176ede19bc7ef3
+  PlusToken 0d32b186967ad92c09457859ab4f303a
+  PowAssignToken 62bd64d1983fbfb6497f32bfa56de95b
+  RaiseToken d140aa3452518956bbf4d83c2a34943d
+  ReturnToken ff37467b6350979db788622ac3544224
+  RightArrowToken 6eeabdd23ad0885b1b3c1f607b894a1f
+  RightBraceToken 51416014b5288d7c6afbcc85099d8959
+  RightRoundBracketToken 651ae74c861ba43e674e18bf027ad9b6
+  RightShiftAssignToken 85116790f81adf1ac2fb57817d8f5602
+  RightSquareBracketToken 7620f90150ae1e3424d4dc9789df6a05
+  SemiColonToken c4783ac1a071940cf6848e4e0db24e79
+  ShiftLeftToken e01211439acde9e9a86fe3849b57df64
+  ShiftRightToken 5bd4c7bd5a78aeab44f44c78b9841241
+  TildeToken 52e829bdee3f547795b44c1a0cf842c6
+  Token c26478989c7eb45d7c7d423358c5d58e
+  TrueToken d17639c7dbb8b81810b37a56eacc2369
+  TryToken 3eb8bb7324c5b5c0a7e54321738e550a
+  WhileToken 1b61ed17fd5df953b4d8715261f2dfe7
+  WithToken 575acef2dbf2f6c01be41be312faf9ea
+  XorToken a10af18317051a3c40da57e95a4dfd43
+  YieldToken 9bee54a9d91101a07c0b1532a02b0a4f
+addDependentFile "src/Language/Python/Version3/Parser/Lexer.x"
+addDependentFile "/Users/jaiyalas/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcconfig.h"
+addDependentFile "/Users/jaiyalas/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcplatform.h"
+addDependentFile "/Users/jaiyalas/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcautoconf.h"
+addDependentFile "/Users/jaiyalas/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+796649d83aef0bcc17f0f6a48436f536
+  $sfromList ::
+    [(GHC.Base.String, a)] -> Data.Map.Internal.Map GHC.Base.String a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Base.String, a)]) ->
+                 case ds of wild1 {
+                   [] -> Data.Map.Internal.Tip @ GHC.Base.String @ a
+                   : ds1 ds2
+                   -> case ds1 of wild2 { (,) kx x ->
+                      case ds2 of wild3 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Internal.Bin
+                             @ GHC.Base.String
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Internal.Tip @ GHC.Base.String @ a)
+                             (Data.Map.Internal.Tip @ GHC.Base.String @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild4 { (,) ky ds3 ->
+                           case GHC.Classes.$fOrd[]_$s$ccompare1 kx ky of wild5 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                Language.Python.Version3.Parser.Lexer.$sfromList1
+                                  @ a
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Base.String
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Base.String @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Base.String @ a))
+                                  wild3 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                Language.Python.Version3.Parser.Lexer.$wpoly_go13
+                                  @ a
+                                  1#
+                                  (Data.Map.Internal.Bin
+                                     @ GHC.Base.String
+                                     @ a
+                                     1#
+                                     dt
+                                     x
+                                     (Data.Map.Internal.Tip @ GHC.Base.String @ a)
+                                     (Data.Map.Internal.Tip @ GHC.Base.String @ a))
+                                  wild3 } } } } } }) -}
+9c9ee0372c1adc5681c72b7e9b02cc51
+  $sfromList1 ::
+    Data.Map.Internal.Map GHC.Base.String a
+    -> [(GHC.Base.String, a)]
+    -> Data.Map.Internal.Map GHC.Base.String a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+2561249844c201eb94741e345e19a7cd
+  $sinsert_$sgo13 ::
+    GHC.Base.String
+    -> GHC.Base.String
+    -> a1
+    -> Data.Map.Internal.Map GHC.Base.String a1
+    -> Data.Map.Internal.Map GHC.Base.String a1
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,U><S,1*U> -}
+2d6e1f0f42ed88271eeca76ea87baa17
+  $slookup1 ::
+    GHC.Base.String
+    -> Data.Map.Internal.Map GHC.Base.String a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+b092740979c09219edfb7e6dc4725ffa
+  $tc'AlexA# :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16176013194047073261##
+                   16804787187253502030##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexA#2
+                   0#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexA#1) -}
+19c318aecc1654d0595df9a070c9e716
+  $tc'AlexA#1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+dba798146abc9eac9238d2a0d45325a9
+  $tc'AlexA#2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexA#3) -}
+3a9185bd11bfb295111c0a300b0066b2
+  $tc'AlexA#3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexA#"#) -}
+6b32f9956b25dbb48abfe5e4d8929c6d
+  $tc'AlexAcc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4115995641895410530##
+                   14191425769667062075##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexAcc2
+                   1#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexAcc1) -}
+de2bc7d73b38c328bacbc6e67a867068
+  $tc'AlexAcc1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c3ddefdabf2d15be2a0b823f3d1249e9
+  $tc'AlexAcc2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexAcc3) -}
+feda9cff9efd4b39fdae3fd377411dcd
+  $tc'AlexAcc3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexAcc"#) -}
+40b8340f18f85711236ac9a025e307a2
+  $tc'AlexAccNone :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16338852329261552575##
+                   837055466746387347##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexAccNone2
+                   1#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexAccNone1) -}
+420bb9c5f09a9ccad98445e2513497a7
+  $tc'AlexAccNone1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+cdd474f0e6dd34773d2138968f69d974
+  $tc'AlexAccNone2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexAccNone3) -}
+1d0c64e680118308ccd997ab99dd62fb
+  $tc'AlexAccNone3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexAccNone"#) -}
+f9d5f9bcf00e716c43d85046f1579f47
+  $tc'AlexAccSkip :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15409782663916143905##
+                   10486734529342626745##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexAccSkip1
+                   1#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexAccNone1) -}
+7facec872560c333c7665d535f82b3ff
+  $tc'AlexAccSkip1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexAccSkip2) -}
+e734d7017e29725bf9497ab0f95c287c
+  $tc'AlexAccSkip2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexAccSkip"#) -}
+d457212941485407b391b90fa995f9c9
+  $tc'AlexEOF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5425847453440512585##
+                   7759161643863309183##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexEOF2
+                   1#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexEOF1) -}
+997c04618af38718b1bc42fc45687026
+  $tc'AlexEOF1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+4a67365ee8f293c3341b3bf80f1a6d2d
+  $tc'AlexEOF2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexEOF3) -}
+c235f0addff4ab4ed76f629749fe6ebb
+  $tc'AlexEOF3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexEOF"#) -}
+62a685c7e06b06e0976e5748f0f240a3
+  $tc'AlexError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8123824587295982472##
+                   5933414258562612447##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexError2
+                   1#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexError1) -}
+f3ead625ce5f1cbd07ff868398b5a954
+  $tc'AlexError1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3b4529e83f780f93a5a72107b228d9ad
+  $tc'AlexError2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexError3) -}
+306156d285c6b5483dd212c8516b6a1a
+  $tc'AlexError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexError"#) -}
+96f3bf096c544c3f0ad7d19cbd694bb1
+  $tc'AlexLastAcc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10697942226121218730##
+                   1476943525144402362##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexLastAcc2
+                   0#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexLastAcc1) -}
+4b7a533b25127dc0526f3a007b37dc75
+  $tc'AlexLastAcc1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+85c4fb40fbeeb244b54c41ccd944abda
+  $tc'AlexLastAcc2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexLastAcc3) -}
+29772a2ec008ffef2f199ff8fa0e670f
+  $tc'AlexLastAcc3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexLastAcc"#) -}
+3571a088ba4785d4506412254815a81a
+  $tc'AlexLastSkip :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18332719234967920025##
+                   16592174082827578067##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexLastSkip2
+                   0#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexLastSkip1) -}
+5db22c99d9e424997deed1b049b794d2
+  $tc'AlexLastSkip1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ee7287e4c1bfe9d46ceee0b4470c6741
+  $tc'AlexLastSkip2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexLastSkip3) -}
+7f5b34d22238cbc575ad329a9d17ac43
+  $tc'AlexLastSkip3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexLastSkip"#) -}
+9f9259f9dfcf7f22e5805b89ad28d7fc
+  $tc'AlexNone :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15317843426311704901##
+                   6765844886712727173##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexNone2
+                   0#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexNone1) -}
+8a0a17be544e98ff61992561b9543d8a
+  $tc'AlexNone1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+31b8f46db5f27d0d049d3341fe49a8fe
+  $tc'AlexNone2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexNone3) -}
+41b84de574a1b5d1198e744f29064c34
+  $tc'AlexNone3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexNone"#) -}
+c89f8118b3e6bb44a523f1b68f832a7e
+  $tc'AlexSkip :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9843456466432268346##
+                   1040955836633887##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexSkip2
+                   1#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexSkip1) -}
+195730733dfc7823b84adac155431ae0
+  $tc'AlexSkip1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6bde1604adc2eb02182aa0237e852112
+  $tc'AlexSkip2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexSkip3) -}
+fd9ff0f386b2624337cc55c922174cd3
+  $tc'AlexSkip3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexSkip"#) -}
+79c3e345e6b2ed68ada9c4b745da9868
+  $tc'AlexToken :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   566758316952437532##
+                   10770478184369006088##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexToken2
+                   1#
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexToken1) -}
+0f2eecc5673ef6bcbdd2599a9e2ec72c
+  $tc'AlexToken1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1062291af4d68c72fde1ef12dfb32d83
+  $tc'AlexToken2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tc'AlexToken3) -}
+daa7bcdf92401a6c6dac105f6ec408fc
+  $tc'AlexToken3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexToken"#) -}
+8b38407484ffa917994f65acf775c8f9
+  $tcAlexAcc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9186588341775936016##
+                   8432050208234516625##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tcAlexAcc1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+59d4abe31f452b69bd76391ce8a95eec
+  $tcAlexAcc1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tcAlexAcc2) -}
+e1b9dbf4a2eba68812195124a5831f30
+  $tcAlexAcc2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AlexAcc"#) -}
+be2376a0d59e5b3e2ffa7aa7ab869e17
+  $tcAlexAddr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1072104851357437571##
+                   17662728998527060191##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tcAlexAddr1
+                   0#
+                   GHC.Types.krep$*) -}
+26660918ce43b1f47cc5d0d6b4902f4f
+  $tcAlexAddr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tcAlexAddr2) -}
+8d8fe6efafaad91388f48ec9fea85eb2
+  $tcAlexAddr2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AlexAddr"#) -}
+58f4bdfed5ab0daff3f36fa476702cf0
+  $tcAlexLastAcc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15703115214515088707##
+                   17602882842985969205##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tcAlexLastAcc1
+                   0#
+                   GHC.Types.krep$*) -}
+553ac8e0d7b10d2570da63b43dcd1dc7
+  $tcAlexLastAcc1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tcAlexLastAcc2) -}
+cc75048046bca7e317d88138591a64c6
+  $tcAlexLastAcc2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AlexLastAcc"#) -}
+4c6937d68f37739b9b5612d090075f6c
+  $tcAlexReturn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16019314251043365809##
+                   7962082821733147311##
+                   Language.Python.Version3.Parser.Lexer.$trModule
+                   Language.Python.Version3.Parser.Lexer.$tcAlexReturn1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+a76f317d9f5b31e9926014b1fae0ab2a
+  $tcAlexReturn1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$tcAlexReturn2) -}
+c2f94fe8fa7aecb9e3ea5a16d9d52617
+  $tcAlexReturn2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AlexReturn"#) -}
+be7b9a4b695a9520e710f958d0a91455
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Version3.Parser.Lexer.$trModule3
+                   Language.Python.Version3.Parser.Lexer.$trModule1) -}
+eade08d5e5b0bc7093f6544d97b9cb54
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$trModule2) -}
+163c170b872583b8ea395c1376c1b328
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.Python.Version3.Parser.Lexer"#) -}
+8da5e4a8154f9e6433491585d2d17a07
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Lexer.$trModule4) -}
+f68141a8f418ac7093d5df287dd881d3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+6a73fbddba2d26297c8a7f5b32c5fafe
+  $wlexCont ::
+    (Language.Python.Common.Token.Token
+     -> Language.Python.Common.ParserMonad.P a)
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> GHC.Base.String
+    -> Language.Python.Common.Token.Token
+    -> [GHC.Types.Int]
+    -> [GHC.Types.Int]
+    -> [Language.Python.Common.Token.Token]
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> [Language.Python.Common.Token.Token]
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (a, Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 9,
+     Strictness: <L,C(C1(U))><L,U><L,U><L,U><S,1*U><L,U><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Language.Python.Common.Token.Token
+                         -> Language.Python.Common.ParserMonad.P a)
+                   (ww :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (ww1 :: GHC.Base.String)
+                   (ww2 :: Language.Python.Common.Token.Token)
+                   (ww3 :: [GHC.Types.Int])
+                   (ww4 :: [GHC.Types.Int])
+                   (ww5 :: [Language.Python.Common.Token.Token])
+                   (ww6 :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (ww7 :: [Language.Python.Common.Token.Token]) ->
+                 letrec {
+                   $wlexLoop :: Language.Python.Common.SrcLocation.SrcLocation
+                                -> GHC.Base.String
+                                -> Language.Python.Common.Token.Token
+                                -> [GHC.Types.Int]
+                                -> [GHC.Types.Int]
+                                -> [Language.Python.Common.Token.Token]
+                                -> Language.Python.Common.SrcLocation.SrcSpan
+                                -> [Language.Python.Common.Token.Token]
+                                -> Data.Either.Either
+                                     Language.Python.Common.ParseError.ParseError
+                                     (a, Language.Python.Common.ParserMonad.ParseState)
+                     <join 8> {- Arity: 8,
+                                 Strictness: <L,U><L,U><L,U><S,1*U><L,U><L,U><L,U><L,U>,
+                                 Inline: [0] -}
+                   = \ (ww8 :: Language.Python.Common.SrcLocation.SrcLocation)
+                       (ww9 :: GHC.Base.String)
+                       (ww10 :: Language.Python.Common.Token.Token)
+                       (ww11 :: [GHC.Types.Int])
+                       (ww12 :: [GHC.Types.Int])
+                       (ww13 :: [Language.Python.Common.Token.Token])
+                       (ww14 :: Language.Python.Common.SrcLocation.SrcSpan)
+                       (ww15 :: [Language.Python.Common.Token.Token]) ->
+                     case Language.Python.Version3.Parser.Lexer.$wlexToken
+                            ww8
+                            ww9
+                            ww10
+                            ww11
+                            ww12
+                            ww13
+                            ww14
+                            ww15 of wild1 {
+                       Data.Either.Left l
+                       -> Data.Either.Left
+                            @ Language.Python.Common.ParseError.ParseError
+                            @ (a, Language.Python.Common.ParserMonad.ParseState)
+                            l
+                       Data.Either.Right r
+                       -> case r of wild2 { (,) a1 s' ->
+                          case a1 of wild3 {
+                            DEFAULT
+                            -> (w wild3)
+                                 `cast`
+                               (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                    <Language.Python.Common.ParserMonad.ParseState>_N
+                                    <Data.Either.Either
+                                       Language.Python.Common.ParseError.ParseError>_R
+                                    <a>_N)
+                                 s'
+                            Language.Python.Common.Token.LineJoinToken ds
+                            -> case s' of ww16 { Language.Python.Common.ParserMonad.ParseState ww17 ww18 ww19 ww20 ww21 ww22 ww23 ww24 ->
+                               $wlexLoop ww17 ww18 ww19 ww20 ww21 ww22 ww23 ww24 }
+                            Language.Python.Common.Token.CommentToken ds ds1
+                            -> case s' of wild4 { Language.Python.Common.ParserMonad.ParseState ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ->
+                               $wlexLoop
+                                 ds2
+                                 ds3
+                                 ds4
+                                 ds5
+                                 ds6
+                                 ds7
+                                 ds8
+                                 (GHC.Types.:
+                                    @ Language.Python.Common.Token.Token
+                                    wild3
+                                    ds9) } } } }
+                 } in
+                 $wlexLoop ww ww1 ww2 ww3 ww4 ww5 ww6 ww7) -}
+c1a4eec5f0f05005b4ae5b7aadf7d7b3
+  $wlexToken ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> GHC.Base.String
+    -> Language.Python.Common.Token.Token
+    -> [GHC.Types.Int]
+    -> [GHC.Types.Int]
+    -> [Language.Python.Common.Token.Token]
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> [Language.Python.Common.Token.Token]
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (Language.Python.Common.Token.Token,
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 8,
+     Strictness: <L,U><L,U><L,U><S,1*U><L,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+ba5eb2959366e71eab5e4f857f737ee6
+  $wpoly_go13 ::
+    GHC.Prim.Int#
+    -> Data.Map.Internal.Map GHC.Base.String a
+    -> [(GHC.Base.String, a)]
+    -> Data.Map.Internal.Map GHC.Base.String a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+1023c9b6d88af2050e6a5a84f0f6732a
+  type role AlexAcc phantom
+  data AlexAcc user
+    = AlexAccNone | AlexAcc GHC.Types.Int | AlexAccSkip
+dcd0ea1c86e5ad07cd1bbc20e097d622
+  data AlexAddr = AlexA# GHC.Prim.Addr#
+e1fbb0a4e53dd3876594b5a126fa5ac0
+  data AlexLastAcc
+    = AlexNone
+    | AlexLastAcc {-# UNPACK #-}GHC.Types.Int
+                  !Language.Python.Common.LexerUtils.AlexInput
+                  {-# UNPACK #-}GHC.Types.Int
+    | AlexLastSkip !Language.Python.Common.LexerUtils.AlexInput
+                   {-# UNPACK #-}GHC.Types.Int
+59907b107d2431403edbc8be1cddc33d
+  data AlexReturn a
+    = AlexEOF
+    | AlexError !Language.Python.Common.LexerUtils.AlexInput
+    | AlexSkip !Language.Python.Common.LexerUtils.AlexInput
+               {-# UNPACK #-}GHC.Types.Int
+    | AlexToken !Language.Python.Common.LexerUtils.AlexInput
+                {-# UNPACK #-}GHC.Types.Int
+                a
+d87da673dc4529c15240df63a821e7f0
+  initStartCodeStack :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Language.Python.Version3.Parser.Lexer.initStartCodeStack3
+                   Language.Python.Version3.Parser.Lexer.initStartCodeStack1) -}
+110ab3ff166cc3e452f5e9d9e095ba0f
+  initStartCodeStack1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Language.Python.Version3.Parser.Lexer.initStartCodeStack2
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+2aca4e6538505396e50d6896e733e94e
+  initStartCodeStack2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+a6bb100f4f6462cce8db0240a8110e7c
+  initStartCodeStack3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+80d8055fab4ab4b66c5afe37674a8c4d
+  lexCont ::
+    (Language.Python.Common.Token.Token
+     -> Language.Python.Common.ParserMonad.P a)
+    -> Language.Python.Common.ParserMonad.P a
+  {- Arity: 2,
+     Strictness: <L,C(C1(U))><S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Version3.Parser.Lexer.lexCont1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Language.Python.Common.Token.Token
+                  -> Language.Python.Common.ParserMonad.P a>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <a>_N)) -}
+617209f0b898362dec4f9c6f4aee658f
+  lexCont1 ::
+    (Language.Python.Common.Token.Token
+     -> Language.Python.Common.ParserMonad.P a)
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (a, Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2,
+     Strictness: <L,C(C1(U))><S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (w :: Language.Python.Common.Token.Token
+                         -> Language.Python.Common.ParserMonad.P a)
+                   (w1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w1 of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Language.Python.Version3.Parser.Lexer.$wlexCont
+                   @ a
+                   w
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8 }) -}
+e481c390aae5b132f02268f48b173b59
+  lexToken ::
+    Language.Python.Common.ParserMonad.P
+      Language.Python.Common.Token.Token
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Version3.Parser.Lexer.lexToken1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <Language.Python.Common.Token.Token>_N)) -}
+7bbf4bbdbbcf247cd73a12cc50e9de31
+  lexToken1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (Language.Python.Common.Token.Token,
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Language.Python.Version3.Parser.Lexer.$wlexToken
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8 }) -}
+"SPEC/Language.Python.Version3.Parser.Lexer fromList @ String _" [orphan] forall @ a
+                                                                                 ($dOrd :: GHC.Classes.Ord
+                                                                                             GHC.Base.String)
+  Data.Map.Internal.fromList @ [GHC.Types.Char] @ a $dOrd
+  = Language.Python.Version3.Parser.Lexer.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

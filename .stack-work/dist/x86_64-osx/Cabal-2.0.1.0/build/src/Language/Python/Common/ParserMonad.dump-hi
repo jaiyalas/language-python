@@ -1,0 +1,1536 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 07:28:02.050997 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.ParserMonad 8022
+  interface hash: 3690cc9a1a8313013f9c9d0b01d48fcf
+  ABI hash: 5c66e785c6954a72ef7262d195f9a0e8
+  export-list hash: e5cf6b15983cfb8cebe91f296cfdd496
+  orphan hash: f96a203ef125abdda91e752cf66c6707
+  flag hash: 9aabdec15547f7ae4d838f51788b53fe
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Python.Common.ParserMonad.addComment
+  Language.Python.Common.ParserMonad.execParser
+  Language.Python.Common.ParserMonad.execParserKeepComments
+  Language.Python.Common.ParserMonad.getComments
+  Language.Python.Common.ParserMonad.getIndent
+  Language.Python.Common.ParserMonad.getIndentStackDepth
+  Language.Python.Common.ParserMonad.getInput
+  Language.Python.Common.ParserMonad.getLastEOL
+  Language.Python.Common.ParserMonad.getLastToken
+  Language.Python.Common.ParserMonad.getLocation
+  Language.Python.Common.ParserMonad.getParen
+  Language.Python.Common.ParserMonad.getParenStackDepth
+  Language.Python.Common.ParserMonad.getStartCode
+  Language.Python.Common.ParserMonad.initialState
+  Language.Python.Common.ParserMonad.popIndent
+  Language.Python.Common.ParserMonad.popParen
+  Language.Python.Common.ParserMonad.popStartCode
+  Language.Python.Common.ParserMonad.pushIndent
+  Language.Python.Common.ParserMonad.pushParen
+  Language.Python.Common.ParserMonad.pushStartCode
+  Language.Python.Common.ParserMonad.returnP
+  Language.Python.Common.ParserMonad.runParser
+  Language.Python.Common.ParserMonad.setInput
+  Language.Python.Common.ParserMonad.setLastEOL
+  Language.Python.Common.ParserMonad.setLastToken
+  Language.Python.Common.ParserMonad.setLocation
+  Language.Python.Common.ParserMonad.spanError
+  Language.Python.Common.ParserMonad.thenP
+  Language.Python.Common.ParseError.ParseError{Language.Python.Common.ParseError.StrError Language.Python.Common.ParseError.UnexpectedChar Language.Python.Common.ParseError.UnexpectedToken}
+  Language.Python.Common.ParserMonad.P
+  Language.Python.Common.ParserMonad.ParseState{Language.Python.Common.ParserMonad.ParseState comments indentStack input lastEOL location parenStack previousToken startCodeStack}
+module dependencies: Language.Python.Common.ParseError
+                     Language.Python.Common.Pretty Language.Python.Common.SrcLocation
+                     Language.Python.Common.Token
+package dependencies: array-0.5.2.0 base-4.10.1.0* deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 monads-tf-0.1.0.3
+                      pretty-1.1.3.3 transformers-0.5.2.0
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         monads-tf-0.1.0.3:Control.Monad.Error.Class
+                         monads-tf-0.1.0.3:Control.Monad.State.Class
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  base-4.10.1.0:Control.Applicative 99577a9c463ffe4790a1d37547a345bd
+import  -/  base-4.10.1.0:Data.Either d7dae5d9bf298dee616e465c14b5d60e
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Functor 2ffda4f936b8f474394d93205750aff3
+import  -/  base-4.10.1.0:Data.OldList 555420b092ca8cf0a8f9666bc0e07dcf
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  Language.Python.Common.ParseError 855377ed2b2e0b4786ce2bc295867d5f
+  exports: 50818e886d7fe171102ba6baa8dfe6d2
+  ParseError 69150014a963a0915aa041aac53345b0
+  StrError 36957af6cdc9a49097021e5273cbf546
+  UnexpectedChar 89e34faee08827a823864d3bdf3a1732
+  UnexpectedToken 971689c295c7da00c367bfb64716b310
+import  -/  Language.Python.Common.Pretty 6e21c42aa69bc1ddac81ab1aa974965d
+  exports: 08b6e8d2393383892c529fbfae3c772e
+  prettyText ece2bef18557308399928020f4b9e92f
+import  -/  Language.Python.Common.SrcLocation 8f143931064eb388f1f2a6dd7f644740
+  exports: 53449eeea761b903564548d6dcb5e6f4
+  Span 6745f4d7f5c89ca40c260953253bdbce
+  SpanEmpty 2597a0b25bcb905fd06782ed7c8e03c7
+  SrcLocation a741649da2405f2d01d7327e5bc28811
+  SrcSpan 7855650ba5477745c617b1d6a2c60117
+  getSpan 705afb86514220eddda721f71e34f0d3
+import  -/  Language.Python.Common.Token d5076ddbfa147a7adfa845a047c4ec2b
+  exports: 989971a82f568d9688304166d774cea9
+  NewlineToken 3f56dcc8b6ff151ce5b76ce9e3b85a30
+  Token c26478989c7eb45d7c7d423358c5d58e
+import  -/  monads-tf-0.1.0.3:Control.Monad.Error 0263cafd81cc546168ec767b4bfdc928
+import  -/  monads-tf-0.1.0.3:Control.Monad.Error.Class e597c07b8524bd991ece6c1cb8641abd
+import  -/  monads-tf-0.1.0.3:Control.Monad.State.Class 02d6e727c74869b4dd62d5915e9100d7
+import  -/  monads-tf-0.1.0.3:Control.Monad.State.Strict db1aae56db6382646e6fe8ced048d369
+import  -/  transformers-0.5.2.0:Control.Monad.Trans.State.Strict 75b42d4f40e4577d37cfb92f2a6e8ec3
+799264df5230f59cffc368b968147341
+  $fShowParseState ::
+    GHC.Show.Show Language.Python.Common.ParserMonad.ParseState
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.ParserMonad.ParseState
+                  Language.Python.Common.ParserMonad.$fShowParseState_$cshowsPrec
+                  Language.Python.Common.ParserMonad.$fShowParseState_$cshow
+                  Language.Python.Common.ParserMonad.$fShowParseState_$cshowList -}
+799264df5230f59cffc368b968147341
+  $fShowParseState1 ::
+    Language.Python.Common.ParserMonad.ParseState -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S(SSSLLLSL),1*U(U,U,U,U,U,U,U,U)>,
+     Unfolding: (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Language.Python.Common.ParserMonad.$w$cshowsPrec
+                   0#
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8 }) -}
+6f03efd122fa752bdc28397dc7ecf7f2
+  $fShowParseState2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+799264df5230f59cffc368b968147341
+  $fShowParseState_$cshow ::
+    Language.Python.Common.ParserMonad.ParseState -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SSSLLLSL),1*U(U,U,U,U,U,U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Language.Python.Common.ParserMonad.$fShowParseState_$cshowsPrec
+                   Language.Python.Common.ParserMonad.$fShowParseState2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+799264df5230f59cffc368b968147341
+  $fShowParseState_$cshowList ::
+    [Language.Python.Common.ParserMonad.ParseState] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Language.Python.Common.ParserMonad.ParseState
+                   Language.Python.Common.ParserMonad.$fShowParseState1) -}
+799264df5230f59cffc368b968147341
+  $fShowParseState_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.Python.Common.ParserMonad.ParseState -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S(S),1*U(U)><S(SSSLLLSL),1*U(U,U,U,U,U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Language.Python.Common.ParserMonad.ParseState ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ->
+                 Language.Python.Common.ParserMonad.$w$cshowsPrec
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10 } }) -}
+dadeb2fd3d8bcf49032b97a5f5ad9ffa
+  $s$fMonadStateT_$c>>= ::
+    Control.Monad.Trans.State.Strict.StateT
+      s
+      (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+      a
+    -> (a
+        -> Control.Monad.Trans.State.Strict.StateT
+             s
+             (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+             b)
+    -> Control.Monad.Trans.State.Strict.StateT
+         s
+         (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+         b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(C1(U))><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.State.Strict.StateT
+                            s
+                            (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+                            a)
+                   (k :: a
+                         -> Control.Monad.Trans.State.Strict.StateT
+                              s
+                              (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+                              b)
+                   (s1 :: s) ->
+                 case m1
+                        `cast`
+                      (Control.Monad.Trans.State.Strict.N:StateT[0]
+                           <s>_N
+                           <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                           <a>_N)
+                        s1 of wild {
+                   Data.Either.Left l
+                   -> Data.Either.Left
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (b, s)
+                        l
+                   Data.Either.Right r
+                   -> case r of wild1 { (,) a1 s' ->
+                      (k a1)
+                        `cast`
+                      (Control.Monad.Trans.State.Strict.N:StateT[0]
+                           <s>_N
+                           <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                           <b>_N)
+                        s' } })
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Control.Monad.Trans.State.Strict.StateT
+                    s
+                    (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+                    a>_R
+                 ->_R <a
+                       -> Control.Monad.Trans.State.Strict.StateT
+                            s
+                            (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+                            b>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <s>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <b>_N)) -}
+d908724c8c0c5e7ee788675b9d9b7691
+  $sevalStateT ::
+    Control.Monad.Trans.State.Strict.StateT
+      s
+      (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+      a
+    -> s
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError a
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   (m1 :: Control.Monad.Trans.State.Strict.StateT
+                            s
+                            (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+                            a)
+                   (s1 :: s) ->
+                 case m1
+                        `cast`
+                      (Control.Monad.Trans.State.Strict.N:StateT[0]
+                           <s>_N
+                           <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                           <a>_N)
+                        s1 of wild {
+                   Data.Either.Left l
+                   -> Data.Either.Left
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ a
+                        l
+                   Data.Either.Right r
+                   -> case r of wild1 { (,) a1 ds1 ->
+                      Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ a
+                        a1 } }) -}
+c8ebfef4af7e829f1749de9a48e79efa
+  $tc'ParseState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4974484788621080272##
+                   17133316057703308563##
+                   Language.Python.Common.ParserMonad.$trModule
+                   Language.Python.Common.ParserMonad.$tc'ParseState2
+                   0#
+                   Language.Python.Common.ParserMonad.$tc'ParseState1) -}
+82882883442332b1a57977e9957d6271
+  $tc'ParseState1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+db778ee563798325cb3576fa4a45c211
+  $tc'ParseState2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserMonad.$tc'ParseState3) -}
+a2e05f01498ba32b69905a847ef82f54
+  $tc'ParseState3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ParseState"#) -}
+a46953183d69cb7a86c40fd1e9b4371c
+  $tcParseState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10162245782505188934##
+                   10117531209955747938##
+                   Language.Python.Common.ParserMonad.$trModule
+                   Language.Python.Common.ParserMonad.$tcParseState1
+                   0#
+                   GHC.Types.krep$*) -}
+f42d9923ae16a7e6e6309bd78adc8be8
+  $tcParseState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserMonad.$tcParseState2) -}
+ee937713f766fc224cfa5b66f3fdf940
+  $tcParseState2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ParseState"#) -}
+eed2f7c81d3070e20fa947f24ed63cb1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Common.ParserMonad.$trModule3
+                   Language.Python.Common.ParserMonad.$trModule1) -}
+8fe079b0335b0e0dda2cdda12d972302
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserMonad.$trModule2) -}
+7e8908c20fed89610dff23f2c02f4261
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.Python.Common.ParserMonad"#) -}
+5d546c64c423a87fcc514d7cdd3b2118
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserMonad.$trModule4) -}
+c8dd9603352a7f433927558878431a6f
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+d0dcec049b052f4419a0ac615ff30760
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> GHC.Base.String
+    -> Language.Python.Common.Token.Token
+    -> [GHC.Types.Int]
+    -> [GHC.Types.Int]
+    -> [Language.Python.Common.Token.Token]
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> [Language.Python.Common.Token.Token]
+    -> GHC.Show.ShowS
+  {- Arity: 9,
+     Strictness: <S,U><L,U><L,U><L,1*U><L,U><L,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+dbdcfebcbc6e82e600f0bd328659de1e
+  type P a =
+    Control.Monad.Trans.State.Strict.StateT
+      Language.Python.Common.ParserMonad.ParseState
+      (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+      a
+799264df5230f59cffc368b968147341
+  data ParseState
+    = ParseState {location :: !Language.Python.Common.SrcLocation.SrcLocation,
+                  input :: !GHC.Base.String,
+                  previousToken :: !Language.Python.Common.Token.Token,
+                  startCodeStack :: [GHC.Types.Int],
+                  indentStack :: [GHC.Types.Int],
+                  parenStack :: [Language.Python.Common.Token.Token],
+                  lastEOL :: !Language.Python.Common.SrcLocation.SrcSpan,
+                  comments :: [Language.Python.Common.Token.Token]}
+9d8da7b4f329ddd9625d4fde103787c3
+  addComment ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><L,1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.addComment1
+                  `cast`
+                (<Language.Python.Common.Token.Token>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <()>_N)) -}
+40ba233c5150536137c5d484adde3f78
+  addComment1 ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><L,1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (c :: Language.Python.Common.Token.Token)
+                   (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   (GHC.Tuple.(),
+                    case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    Language.Python.Common.ParserMonad.ParseState
+                      ds
+                      ds1
+                      ds2
+                      ds3
+                      ds4
+                      ds5
+                      ds6
+                      (GHC.Types.: @ Language.Python.Common.Token.Token c ds7) })) -}
+799264df5230f59cffc368b968147341
+  comments ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> [Language.Python.Common.Token.Token]
+  RecSel Left Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLS),1*U(A,A,A,A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case ds of wild { Language.Python.Common.ParserMonad.ParseState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds8 }) -}
+8de770ad7ddea6184794ec2df46a1000
+  execParser ::
+    Language.Python.Common.ParserMonad.P a
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError a
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                (Language.Python.Common.ParserMonad.$sevalStateT
+                   @ Language.Python.Common.ParserMonad.ParseState) -}
+ca035607a8d25b4c66ae5c792c99ec71
+  execParserKeepComments ::
+    Language.Python.Common.ParserMonad.P a
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (a, [Language.Python.Common.Token.Token])
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: (\ @ a
+                   (parser :: Language.Python.Common.ParserMonad.P a)
+                   (state :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case parser
+                        `cast`
+                      (Control.Monad.Trans.State.Strict.N:StateT[0]
+                           <Language.Python.Common.ParserMonad.ParseState>_N
+                           <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                           <a>_N)
+                        state of wild {
+                   Data.Either.Left l
+                   -> Data.Either.Left
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (a, [Language.Python.Common.Token.Token])
+                        l
+                   Data.Either.Right r
+                   -> case r of wild1 { (,) a1 s' ->
+                      Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (a, [Language.Python.Common.Token.Token])
+                        (a1,
+                         case s' of wild2 { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                         GHC.List.reverse1
+                           @ Language.Python.Common.Token.Token
+                           ds7
+                           (GHC.Types.[] @ Language.Python.Common.Token.Token) }) } }) -}
+e304a33d577a951b2dee6d3fe7a23e90
+  getComments ::
+    Language.Python.Common.ParserMonad.P
+      [Language.Python.Common.Token.Token]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getComments1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <[Language.Python.Common.Token.Token]>_N)) -}
+8bb58441d6a648b9e6f5a0e032f96aa0
+  getComments1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ([Language.Python.Common.Token.Token],
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ([Language.Python.Common.Token.Token],
+                      Language.Python.Common.ParserMonad.ParseState)
+                   (case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    GHC.List.reverse1
+                      @ Language.Python.Common.Token.Token
+                      ds7
+                      (GHC.Types.[] @ Language.Python.Common.Token.Token) },
+                    s1)) -}
+56493932c41fcebf07a783416267e0f1
+  getIndent :: Language.Python.Common.ParserMonad.P GHC.Types.Int
+  {- Arity: 1, Strictness: <S(SSSLSLSL),1*U(U,U,U,U,1*U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getIndent1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <GHC.Types.Int>_N)) -}
+861e5edfd812732e89e89c034dc6cc18
+  getIndent1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSLSLSL),1*U(U,U,U,U,1*U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case ww5 of wild {
+                   [] -> Language.Python.Common.ParserMonad.getIndent2
+                   : indent ds
+                   -> Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+                        (indent,
+                         Language.Python.Common.ParserMonad.ParseState
+                           ww1
+                           ww2
+                           ww3
+                           ww4
+                           wild
+                           ww6
+                           ww7
+                           ww8) } }) -}
+b5dea658c909f12779e8b2d387fecddf
+  getIndent2 ::
+    Data.Either.Either
+      Language.Python.Common.ParseError.ParseError
+      (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+  {- Strictness: m1,
+     Unfolding: (Data.Either.Left
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+                   Language.Python.Common.ParserMonad.getIndent3) -}
+6ff1429b08980d99b1e6b047fc1b1090
+  getIndent3 :: Language.Python.Common.ParseError.ParseError
+  {- Strictness: m3,
+     Unfolding: (Language.Python.Common.ParseError.StrError
+                   Language.Python.Common.ParserMonad.getIndent4) -}
+cfb7e08d43631a663a26b08ca80c2356
+  getIndent4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.ParserMonad.getIndent5) -}
+88521b286d5d179de6988f09fe06738d
+  getIndent5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("fatal error in lexer: indent stack empty on getIndent"#) -}
+534d582355112a41f723d218ca29939c
+  getIndentStackDepth ::
+    Language.Python.Common.ParserMonad.P GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getIndentStackDepth1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <GHC.Types.Int>_N)) -}
+fbe51dddefa423d191ed45c391ed8584
+  getIndentStackDepth1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+                   (case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    case GHC.List.$wlenAcc @ GHC.Types.Int ds4 0# of ww2 { DEFAULT ->
+                    GHC.Types.I# ww2 } },
+                    s1)) -}
+834ab7a324434f64659f92f9a63c6a70
+  getInput :: Language.Python.Common.ParserMonad.P GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getInput1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <GHC.Base.String>_N)) -}
+eede9eaf1881d7f9949c348dd9b5c2c9
+  getInput1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (GHC.Base.String, Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (GHC.Base.String, Language.Python.Common.ParserMonad.ParseState)
+                   (case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    ds1 },
+                    s1)) -}
+e8c30f617daa800a1c35e13ec63c389a
+  getLastEOL ::
+    Language.Python.Common.ParserMonad.P
+      Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getLastEOL1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <Language.Python.Common.SrcLocation.SrcSpan>_N)) -}
+4ec9f8ce62e270183441221ab02b6b76
+  getLastEOL1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (Language.Python.Common.SrcLocation.SrcSpan,
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (Language.Python.Common.SrcLocation.SrcSpan,
+                      Language.Python.Common.ParserMonad.ParseState)
+                   (case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    ds6 },
+                    s1)) -}
+1f5f1ce242b0eb2c270577dea33da5cd
+  getLastToken ::
+    Language.Python.Common.ParserMonad.P
+      Language.Python.Common.Token.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getLastToken1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <Language.Python.Common.Token.Token>_N)) -}
+dd61faeeb9d2132ae36dbe0e2324745c
+  getLastToken1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (Language.Python.Common.Token.Token,
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (Language.Python.Common.Token.Token,
+                      Language.Python.Common.ParserMonad.ParseState)
+                   (case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    ds2 },
+                    s1)) -}
+d710ac7b0de62bab54f8b66387e0f29f
+  getLocation ::
+    Language.Python.Common.ParserMonad.P
+      Language.Python.Common.SrcLocation.SrcLocation
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getLocation1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <Language.Python.Common.SrcLocation.SrcLocation>_N)) -}
+d5c52de268ad75fa372b05514f711987
+  getLocation1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (Language.Python.Common.SrcLocation.SrcLocation,
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (Language.Python.Common.SrcLocation.SrcLocation,
+                      Language.Python.Common.ParserMonad.ParseState)
+                   (case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    ds },
+                    s1)) -}
+ddfa9c934e0f44243c039f293e978fc5
+  getParen ::
+    Language.Python.Common.ParserMonad.P
+      (GHC.Base.Maybe Language.Python.Common.Token.Token)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SSSLLSSL),1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getParen1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <GHC.Base.Maybe Language.Python.Common.Token.Token>_N)) -}
+7ff689df92abd90d9a8de8fb9c8ffe04
+  getParen1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (GHC.Base.Maybe Language.Python.Common.Token.Token,
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SSSLLSSL),1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                 case ds5 of wild1 {
+                   []
+                   -> Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (GHC.Base.Maybe Language.Python.Common.Token.Token,
+                           Language.Python.Common.ParserMonad.ParseState)
+                        (GHC.Base.Nothing @ Language.Python.Common.Token.Token, wild)
+                   : symbol ds8
+                   -> Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (GHC.Base.Maybe Language.Python.Common.Token.Token,
+                           Language.Python.Common.ParserMonad.ParseState)
+                        (GHC.Base.Just @ Language.Python.Common.Token.Token symbol,
+                         wild) } }) -}
+83cdf0a90ffb89ac31cb9e666e7167cb
+  getParenStackDepth ::
+    Language.Python.Common.ParserMonad.P GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getParenStackDepth1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <GHC.Types.Int>_N)) -}
+2aa5dd2352298f5b051f13b20e9fe9df
+  getParenStackDepth1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+                   (case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    case GHC.List.$wlenAcc
+                           @ Language.Python.Common.Token.Token
+                           ds5
+                           0# of ww2 { DEFAULT ->
+                    GHC.Types.I# ww2 } },
+                    s1)) -}
+92ee95f32fecbd7a2efcbd14a7a1a74b
+  getStartCode :: Language.Python.Common.ParserMonad.P GHC.Types.Int
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.getStartCode1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <GHC.Types.Int>_N)) -}
+964ecf6326e750b804f5e78a909a8812
+  getStartCode1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case ww4 of wild {
+                   [] -> Language.Python.Common.ParserMonad.getStartCode2
+                   : code ds
+                   -> Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+                        (code,
+                         Language.Python.Common.ParserMonad.ParseState
+                           ww1
+                           ww2
+                           ww3
+                           wild
+                           ww5
+                           ww6
+                           ww7
+                           ww8) } }) -}
+6ccd934a81ab544e06c2dd8feec6d813
+  getStartCode2 ::
+    Data.Either.Either
+      Language.Python.Common.ParseError.ParseError
+      (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+  {- Strictness: m1,
+     Unfolding: (Data.Either.Left
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (GHC.Types.Int, Language.Python.Common.ParserMonad.ParseState)
+                   Language.Python.Common.ParserMonad.getStartCode3) -}
+fdefe5cedce831fb7cd00490b701c099
+  getStartCode3 :: Language.Python.Common.ParseError.ParseError
+  {- Strictness: m3,
+     Unfolding: (Language.Python.Common.ParseError.StrError
+                   Language.Python.Common.ParserMonad.getStartCode4) -}
+4b3134df5c68be986ea5c43cf6c4bb00
+  getStartCode4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.ParserMonad.getStartCode5) -}
+a1c3eb2bb9b293175c592fa8e07b72f4
+  getStartCode5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("fatal error in lexer: start code stack empty on getStartCode"#) -}
+799264df5230f59cffc368b968147341
+  indentStack ::
+    Language.Python.Common.ParserMonad.ParseState -> [GHC.Types.Int]
+  RecSel Left Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLL),1*U(A,A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case ds of wild { Language.Python.Common.ParserMonad.ParseState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds5 }) -}
+0e8505307f513c7aaed9d4a1b5b5d294
+  initToken :: Language.Python.Common.Token.Token
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Language.Python.Common.Token.NewlineToken
+                   Language.Python.Common.SrcLocation.SpanEmpty) -}
+7c462c78b2f4a13c71611b5da54c4189
+  initialState ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> GHC.Base.String
+    -> [GHC.Types.Int]
+    -> Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><S,1*U><L,U>m,
+     Unfolding: InlineRule (3, True, False)
+                (\ (initLoc :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (inp :: GHC.Base.String)
+                   (scStack :: [GHC.Types.Int]) ->
+                 case initLoc of dt { DEFAULT ->
+                 case inp of dt1 { DEFAULT ->
+                 Language.Python.Common.ParserMonad.ParseState
+                   dt
+                   dt1
+                   Language.Python.Common.ParserMonad.initToken
+                   scStack
+                   Language.Python.Common.ParserMonad.initialState1
+                   (GHC.Types.[] @ Language.Python.Common.Token.Token)
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   (GHC.Types.[] @ Language.Python.Common.Token.Token) } }) -}
+a1509e5c3d9ed079d6d0c2cf4af41313
+  initialState1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Language.Python.Common.ParserMonad.initialState2
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+5b8edcb9399f810f2de5c92310d8cbab
+  initialState2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+799264df5230f59cffc368b968147341
+  input ::
+    Language.Python.Common.ParserMonad.ParseState -> GHC.Base.String
+  RecSel Left Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLL),1*U(A,U,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case ds of wild { Language.Python.Common.ParserMonad.ParseState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds2 }) -}
+799264df5230f59cffc368b968147341
+  lastEOL ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  RecSel Left Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSL),1*U(A,A,A,A,A,A,U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case ds of wild { Language.Python.Common.ParserMonad.ParseState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds7 }) -}
+799264df5230f59cffc368b968147341
+  location ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Language.Python.Common.SrcLocation.SrcLocation
+  RecSel Left Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLL),1*U(U,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case ds of wild { Language.Python.Common.ParserMonad.ParseState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds1 }) -}
+799264df5230f59cffc368b968147341
+  parenStack ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> [Language.Python.Common.Token.Token]
+  RecSel Left Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLL),1*U(A,A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case ds of wild { Language.Python.Common.ParserMonad.ParseState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds6 }) -}
+f373b6066887eceb4fe724fc36051f78
+  popIndent :: Language.Python.Common.ParserMonad.P ()
+  {- Arity: 1, Strictness: <S(SSSLSLSL),1*U(U,U,U,U,1*U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.popIndent1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <()>_N)) -}
+4313145e013abbe629e8a7a9be18940d
+  popIndent1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSLSLSL),1*U(U,U,U,U,1*U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case ww5 of wild {
+                   [] -> Language.Python.Common.ParserMonad.popIndent2
+                   : ds rest
+                   -> Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ ((), Language.Python.Common.ParserMonad.ParseState)
+                        (GHC.Tuple.(),
+                         Language.Python.Common.ParserMonad.ParseState
+                           ww1
+                           ww2
+                           ww3
+                           ww4
+                           rest
+                           ww6
+                           ww7
+                           ww8) } }) -}
+4491d0bbbbe929cb7e5bf547da0afc7d
+  popIndent2 ::
+    Data.Either.Either
+      Language.Python.Common.ParseError.ParseError
+      ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Strictness: m1,
+     Unfolding: (Data.Either.Left
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   Language.Python.Common.ParserMonad.popIndent3) -}
+4be29d2a589c82214ca015d16aacc1a5
+  popIndent3 :: Language.Python.Common.ParseError.ParseError
+  {- Strictness: m3,
+     Unfolding: (Language.Python.Common.ParseError.StrError
+                   Language.Python.Common.ParserMonad.popIndent4) -}
+b263482206150becc6bac7b10b8b8943
+  popIndent4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.ParserMonad.popIndent5) -}
+af47adc12576d6b94807d81396f08f15
+  popIndent5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("fatal error in lexer: attempt to pop empty indentation stack"#) -}
+c262aa9c0ccf1b64708e21c9a4359af3
+  popParen :: Language.Python.Common.ParserMonad.P ()
+  {- Arity: 1, Strictness: <S(SSSLLSSL),1*U(U,U,U,U,U,1*U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.popParen1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <()>_N)) -}
+9f4abd9b6ee0229a130da25bab67ea01
+  popParen1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSLLSSL),1*U(U,U,U,U,U,1*U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case ww6 of wild {
+                   [] -> Language.Python.Common.ParserMonad.popParen2
+                   : ds rest
+                   -> Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ ((), Language.Python.Common.ParserMonad.ParseState)
+                        (GHC.Tuple.(),
+                         Language.Python.Common.ParserMonad.ParseState
+                           ww1
+                           ww2
+                           ww3
+                           ww4
+                           ww5
+                           rest
+                           ww7
+                           ww8) } }) -}
+8174eec16a8817db1262fa0e21a69cfb
+  popParen2 ::
+    Data.Either.Either
+      Language.Python.Common.ParseError.ParseError
+      ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Strictness: m1,
+     Unfolding: (Data.Either.Left
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   Language.Python.Common.ParserMonad.popParen3) -}
+3b42aa39e1be82118d561b7435eef2d0
+  popParen3 :: Language.Python.Common.ParseError.ParseError
+  {- Strictness: m3,
+     Unfolding: (Language.Python.Common.ParseError.StrError
+                   Language.Python.Common.ParserMonad.popParen4) -}
+1b9d0ee5c91a52e08ba64b985627b78a
+  popParen4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.ParserMonad.popParen5) -}
+cdd2ddbc70ff638e5d0cedfab9736b85
+  popParen5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("fatal error in lexer: attempt to pop empty paren stack"#) -}
+936bfe2179bc1494e72c39239f3f831b
+  popStartCode :: Language.Python.Common.ParserMonad.P ()
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.popStartCode1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <()>_N)) -}
+0a02c120b024c6bf20c6f3f3f53ff5b1
+  popStartCode1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case ww4 of wild {
+                   [] -> Language.Python.Common.ParserMonad.popStartCode2
+                   : ds rest
+                   -> Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ ((), Language.Python.Common.ParserMonad.ParseState)
+                        (GHC.Tuple.(),
+                         Language.Python.Common.ParserMonad.ParseState
+                           ww1
+                           ww2
+                           ww3
+                           rest
+                           ww5
+                           ww6
+                           ww7
+                           ww8) } }) -}
+a78ad3648b645ccc8954b935a99b7cc0
+  popStartCode2 ::
+    Data.Either.Either
+      Language.Python.Common.ParseError.ParseError
+      ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Strictness: m1,
+     Unfolding: (Data.Either.Left
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   Language.Python.Common.ParserMonad.popStartCode3) -}
+839ba6886d7c5f633bc35954c98b3c1b
+  popStartCode3 :: Language.Python.Common.ParseError.ParseError
+  {- Strictness: m3,
+     Unfolding: (Language.Python.Common.ParseError.StrError
+                   Language.Python.Common.ParserMonad.popStartCode4) -}
+af625f21e397a12d5b1afa2674ae43d1
+  popStartCode4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.ParserMonad.popStartCode5) -}
+cdeefeb07fc0c4b3cd995815d628a16f
+  popStartCode5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("fatal error in lexer: attempt to pop empty start code stack"#) -}
+799264df5230f59cffc368b968147341
+  previousToken ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Language.Python.Common.Token.Token
+  RecSel Left Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLL),1*U(A,A,U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case ds of wild { Language.Python.Common.ParserMonad.ParseState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds3 }) -}
+24ba7b10a869eba4788a27b4a5df0aa2
+  pushIndent ::
+    GHC.Types.Int -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><L,1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.pushIndent1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <()>_N)) -}
+00dc80df0383d87311f28b3bbeea7478
+  pushIndent1 ::
+    GHC.Types.Int
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><L,1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (indent :: GHC.Types.Int)
+                   (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   (GHC.Tuple.(),
+                    case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    Language.Python.Common.ParserMonad.ParseState
+                      ds
+                      ds1
+                      ds2
+                      ds3
+                      (GHC.Types.: @ GHC.Types.Int indent ds4)
+                      ds5
+                      ds6
+                      ds7 })) -}
+ad6ba764e933db5749607b845034c192
+  pushParen ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><L,1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.pushParen1
+                  `cast`
+                (<Language.Python.Common.Token.Token>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <()>_N)) -}
+efee9218bf531e2b62b0f463158d6c77
+  pushParen1 ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><L,1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (symbol :: Language.Python.Common.Token.Token)
+                   (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   (GHC.Tuple.(),
+                    case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    Language.Python.Common.ParserMonad.ParseState
+                      ds
+                      ds1
+                      ds2
+                      ds3
+                      ds4
+                      (GHC.Types.: @ Language.Python.Common.Token.Token symbol ds5)
+                      ds6
+                      ds7 })) -}
+bff6c5ce1db6402dae9e0cc619933de8
+  pushStartCode ::
+    GHC.Types.Int -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><L,1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.pushStartCode1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <()>_N)) -}
+f98da3676f0ca2dbb43f453b3ec9000b
+  pushStartCode1 ::
+    GHC.Types.Int
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><L,1*U(U,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (code :: GHC.Types.Int)
+                   (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   (GHC.Tuple.(),
+                    case s1 of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    Language.Python.Common.ParserMonad.ParseState
+                      ds
+                      ds1
+                      ds2
+                      (GHC.Types.: @ GHC.Types.Int code ds3)
+                      ds4
+                      ds5
+                      ds6
+                      ds7 })) -}
+060cfabff07ce993d9fe4b082686171a
+  returnP :: a -> Language.Python.Common.ParserMonad.P a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m2,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ a
+                   (eta :: a)
+                   (eta1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (a, Language.Python.Common.ParserMonad.ParseState)
+                   (eta, eta1))
+                  `cast`
+                (forall (a :: <*>_N).
+                 <a>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <a>_N)) -}
+a544af1a11e4a0aa9a6bd32b1b9e2ee0
+  runParser ::
+    Language.Python.Common.ParserMonad.P a
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (a, Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                (Control.Monad.Trans.State.Strict.runStateT1
+                   @ Language.Python.Common.ParserMonad.ParseState
+                   @ (Data.Either.Either
+                        Language.Python.Common.ParseError.ParseError))
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Control.Monad.Trans.State.Strict.StateT
+                    Language.Python.Common.ParserMonad.ParseState
+                    (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+                    a>_R
+                 ->_R Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <a>_N) -}
+bb52324ee33e7249ec279874ad4ffeb5
+  setInput ::
+    GHC.Base.String -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,A,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.setInput1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <()>_N)) -}
+7534c9bc9c5fd23206c9bf3527b79c8e
+  setInput1 ::
+    GHC.Base.String
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,A,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (inp :: GHC.Base.String)
+                   (eta :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   (GHC.Tuple.(),
+                    case eta of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    case inp of dt { DEFAULT ->
+                    Language.Python.Common.ParserMonad.ParseState
+                      ds
+                      dt
+                      ds2
+                      ds3
+                      ds4
+                      ds5
+                      ds6
+                      ds7 } })) -}
+933f32a6a92a31a0dd08e9c1cad33dd0
+  setLastEOL ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,U,U,U,U,A,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.setLastEOL1
+                  `cast`
+                (<Language.Python.Common.SrcLocation.SrcSpan>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <()>_N)) -}
+204a76ed25e27b9ba8136f0218ab7bd6
+  setLastEOL1 ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,U,U,U,U,A,U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (span :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (eta :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   (GHC.Tuple.(),
+                    case eta of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    case span of dt { DEFAULT ->
+                    Language.Python.Common.ParserMonad.ParseState
+                      ds
+                      ds1
+                      ds2
+                      ds3
+                      ds4
+                      ds5
+                      dt
+                      ds7 } })) -}
+7ad569c9e33e25e26df99d29b5b9585f
+  setLastToken ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,A,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.setLastToken1
+                  `cast`
+                (<Language.Python.Common.Token.Token>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <()>_N)) -}
+4876c4875b80ef8104a76782ba602a8d
+  setLastToken1 ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(U,U,A,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (tok :: Language.Python.Common.Token.Token)
+                   (eta :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   (GHC.Tuple.(),
+                    case eta of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    case tok of dt { DEFAULT ->
+                    Language.Python.Common.ParserMonad.ParseState
+                      ds
+                      ds1
+                      dt
+                      ds3
+                      ds4
+                      ds5
+                      ds6
+                      ds7 } })) -}
+ef7682f85fde76d3dfd0e6fa4de7ac29
+  setLocation ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(A,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserMonad.setLocation1
+                  `cast`
+                (<Language.Python.Common.SrcLocation.SrcLocation>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <()>_N)) -}
+e6f17c2b1a5ee5e2842115787b488112
+  setLocation1 ::
+    Language.Python.Common.SrcLocation.SrcLocation
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ((), Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U><L,1*U(A,U,U,U,U,U,U,U)>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (loc :: Language.Python.Common.SrcLocation.SrcLocation)
+                   (eta :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Right
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ ((), Language.Python.Common.ParserMonad.ParseState)
+                   (GHC.Tuple.(),
+                    case eta of wild { Language.Python.Common.ParserMonad.ParseState ds ds1 ds2 ds3 ds4 ds5 ds6 ds7 ->
+                    case loc of dt { DEFAULT ->
+                    Language.Python.Common.ParserMonad.ParseState
+                      dt
+                      ds1
+                      ds2
+                      ds3
+                      ds4
+                      ds5
+                      ds6
+                      ds7 } })) -}
+fbdd27f02d4adf11b9fc48d4815c694a
+  spanError ::
+    Language.Python.Common.SrcLocation.Span a =>
+    a -> GHC.Base.String -> Language.Python.Common.ParserMonad.P b
+  {- Arity: 3, Strictness: <L,1*C1(U)><L,U><L,1*U>,
+     Unfolding: (\ @ a
+                   @ b
+                   ($dSpan :: Language.Python.Common.SrcLocation.Span a)
+                   (x :: a)
+                   (str :: GHC.Base.String) ->
+                 let {
+                   xs :: [GHC.Types.Char]
+                   = GHC.Base.++
+                       @ GHC.Types.Char
+                       (Text.PrettyPrint.Annotated.HughesPJ.fullRenderAnn
+                          @ ()
+                          @ GHC.Base.String
+                          Text.PrettyPrint.Annotated.HughesPJ.PageMode
+                          Text.PrettyPrint.Annotated.HughesPJ.$fEqDoc3
+                          Text.PrettyPrint.Annotated.HughesPJ.$fEqDoc2
+                          Language.Python.Common.Pretty.prettyPrefix4
+                          (GHC.Types.[] @ GHC.Types.Char)
+                          (Language.Python.Common.SrcLocation.$fPrettySrcLocation_$cpretty1
+                             ($dSpan `cast` (Language.Python.Common.SrcLocation.N:Span[0] <a>_N)
+                                x))
+                            `cast`
+                          (Text.PrettyPrint.HughesPJ.N:Doc[0]))
+                       (GHC.Types.:
+                          @ GHC.Types.Char
+                          Language.Python.Common.ParserMonad.spanError1
+                          (GHC.Base.++ @ GHC.Types.Char str (GHC.Types.[] @ GHC.Types.Char)))
+                 } in
+                 let {
+                   m1 :: Language.Python.Common.ParseError.ParseError
+                   = Language.Python.Common.ParseError.StrError xs
+                 } in
+                 let {
+                   lvl9 :: Data.Either.Either
+                             Language.Python.Common.ParseError.ParseError
+                             (b, Language.Python.Common.ParserMonad.ParseState)
+                   = Data.Either.Left
+                       @ Language.Python.Common.ParseError.ParseError
+                       @ (b, Language.Python.Common.ParserMonad.ParseState)
+                       m1
+                 } in
+                 (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) -> lvl9)
+                   `cast`
+                 (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                           <Language.Python.Common.ParserMonad.ParseState>_N
+                           <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                           <b>_N))) -}
+587854625ab5aa818c49d3960be0048f
+  spanError1 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ' '#) -}
+799264df5230f59cffc368b968147341
+  startCodeStack ::
+    Language.Python.Common.ParserMonad.ParseState -> [GHC.Types.Int]
+  RecSel Left Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLL),1*U(A,A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case ds of wild { Language.Python.Common.ParserMonad.ParseState ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ->
+                 ds4 }) -}
+59844d9f1d6f01a27d0fc299a12afec7
+  thenP ::
+    Language.Python.Common.ParserMonad.P a
+    -> (a -> Language.Python.Common.ParserMonad.P b)
+    -> Language.Python.Common.ParserMonad.P b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><L,1*C1(C1(U))><L,U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                (Language.Python.Common.ParserMonad.$s$fMonadStateT_$c>>=
+                   @ Language.Python.Common.ParserMonad.ParseState) -}
+instance [safe] GHC.Show.Show [Language.Python.Common.ParserMonad.ParseState]
+  = Language.Python.Common.ParserMonad.$fShowParseState
+"SPEC/Language.Python.Common.ParserMonad $fMonadStateT_$c>>= @ (Either
+                                                                 ParseError) _" [orphan] forall @ s
+                                                                                                                                                                       ($dMonad :: GHC.Base.Monad
+                                                                                                                                                                                     (Data.Either.Either
+                                                                                                                                                                                        Language.Python.Common.ParseError.ParseError))
+  Control.Monad.Trans.State.Strict.$fMonadStateT_$c>>= @ (Data.Either.Either
+                                                            Language.Python.Common.ParseError.ParseError)
+                                                       @ s
+                                                       $dMonad
+  = Language.Python.Common.ParserMonad.$s$fMonadStateT_$c>>= @ s
+"SPEC/Language.Python.Common.ParserMonad evalStateT @ (Either
+                                                        ParseError) _ _" [orphan] forall @ s
+                                                                                                                                                       @ a
+                                                                                                                                                       ($dMonad :: GHC.Base.Monad
+                                                                                                                                                                     (Data.Either.Either
+                                                                                                                                                                        Language.Python.Common.ParseError.ParseError))
+  Control.Monad.Trans.State.Strict.evalStateT @ (Data.Either.Either
+                                                   Language.Python.Common.ParseError.ParseError)
+                                              @ s
+                                              @ a
+                                              $dMonad
+  = Language.Python.Common.ParserMonad.$sevalStateT @ s @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

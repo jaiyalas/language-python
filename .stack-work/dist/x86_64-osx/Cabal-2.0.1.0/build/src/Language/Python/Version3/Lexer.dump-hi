@@ -1,0 +1,234 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 07:28:06.315874 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Version3.Lexer 8022
+  interface hash: e33eef9566dbc5fc29c70d45b176670b
+  ABI hash: 0e13b391835de14c3d28caef2bcef18a
+  export-list hash: 52c9067796a5721675e2c720e2f24a5c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bd28c676e218bce9fc6f5a44cfa1fd82
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Python.Version3.Lexer.initLexState
+  Language.Python.Version3.Lexer.lex
+  Language.Python.Version3.Lexer.lexOneToken
+  Language.Python.Version3.Lexer.lexer
+module dependencies: Language.Python.Common.LexerUtils
+                     Language.Python.Common.ParseError
+                     Language.Python.Common.ParserMonad Language.Python.Common.Pretty
+                     Language.Python.Common.SrcLocation Language.Python.Common.Token
+                     Language.Python.Version3.Parser.Lexer
+package dependencies: array-0.5.2.0 base-4.10.1.0
+                      containers-0.5.10.2 deepseq-1.4.3.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0 monads-tf-0.1.0.3 pretty-1.1.3.3
+                      transformers-0.5.2.0 utf8-string-1.0.1.1
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Set.Internal
+                         monads-tf-0.1.0.3:Control.Monad.Error.Class
+                         monads-tf-0.1.0.3:Control.Monad.State.Class
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  base-4.10.1.0:Data.Either d7dae5d9bf298dee616e465c14b5d60e
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  Language.Python.Common.ParseError 855377ed2b2e0b4786ce2bc295867d5f
+  ParseError 69150014a963a0915aa041aac53345b0
+import  -/  Language.Python.Common.ParserMonad 5c66e785c6954a72ef7262d195f9a0e8
+  exports: e5cf6b15983cfb8cebe91f296cfdd496
+  P dbdcfebcbc6e82e600f0bd328659de1e
+  ParseState 799264df5230f59cffc368b968147341
+  execParser 8de770ad7ddea6184794ec2df46a1000
+  initialState 7c462c78b2f4a13c71611b5da54c4189
+  input 799264df5230f59cffc368b968147341
+  runParser a544af1a11e4a0aa9a6bd32b1b9e2ee0
+import  -/  Language.Python.Common.SrcLocation 8f143931064eb388f1f2a6dd7f644740
+  exports: 53449eeea761b903564548d6dcb5e6f4
+  initialSrcLocation 3092192d0486b5ee3b33946735df2f82
+import  -/  Language.Python.Common.Token d5076ddbfa147a7adfa845a047c4ec2b
+  exports: 989971a82f568d9688304166d774cea9
+  EOFToken 1cf80df53c67e36853da3c226a40c5e4
+  Token c26478989c7eb45d7c7d423358c5d58e
+import  -/  Language.Python.Version3.Parser.Lexer 396764c0f5f504316b88251e9f75508e
+  exports: 7e1506f13bdcce57bdba9463f320e629
+  initStartCodeStack d87da673dc4529c15240df63a821e7f0
+  lexToken e481c390aae5b132f02268f48b173b59
+50d8634dc1819ff864a22b4d7850d152
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Version3.Lexer.$trModule3
+                   Language.Python.Version3.Lexer.$trModule1) -}
+7b14a0091fb595883b023cbce1ee7530
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Lexer.$trModule2) -}
+cac9cfe6dbedc9d34f36fc07ba6f330d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.Python.Version3.Lexer"#) -}
+8601072b384ec405a22fafb8b031ba2f
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Lexer.$trModule4) -}
+7e65d278d29b31a7c248bd4da77037e5
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+a4df2486a32aee85ce6cf46434de3c62
+  $wloop ::
+    [Language.Python.Common.Token.Token]
+    -> Language.Python.Common.SrcLocation.SrcLocation
+    -> GHC.Base.String
+    -> Language.Python.Common.Token.Token
+    -> [GHC.Types.Int]
+    -> [GHC.Types.Int]
+    -> [Language.Python.Common.Token.Token]
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> [Language.Python.Common.Token.Token]
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ([Language.Python.Common.Token.Token],
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 9,
+     Strictness: <L,U><L,U><L,U><L,U><S,1*U><L,U><L,U><L,U><L,U>,
+     Inline: [0] -}
+b28e2aff5a444cafd20447ecdb6ad76f
+  initLexState ::
+    GHC.Base.String
+    -> GHC.Base.String -> Language.Python.Common.ParserMonad.ParseState
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (input :: GHC.Base.String) (srcName :: GHC.Base.String) ->
+                 case srcName of dt { DEFAULT ->
+                 case input of dt1 { DEFAULT ->
+                 Language.Python.Common.ParserMonad.ParseState
+                   (Language.Python.Common.SrcLocation.Sloc dt 1# 1#)
+                   dt1
+                   Language.Python.Common.ParserMonad.initToken
+                   Language.Python.Version3.Parser.Lexer.initStartCodeStack
+                   Language.Python.Common.ParserMonad.initialState1
+                   (GHC.Types.[] @ Language.Python.Common.Token.Token)
+                   Language.Python.Common.SrcLocation.SpanEmpty
+                   (GHC.Types.[] @ Language.Python.Common.Token.Token) } }) -}
+fd34899995b2c20ff37c5fb4fb63e690
+  lex ::
+    GHC.Base.String
+    -> GHC.Base.String
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         [Language.Python.Common.Token.Token]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (input :: GHC.Base.String)
+                   (srcName :: GHC.Base.String) ->
+                 case srcName of dt { DEFAULT ->
+                 case input of dt1 { DEFAULT ->
+                 case Language.Python.Version3.Lexer.$wloop
+                        (GHC.Types.[] @ Language.Python.Common.Token.Token)
+                        (Language.Python.Common.SrcLocation.Sloc dt 1# 1#)
+                        dt1
+                        Language.Python.Common.ParserMonad.initToken
+                        Language.Python.Version3.Parser.Lexer.initStartCodeStack
+                        Language.Python.Common.ParserMonad.initialState1
+                        (GHC.Types.[] @ Language.Python.Common.Token.Token)
+                        Language.Python.Common.SrcLocation.SpanEmpty
+                        (GHC.Types.[] @ Language.Python.Common.Token.Token) of wild {
+                   Data.Either.Left l
+                   -> Data.Either.Left
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ [Language.Python.Common.Token.Token]
+                        l
+                   Data.Either.Right r
+                   -> case r of wild1 { (,) a1 ds1 ->
+                      Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ [Language.Python.Common.Token.Token]
+                        a1 } } } }) -}
+eabedc5ba1632764bed49f5d7dd6db5a
+  lexOneToken ::
+    GHC.Base.String
+    -> GHC.Base.String
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (Language.Python.Common.Token.Token, GHC.Base.String)
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (source :: GHC.Base.String)
+                   (srcName :: GHC.Base.String) ->
+                 case srcName of dt { DEFAULT ->
+                 case source of dt1 { DEFAULT ->
+                 case Language.Python.Version3.Parser.Lexer.$wlexToken
+                        (Language.Python.Common.SrcLocation.Sloc dt 1# 1#)
+                        dt1
+                        Language.Python.Common.ParserMonad.initToken
+                        Language.Python.Version3.Parser.Lexer.initStartCodeStack
+                        Language.Python.Common.ParserMonad.initialState1
+                        (GHC.Types.[] @ Language.Python.Common.Token.Token)
+                        Language.Python.Common.SrcLocation.SpanEmpty
+                        (GHC.Types.[] @ Language.Python.Common.Token.Token) of wild {
+                   Data.Either.Left err
+                   -> Data.Either.Left
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (Language.Python.Common.Token.Token, GHC.Base.String)
+                        err
+                   Data.Either.Right ds
+                   -> case ds of wild1 { (,) tok state ->
+                      Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (Language.Python.Common.Token.Token, GHC.Base.String)
+                        (tok, Language.Python.Common.ParserMonad.input state) } } } }) -}
+7dcb9e0e778f50df2e05498ed44ee09e
+  lexer ::
+    Language.Python.Common.ParserMonad.P
+      [Language.Python.Common.Token.Token]
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Version3.Lexer.lexer1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <[Language.Python.Common.Token.Token]>_N)) -}
+697cebe4296869127a18b5b80c26c82c
+  lexer1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ([Language.Python.Common.Token.Token],
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Unfolding: (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 Language.Python.Version3.Lexer.$wloop
+                   (GHC.Types.[] @ Language.Python.Common.Token.Token)
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7
+                   ww8 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

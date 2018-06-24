@@ -1,0 +1,94 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 10:44:11.642623 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Version3 8022
+  interface hash: 91de5a153e07adb34f176ed2a1ffc84e
+  ABI hash: e4bdca9df614d89df86e985d27d00a05
+  export-list hash: 38be2e92374ef74fe0bc1a06aeaafe6a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7bdb620d4c89f74a1d986a6cf3401546
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Python.Version3.Lexer.initLexState
+  Language.Python.Version3.Lexer.lex
+  Language.Python.Version3.Lexer.lexOneToken
+  Language.Python.Version3.Lexer.lexer
+  Language.Python.Version3.Parser.parseExpr
+  Language.Python.Version3.Parser.parseModule
+  Language.Python.Version3.Parser.parseStmt
+module dependencies: Language.Python.Common.AST
+                     Language.Python.Common.LexerUtils Language.Python.Common.ParseError
+                     Language.Python.Common.ParserMonad
+                     Language.Python.Common.ParserUtils Language.Python.Common.Pretty
+                     Language.Python.Common.SrcLocation Language.Python.Common.Token
+                     Language.Python.Version3.Lexer Language.Python.Version3.Parser
+                     Language.Python.Version3.Parser.Lexer
+                     Language.Python.Version3.Parser.Parser
+package dependencies: array-0.5.2.0 base-4.10.1.0
+                      containers-0.5.10.2 deepseq-1.4.3.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0 monads-tf-0.1.0.3 pretty-1.1.3.3
+                      transformers-0.5.2.0 utf8-string-1.0.1.1
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Set.Internal
+                         monads-tf-0.1.0.3:Control.Monad.Error.Class
+                         monads-tf-0.1.0.3:Control.Monad.State.Class
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  Language.Python.Version3.Lexer 0e13b391835de14c3d28caef2bcef18a
+  exports: 52c9067796a5721675e2c720e2f24a5c
+  initLexState b28e2aff5a444cafd20447ecdb6ad76f
+  lex fd34899995b2c20ff37c5fb4fb63e690
+  lexOneToken eabedc5ba1632764bed49f5d7dd6db5a
+  lexer 7dcb9e0e778f50df2e05498ed44ee09e
+import  -/  Language.Python.Version3.Parser 4fa57e38a16fe9c5f9b6b549ff5720bd
+  exports: c4730ab977d0f20ef1fa87584981b3f7
+  parseExpr 3b5f8599b21606f6424432a26abe982c
+  parseModule 5646c9bb7fb9f684f6e6c43ba179859d
+  parseStmt 4538958fd6b03a527c6d2cd5120be6e7
+aba00364c492aa813d4b445542517262
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Version3.$trModule3
+                   Language.Python.Version3.$trModule1) -}
+201f7d5ac933357343f5623cd7c72c43
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.$trModule2) -}
+84c90c082eb92098575f4c9a5c185c0d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.Python.Version3"#) -}
+835b67ccb2fa69c86aa497a1be5cb1fb
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.$trModule4) -}
+8d2f7e19fa1835b15153378a2c85ccd0
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

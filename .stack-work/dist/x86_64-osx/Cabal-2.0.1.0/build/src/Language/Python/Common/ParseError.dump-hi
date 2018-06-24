@@ -1,0 +1,610 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 07:28:01.518266 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.ParseError 8022
+  interface hash: b9c75e95968853508087db130f153e14
+  ABI hash: 855377ed2b2e0b4786ce2bc295867d5f
+  export-list hash: 50818e886d7fe171102ba6baa8dfe6d2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9aabdec15547f7ae4d838f51788b53fe
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Python.Common.ParseError.ParseError{Language.Python.Common.ParseError.StrError Language.Python.Common.ParseError.UnexpectedChar Language.Python.Common.ParseError.UnexpectedToken}
+module dependencies: Language.Python.Common.Pretty
+                     Language.Python.Common.SrcLocation Language.Python.Common.Token
+package dependencies: array-0.5.2.0 base-4.10.1.0* deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 monads-tf-0.1.0.3
+                      pretty-1.1.3.3 transformers-0.5.2.0
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         monads-tf-0.1.0.3:Control.Monad.Error.Class
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  Language.Python.Common.SrcLocation 8f143931064eb388f1f2a6dd7f644740
+  exports: 53449eeea761b903564548d6dcb5e6f4
+  SrcLocation a741649da2405f2d01d7327e5bc28811
+import  -/  Language.Python.Common.Token d5076ddbfa147a7adfa845a047c4ec2b
+  exports: 989971a82f568d9688304166d774cea9
+  Token c26478989c7eb45d7c7d423358c5d58e
+import  -/  monads-tf-0.1.0.3:Control.Monad.Error.Class e597c07b8524bd991ece6c1cb8641abd
+import  -/  transformers-0.5.2.0:Control.Monad.Trans.Error c04e43dadc386f2047f44c5c92a48741
+69150014a963a0915aa041aac53345b0
+  $fEqParseError ::
+    GHC.Classes.Eq Language.Python.Common.ParseError.ParseError
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.ParseError.ParseError
+                  Language.Python.Common.ParseError.$fEqParseError_$c==
+                  Language.Python.Common.ParseError.$fEqParseError_$c/= -}
+69150014a963a0915aa041aac53345b0
+  $fEqParseError_$c/= ::
+    Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.Python.Common.ParseError.ParseError)
+                   (b :: Language.Python.Common.ParseError.ParseError) ->
+                 case Language.Python.Common.ParseError.$fEqParseError_$c==
+                        a
+                        b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+69150014a963a0915aa041aac53345b0
+  $fEqParseError_$c== ::
+    Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Language.Python.Common.ParseError.ParseError)
+                   (ds1 :: Language.Python.Common.ParseError.ParseError) ->
+                 case ds of wild {
+                   Language.Python.Common.ParseError.UnexpectedToken a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.Python.Common.ParseError.UnexpectedToken b1
+                        -> Language.Python.Common.Token.$fEqToken_$c== a1 b1 }
+                   Language.Python.Common.ParseError.UnexpectedChar a1 a2
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.Python.Common.ParseError.UnexpectedChar b1 b2
+                        -> case a1 of wild2 { GHC.Types.C# x ->
+                           case b1 of wild3 { GHC.Types.C# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.eqChar# x y) of wild4 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> Language.Python.Common.SrcLocation.$fEqSrcLocation_$c==
+                                  a2
+                                  b2 } } } }
+                   Language.Python.Common.ParseError.StrError a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.Python.Common.ParseError.StrError b1
+                        -> GHC.Base.eqString a1 b1 } }) -}
+69150014a963a0915aa041aac53345b0
+  $fErrorParseError ::
+    Control.Monad.Trans.Error.Error
+      Language.Python.Common.ParseError.ParseError
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.ParseError.ParseError
+                  Language.Python.Common.ParseError.$fErrorParseError_$cnoMsg
+                  Language.Python.Common.ParseError.StrError -}
+69150014a963a0915aa041aac53345b0
+  $fErrorParseError_$cnoMsg ::
+    Language.Python.Common.ParseError.ParseError
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Language.Python.Common.ParseError.StrError
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+69150014a963a0915aa041aac53345b0
+  $fOrdParseError ::
+    GHC.Classes.Ord Language.Python.Common.ParseError.ParseError
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.ParseError.ParseError
+                  Language.Python.Common.ParseError.$fEqParseError
+                  Language.Python.Common.ParseError.$fOrdParseError_$ccompare
+                  Language.Python.Common.ParseError.$fOrdParseError_$c<
+                  Language.Python.Common.ParseError.$fOrdParseError_$c<=
+                  Language.Python.Common.ParseError.$fOrdParseError_$c>
+                  Language.Python.Common.ParseError.$fOrdParseError_$c>=
+                  Language.Python.Common.ParseError.$fOrdParseError_$cmax
+                  Language.Python.Common.ParseError.$fOrdParseError_$cmin -}
+69150014a963a0915aa041aac53345b0
+  $fOrdParseError_$c< ::
+    Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.Python.Common.ParseError.ParseError)
+                   (b :: Language.Python.Common.ParseError.ParseError) ->
+                 case a of wild {
+                   Language.Python.Common.ParseError.UnexpectedToken a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Language.Python.Common.ParseError.UnexpectedToken b1
+                        -> Language.Python.Common.Token.$fOrdToken_$c< a1 b1 }
+                   Language.Python.Common.ParseError.UnexpectedChar a1 a2
+                   -> case b of wild1 {
+                        Language.Python.Common.ParseError.UnexpectedToken ds
+                        -> GHC.Types.False
+                        Language.Python.Common.ParseError.UnexpectedChar b1 b2
+                        -> case a1 of wild2 { GHC.Types.C# x1 ->
+                           case b1 of wild3 { GHC.Types.C# y1 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.eqChar# x1 y1) of wild4 {
+                             GHC.Types.False
+                             -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.leChar# x1 y1)
+                             GHC.Types.True
+                             -> Language.Python.Common.SrcLocation.$fOrdSrcLocation_$c<
+                                  a2
+                                  b2 } } }
+                        Language.Python.Common.ParseError.StrError ipv -> GHC.Types.True }
+                   Language.Python.Common.ParseError.StrError a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Language.Python.Common.ParseError.StrError b1
+                        -> GHC.Classes.$fOrd[]_$s$c<1 a1 b1 } }) -}
+69150014a963a0915aa041aac53345b0
+  $fOrdParseError_$c<= ::
+    Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.Python.Common.ParseError.ParseError)
+                   (b :: Language.Python.Common.ParseError.ParseError) ->
+                 case Language.Python.Common.ParseError.$fOrdParseError_$c<
+                        b
+                        a of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+69150014a963a0915aa041aac53345b0
+  $fOrdParseError_$c> ::
+    Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Language.Python.Common.ParseError.ParseError)
+                   (b :: Language.Python.Common.ParseError.ParseError) ->
+                 Language.Python.Common.ParseError.$fOrdParseError_$c< b a) -}
+69150014a963a0915aa041aac53345b0
+  $fOrdParseError_$c>= ::
+    Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Language.Python.Common.ParseError.ParseError)
+                   (b :: Language.Python.Common.ParseError.ParseError) ->
+                 case Language.Python.Common.ParseError.$fOrdParseError_$c<
+                        a
+                        b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+69150014a963a0915aa041aac53345b0
+  $fOrdParseError_$ccompare ::
+    Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Language.Python.Common.ParseError.ParseError)
+                   (b :: Language.Python.Common.ParseError.ParseError) ->
+                 case a of wild {
+                   Language.Python.Common.ParseError.UnexpectedToken a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.LT
+                        Language.Python.Common.ParseError.UnexpectedToken b1
+                        -> Language.Python.Common.Token.$fOrdToken_$ccompare a1 b1 }
+                   Language.Python.Common.ParseError.UnexpectedChar a1 a2
+                   -> case b of wild1 {
+                        Language.Python.Common.ParseError.UnexpectedToken ds
+                        -> GHC.Types.GT
+                        Language.Python.Common.ParseError.UnexpectedChar b1 b2
+                        -> case a1 of wild2 { GHC.Types.C# x1 ->
+                           case b1 of wild3 { GHC.Types.C# y1 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.eqChar# x1 y1) of wild4 {
+                             GHC.Types.False
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.leChar# x1 y1) of wild5 {
+                                  GHC.Types.False -> GHC.Types.GT GHC.Types.True -> GHC.Types.LT }
+                             GHC.Types.True
+                             -> Language.Python.Common.SrcLocation.$fOrdSrcLocation_$ccompare
+                                  a2
+                                  b2 } } }
+                        Language.Python.Common.ParseError.StrError ipv -> GHC.Types.LT }
+                   Language.Python.Common.ParseError.StrError a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Language.Python.Common.ParseError.StrError b1
+                        -> GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 } }) -}
+69150014a963a0915aa041aac53345b0
+  $fOrdParseError_$cmax ::
+    Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.Python.Common.ParseError.ParseError)
+                   (y :: Language.Python.Common.ParseError.ParseError) ->
+                 case Language.Python.Common.ParseError.$fOrdParseError_$c<
+                        y
+                        x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+69150014a963a0915aa041aac53345b0
+  $fOrdParseError_$cmin ::
+    Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError
+    -> Language.Python.Common.ParseError.ParseError
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Language.Python.Common.ParseError.ParseError)
+                   (y :: Language.Python.Common.ParseError.ParseError) ->
+                 case Language.Python.Common.ParseError.$fOrdParseError_$c<
+                        y
+                        x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+69150014a963a0915aa041aac53345b0
+  $fShowParseError ::
+    GHC.Show.Show Language.Python.Common.ParseError.ParseError
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.Python.Common.ParseError.ParseError
+                  Language.Python.Common.ParseError.$fShowParseError_$cshowsPrec
+                  Language.Python.Common.ParseError.$fShowParseError_$cshow
+                  Language.Python.Common.ParseError.$fShowParseError_$cshowList -}
+69150014a963a0915aa041aac53345b0
+  $fShowParseError1 ::
+    Language.Python.Common.ParseError.ParseError -> GHC.Show.ShowS
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (w :: Language.Python.Common.ParseError.ParseError) ->
+                 Language.Python.Common.ParseError.$w$cshowsPrec 0# w) -}
+0affaabd7cdb673677f962c5d6f2e964
+  $fShowParseError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("StrError "#) -}
+bee37196ef71d6386e5617a35271f3c5
+  $fShowParseError3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.ParseError.$fShowParseError4) -}
+872dbd5274534109bfa29f8c7c2638fa
+  $fShowParseError4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("UnexpectedChar "#) -}
+c2773df72c6fd2b8cf57f3a974d4c5a1
+  $fShowParseError5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+ecce7b3ee06def467207f2fff06e3d8a
+  $fShowParseError6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.Python.Common.ParseError.$fShowParseError7) -}
+38d7eebe0e8e8b32d4ca939d7e361655
+  $fShowParseError7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("UnexpectedToken "#) -}
+d2edbb050296ddc2727fe2f8ea4c77d8
+  $fShowParseError8 :: [GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.$fShow(,)3
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+69150014a963a0915aa041aac53345b0
+  $fShowParseError_$cshow ::
+    Language.Python.Common.ParseError.ParseError -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Language.Python.Common.ParseError.ParseError) ->
+                 case x of wild {
+                   Language.Python.Common.ParseError.UnexpectedToken b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.Python.Common.ParseError.$fShowParseError6
+                        (Language.Python.Common.Token.$w$cshowsPrec
+                           11#
+                           b1
+                           (GHC.Types.[] @ GHC.Types.Char))
+                   Language.Python.Common.ParseError.UnexpectedChar b1 b2
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Language.Python.Common.ParseError.$fShowParseError3
+                        (case b1 of ww { GHC.Types.C# ww1 ->
+                         case ww1 of ds {
+                           DEFAULT
+                           -> GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShowChar3
+                                (GHC.Show.$wshowLitChar
+                                   ds
+                                   (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.$fShowChar3
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.showSpace1
+                                         (Language.Python.Common.SrcLocation.$fShowSrcLocation_$cshowsPrec
+                                            Language.Python.Common.ParseError.$fShowParseError5
+                                            b2
+                                            (GHC.Types.[] @ GHC.Types.Char)))))
+                           '\''#
+                           -> GHC.Base.++
+                                @ GHC.Types.Char
+                                GHC.Show.$fShowChar1
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.showSpace1
+                                   (Language.Python.Common.SrcLocation.$fShowSrcLocation_$cshowsPrec
+                                      Language.Python.Common.ParseError.$fShowParseError5
+                                      b2
+                                      (GHC.Types.[] @ GHC.Types.Char))) } })
+                   Language.Python.Common.ParseError.StrError b1
+                   -> GHC.CString.unpackAppendCString#
+                        Language.Python.Common.ParseError.$fShowParseError2
+                        (GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.$fShow(,)3
+                           (GHC.Show.showLitString
+                              b1
+                              Language.Python.Common.ParseError.$fShowParseError8)) }) -}
+69150014a963a0915aa041aac53345b0
+  $fShowParseError_$cshowList ::
+    [Language.Python.Common.ParseError.ParseError] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Language.Python.Common.ParseError.ParseError
+                   Language.Python.Common.ParseError.$fShowParseError1) -}
+69150014a963a0915aa041aac53345b0
+  $fShowParseError_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.Python.Common.ParseError.ParseError -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,1*U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Language.Python.Common.ParseError.ParseError) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.Python.Common.ParseError.$w$cshowsPrec ww1 w1 }) -}
+ef38b66f365c3b645ac03615369d098c
+  $tc'StrError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2600753353889208589##
+                   6220060578637295144##
+                   Language.Python.Common.ParseError.$trModule
+                   Language.Python.Common.ParseError.$tc'StrError2
+                   0#
+                   Language.Python.Common.ParseError.$tc'StrError1) -}
+8a8597de976b296495449a324ddc3514
+  $tc'StrError1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+824994d9d54255b4a04e525258b81851
+  $tc'StrError2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParseError.$tc'StrError3) -}
+485c7d4c1ad09e46f542f8ee7b7ebc56
+  $tc'StrError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'StrError"#) -}
+7ae6c333e128534a74dd5bdf27b4baf3
+  $tc'UnexpectedChar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2322402340948570328##
+                   5637501633783970059##
+                   Language.Python.Common.ParseError.$trModule
+                   Language.Python.Common.ParseError.$tc'UnexpectedChar2
+                   0#
+                   Language.Python.Common.ParseError.$tc'UnexpectedChar1) -}
+bfee1e016db40d533c417258218cb553
+  $tc'UnexpectedChar1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7adc43abc1ffd69cc8ac7ab3a57984a7
+  $tc'UnexpectedChar2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParseError.$tc'UnexpectedChar3) -}
+a36eaf345e76e3ba3ac9889212fcb088
+  $tc'UnexpectedChar3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'UnexpectedChar"#) -}
+d68a4f426c7d3e660578ddd4b44e5865
+  $tc'UnexpectedToken :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7370248577751363026##
+                   342409107017940053##
+                   Language.Python.Common.ParseError.$trModule
+                   Language.Python.Common.ParseError.$tc'UnexpectedToken2
+                   0#
+                   Language.Python.Common.ParseError.$tc'UnexpectedToken1) -}
+338fb0f11a4444294578f0435b569bea
+  $tc'UnexpectedToken1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+2a23d65698b85d195e71f19ae3d8e14e
+  $tc'UnexpectedToken2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParseError.$tc'UnexpectedToken3) -}
+bdcdfd5cb92b9f7fc5f2c16702e0fffe
+  $tc'UnexpectedToken3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'UnexpectedToken"#) -}
+c59bc11212f67e7f62cbc85c053b5f55
+  $tcParseError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5861675687547318950##
+                   10431727387884987797##
+                   Language.Python.Common.ParseError.$trModule
+                   Language.Python.Common.ParseError.$tcParseError1
+                   0#
+                   GHC.Types.krep$*) -}
+5103940564a93a1506f6da3807997de6
+  $tcParseError1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParseError.$tcParseError2) -}
+9447bab219f59598f5952b36f47d8c47
+  $tcParseError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ParseError"#) -}
+32ae117d00bf6233a005c055ed535ea4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Common.ParseError.$trModule3
+                   Language.Python.Common.ParseError.$trModule1) -}
+128784a85beb8b936238e2a934014aa8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParseError.$trModule2) -}
+6d4cc2040ef940ca76af9f1e384a6e22
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.Python.Common.ParseError"#) -}
+2afb691b2be9a3f78386dc69c5b6f279
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParseError.$trModule4) -}
+3950f480b538fcc65b39fa047651a728
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+69150014a963a0915aa041aac53345b0
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.Python.Common.ParseError.ParseError -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Language.Python.Common.ParseError.ParseError) ->
+                 case w of wild {
+                   Language.Python.Common.ParseError.UnexpectedToken b1
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                        = Language.Python.Common.Token.$w$cshowsPrec 11# b1
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             Language.Python.Common.ParseError.$fShowParseError6
+                             (g x)
+                        GHC.Types.True
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Language.Python.Common.ParseError.$fShowParseError6
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }
+                   Language.Python.Common.ParseError.UnexpectedChar b1 b2
+                   -> let {
+                        g :: GHC.Base.String -> GHC.Base.String
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Base.String) ->
+                          case b1 of ww1 { GHC.Types.C# ww2 ->
+                          GHC.Show.$w$cshowsPrec3
+                            ww2
+                            (GHC.Types.:
+                               @ GHC.Types.Char
+                               GHC.Show.showSpace1
+                               (Language.Python.Common.SrcLocation.$fShowSrcLocation_$cshowsPrec
+                                  Language.Python.Common.ParseError.$fShowParseError5
+                                  b2
+                                  x)) }
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             Language.Python.Common.ParseError.$fShowParseError3
+                             (g x)
+                        GHC.Types.True
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Language.Python.Common.ParseError.$fShowParseError3
+                                (g (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 x))) }
+                   Language.Python.Common.ParseError.StrError b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.CString.unpackAppendCString#
+                             Language.Python.Common.ParseError.$fShowParseError2
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 x)))
+                        GHC.Types.True
+                        -> \ (x :: GHC.Base.String) ->
+                           GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                Language.Python.Common.ParseError.$fShowParseError2
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.$fShow(,)3
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.$fShow(,)3
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.$fShow(,)2
+                                            x))))) } }) -}
+69150014a963a0915aa041aac53345b0
+  data ParseError
+    = UnexpectedToken Language.Python.Common.Token.Token
+    | UnexpectedChar GHC.Types.Char
+                     Language.Python.Common.SrcLocation.SrcLocation
+    | StrError GHC.Base.String
+instance [safe] GHC.Classes.Eq [Language.Python.Common.ParseError.ParseError]
+  = Language.Python.Common.ParseError.$fEqParseError
+instance [safe] Control.Monad.Trans.Error.Error [Language.Python.Common.ParseError.ParseError]
+  = Language.Python.Common.ParseError.$fErrorParseError
+instance [safe] GHC.Classes.Ord [Language.Python.Common.ParseError.ParseError]
+  = Language.Python.Common.ParseError.$fOrdParseError
+instance [safe] GHC.Show.Show [Language.Python.Common.ParseError.ParseError]
+  = Language.Python.Common.ParseError.$fShowParseError
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,728 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 07:28:03.511448 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common 8022
+  interface hash: 7b8369e1130c1999e56d0273bba2006d
+  ABI hash: 27ca118617404b77653569eb45a6a762
+  export-list hash: 846ce8313c223ad953106dee05019f4f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7bdb620d4c89f74a1d986a6cf3401546
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Python.Common.Pretty.commaList
+  Language.Python.Common.Pretty.equalsList
+  Language.Python.Common.Pretty.parensIf
+  Language.Python.Common.Pretty.perhaps
+  Language.Python.Common.Pretty.prettyPrefix
+  Language.Python.Common.Pretty.prettyText
+  Language.Python.Common.SrcLocation.combineSrcSpans
+  Language.Python.Common.SrcLocation.decColumn
+  Language.Python.Common.SrcLocation.endCol
+  Language.Python.Common.SrcLocation.endRow
+  Language.Python.Common.SrcLocation.incColumn
+  Language.Python.Common.SrcLocation.incLine
+  Language.Python.Common.SrcLocation.incTab
+  Language.Python.Common.SrcLocation.initialSrcLocation
+  Language.Python.Common.SrcLocation.mkSrcSpan
+  Language.Python.Common.SrcLocation.spanStartPoint
+  Language.Python.Common.SrcLocation.spanning
+  Language.Python.Common.SrcLocation.startCol
+  Language.Python.Common.SrcLocation.startRow
+  Language.Python.Common.Token.classifyToken
+  Language.Python.Common.Token.debugTokenString
+  Language.Python.Common.Token.hasLiteral
+  Language.Python.Common.Token.tokenString
+  Text.PrettyPrint.Annotated.HughesPJ.style
+  Text.PrettyPrint.HughesPJ.$$
+  Text.PrettyPrint.HughesPJ.$+$
+  Text.PrettyPrint.HughesPJ.<+>
+  Text.PrettyPrint.HughesPJ.<>
+  Text.PrettyPrint.HughesPJ.braces
+  Text.PrettyPrint.HughesPJ.brackets
+  Text.PrettyPrint.HughesPJ.cat
+  Text.PrettyPrint.HughesPJ.char
+  Text.PrettyPrint.HughesPJ.colon
+  Text.PrettyPrint.HughesPJ.comma
+  Text.PrettyPrint.HughesPJ.double
+  Text.PrettyPrint.HughesPJ.doubleQuotes
+  Text.PrettyPrint.HughesPJ.empty
+  Text.PrettyPrint.HughesPJ.equals
+  Text.PrettyPrint.HughesPJ.fcat
+  Text.PrettyPrint.HughesPJ.float
+  Text.PrettyPrint.HughesPJ.fsep
+  Text.PrettyPrint.HughesPJ.fullRender
+  Text.PrettyPrint.HughesPJ.hang
+  Text.PrettyPrint.HughesPJ.hcat
+  Text.PrettyPrint.HughesPJ.hsep
+  Text.PrettyPrint.HughesPJ.int
+  Text.PrettyPrint.HughesPJ.integer
+  Text.PrettyPrint.HughesPJ.isEmpty
+  Text.PrettyPrint.HughesPJ.lbrace
+  Text.PrettyPrint.HughesPJ.lbrack
+  Text.PrettyPrint.HughesPJ.lparen
+  Text.PrettyPrint.HughesPJ.nest
+  Text.PrettyPrint.HughesPJ.parens
+  Text.PrettyPrint.HughesPJ.ptext
+  Text.PrettyPrint.HughesPJ.punctuate
+  Text.PrettyPrint.HughesPJ.quotes
+  Text.PrettyPrint.HughesPJ.rational
+  Text.PrettyPrint.HughesPJ.rbrace
+  Text.PrettyPrint.HughesPJ.rbrack
+  Text.PrettyPrint.HughesPJ.render
+  Text.PrettyPrint.HughesPJ.renderStyle
+  Text.PrettyPrint.HughesPJ.rparen
+  Text.PrettyPrint.HughesPJ.semi
+  Text.PrettyPrint.HughesPJ.sep
+  Text.PrettyPrint.HughesPJ.sizedText
+  Text.PrettyPrint.HughesPJ.space
+  Text.PrettyPrint.HughesPJ.text
+  Text.PrettyPrint.HughesPJ.vcat
+  Text.PrettyPrint.HughesPJ.zeroWidthText
+  Language.Python.Common.AST.Annotated{Language.Python.Common.AST.annot}
+  Language.Python.Common.AST.Argument{Language.Python.Common.AST.ArgExpr Language.Python.Common.AST.ArgKeyword Language.Python.Common.AST.ArgVarArgsKeyword Language.Python.Common.AST.ArgVarArgsPos arg_annot arg_expr arg_keyword}
+  Language.Python.Common.AST.ArgumentSpan
+  Language.Python.Common.AST.AssignOp{Language.Python.Common.AST.BinAndAssign Language.Python.Common.AST.BinOrAssign Language.Python.Common.AST.BinXorAssign Language.Python.Common.AST.DivAssign Language.Python.Common.AST.FloorDivAssign Language.Python.Common.AST.LeftShiftAssign Language.Python.Common.AST.MatrixMultAssign Language.Python.Common.AST.MinusAssign Language.Python.Common.AST.ModAssign Language.Python.Common.AST.MultAssign Language.Python.Common.AST.PlusAssign Language.Python.Common.AST.PowAssign Language.Python.Common.AST.RightShiftAssign assignOp_annot}
+  Language.Python.Common.AST.AssignOpSpan
+  Language.Python.Common.AST.CompFor{Language.Python.Common.AST.CompFor comp_for_annot comp_for_async comp_for_exprs comp_for_iter comp_in_expr}
+  Language.Python.Common.AST.CompForSpan
+  Language.Python.Common.AST.CompIf{Language.Python.Common.AST.CompIf comp_if comp_if_annot comp_if_iter}
+  Language.Python.Common.AST.CompIfSpan
+  Language.Python.Common.AST.CompIter{Language.Python.Common.AST.IterFor Language.Python.Common.AST.IterIf comp_iter_annot comp_iter_for comp_iter_if}
+  Language.Python.Common.AST.CompIterSpan
+  Language.Python.Common.AST.Comprehension{Language.Python.Common.AST.Comprehension comprehension_annot comprehension_expr comprehension_for}
+  Language.Python.Common.AST.ComprehensionExpr{Language.Python.Common.AST.ComprehensionDict Language.Python.Common.AST.ComprehensionExpr}
+  Language.Python.Common.AST.ComprehensionExprSpan
+  Language.Python.Common.AST.ComprehensionSpan
+  Language.Python.Common.AST.Decorator{Language.Python.Common.AST.Decorator decorator_annot decorator_args decorator_name}
+  Language.Python.Common.AST.DecoratorSpan
+  Language.Python.Common.AST.DictKeyDatumList{Language.Python.Common.AST.DictMappingPair Language.Python.Common.AST.DictUnpacking}
+  Language.Python.Common.AST.DictKeyDatumListSpan
+  Language.Python.Common.AST.DottedName
+  Language.Python.Common.AST.DottedNameSpan
+  Language.Python.Common.AST.ExceptClause{Language.Python.Common.AST.ExceptClause except_clause except_clause_annot}
+  Language.Python.Common.AST.ExceptClauseSpan
+  Language.Python.Common.AST.Expr{Language.Python.Common.AST.Await Language.Python.Common.AST.BinaryOp Language.Python.Common.AST.Bool Language.Python.Common.AST.ByteStrings Language.Python.Common.AST.Call Language.Python.Common.AST.CondExpr Language.Python.Common.AST.DictComp Language.Python.Common.AST.Dictionary Language.Python.Common.AST.Dot Language.Python.Common.AST.Ellipsis Language.Python.Common.AST.Float Language.Python.Common.AST.Generator Language.Python.Common.AST.Imaginary Language.Python.Common.AST.Int Language.Python.Common.AST.Lambda Language.Python.Common.AST.List Language.Python.Common.AST.ListComp Language.Python.Common.AST.LongInt Language.Python.Common.AST.None Language.Python.Common.AST.Paren Language.Python.Common.AST.Set Language.Python.Common.AST.SetComp Language.Python.Common.AST.SlicedExpr Language.Python.Common.AST.Starred Language.Python.Common.AST.StringConversion Language.Python.Common.AST.Strings Language.Python.Common.AST.Subscript Language.Python.Common.AST.Tuple Language.Python.Common.AST.UnaryOp Language.Python.Common.AST.UnicodeStrings Language.Python.Common.AST.Var Language.Python.Common.AST.Yield await_expr backquoted_expr bool_value byte_string_strings call_args call_fun ce_condition ce_false_branch ce_true_branch dict_comprehension dict_mappings dot_attribute dot_expr expr_annot expr_anot expr_literal float_value gen_comprehension imaginary_value int_value lambda_args lambda_body left_op_arg list_comprehension list_exprs op_arg operator paren_expr right_op_arg set_comprehension set_exprs slicee slices starred_expr strings_strings subscript_expr subscriptee tuple_exprs unicodestrings_strings var_ident yield_arg}
+  Language.Python.Common.AST.ExprSpan
+  Language.Python.Common.AST.FromItem{Language.Python.Common.AST.FromItem from_as_name from_item_annot from_item_name}
+  Language.Python.Common.AST.FromItemSpan
+  Language.Python.Common.AST.FromItems{Language.Python.Common.AST.FromItems Language.Python.Common.AST.ImportEverything from_items_annot from_items_items}
+  Language.Python.Common.AST.FromItemsSpan
+  Language.Python.Common.AST.Handler{Language.Python.Common.AST.Handler handler_annot handler_clause handler_suite}
+  Language.Python.Common.AST.HandlerSpan
+  Language.Python.Common.AST.Ident{Language.Python.Common.AST.Ident ident_annot ident_string}
+  Language.Python.Common.AST.IdentSpan
+  Language.Python.Common.AST.ImportItem{Language.Python.Common.AST.ImportItem import_as_name import_item_annot import_item_name}
+  Language.Python.Common.AST.ImportItemSpan
+  Language.Python.Common.AST.ImportRelative{Language.Python.Common.AST.ImportRelative import_relative_annot import_relative_dots import_relative_module}
+  Language.Python.Common.AST.ImportRelativeSpan
+  Language.Python.Common.AST.Module{Language.Python.Common.AST.Module}
+  Language.Python.Common.AST.ModuleSpan
+  Language.Python.Common.AST.Op{Language.Python.Common.AST.And Language.Python.Common.AST.BinaryAnd Language.Python.Common.AST.BinaryOr Language.Python.Common.AST.Divide Language.Python.Common.AST.Equality Language.Python.Common.AST.Exponent Language.Python.Common.AST.FloorDivide Language.Python.Common.AST.GreaterThan Language.Python.Common.AST.GreaterThanEquals Language.Python.Common.AST.In Language.Python.Common.AST.Invert Language.Python.Common.AST.Is Language.Python.Common.AST.IsNot Language.Python.Common.AST.LessThan Language.Python.Common.AST.LessThanEquals Language.Python.Common.AST.MatrixMult Language.Python.Common.AST.Minus Language.Python.Common.AST.Modulo Language.Python.Common.AST.Multiply Language.Python.Common.AST.Not Language.Python.Common.AST.NotEquals Language.Python.Common.AST.NotEqualsV2 Language.Python.Common.AST.NotIn Language.Python.Common.AST.Or Language.Python.Common.AST.Plus Language.Python.Common.AST.ShiftLeft Language.Python.Common.AST.ShiftRight Language.Python.Common.AST.Xor op_annot}
+  Language.Python.Common.AST.OpSpan
+  Language.Python.Common.AST.ParamTuple{Language.Python.Common.AST.ParamTuple Language.Python.Common.AST.ParamTupleName param_tuple param_tuple_annot param_tuple_name}
+  Language.Python.Common.AST.ParamTupleSpan
+  Language.Python.Common.AST.Parameter{Language.Python.Common.AST.EndPositional Language.Python.Common.AST.Param Language.Python.Common.AST.UnPackTuple Language.Python.Common.AST.VarArgsKeyword Language.Python.Common.AST.VarArgsPos param_annot param_default param_name param_py_annotation param_unpack_tuple}
+  Language.Python.Common.AST.ParameterSpan
+  Language.Python.Common.AST.RaiseExpr{Language.Python.Common.AST.RaiseV2 Language.Python.Common.AST.RaiseV3}
+  Language.Python.Common.AST.RaiseExprSpan
+  Language.Python.Common.AST.Slice{Language.Python.Common.AST.SliceEllipsis Language.Python.Common.AST.SliceExpr Language.Python.Common.AST.SliceProper slice_annot slice_expr slice_lower slice_stride slice_upper}
+  Language.Python.Common.AST.SliceSpan
+  Language.Python.Common.AST.Statement{Language.Python.Common.AST.AnnotatedAssign Language.Python.Common.AST.Assert Language.Python.Common.AST.Assign Language.Python.Common.AST.AsyncFor Language.Python.Common.AST.AsyncFun Language.Python.Common.AST.AsyncWith Language.Python.Common.AST.AugmentedAssign Language.Python.Common.AST.Break Language.Python.Common.AST.Class Language.Python.Common.AST.Conditional Language.Python.Common.AST.Continue Language.Python.Common.AST.Decorated Language.Python.Common.AST.Delete Language.Python.Common.AST.Exec Language.Python.Common.AST.For Language.Python.Common.AST.FromImport Language.Python.Common.AST.Fun Language.Python.Common.AST.Global Language.Python.Common.AST.Import Language.Python.Common.AST.NonLocal Language.Python.Common.AST.Pass Language.Python.Common.AST.Print Language.Python.Common.AST.Raise Language.Python.Common.AST.Return Language.Python.Common.AST.StmtExpr Language.Python.Common.AST.Try Language.Python.Common.AST.While Language.Python.Common.AST.With ann_assign_annotation ann_assign_expr ann_assign_to assert_exprs assign_expr assign_to aug_assign_expr aug_assign_op aug_assign_to class_args class_body class_name cond_else cond_guards decorated_decorators decorated_def del_exprs exec_expr exec_globals_locals for_body for_else for_generator for_stmt for_targets from_items from_module fun_args fun_body fun_def fun_name fun_result_annotation global_vars import_items nonLocal_vars print_chevron print_exprs print_trailing_comma raise_expr return_expr stmt_annot stmt_expr try_body try_else try_excepts try_finally while_body while_cond while_else with_body with_context with_stmt}
+  Language.Python.Common.AST.StatementSpan
+  Language.Python.Common.AST.Suite
+  Language.Python.Common.AST.SuiteSpan
+  Language.Python.Common.AST.YieldArg{Language.Python.Common.AST.YieldExpr Language.Python.Common.AST.YieldFrom}
+  Language.Python.Common.AST.YieldArgSpan
+  Language.Python.Common.ParseError.ParseError{Language.Python.Common.ParseError.StrError Language.Python.Common.ParseError.UnexpectedChar Language.Python.Common.ParseError.UnexpectedToken}
+  Language.Python.Common.Pretty.Pretty{Language.Python.Common.Pretty.pretty}
+  Language.Python.Common.SrcLocation.Span{Language.Python.Common.SrcLocation.getSpan}
+  Language.Python.Common.SrcLocation.SrcLocation{Language.Python.Common.SrcLocation.NoLocation Language.Python.Common.SrcLocation.Sloc sloc_column sloc_filename sloc_row}
+  Language.Python.Common.SrcLocation.SrcSpan{Language.Python.Common.SrcLocation.SpanCoLinear Language.Python.Common.SrcLocation.SpanEmpty Language.Python.Common.SrcLocation.SpanMultiLine Language.Python.Common.SrcLocation.SpanPoint span_column span_end_column span_end_row span_filename span_row span_start_column span_start_row}
+  Language.Python.Common.Token.Token{Language.Python.Common.Token.AndToken Language.Python.Common.Token.AsToken Language.Python.Common.Token.AssertToken Language.Python.Common.Token.AssignToken Language.Python.Common.Token.AsyncToken Language.Python.Common.Token.AtToken Language.Python.Common.Token.AwaitToken Language.Python.Common.Token.BackQuoteToken Language.Python.Common.Token.BinAndAssignToken Language.Python.Common.Token.BinOrAssignToken Language.Python.Common.Token.BinXorAssignToken Language.Python.Common.Token.BinaryAndToken Language.Python.Common.Token.BinaryOrToken Language.Python.Common.Token.BreakToken Language.Python.Common.Token.ByteStringToken Language.Python.Common.Token.ClassToken Language.Python.Common.Token.ColonToken Language.Python.Common.Token.CommaToken Language.Python.Common.Token.CommentToken Language.Python.Common.Token.ContinueToken Language.Python.Common.Token.DedentToken Language.Python.Common.Token.DefToken Language.Python.Common.Token.DeleteToken Language.Python.Common.Token.DivAssignToken Language.Python.Common.Token.DivToken Language.Python.Common.Token.DotToken Language.Python.Common.Token.EOFToken Language.Python.Common.Token.ElifToken Language.Python.Common.Token.EllipsisToken Language.Python.Common.Token.ElseToken Language.Python.Common.Token.EqualityToken Language.Python.Common.Token.ExceptToken Language.Python.Common.Token.ExecToken Language.Python.Common.Token.ExponentToken Language.Python.Common.Token.FalseToken Language.Python.Common.Token.FinallyToken Language.Python.Common.Token.FloatToken Language.Python.Common.Token.FloorDivAssignToken Language.Python.Common.Token.FloorDivToken Language.Python.Common.Token.ForToken Language.Python.Common.Token.FromToken Language.Python.Common.Token.GlobalToken Language.Python.Common.Token.GreaterThanEqualsToken Language.Python.Common.Token.GreaterThanToken Language.Python.Common.Token.IdentifierToken Language.Python.Common.Token.IfToken Language.Python.Common.Token.ImaginaryToken Language.Python.Common.Token.ImportToken Language.Python.Common.Token.InToken Language.Python.Common.Token.IndentToken Language.Python.Common.Token.IntegerToken Language.Python.Common.Token.IsToken Language.Python.Common.Token.LambdaToken Language.Python.Common.Token.LeftBraceToken Language.Python.Common.Token.LeftRoundBracketToken Language.Python.Common.Token.LeftShiftAssignToken Language.Python.Common.Token.LeftSquareBracketToken Language.Python.Common.Token.LessThanEqualsToken Language.Python.Common.Token.LessThanToken Language.Python.Common.Token.LineJoinToken Language.Python.Common.Token.LongIntegerToken Language.Python.Common.Token.MatrixMultAssignToken Language.Python.Common.Token.MinusAssignToken Language.Python.Common.Token.MinusToken Language.Python.Common.Token.ModAssignToken Language.Python.Common.Token.ModuloToken Language.Python.Common.Token.MultAssignToken Language.Python.Common.Token.MultToken Language.Python.Common.Token.NewlineToken Language.Python.Common.Token.NonLocalToken Language.Python.Common.Token.NoneToken Language.Python.Common.Token.NotEqualsToken Language.Python.Common.Token.NotEqualsV2Token Language.Python.Common.Token.NotToken Language.Python.Common.Token.OrToken Language.Python.Common.Token.PassToken Language.Python.Common.Token.PlusAssignToken Language.Python.Common.Token.PlusToken Language.Python.Common.Token.PowAssignToken Language.Python.Common.Token.PrintToken Language.Python.Common.Token.RaiseToken Language.Python.Common.Token.ReturnToken Language.Python.Common.Token.RightArrowToken Language.Python.Common.Token.RightBraceToken Language.Python.Common.Token.RightRoundBracketToken Language.Python.Common.Token.RightShiftAssignToken Language.Python.Common.Token.RightSquareBracketToken Language.Python.Common.Token.SemiColonToken Language.Python.Common.Token.ShiftLeftToken Language.Python.Common.Token.ShiftRightToken Language.Python.Common.Token.StringToken Language.Python.Common.Token.TildeToken Language.Python.Common.Token.TrueToken Language.Python.Common.Token.TryToken Language.Python.Common.Token.UnicodeStringToken Language.Python.Common.Token.WhileToken Language.Python.Common.Token.WithToken Language.Python.Common.Token.XorToken Language.Python.Common.Token.YieldToken token_double token_integer token_literal token_span}
+  Language.Python.Common.Token.TokenClass{Language.Python.Common.Token.Assignment Language.Python.Common.Token.Bracket Language.Python.Common.Token.Comment Language.Python.Common.Token.Identifier Language.Python.Common.Token.Keyword Language.Python.Common.Token.Layout Language.Python.Common.Token.Number Language.Python.Common.Token.Operator Language.Python.Common.Token.Punctuation Language.Python.Common.Token.String}
+  Text.PrettyPrint.Annotated.HughesPJ.Mode{Text.PrettyPrint.Annotated.HughesPJ.LeftMode Text.PrettyPrint.Annotated.HughesPJ.OneLineMode Text.PrettyPrint.Annotated.HughesPJ.PageMode Text.PrettyPrint.Annotated.HughesPJ.ZigZagMode}
+  Text.PrettyPrint.Annotated.HughesPJ.Style{Text.PrettyPrint.Annotated.HughesPJ.Style lineLength mode ribbonsPerLine}
+  Text.PrettyPrint.Annotated.HughesPJ.TextDetails{Text.PrettyPrint.Annotated.HughesPJ.Chr Text.PrettyPrint.Annotated.HughesPJ.PStr Text.PrettyPrint.Annotated.HughesPJ.Str}
+  Text.PrettyPrint.HughesPJ.Doc
+module dependencies: Language.Python.Common.AST
+                     Language.Python.Common.ParseError Language.Python.Common.Pretty
+                     Language.Python.Common.PrettyAST
+                     Language.Python.Common.PrettyParseError
+                     Language.Python.Common.PrettyToken
+                     Language.Python.Common.SrcLocation Language.Python.Common.Token
+package dependencies: array-0.5.2.0 base-4.10.1.0* deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 monads-tf-0.1.0.3
+                      pretty-1.1.3.3 transformers-0.5.2.0
+orphans: language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.PrettyAST
+         language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.PrettyParseError
+         language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.PrettyToken
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         monads-tf-0.1.0.3:Control.Monad.Error.Class
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  Language.Python.Common.AST 33488c541ff242f5692911095cbd1198
+  exports: f399fd5201b5af1a1d98fd75d096fbc1
+  And 51f82c4fbba1705499777b30ed480274
+  Annotated ca5b475912faba16480ea09a8091760b
+  AnnotatedAssign db9ef2162d0b3e034a9cd7f8dc2878ae
+  ArgExpr f573e6a264f49cc5da5b135421c1f399
+  ArgKeyword b3b9abedff38eb94a2fd07f9a423444c
+  ArgVarArgsKeyword ec4fb989922a9a84280f254467a4d281
+  ArgVarArgsPos 8d6d23e4667a2d4ecdf298d35b7b9b30
+  Argument 94dde4ffceed0a2a13daed020b6576e1
+  ArgumentSpan 94dde4ffceed0a2a13daed020b6576e1
+  Assert 2a01ff365c8dbfcc7b4f8eb45ec2f456
+  Assign 818192e551b96768717d193545420146
+  AssignOp f55a81e56367dca5b5d86dd1548fd97f
+  AssignOpSpan f55a81e56367dca5b5d86dd1548fd97f
+  AsyncFor 04b621fbfc45cb94f3db32130dd7fdd0
+  AsyncFun bcf5b86d1b4f3c62e415d50ad9baa3c6
+  AsyncWith 5d370f87de0656319c3d416096402d15
+  AugmentedAssign 73ff9d627e810a5b9689edcde5389eec
+  Await 3e6d8b99c4f5e27178f771003af2d168
+  BinAndAssign d25c6bd9721c3b26a66faa7ab9c16b94
+  BinOrAssign 310639512e2edd84baf67bdd3f75acc3
+  BinXorAssign 7df0eb0b1aa1bb249bee16b624e6530c
+  BinaryAnd e5e9fa4ef9ff3cee3f9d7142d8e1b337
+  BinaryOp a4b91f2400398e883f3697bc9de91cb0
+  BinaryOr 1084b81c43cf33636cfeb7df977da662
+  Bool 7d1a32bdcaca2a9c535ffaa4ae699a7a
+  Break 9c788428750d5bfb20ae989c86276354
+  ByteStrings c91587ea95aebd47412aba70c52edf2e
+  Call 12168d711750e490a63b7241b4fb781e
+  Class ab9067f77b0b64e960cb441cfa60c353
+  CompFor c75fa5d490111a6c2188a968704ecf0f
+  CompFor 94dde4ffceed0a2a13daed020b6576e1
+  CompForSpan 94dde4ffceed0a2a13daed020b6576e1
+  CompIf 2b2d42dae734063459798c83210d406e
+  CompIf 94dde4ffceed0a2a13daed020b6576e1
+  CompIfSpan 94dde4ffceed0a2a13daed020b6576e1
+  CompIter 94dde4ffceed0a2a13daed020b6576e1
+  CompIterSpan 94dde4ffceed0a2a13daed020b6576e1
+  Comprehension 68bb9e293ca5f4ddd695ab40049b8da1
+  Comprehension 94dde4ffceed0a2a13daed020b6576e1
+  ComprehensionDict 5f0d548841f3f7dd78d5e7485f924fb2
+  ComprehensionExpr c3a1dab3d0905c07d3978ea92bc757b5
+  ComprehensionExpr 94dde4ffceed0a2a13daed020b6576e1
+  ComprehensionExprSpan 94dde4ffceed0a2a13daed020b6576e1
+  ComprehensionSpan 94dde4ffceed0a2a13daed020b6576e1
+  CondExpr 30846bd81b9c1c973b4ac4eea666e65f
+  Conditional cb8fcc5df2c339b3407f4ce580051bc5
+  Continue c80d9f6d50d3985afee402395810062c
+  Decorated f1a1e9f31178b118d6871eb32b4385e0
+  Decorator 27fa0b29a3d13d11ee5e8883bc1f8ae1
+  Decorator 6e1ab2fb537d2522edcf9b3f967431ea
+  DecoratorSpan 6e1ab2fb537d2522edcf9b3f967431ea
+  Delete aba69b50f60b5ec37a06c660cd4ac0ee
+  DictComp 7a81a93d838a75483694c229d0b4227e
+  DictKeyDatumList 94dde4ffceed0a2a13daed020b6576e1
+  DictKeyDatumListSpan 94dde4ffceed0a2a13daed020b6576e1
+  DictMappingPair 357beba7550a27f2d49496a1c21cf7f8
+  DictUnpacking da43c5f8431e37428d61f801d64ea400
+  Dictionary 69bc809ca8d2fe5012dcaa380c8bdbbf
+  DivAssign 928c84a9ef113a78ff0205fd1d6c7995
+  Divide 220260cd57ae15f7cd4b0c923435df3c
+  Dot b8a7eff9f46fd5d3626be0942c4a830f
+  DottedName 7a1fdcb56d2427503fddeab61367bbc5
+  DottedNameSpan a5e20e92d1dd22978ba34ba5b6e7214b
+  Ellipsis c8d2c37c8a37d4a4ee792f6e160ffd9f
+  EndPositional c9080b870aa52bb30ed4ee25c8aa51ae
+  Equality 0d50ccc3706d66cb87c371a622a97e94
+  ExceptClause 6223ced3f6dab60461bf41b181e15210
+  ExceptClause 54ad83b54b9c0dd8bf180da8d82f4195
+  ExceptClauseSpan 54ad83b54b9c0dd8bf180da8d82f4195
+  Exec 89a28ba5f85c9558e3841c85ec8ce848
+  Exponent 5adbc0e412f37719e5f4754090d920ec
+  Expr 94dde4ffceed0a2a13daed020b6576e1
+  ExprSpan 94dde4ffceed0a2a13daed020b6576e1
+  Float c7df373b8e4833e69cb3138c7e929750
+  FloorDivAssign 6c92a793bfa316ebedb56004d85f3d6e
+  FloorDivide ebaf0d85800db21e616068648efe0972
+  For 45dcb16218c0382e69bbf51103aee3c7
+  FromImport cdff3b71f3c3d7ee22b2fc1494b865ca
+  FromItem 302fa9e6e7558f79d79c39d093f0e922
+  FromItem 73d811e85ab4018f7789c4c4421a9fde
+  FromItemSpan 73d811e85ab4018f7789c4c4421a9fde
+  FromItems dfc1c1bbdf6934daa520e9dcfd1ae50c
+  FromItems e3cd8a0dc8214c8f5ef60ed5a9ac11ef
+  FromItemsSpan e3cd8a0dc8214c8f5ef60ed5a9ac11ef
+  Fun c7d36065932d9256f7329e296beb9003
+  Generator c431efb34c44170d0594c43525fb873b
+  Global 1429f98820c974fcdfe6f8ad8f1cd94b
+  GreaterThan c87281eb602bf9c1674a7be8ba9f22c4
+  GreaterThanEquals ae74127d658bab636df48f5c8cdaf87d
+  Handler 1077bfa458ddf95d8d64d590c7f7f593
+  Handler cf431e64d114ff48b3a5eb8fda819c32
+  HandlerSpan cf431e64d114ff48b3a5eb8fda819c32
+  Ident c5dd5cb7cc6c45b3f8a1e4797f357a9b
+  Ident 6aab1d6f902c3e0dbc09c99c8605e197
+  IdentSpan 6aab1d6f902c3e0dbc09c99c8605e197
+  Imaginary 1a04b13ab867413c955d52accb4cdc99
+  Import 35d5fd7a06cf3bcd75235c9572a33105
+  ImportEverything fcba412422d650d600f9d0e50d5a5bb7
+  ImportItem cf1f0f2bdb44723a6a3c88b456992eb9
+  ImportItem 283607fc44cb0ad26a76914defc72d00
+  ImportItemSpan 283607fc44cb0ad26a76914defc72d00
+  ImportRelative 76719baec1e784bd1d9bbb1f64bcad83
+  ImportRelative 01a50092e1f9a1aefabdff796e5265a4
+  ImportRelativeSpan 01a50092e1f9a1aefabdff796e5265a4
+  In 45ff596788ad98383b1505d37ff1ade7
+  Int d1fb0f5c7da4e5e7f6c48d7cff862a9d
+  Invert ebb5ee48bd20676ddf11c12df347b840
+  Is 83bc3512dd70e343ac077fb627f3363d
+  IsNot 051069b5ae7a54d6a254b7ed90943dd2
+  IterFor 0f1c0bcaacdbf4ae43e623a48f9e93ca
+  IterIf ef8fac6b5100cf952d91acbcb67a5fe9
+  Lambda a586ac894cb842e51b5b652373727cdb
+  LeftShiftAssign 7930bedc1ee424d9a43ba0aea0a131c4
+  LessThan c8ed55e41860dda024da880271ecca51
+  LessThanEquals bd1c77effc4e35bc9ca594fb68c0d5df
+  List 11b8e83c1b5ca19d76b016f6486d088c
+  ListComp 81e886f57cffe532999ffe3fea655c68
+  LongInt 5b8c86008f6d2e9a2a0d5761fcdcaa43
+  MatrixMult 79ac431cb60de4e7042578a557144d78
+  MatrixMultAssign bbef0084b8a8d04fd15487480d312301
+  Minus eeade8cede53659f7208079699f800f8
+  MinusAssign e337b878384b35d54d6b1024b98a5799
+  ModAssign 7a40aef6b4fa9104520489f933e314a5
+  Module f1d03aee723924696a2ae6c69e86c1a4
+  Module 789db2a4b3c023a9cf43afdd1f0c3249
+  ModuleSpan 86810320d90325ede6ee77588677d73d
+  Modulo fc1ac085cf71d9724507056088b2e190
+  MultAssign 7c95d2af1e7400e5e4a97b7fed700dad
+  Multiply 50e1028882c21443daf63f89d5d18910
+  NonLocal 0db1023b4dba2e7fe10d87edd30177e2
+  None 4f1f7a94194f9fa83d680628a617f730
+  Not f9f7ceb18ab82e37ada821c6975ea513
+  NotEquals abe36c43a094363d3303b907f3ec75ef
+  NotEqualsV2 338455631d24b57b5eda314f4c932c18
+  NotIn f08fe0f3847cb11886d14abae1808caa
+  Op 3e80c1212dbae482ce637a5dc72042ac
+  OpSpan 3e80c1212dbae482ce637a5dc72042ac
+  Or b64688f0061c5a4097b76aeb42c2caec
+  Param 61068bd2027f06ccf16690716a8f5688
+  ParamTuple 37c02cf6f28972fa645e7cd06c40a054
+  ParamTuple 77aacf63ade2d28a10031365ad257b9f
+  ParamTupleName f579539774d9e071f0ee5fcfc5e7cbce
+  ParamTupleSpan 77aacf63ade2d28a10031365ad257b9f
+  Parameter 94dde4ffceed0a2a13daed020b6576e1
+  ParameterSpan 94dde4ffceed0a2a13daed020b6576e1
+  Paren ffdb4e442edc88bc0a62076087c49146
+  Pass 2f4970c70e3d20edcbd9ac08ff9ee449
+  Plus da587f581d1642c0cf29630d6101f6de
+  PlusAssign 2228cb646507ab9e769ea1df91b373c8
+  PowAssign c975e5d1f49a4008def285e91d61fa27
+  Print 600dc49a19c6e5394568b3ff191c30cd
+  Raise 550e547bd36220c7f92e7791cd92bd35
+  RaiseExpr 40b646133484efeda0b61064c970b83c
+  RaiseExprSpan 5f5f18aa546c3a3c5fc67ab98425ccd8
+  RaiseV2 04f143d5aa31b1fc2e2552838a550408
+  RaiseV3 8bde63aaaec46c5badb3efcb4cf0a7a1
+  Return 56f0bf54e4d839de734a3ef084f93dc1
+  RightShiftAssign 4df10160a308030e8bd17ab83494dd5e
+  Set a9de4797bcf3b6b0b74b1963eb65496b
+  SetComp 5d734e3e60a31edfeb4dd6fa43961eff
+  ShiftLeft 526e914af1206afef12d2e3026e742e6
+  ShiftRight 87d7da6aac44dbdf57d10a35a150655d
+  Slice 94dde4ffceed0a2a13daed020b6576e1
+  SliceEllipsis e02397fcdded084df6a5a869fa2d99c1
+  SliceExpr b585c3d921266f9e6c596481048bb532
+  SliceProper 0effa1cc2e6bfdb8a976fc33bcb6358d
+  SliceSpan 94dde4ffceed0a2a13daed020b6576e1
+  SlicedExpr 8be405f3591cfe72d365c11c6cc6d79c
+  Starred dd112618fb5f92f28083d6c2417ea92c
+  Statement cf431e64d114ff48b3a5eb8fda819c32
+  StatementSpan cf431e64d114ff48b3a5eb8fda819c32
+  StmtExpr aab63600bbff35086c75728f925bb3b3
+  StringConversion 6c6497b2249d0f3cb161c7378057a467
+  Strings 8717ee9a003ddbe81762bf932e73727e
+  Subscript 592ed991bd108dff03aaae57180dab8c
+  Suite cf431e64d114ff48b3a5eb8fda819c32
+  SuiteSpan cd84fbfdee57b86021f0a7b1524fc007
+  Try 1378d4582c0ad8c9f047de868628ac3f
+  Tuple 2bb6cf88877f9f7dbea0aa0d6b3de88c
+  UnPackTuple e78bac92e51304353202a303f6eacebb
+  UnaryOp 22fd54dfaf3c9c3bb8ce5fa3accadccb
+  UnicodeStrings 00cd34cc2704f7559774e32e2d4c93c6
+  Var fccfc994f1c2754feff1a20e8d489eb0
+  VarArgsKeyword c83f809462b6693741af6d8d22be98eb
+  VarArgsPos 88afd20f38373f5627d3c1d4b00f7129
+  While 6f9852ffe7f40ab9de79a6f838502362
+  With 122fa74a2b82606a9a92be2831fc8f09
+  Xor 86413e771bfc9bad908bf9caa08b0316
+  Yield eaebfa460dc3353f02c32e061319adda
+  YieldArg 94dde4ffceed0a2a13daed020b6576e1
+  YieldArgSpan 94dde4ffceed0a2a13daed020b6576e1
+  YieldExpr 1bc175319ad5e3cadfcbff6c177ec614
+  YieldFrom 4d5a84bc759719c537ba58f8a3b5a118
+  ann_assign_annotation cf431e64d114ff48b3a5eb8fda819c32
+  ann_assign_expr cf431e64d114ff48b3a5eb8fda819c32
+  ann_assign_to cf431e64d114ff48b3a5eb8fda819c32
+  annot 67c9ef4e9830c92002535460b7f1915f
+  arg_annot 94dde4ffceed0a2a13daed020b6576e1
+  arg_expr 94dde4ffceed0a2a13daed020b6576e1
+  arg_keyword 94dde4ffceed0a2a13daed020b6576e1
+  assert_exprs cf431e64d114ff48b3a5eb8fda819c32
+  assignOp_annot f55a81e56367dca5b5d86dd1548fd97f
+  assign_expr cf431e64d114ff48b3a5eb8fda819c32
+  assign_to cf431e64d114ff48b3a5eb8fda819c32
+  aug_assign_expr cf431e64d114ff48b3a5eb8fda819c32
+  aug_assign_op cf431e64d114ff48b3a5eb8fda819c32
+  aug_assign_to cf431e64d114ff48b3a5eb8fda819c32
+  await_expr 94dde4ffceed0a2a13daed020b6576e1
+  backquoted_expr 94dde4ffceed0a2a13daed020b6576e1
+  bool_value 94dde4ffceed0a2a13daed020b6576e1
+  byte_string_strings 94dde4ffceed0a2a13daed020b6576e1
+  call_args 94dde4ffceed0a2a13daed020b6576e1
+  call_fun 94dde4ffceed0a2a13daed020b6576e1
+  ce_condition 94dde4ffceed0a2a13daed020b6576e1
+  ce_false_branch 94dde4ffceed0a2a13daed020b6576e1
+  ce_true_branch 94dde4ffceed0a2a13daed020b6576e1
+  class_args cf431e64d114ff48b3a5eb8fda819c32
+  class_body cf431e64d114ff48b3a5eb8fda819c32
+  class_name cf431e64d114ff48b3a5eb8fda819c32
+  comp_for_annot 94dde4ffceed0a2a13daed020b6576e1
+  comp_for_async 94dde4ffceed0a2a13daed020b6576e1
+  comp_for_exprs 94dde4ffceed0a2a13daed020b6576e1
+  comp_for_iter 94dde4ffceed0a2a13daed020b6576e1
+  comp_if 94dde4ffceed0a2a13daed020b6576e1
+  comp_if_annot 94dde4ffceed0a2a13daed020b6576e1
+  comp_if_iter 94dde4ffceed0a2a13daed020b6576e1
+  comp_in_expr 94dde4ffceed0a2a13daed020b6576e1
+  comp_iter_annot 94dde4ffceed0a2a13daed020b6576e1
+  comp_iter_for 94dde4ffceed0a2a13daed020b6576e1
+  comp_iter_if 94dde4ffceed0a2a13daed020b6576e1
+  comprehension_annot 94dde4ffceed0a2a13daed020b6576e1
+  comprehension_expr 94dde4ffceed0a2a13daed020b6576e1
+  comprehension_for 94dde4ffceed0a2a13daed020b6576e1
+  cond_else cf431e64d114ff48b3a5eb8fda819c32
+  cond_guards cf431e64d114ff48b3a5eb8fda819c32
+  decorated_decorators cf431e64d114ff48b3a5eb8fda819c32
+  decorated_def cf431e64d114ff48b3a5eb8fda819c32
+  decorator_annot 6e1ab2fb537d2522edcf9b3f967431ea
+  decorator_args 6e1ab2fb537d2522edcf9b3f967431ea
+  decorator_name 6e1ab2fb537d2522edcf9b3f967431ea
+  del_exprs cf431e64d114ff48b3a5eb8fda819c32
+  dict_comprehension 94dde4ffceed0a2a13daed020b6576e1
+  dict_mappings 94dde4ffceed0a2a13daed020b6576e1
+  dot_attribute 94dde4ffceed0a2a13daed020b6576e1
+  dot_expr 94dde4ffceed0a2a13daed020b6576e1
+  except_clause 54ad83b54b9c0dd8bf180da8d82f4195
+  except_clause_annot 54ad83b54b9c0dd8bf180da8d82f4195
+  exec_expr cf431e64d114ff48b3a5eb8fda819c32
+  exec_globals_locals cf431e64d114ff48b3a5eb8fda819c32
+  expr_annot 94dde4ffceed0a2a13daed020b6576e1
+  expr_anot 94dde4ffceed0a2a13daed020b6576e1
+  expr_literal 94dde4ffceed0a2a13daed020b6576e1
+  float_value 94dde4ffceed0a2a13daed020b6576e1
+  for_body cf431e64d114ff48b3a5eb8fda819c32
+  for_else cf431e64d114ff48b3a5eb8fda819c32
+  for_generator cf431e64d114ff48b3a5eb8fda819c32
+  for_stmt cf431e64d114ff48b3a5eb8fda819c32
+  for_targets cf431e64d114ff48b3a5eb8fda819c32
+  from_as_name 73d811e85ab4018f7789c4c4421a9fde
+  from_item_annot 73d811e85ab4018f7789c4c4421a9fde
+  from_item_name 73d811e85ab4018f7789c4c4421a9fde
+  from_items cf431e64d114ff48b3a5eb8fda819c32
+  from_items_annot e3cd8a0dc8214c8f5ef60ed5a9ac11ef
+  from_items_items e3cd8a0dc8214c8f5ef60ed5a9ac11ef
+  from_module cf431e64d114ff48b3a5eb8fda819c32
+  fun_args cf431e64d114ff48b3a5eb8fda819c32
+  fun_body cf431e64d114ff48b3a5eb8fda819c32
+  fun_def cf431e64d114ff48b3a5eb8fda819c32
+  fun_name cf431e64d114ff48b3a5eb8fda819c32
+  fun_result_annotation cf431e64d114ff48b3a5eb8fda819c32
+  gen_comprehension 94dde4ffceed0a2a13daed020b6576e1
+  global_vars cf431e64d114ff48b3a5eb8fda819c32
+  handler_annot cf431e64d114ff48b3a5eb8fda819c32
+  handler_clause cf431e64d114ff48b3a5eb8fda819c32
+  handler_suite cf431e64d114ff48b3a5eb8fda819c32
+  ident_annot 6aab1d6f902c3e0dbc09c99c8605e197
+  ident_string 6aab1d6f902c3e0dbc09c99c8605e197
+  imaginary_value 94dde4ffceed0a2a13daed020b6576e1
+  import_as_name 283607fc44cb0ad26a76914defc72d00
+  import_item_annot 283607fc44cb0ad26a76914defc72d00
+  import_item_name 283607fc44cb0ad26a76914defc72d00
+  import_items cf431e64d114ff48b3a5eb8fda819c32
+  import_relative_annot 01a50092e1f9a1aefabdff796e5265a4
+  import_relative_dots 01a50092e1f9a1aefabdff796e5265a4
+  import_relative_module 01a50092e1f9a1aefabdff796e5265a4
+  int_value 94dde4ffceed0a2a13daed020b6576e1
+  lambda_args 94dde4ffceed0a2a13daed020b6576e1
+  lambda_body 94dde4ffceed0a2a13daed020b6576e1
+  left_op_arg 94dde4ffceed0a2a13daed020b6576e1
+  list_comprehension 94dde4ffceed0a2a13daed020b6576e1
+  list_exprs 94dde4ffceed0a2a13daed020b6576e1
+  nonLocal_vars cf431e64d114ff48b3a5eb8fda819c32
+  op_annot 3e80c1212dbae482ce637a5dc72042ac
+  op_arg 94dde4ffceed0a2a13daed020b6576e1
+  operator 94dde4ffceed0a2a13daed020b6576e1
+  param_annot 94dde4ffceed0a2a13daed020b6576e1
+  param_default 94dde4ffceed0a2a13daed020b6576e1
+  param_name 94dde4ffceed0a2a13daed020b6576e1
+  param_py_annotation 94dde4ffceed0a2a13daed020b6576e1
+  param_tuple 77aacf63ade2d28a10031365ad257b9f
+  param_tuple_annot 77aacf63ade2d28a10031365ad257b9f
+  param_tuple_name 77aacf63ade2d28a10031365ad257b9f
+  param_unpack_tuple 94dde4ffceed0a2a13daed020b6576e1
+  paren_expr 94dde4ffceed0a2a13daed020b6576e1
+  print_chevron cf431e64d114ff48b3a5eb8fda819c32
+  print_exprs cf431e64d114ff48b3a5eb8fda819c32
+  print_trailing_comma cf431e64d114ff48b3a5eb8fda819c32
+  raise_expr cf431e64d114ff48b3a5eb8fda819c32
+  return_expr cf431e64d114ff48b3a5eb8fda819c32
+  right_op_arg 94dde4ffceed0a2a13daed020b6576e1
+  set_comprehension 94dde4ffceed0a2a13daed020b6576e1
+  set_exprs 94dde4ffceed0a2a13daed020b6576e1
+  slice_annot 94dde4ffceed0a2a13daed020b6576e1
+  slice_expr 94dde4ffceed0a2a13daed020b6576e1
+  slice_lower 94dde4ffceed0a2a13daed020b6576e1
+  slice_stride 94dde4ffceed0a2a13daed020b6576e1
+  slice_upper 94dde4ffceed0a2a13daed020b6576e1
+  slicee 94dde4ffceed0a2a13daed020b6576e1
+  slices 94dde4ffceed0a2a13daed020b6576e1
+  starred_expr 94dde4ffceed0a2a13daed020b6576e1
+  stmt_annot cf431e64d114ff48b3a5eb8fda819c32
+  stmt_expr cf431e64d114ff48b3a5eb8fda819c32
+  strings_strings 94dde4ffceed0a2a13daed020b6576e1
+  subscript_expr 94dde4ffceed0a2a13daed020b6576e1
+  subscriptee 94dde4ffceed0a2a13daed020b6576e1
+  try_body cf431e64d114ff48b3a5eb8fda819c32
+  try_else cf431e64d114ff48b3a5eb8fda819c32
+  try_excepts cf431e64d114ff48b3a5eb8fda819c32
+  try_finally cf431e64d114ff48b3a5eb8fda819c32
+  tuple_exprs 94dde4ffceed0a2a13daed020b6576e1
+  unicodestrings_strings 94dde4ffceed0a2a13daed020b6576e1
+  var_ident 94dde4ffceed0a2a13daed020b6576e1
+  while_body cf431e64d114ff48b3a5eb8fda819c32
+  while_cond cf431e64d114ff48b3a5eb8fda819c32
+  while_else cf431e64d114ff48b3a5eb8fda819c32
+  with_body cf431e64d114ff48b3a5eb8fda819c32
+  with_context cf431e64d114ff48b3a5eb8fda819c32
+  with_stmt cf431e64d114ff48b3a5eb8fda819c32
+  yield_arg 94dde4ffceed0a2a13daed020b6576e1
+import  -/  Language.Python.Common.ParseError 855377ed2b2e0b4786ce2bc295867d5f
+  exports: 50818e886d7fe171102ba6baa8dfe6d2
+  ParseError 69150014a963a0915aa041aac53345b0
+  StrError 36957af6cdc9a49097021e5273cbf546
+  UnexpectedChar 89e34faee08827a823864d3bdf3a1732
+  UnexpectedToken 971689c295c7da00c367bfb64716b310
+import  -/  Language.Python.Common.Pretty 6e21c42aa69bc1ddac81ab1aa974965d
+  exports: 08b6e8d2393383892c529fbfae3c772e
+  Pretty 966791a55bc80a3e5958da97a36c9f4e
+  commaList 746bc69bcc34900f6fa3164c8caabe31
+  equalsList 78e9ce0bcd448cb05ca6291cc7a93118
+  parensIf 76da70f7c5299bc839be4405b1bfca96
+  perhaps d3639618b1f1aa155817de31e83f3177
+  pretty 3cc14f812a2b3939276efb7c8cc0a981
+  prettyPrefix 1de448da20e8c8f729f447b314cbfd6b
+  prettyText ece2bef18557308399928020f4b9e92f
+import  -/  Language.Python.Common.PrettyAST ac4e56618ee24e5757128c02cdca182d
+  exports: 35ea15cb501b7ce09db2c0f04adb4233
+import  -/  Language.Python.Common.PrettyParseError 107c8e5389afeafb4187dbeb8b7c193f
+  exports: 0d00d0019023ea068fd5a95c635d9b2a
+import  -/  Language.Python.Common.PrettyToken bc741243f6c6b5b8d322f15ee3ad6d8d
+  exports: 0d3234b92dbf15a61a7f4ce8aa159ab3
+import  -/  Language.Python.Common.SrcLocation 8f143931064eb388f1f2a6dd7f644740
+  exports: 53449eeea761b903564548d6dcb5e6f4
+  NoLocation 415cc94920da9396f664fbe603c33647
+  Sloc ff939c9fad2cad9509d3023264869e1f
+  Span 6745f4d7f5c89ca40c260953253bdbce
+  SpanCoLinear 9d66c0c8ef44568e04800ad94b264ebe
+  SpanEmpty 2597a0b25bcb905fd06782ed7c8e03c7
+  SpanMultiLine 9aa4a6fc27859828db67d3b9a588d1c7
+  SpanPoint 5adeffddcdab834c51b754e6755cc59d
+  SrcLocation a741649da2405f2d01d7327e5bc28811
+  SrcSpan 7855650ba5477745c617b1d6a2c60117
+  combineSrcSpans 7963aa44893386d97f982d0c912e100a
+  decColumn 3be8f75ac6ccf4dbc38c1dd27777ff7b
+  endCol 2188b3c8a0804ff8649d0cf2d440562e
+  endRow 11851313e080c5978e608589af89fa9c
+  getSpan 705afb86514220eddda721f71e34f0d3
+  incColumn 7e6d1cf0e067015ad0c94c0c7f84cf50
+  incLine 0ca59f74853ae91994e3c2b0a6afa2a1
+  incTab ebd197a17f90b658b9b70d96ab3af1cc
+  initialSrcLocation 3092192d0486b5ee3b33946735df2f82
+  mkSrcSpan 2d7fcc453e48fd76e9fc9f7ca027cc29
+  sloc_column a741649da2405f2d01d7327e5bc28811
+  sloc_filename a741649da2405f2d01d7327e5bc28811
+  sloc_row a741649da2405f2d01d7327e5bc28811
+  spanStartPoint 01df232a08fa954d8f8e7e7b897afb9b
+  span_column 7855650ba5477745c617b1d6a2c60117
+  span_end_column 7855650ba5477745c617b1d6a2c60117
+  span_end_row 7855650ba5477745c617b1d6a2c60117
+  span_filename 7855650ba5477745c617b1d6a2c60117
+  span_row 7855650ba5477745c617b1d6a2c60117
+  span_start_column 7855650ba5477745c617b1d6a2c60117
+  span_start_row 7855650ba5477745c617b1d6a2c60117
+  spanning 6745f4d7f5c89ca40c260953253bdbce
+  startCol b5d6f96ca88d4103418d6db5c0aaf679
+  startRow 03380f4548aec822771fa58204fc49b7
+import  -/  Language.Python.Common.Token d5076ddbfa147a7adfa845a047c4ec2b
+  exports: 989971a82f568d9688304166d774cea9
+  AndToken bce9c8edbcd5d465728823cc1739c7d4
+  AsToken 96fe3cfeeb967cf06a19b6fd80ee37d6
+  AssertToken 08d8a31a9b4b360cc5d40baed79a4b99
+  AssignToken 90cbda14cc6f27aba58cfa7b0f9046a0
+  Assignment 1411bf85090a99420eab519164ca134e
+  AsyncToken 214c4822294d4e3df0cd338379ddfff8
+  AtToken a7dfe1d1ac7e5b0c7d4b45e79e184b11
+  AwaitToken 1c7ac69630ff851811c7844c62f8b76e
+  BackQuoteToken 9e841665ed88cbade176395f8f06834b
+  BinAndAssignToken 3b81f90aa225d174e94965452db18408
+  BinOrAssignToken 6643a8a78e786cbd2ea2837cfa7b85ec
+  BinXorAssignToken 7db12eb04e29f0985627f222ef8ff1e3
+  BinaryAndToken 5eb4e410690fe57750202406133ccae9
+  BinaryOrToken 7ae5c405bd25cb154d4d51b43ebf120e
+  Bracket 003991d03075882c2b774730443d10c8
+  BreakToken 59f6f60850766e0ffbcb5afe044e8d5a
+  ByteStringToken 8ed71ca430d8fd81a65296b0f242d1d6
+  ClassToken 0f70c7bc21536d33024932e7d1aff301
+  ColonToken 4061513d4dbaa88f2737a77ef56094d4
+  CommaToken 44ada8e9df755fe79ff3e5629d7e534d
+  Comment 796bee97baa422baf39d73632c476e26
+  CommentToken df6bdfa94fc5acffd8dadf57b31c4227
+  ContinueToken 16fd641b346eaa8a19d028223660a14a
+  DedentToken d88ae81e5dfafe5f22e03615b3b9afb9
+  DefToken b6e057e6167e5f1d735d9b5b98c07fd0
+  DeleteToken 3297524c3afb0e0f2158d84e9f45224e
+  DivAssignToken c310d8f2db30124c9c5f0502c0146065
+  DivToken 462b17bee82838812bc02a64f1a0025e
+  DotToken 003d9d4564a536435f9e80722ec86d3d
+  EOFToken 1cf80df53c67e36853da3c226a40c5e4
+  ElifToken 839e2a6d8ef776ba99a451112af7dfee
+  EllipsisToken d57d66112d934a9c41a298d428d79716
+  ElseToken 72c3434d31abb473ddf34e4261a06332
+  EqualityToken 08ddde846ce980c8c499db4ae68fc0c6
+  ExceptToken 238220cc11ce851dba08933f15363c33
+  ExecToken b738b9e8f1fe140e92d5af5e2c55b3de
+  ExponentToken 09f697be60b198fbfaf81cd79a2ce779
+  FalseToken 1f17dbac4445d041fdfca052e81ee897
+  FinallyToken ea75a81465ef50606e4bd90787e7c8a3
+  FloatToken c6c8144ddb699972c1b74dddc504c056
+  FloorDivAssignToken dcddffde2042e303c8cea3a925581f88
+  FloorDivToken 6e99009a41ace8a74730d51bd8327b2c
+  ForToken 59b1001aea44b8dc5cc23a1748e1d070
+  FromToken bea75cc33171ebc3c4c60a9d553de8b9
+  GlobalToken efac6585447e4190333d8352ea1f80bf
+  GreaterThanEqualsToken e783d490b095d815e947711cb5b6f5ec
+  GreaterThanToken e1e05bf37deccd8c8592cdd36cb16e73
+  Identifier 3b47eff1908845204ba56d41cfd81c37
+  IdentifierToken 8b13c0eed3b80d89b71ea9f79ae411b6
+  IfToken 3a93e34ef185993f7f4c6a91dbb2e1d3
+  ImaginaryToken 146a73d5fbc8ec23fda5be0442442cdc
+  ImportToken 8b9680cc98e8aa033fcc878f16016fb3
+  InToken 5447463b85d1aff2c356cc5227b3677b
+  IndentToken 3977f1b73d2288983e72233470a4e6bd
+  IntegerToken e71a57281f42e20860c67b540ddee222
+  IsToken a086e4d09c866c5a18db0cf2bc950d89
+  Keyword ace5914aa1a2423e0468f7ec42f5f8fb
+  LambdaToken 1461fc1dbc0359ab4fc369875531e6d5
+  Layout 1b625cfecd6df8b27b4238c85383e164
+  LeftBraceToken b95fd072d7d2e01fe836cd003b745326
+  LeftRoundBracketToken d11dbcb5363be70a2bdf7bdeac7f2ebc
+  LeftShiftAssignToken 6b47708d246959d20acdc54339528adc
+  LeftSquareBracketToken cdebfdc78e4d0d70ef126d6f2401a811
+  LessThanEqualsToken 13b1a5252b0ba146ce8c2cb210c89227
+  LessThanToken 5e4b00ed35a51458495ed70494d2d463
+  LineJoinToken 159d83201ed113091d4e795c670a0eba
+  LongIntegerToken ec7762f7f9526ee1697564b230c4f875
+  MatrixMultAssignToken 61f35f01d85e42cc35b163ffdef8dcf7
+  MinusAssignToken 23f36baf1e86a827390308cb2544e4da
+  MinusToken 59c24c04f0c25f648a42bf63de9d4189
+  ModAssignToken 234024f2c69436a80b46aeb42dbbf307
+  ModuloToken fc6bc20aa6094c9326578a984c8a7748
+  MultAssignToken 7c93f1a0c17b335cd511ad8482e53807
+  MultToken 135814f3f60efd00a5dde7bf307dfafa
+  NewlineToken 3f56dcc8b6ff151ce5b76ce9e3b85a30
+  NonLocalToken 1b517f2e00d22f07134c9805ff8bbaf4
+  NoneToken 20318e326a3cf81919f09221483bf9f8
+  NotEqualsToken 8af1806ae11edf967c2a42f0008b0946
+  NotEqualsV2Token 478d03914713d84fae4a5fbd262f3ba4
+  NotToken 1c1cb07b5238197fdf5d5016137f4050
+  Number cab7c19c3d4ace70aa97475b51f7ccd1
+  Operator 6811a6ab01fdbe9bac7dc333173e5b83
+  OrToken 985b136ccee4dca9a24bdc602e5b3c14
+  PassToken a8acbbe3beebd423550d138b1d7b4a8d
+  PlusAssignToken 0454620aac0fd884e1176ede19bc7ef3
+  PlusToken 0d32b186967ad92c09457859ab4f303a
+  PowAssignToken 62bd64d1983fbfb6497f32bfa56de95b
+  PrintToken 5bc155d49af41169eb48c6234f4aafa3
+  Punctuation 1147dbc42c4254f64eb69cf2bd82a4c9
+  RaiseToken d140aa3452518956bbf4d83c2a34943d
+  ReturnToken ff37467b6350979db788622ac3544224
+  RightArrowToken 6eeabdd23ad0885b1b3c1f607b894a1f
+  RightBraceToken 51416014b5288d7c6afbcc85099d8959
+  RightRoundBracketToken 651ae74c861ba43e674e18bf027ad9b6
+  RightShiftAssignToken 85116790f81adf1ac2fb57817d8f5602
+  RightSquareBracketToken 7620f90150ae1e3424d4dc9789df6a05
+  SemiColonToken c4783ac1a071940cf6848e4e0db24e79
+  ShiftLeftToken e01211439acde9e9a86fe3849b57df64
+  ShiftRightToken 5bd4c7bd5a78aeab44f44c78b9841241
+  String 1e99c9689e8a8356e421b45d9465dca2
+  StringToken a7ab32c6550b6c4e156e55510a109386
+  TildeToken 52e829bdee3f547795b44c1a0cf842c6
+  Token c26478989c7eb45d7c7d423358c5d58e
+  TokenClass 5a4473d0177ecac422b2f7fd1446bd9b
+  TrueToken d17639c7dbb8b81810b37a56eacc2369
+  TryToken 3eb8bb7324c5b5c0a7e54321738e550a
+  UnicodeStringToken 3a20dd20048b280b2b0ac129f0fa84b6
+  WhileToken 1b61ed17fd5df953b4d8715261f2dfe7
+  WithToken 575acef2dbf2f6c01be41be312faf9ea
+  XorToken a10af18317051a3c40da57e95a4dfd43
+  YieldToken 9bee54a9d91101a07c0b1532a02b0a4f
+  classifyToken 3c45b2574a1d754234530ab8c96b8dfe
+  debugTokenString 62f22853ddeeb508e03602be4b015cb5
+  hasLiteral 66f55e7483f9820a5ef5c4b649ff01f6
+  tokenString 535cda0a2ebaba73a32507135eeb2f07
+  token_double c26478989c7eb45d7c7d423358c5d58e
+  token_integer c26478989c7eb45d7c7d423358c5d58e
+  token_literal c26478989c7eb45d7c7d423358c5d58e
+  token_span c26478989c7eb45d7c7d423358c5d58e
+import  -/  pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ e5ec2c142b5289ca549345de3dfacc7a
+import  -/  pretty-1.1.3.3:Text.PrettyPrint.HughesPJ 5687246d91968c1419197b2e272e319d
+add992e7c2501149b765ddcde199bf90
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Common.$trModule3
+                   Language.Python.Common.$trModule1) -}
+2ac9406dfe1b201492ec1f380d115cd1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.Python.Common.$trModule2) -}
+f4ecd52d1a3b9e52e79500a06ce6db62
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.Python.Common"#) -}
+566a4c539b074778d0ea4321405c85ac
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.Python.Common.$trModule4) -}
+964949ea31a6d4ca101d1b84861658db
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

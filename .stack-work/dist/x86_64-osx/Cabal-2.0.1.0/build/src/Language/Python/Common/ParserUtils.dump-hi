@@ -1,0 +1,2102 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 07:28:02.587523 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Common.ParserUtils 8022
+  interface hash: e46adb81221fefdbe0485551f676622f
+  ABI hash: f6ceab7a6002acca13c3320339993201
+  export-list hash: 72077ae1de29739027f58c2d5f3e84de
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9aabdec15547f7ae4d838f51788b53fe
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Python.Common.ParserUtils.addTrailer
+  Language.Python.Common.ParserUtils.checkArguments
+  Language.Python.Common.ParserUtils.checkParameters
+  Language.Python.Common.ParserUtils.fromEither
+  Language.Python.Common.ParserUtils.isProperSlice
+  Language.Python.Common.ParserUtils.makeAnnAssignment
+  Language.Python.Common.ParserUtils.makeAssignmentOrExpr
+  Language.Python.Common.ParserUtils.makeAugAssignment
+  Language.Python.Common.ParserUtils.makeBinOp
+  Language.Python.Common.ParserUtils.makeComprehension
+  Language.Python.Common.ParserUtils.makeConditionalExpr
+  Language.Python.Common.ParserUtils.makeDecorated
+  Language.Python.Common.ParserUtils.makeDecorator
+  Language.Python.Common.ParserUtils.makeDictionary
+  Language.Python.Common.ParserUtils.makeFun
+  Language.Python.Common.ParserUtils.makeListForm
+  Language.Python.Common.ParserUtils.makeNormalAssignment
+  Language.Python.Common.ParserUtils.makeParam
+  Language.Python.Common.ParserUtils.makeParenOrGenerator
+  Language.Python.Common.ParserUtils.makePrint
+  Language.Python.Common.ParserUtils.makeRelative
+  Language.Python.Common.ParserUtils.makeReturn
+  Language.Python.Common.ParserUtils.makeSet
+  Language.Python.Common.ParserUtils.makeStarParam
+  Language.Python.Common.ParserUtils.makeStarStarParam
+  Language.Python.Common.ParserUtils.makeTry
+  Language.Python.Common.ParserUtils.makeTupleOrExpr
+  Language.Python.Common.ParserUtils.makeTupleParam
+  Language.Python.Common.ParserUtils.parseError
+  Language.Python.Common.ParserUtils.subscriptToExpr
+  Language.Python.Common.ParserUtils.subscriptToSlice
+  Language.Python.Common.ParserUtils.subscriptsToExpr
+  Language.Python.Common.ParserUtils.toKeyDatumList
+  Language.Python.Common.ParserUtils.Subscript{Language.Python.Common.ParserUtils.SubscriptExpr Language.Python.Common.ParserUtils.SubscriptSlice Language.Python.Common.ParserUtils.SubscriptSliceEllipsis subscript_slice_span1 subscript_slice_span2 subscript_slice_span3 subscript_span subscription}
+  Language.Python.Common.ParserUtils.Trailer{Language.Python.Common.ParserUtils.TrailerCall Language.Python.Common.ParserUtils.TrailerDot Language.Python.Common.ParserUtils.TrailerSubscript dot_span trailer_call_args trailer_dot_ident trailer_span trailer_subs}
+module dependencies: Language.Python.Common.AST
+                     Language.Python.Common.ParseError
+                     Language.Python.Common.ParserMonad Language.Python.Common.Pretty
+                     Language.Python.Common.SrcLocation Language.Python.Common.Token
+package dependencies: array-0.5.2.0 base-4.10.1.0* deepseq-1.4.3.0
+                      ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 monads-tf-0.1.0.3
+                      pretty-1.1.3.3 transformers-0.5.2.0
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+                         monads-tf-0.1.0.3:Control.Monad.Error.Class
+                         monads-tf-0.1.0.3:Control.Monad.State.Class
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  base-4.10.1.0:Data.Either d7dae5d9bf298dee616e465c14b5d60e
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Functor 2ffda4f936b8f474394d93205750aff3
+import  -/  base-4.10.1.0:Data.List 4ab7fa2a1b87502b23af891a384f0506
+import  -/  base-4.10.1.0:Data.Maybe 07738c5485acb328136bb15596f8b845
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  Language.Python.Common.AST 33488c541ff242f5692911095cbd1198
+  exports: f399fd5201b5af1a1d98fd75d096fbc1
+  AnnotatedAssign db9ef2162d0b3e034a9cd7f8dc2878ae
+  ArgExpr f573e6a264f49cc5da5b135421c1f399
+  ArgKeyword b3b9abedff38eb94a2fd07f9a423444c
+  ArgVarArgsKeyword ec4fb989922a9a84280f254467a4d281
+  ArgVarArgsPos 8d6d23e4667a2d4ecdf298d35b7b9b30
+  ArgumentSpan 94dde4ffceed0a2a13daed020b6576e1
+  Assign 818192e551b96768717d193545420146
+  AssignOpSpan f55a81e56367dca5b5d86dd1548fd97f
+  AugmentedAssign 73ff9d627e810a5b9689edcde5389eec
+  BinaryOp a4b91f2400398e883f3697bc9de91cb0
+  Call 12168d711750e490a63b7241b4fb781e
+  CompForSpan 94dde4ffceed0a2a13daed020b6576e1
+  Comprehension 68bb9e293ca5f4ddd695ab40049b8da1
+  ComprehensionDict 5f0d548841f3f7dd78d5e7485f924fb2
+  ComprehensionExpr c3a1dab3d0905c07d3978ea92bc757b5
+  ComprehensionSpan 94dde4ffceed0a2a13daed020b6576e1
+  CondExpr 30846bd81b9c1c973b4ac4eea666e65f
+  Decorated f1a1e9f31178b118d6871eb32b4385e0
+  Decorator 27fa0b29a3d13d11ee5e8883bc1f8ae1
+  DecoratorSpan 6e1ab2fb537d2522edcf9b3f967431ea
+  DictComp 7a81a93d838a75483694c229d0b4227e
+  DictKeyDatumList 94dde4ffceed0a2a13daed020b6576e1
+  DictMappingPair 357beba7550a27f2d49496a1c21cf7f8
+  DictUnpacking da43c5f8431e37428d61f801d64ea400
+  Dictionary 69bc809ca8d2fe5012dcaa380c8bdbbf
+  Dot b8a7eff9f46fd5d3626be0942c4a830f
+  DottedNameSpan a5e20e92d1dd22978ba34ba5b6e7214b
+  EndPositional c9080b870aa52bb30ed4ee25c8aa51ae
+  ExprSpan 94dde4ffceed0a2a13daed020b6576e1
+  Fun c7d36065932d9256f7329e296beb9003
+  Generator c431efb34c44170d0594c43525fb873b
+  HandlerSpan cf431e64d114ff48b3a5eb8fda819c32
+  IdentSpan 6aab1d6f902c3e0dbc09c99c8605e197
+  ImportRelative 76719baec1e784bd1d9bbb1f64bcad83
+  ImportRelativeSpan 01a50092e1f9a1aefabdff796e5265a4
+  List 11b8e83c1b5ca19d76b016f6486d088c
+  ListComp 81e886f57cffe532999ffe3fea655c68
+  OpSpan 3e80c1212dbae482ce637a5dc72042ac
+  Param 61068bd2027f06ccf16690716a8f5688
+  ParamTuple 37c02cf6f28972fa645e7cd06c40a054
+  ParamTupleName f579539774d9e071f0ee5fcfc5e7cbce
+  ParamTupleSpan 77aacf63ade2d28a10031365ad257b9f
+  ParameterSpan 94dde4ffceed0a2a13daed020b6576e1
+  Paren ffdb4e442edc88bc0a62076087c49146
+  Print 600dc49a19c6e5394568b3ff191c30cd
+  Return 56f0bf54e4d839de734a3ef084f93dc1
+  Set a9de4797bcf3b6b0b74b1963eb65496b
+  SetComp 5d734e3e60a31edfeb4dd6fa43961eff
+  SliceEllipsis e02397fcdded084df6a5a869fa2d99c1
+  SliceExpr b585c3d921266f9e6c596481048bb532
+  SliceProper 0effa1cc2e6bfdb8a976fc33bcb6358d
+  SliceSpan 94dde4ffceed0a2a13daed020b6576e1
+  SlicedExpr 8be405f3591cfe72d365c11c6cc6d79c
+  StatementSpan cf431e64d114ff48b3a5eb8fda819c32
+  StmtExpr aab63600bbff35086c75728f925bb3b3
+  Subscript 592ed991bd108dff03aaae57180dab8c
+  SuiteSpan cd84fbfdee57b86021f0a7b1524fc007
+  Try 1378d4582c0ad8c9f047de868628ac3f
+  Tuple 2bb6cf88877f9f7dbea0aa0d6b3de88c
+  UnPackTuple e78bac92e51304353202a303f6eacebb
+  VarArgsKeyword c83f809462b6693741af6d8d22be98eb
+  VarArgsPos 88afd20f38373f5627d3c1d4b00f7129
+  dot_attribute 94dde4ffceed0a2a13daed020b6576e1
+  dot_expr 94dde4ffceed0a2a13daed020b6576e1
+  expr_annot 94dde4ffceed0a2a13daed020b6576e1
+  param_tuple_annot 77aacf63ade2d28a10031365ad257b9f
+  param_tuple_name 77aacf63ade2d28a10031365ad257b9f
+  tuple_exprs 94dde4ffceed0a2a13daed020b6576e1
+import  -/  Language.Python.Common.ParseError 855377ed2b2e0b4786ce2bc295867d5f
+  UnexpectedToken 971689c295c7da00c367bfb64716b310
+import  -/  Language.Python.Common.ParserMonad 5c66e785c6954a72ef7262d195f9a0e8
+  exports: e5cf6b15983cfb8cebe91f296cfdd496
+  P dbdcfebcbc6e82e600f0bd328659de1e
+  spanError fbdd27f02d4adf11b9fc48d4815c694a
+import  -/  Language.Python.Common.SrcLocation 8f143931064eb388f1f2a6dd7f644740
+  exports: 53449eeea761b903564548d6dcb5e6f4
+  Span 6745f4d7f5c89ca40c260953253bdbce
+  SrcSpan 7855650ba5477745c617b1d6a2c60117
+  getSpan 705afb86514220eddda721f71e34f0d3
+  spanning 6745f4d7f5c89ca40c260953253bdbce
+import  -/  Language.Python.Common.Token d5076ddbfa147a7adfa845a047c4ec2b
+  exports: 989971a82f568d9688304166d774cea9
+  DotToken 003d9d4564a536435f9e80722ec86d3d
+  EllipsisToken d57d66112d934a9c41a298d428d79716
+  Token c26478989c7eb45d7c7d423358c5d58e
+import  -/  monads-tf-0.1.0.3:Control.Monad.Error.Class e597c07b8524bd991ece6c1cb8641abd
+f269901d5307ea19b4068b66dc7636f3
+  $fSpanSubscript ::
+    Language.Python.Common.SrcLocation.Span
+      Language.Python.Common.ParserUtils.Subscript
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Python.Common.ParserUtils.subscript_span
+                  `cast`
+                (Sym (Language.Python.Common.SrcLocation.N:Span[0]
+                          <Language.Python.Common.ParserUtils.Subscript>_N)) -}
+ef973e6b3be4feb427a73c916f947bc0
+  $fSpanTrailer ::
+    Language.Python.Common.SrcLocation.Span
+      Language.Python.Common.ParserUtils.Trailer
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.Python.Common.ParserUtils.trailer_span
+                  `cast`
+                (Sym (Language.Python.Common.SrcLocation.N:Span[0]
+                          <Language.Python.Common.ParserUtils.Trailer>_N)) -}
+13ff362aad5594e30d470a4fe2405de8
+  $tc'SubscriptExpr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   143854376864060490##
+                   4032183140244532648##
+                   Language.Python.Common.ParserUtils.$trModule
+                   Language.Python.Common.ParserUtils.$tc'SubscriptExpr2
+                   0#
+                   Language.Python.Common.ParserUtils.$tc'SubscriptExpr1) -}
+240db71173c4d61340ed0130ed0dc37c
+  $tc'SubscriptExpr1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c66751de4c777d8c066d7bf31ba69707
+  $tc'SubscriptExpr2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$tc'SubscriptExpr3) -}
+70ead488b465cbdf256d6316815bcd88
+  $tc'SubscriptExpr3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SubscriptExpr"#) -}
+5bc64abdd7d95237846a87ab3076f758
+  $tc'SubscriptSlice :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7130441304007319891##
+                   600724457405231841##
+                   Language.Python.Common.ParserUtils.$trModule
+                   Language.Python.Common.ParserUtils.$tc'SubscriptSlice2
+                   0#
+                   Language.Python.Common.ParserUtils.$tc'SubscriptSlice1) -}
+20882bb281ce51ef09e69750e63641f9
+  $tc'SubscriptSlice1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ad1baa00950f9b264294cfb1adea3aaa
+  $tc'SubscriptSlice2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$tc'SubscriptSlice3) -}
+996661c48a42163ec83228c095ddf8ab
+  $tc'SubscriptSlice3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SubscriptSlice"#) -}
+726d7d56eb5db2e5242bb6115cdcfa11
+  $tc'SubscriptSliceEllipsis :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9903315791934395000##
+                   5326372262250489292##
+                   Language.Python.Common.ParserUtils.$trModule
+                   Language.Python.Common.ParserUtils.$tc'SubscriptSliceEllipsis2
+                   0#
+                   Language.Python.Common.ParserUtils.$tc'SubscriptSliceEllipsis1) -}
+bd602727a3ce48e841662c56e3c2829b
+  $tc'SubscriptSliceEllipsis1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b7cc2aa7ccf25ad74fe639dd712ffa4d
+  $tc'SubscriptSliceEllipsis2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$tc'SubscriptSliceEllipsis3) -}
+089ce5676d0f922e319523efac368d93
+  $tc'SubscriptSliceEllipsis3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SubscriptSliceEllipsis"#) -}
+7e28ca9c69d2224d11760cb2ffbca58c
+  $tc'TrailerCall :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6904783644627299048##
+                   5986017985880236899##
+                   Language.Python.Common.ParserUtils.$trModule
+                   Language.Python.Common.ParserUtils.$tc'TrailerCall2
+                   0#
+                   Language.Python.Common.ParserUtils.$tc'TrailerCall1) -}
+50c48d746437e040d9c57210851c587f
+  $tc'TrailerCall1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+97888d4d9319b3e64a9a2ae5a6301682
+  $tc'TrailerCall2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$tc'TrailerCall3) -}
+50022c743e161faa1df30c0c2db9a599
+  $tc'TrailerCall3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TrailerCall"#) -}
+b5677b000eeb93d9464e3e455b2ceb5a
+  $tc'TrailerDot :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17698228219408268236##
+                   16306578157711537065##
+                   Language.Python.Common.ParserUtils.$trModule
+                   Language.Python.Common.ParserUtils.$tc'TrailerDot2
+                   0#
+                   Language.Python.Common.ParserUtils.$tc'TrailerDot1) -}
+77126c9b3d83b5c896200c612ab3e0df
+  $tc'TrailerDot1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+370f6bf69e5394cd904e6db7fda87414
+  $tc'TrailerDot2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$tc'TrailerDot3) -}
+4632279540bcd3f48a420a1706b7d7d4
+  $tc'TrailerDot3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TrailerDot"#) -}
+14f81d92e342507c2e83f95439f3cdee
+  $tc'TrailerSubscript :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12573380887915276589##
+                   9468738992681970593##
+                   Language.Python.Common.ParserUtils.$trModule
+                   Language.Python.Common.ParserUtils.$tc'TrailerSubscript2
+                   0#
+                   Language.Python.Common.ParserUtils.$tc'TrailerSubscript1) -}
+4267328da496d9dde66a16d2ffe8a655
+  $tc'TrailerSubscript1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+dbd8e6658f81c74b35c8508a6839a5c2
+  $tc'TrailerSubscript2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$tc'TrailerSubscript3) -}
+ed9ecf8a2074e1c641027002e28965ad
+  $tc'TrailerSubscript3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TrailerSubscript"#) -}
+c6b2e550e6cb7993a4ec54ebbbc062fa
+  $tcSubscript :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12218039284181788988##
+                   18080310803433672725##
+                   Language.Python.Common.ParserUtils.$trModule
+                   Language.Python.Common.ParserUtils.$tcSubscript1
+                   0#
+                   GHC.Types.krep$*) -}
+b554c62caa66663415414d9c65521dcf
+  $tcSubscript1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$tcSubscript2) -}
+e49168dbacb9a93dd159796541d5b2c1
+  $tcSubscript2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Subscript"#) -}
+7f52327aeca8e40861e0bdabafb3d5b6
+  $tcTrailer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10454015058818653265##
+                   9666346997944315468##
+                   Language.Python.Common.ParserUtils.$trModule
+                   Language.Python.Common.ParserUtils.$tcTrailer1
+                   0#
+                   GHC.Types.krep$*) -}
+8a38d8d903990b815f3a088ec49afd16
+  $tcTrailer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$tcTrailer2) -}
+f7ed9985fa98becbfdd90ce038d70849
+  $tcTrailer2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Trailer"#) -}
+551f13656b696dabde2c4e5db1de77bd
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Common.ParserUtils.$trModule3
+                   Language.Python.Common.ParserUtils.$trModule1) -}
+ff2abda4899bd9ef2644b930b6102851
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$trModule2) -}
+938f51bed5d4e0a16f92c243eab0fe5d
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.Python.Common.ParserUtils"#) -}
+4de36afa1621e9eccbf32ec171999347
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Common.ParserUtils.$trModule4) -}
+fe87655c63e183f62160d27d0e5fb039
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+d49a306ed5279fb5ee9a35afb0595f39
+  $wcountDots ::
+    GHC.Types.Int
+    -> [Data.Either.Either
+          Language.Python.Common.Token.Token
+          Language.Python.Common.AST.DottedNameSpan]
+    -> (# GHC.Types.Int,
+          GHC.Base.Maybe Language.Python.Common.AST.DottedNameSpan #)
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U>, Inline: [0] -}
+07adf282a954012f0bb98d87451b4556
+  $wmakeDecorator ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.AST.DottedNameSpan
+    -> [Language.Python.Common.AST.ArgumentSpan]
+    -> (# Language.Python.Common.AST.DottedName
+            Language.Python.Common.SrcLocation.SrcSpan,
+          [Language.Python.Common.AST.Argument
+             Language.Python.Common.SrcLocation.SrcSpan],
+          Language.Python.Common.SrcLocation.SrcSpan #)
+  {- Arity: 3, Strictness: <L,1*U><L,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Language.Python.Common.Token.Token)
+                   (w1 :: Language.Python.Common.AST.DottedNameSpan)
+                   (w2 :: [Language.Python.Common.AST.ArgumentSpan]) ->
+                 case w2 of wild {
+                   []
+                   -> (# w1,
+                         GHC.Types.[]
+                           @ (Language.Python.Common.AST.Argument
+                                Language.Python.Common.SrcLocation.SrcSpan),
+                         Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.Token.token_span w)
+                           (Language.Python.Common.ParserUtils.makeDecorator1 w1) #)
+                   : ipv ipv1
+                   -> (# w1, wild,
+                         case ipv1 of wild1 {
+                           []
+                           -> case ipv of wild2 {
+                                Language.Python.Common.AST.ArgExpr ds1 ds2
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.Token.token_span w)
+                                     ds2
+                                Language.Python.Common.AST.ArgVarArgsPos ds1 ds2
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.Token.token_span w)
+                                     ds2
+                                Language.Python.Common.AST.ArgVarArgsKeyword ds1 ds2
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.Token.token_span w)
+                                     ds2
+                                Language.Python.Common.AST.ArgKeyword ds1 ds2 ds3
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.Token.token_span w)
+                                     ds3 }
+                           : ipv2 ipv3
+                           -> let {
+                                karg :: Language.Python.Common.SrcLocation.SrcSpan
+                                = case Language.Python.Common.SrcLocation.$fSpan[]1
+                                         @ (Language.Python.Common.AST.Argument
+                                              Language.Python.Common.SrcLocation.SrcSpan)
+                                         wild
+                                         (GHC.List.lastError
+                                            @ (Language.Python.Common.AST.Argument
+                                                 Language.Python.Common.SrcLocation.SrcSpan)) of wild2 {
+                                    Language.Python.Common.AST.ArgExpr ds1 ds2 -> ds2
+                                    Language.Python.Common.AST.ArgVarArgsPos ds1 ds2 -> ds2
+                                    Language.Python.Common.AST.ArgVarArgsKeyword ds1 ds2 -> ds2
+                                    Language.Python.Common.AST.ArgKeyword ds1 ds2 ds3 -> ds3 }
+                              } in
+                              case ipv of wild2 {
+                                Language.Python.Common.AST.ArgExpr ds1 ds2
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.Token.token_span w)
+                                     (Language.Python.Common.SrcLocation.combineSrcSpans ds2 karg)
+                                Language.Python.Common.AST.ArgVarArgsPos ds1 ds2
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.Token.token_span w)
+                                     (Language.Python.Common.SrcLocation.combineSrcSpans ds2 karg)
+                                Language.Python.Common.AST.ArgVarArgsKeyword ds1 ds2
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.Token.token_span w)
+                                     (Language.Python.Common.SrcLocation.combineSrcSpans ds2 karg)
+                                Language.Python.Common.AST.ArgKeyword ds1 ds2 ds3
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.Token.token_span w)
+                                     (Language.Python.Common.SrcLocation.combineSrcSpans
+                                        ds3
+                                        karg) } } #) }) -}
+43f6f00357f5284889c257c4322d807e
+  $wmakeParam ::
+    Language.Python.Common.AST.IdentSpan
+    -> GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+    -> GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+    -> (# Language.Python.Common.AST.Ident
+            Language.Python.Common.SrcLocation.SrcSpan,
+          GHC.Base.Maybe
+            (Language.Python.Common.AST.Expr
+               Language.Python.Common.SrcLocation.SrcSpan),
+          GHC.Base.Maybe
+            (Language.Python.Common.AST.Expr
+               Language.Python.Common.SrcLocation.SrcSpan),
+          Language.Python.Common.SrcLocation.SrcSpan #)
+  {- Arity: 3, Strictness: <L,U(U,U)><L,U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: Language.Python.Common.AST.IdentSpan)
+                   (ww1 :: GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                   (w :: GHC.Base.Maybe Language.Python.Common.AST.ExprSpan) ->
+                 (# ww, ww1, w,
+                    case ww of wild { Language.Python.Common.AST.Ident ds1 ds2 ->
+                    case ww1 of wild1 {
+                      GHC.Base.Nothing
+                      -> case w of wild2 {
+                           GHC.Base.Nothing
+                           -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                (Language.Python.Common.SrcLocation.combineSrcSpans
+                                   ds2
+                                   Language.Python.Common.SrcLocation.SpanEmpty)
+                                Language.Python.Common.SrcLocation.SpanEmpty
+                           GHC.Base.Just x
+                           -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                (Language.Python.Common.SrcLocation.combineSrcSpans
+                                   ds2
+                                   Language.Python.Common.SrcLocation.SpanEmpty)
+                                (Language.Python.Common.AST.expr_annot
+                                   @ Language.Python.Common.SrcLocation.SrcSpan
+                                   x) }
+                      GHC.Base.Just x
+                      -> case w of wild2 {
+                           GHC.Base.Nothing
+                           -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                (Language.Python.Common.SrcLocation.combineSrcSpans
+                                   ds2
+                                   (Language.Python.Common.AST.expr_annot
+                                      @ Language.Python.Common.SrcLocation.SrcSpan
+                                      x))
+                                Language.Python.Common.SrcLocation.SpanEmpty
+                           GHC.Base.Just x1
+                           -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                (Language.Python.Common.SrcLocation.combineSrcSpans
+                                   ds2
+                                   (Language.Python.Common.AST.expr_annot
+                                      @ Language.Python.Common.SrcLocation.SrcSpan
+                                      x))
+                                (Language.Python.Common.AST.expr_annot
+                                   @ Language.Python.Common.SrcLocation.SrcSpan
+                                   x1) } } } #)) -}
+8aaf475c4fb4a8dde11f35f966215abb
+  $wmakeRelative ::
+    [Data.Either.Either
+       Language.Python.Common.Token.Token
+       Language.Python.Common.AST.DottedNameSpan]
+    -> (# GHC.Types.Int,
+          GHC.Base.Maybe
+            (Language.Python.Common.AST.DottedName
+               Language.Python.Common.SrcLocation.SrcSpan),
+          Language.Python.Common.SrcLocation.SrcSpan #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ (w :: [Data.Either.Either
+                            Language.Python.Common.Token.Token
+                            Language.Python.Common.AST.DottedNameSpan]) ->
+                 let {
+                   ds :: (GHC.Types.Int,
+                          GHC.Base.Maybe Language.Python.Common.AST.DottedNameSpan)
+                   = case Language.Python.Common.ParserUtils.$wcountDots
+                            Language.Python.Common.ParserUtils.makeRelative1
+                            w of ww { (#,#) ww1 ww2 ->
+                     (ww1, ww2) }
+                 } in
+                 (# case ds of wild { (,) ndots maybeName -> ndots },
+                    case ds of wild { (,) ndots maybeName -> maybeName },
+                    case w of wild {
+                      [] -> Language.Python.Common.SrcLocation.SpanEmpty
+                      : x ds1
+                      -> case ds1 of wild1 {
+                           []
+                           -> case x of wild2 {
+                                Data.Either.Left x1 -> Language.Python.Common.Token.token_span x1
+                                Data.Either.Right x1
+                                -> Language.Python.Common.ParserUtils.makeDecorator1 x1 }
+                           : ipv ipv1
+                           -> let {
+                                karg :: Language.Python.Common.SrcLocation.SrcSpan
+                                = case Language.Python.Common.SrcLocation.$fSpan[]1
+                                         @ (Data.Either.Either
+                                              Language.Python.Common.Token.Token
+                                              Language.Python.Common.AST.DottedNameSpan)
+                                         wild
+                                         (GHC.List.lastError
+                                            @ (Data.Either.Either
+                                                 Language.Python.Common.Token.Token
+                                                 Language.Python.Common.AST.DottedNameSpan)) of wild2 {
+                                    Data.Either.Left x1
+                                    -> Language.Python.Common.Token.token_span x1
+                                    Data.Either.Right x1
+                                    -> Language.Python.Common.ParserUtils.makeDecorator1 x1 }
+                              } in
+                              case x of wild2 {
+                                Data.Either.Left x1
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.Token.token_span x1)
+                                     karg
+                                Data.Either.Right x1
+                                -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                     (Language.Python.Common.ParserUtils.makeDecorator1 x1)
+                                     karg } } } #)) -}
+60e9055af3b30b5b3bc5fdaf52fea598
+  $wmakeStarStarParam ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.AST.IdentSpan
+    -> GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+    -> (# Language.Python.Common.AST.Ident
+            Language.Python.Common.SrcLocation.SrcSpan,
+          GHC.Base.Maybe
+            (Language.Python.Common.AST.Expr
+               Language.Python.Common.SrcLocation.SrcSpan),
+          Language.Python.Common.SrcLocation.SrcSpan #)
+  {- Arity: 3, Strictness: <L,1*U><L,U(U,U)><L,U>, Inline: [0],
+     Unfolding: (\ (w :: Language.Python.Common.Token.Token)
+                   (ww :: Language.Python.Common.AST.IdentSpan)
+                   (ww1 :: GHC.Base.Maybe Language.Python.Common.AST.ExprSpan) ->
+                 (# ww, ww1,
+                    case ww of wild { Language.Python.Common.AST.Ident ds1 ds2 ->
+                    case ww1 of wild1 {
+                      GHC.Base.Nothing
+                      -> Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.SrcLocation.combineSrcSpans
+                              (Language.Python.Common.Token.token_span w)
+                              ds2)
+                           Language.Python.Common.SrcLocation.SpanEmpty
+                      GHC.Base.Just x
+                      -> Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.SrcLocation.combineSrcSpans
+                              (Language.Python.Common.Token.token_span w)
+                              ds2)
+                           (Language.Python.Common.AST.expr_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              x) } } #)) -}
+f6a0fda1e1007b543339de77beac0701
+  $wmakeTry ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.AST.SuiteSpan
+    -> [Language.Python.Common.AST.HandlerSpan]
+    -> [Language.Python.Common.AST.StatementSpan]
+    -> [Language.Python.Common.AST.StatementSpan]
+    -> (# Language.Python.Common.AST.Suite
+            Language.Python.Common.SrcLocation.SrcSpan,
+          [Language.Python.Common.AST.Handler
+             Language.Python.Common.SrcLocation.SrcSpan],
+          Language.Python.Common.AST.Suite
+            Language.Python.Common.SrcLocation.SrcSpan,
+          Language.Python.Common.AST.Suite
+            Language.Python.Common.SrcLocation.SrcSpan,
+          Language.Python.Common.SrcLocation.SrcSpan #)
+  {- Arity: 5, Strictness: <L,1*U><L,U><L,U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ (w :: Language.Python.Common.Token.Token)
+                   (w1 :: Language.Python.Common.AST.SuiteSpan)
+                   (ww :: [Language.Python.Common.AST.HandlerSpan])
+                   (ww1 :: [Language.Python.Common.AST.StatementSpan])
+                   (ww2 :: [Language.Python.Common.AST.StatementSpan]) ->
+                 (# w1, ww, ww1, ww2,
+                    let {
+                      arg :: Language.Python.Common.SrcLocation.SrcSpan
+                      = Language.Python.Common.SrcLocation.combineSrcSpans
+                          (Language.Python.Common.Token.token_span w)
+                          (Language.Python.Common.ParserUtils.makeFun1 w1)
+                    } in
+                    case ww of wild {
+                      []
+                      -> Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.SrcLocation.combineSrcSpans
+                              (Language.Python.Common.SrcLocation.combineSrcSpans
+                                 arg
+                                 Language.Python.Common.SrcLocation.SpanEmpty)
+                              (Language.Python.Common.ParserUtils.makeFun1 ww1))
+                           (Language.Python.Common.ParserUtils.makeFun1 ww2)
+                      : x ds1
+                      -> case ds1 of wild1 {
+                           []
+                           -> case x of wild2 { Language.Python.Common.AST.Handler ds2 ds3 ds4 ->
+                              Language.Python.Common.SrcLocation.combineSrcSpans
+                                (Language.Python.Common.SrcLocation.combineSrcSpans
+                                   (Language.Python.Common.SrcLocation.combineSrcSpans arg ds4)
+                                   (Language.Python.Common.ParserUtils.makeFun1 ww1))
+                                (Language.Python.Common.ParserUtils.makeFun1 ww2) }
+                           : ipv ipv1
+                           -> case x of wild2 { Language.Python.Common.AST.Handler ds2 ds3 ds4 ->
+                              case Language.Python.Common.SrcLocation.$fSpan[]1
+                                     @ (Language.Python.Common.AST.Handler
+                                          Language.Python.Common.SrcLocation.SrcSpan)
+                                     wild
+                                     (GHC.List.lastError
+                                        @ (Language.Python.Common.AST.Handler
+                                             Language.Python.Common.SrcLocation.SrcSpan)) of wild3 { Language.Python.Common.AST.Handler ds5 ds6 ds7 ->
+                              Language.Python.Common.SrcLocation.combineSrcSpans
+                                (Language.Python.Common.SrcLocation.combineSrcSpans
+                                   (Language.Python.Common.SrcLocation.combineSrcSpans
+                                      arg
+                                      (Language.Python.Common.SrcLocation.combineSrcSpans ds4 ds7))
+                                   (Language.Python.Common.ParserUtils.makeFun1 ww1))
+                                (Language.Python.Common.ParserUtils.makeFun1 ww2) } } } } #)) -}
+f269901d5307ea19b4068b66dc7636f3
+  data Subscript
+    = SubscriptExpr {subscription :: Language.Python.Common.AST.ExprSpan,
+                     subscript_span :: Language.Python.Common.SrcLocation.SrcSpan}
+    | SubscriptSlice {subscript_slice_span1 :: GHC.Base.Maybe
+                                                 Language.Python.Common.AST.ExprSpan,
+                      subscript_slice_span2 :: GHC.Base.Maybe
+                                                 Language.Python.Common.AST.ExprSpan,
+                      subscript_slice_span3 :: GHC.Base.Maybe
+                                                 (GHC.Base.Maybe
+                                                    Language.Python.Common.AST.ExprSpan),
+                      subscript_span :: Language.Python.Common.SrcLocation.SrcSpan}
+    | SubscriptSliceEllipsis {subscript_span :: Language.Python.Common.SrcLocation.SrcSpan}
+ef973e6b3be4feb427a73c916f947bc0
+  data Trailer
+    = TrailerCall {trailer_call_args :: [Language.Python.Common.AST.ArgumentSpan],
+                   trailer_span :: Language.Python.Common.SrcLocation.SrcSpan}
+    | TrailerSubscript {trailer_subs :: [Language.Python.Common.ParserUtils.Subscript],
+                        trailer_span :: Language.Python.Common.SrcLocation.SrcSpan}
+    | TrailerDot {trailer_dot_ident :: Language.Python.Common.AST.IdentSpan,
+                  dot_span :: Language.Python.Common.SrcLocation.SrcSpan,
+                  trailer_span :: Language.Python.Common.SrcLocation.SrcSpan}
+9c0a29652f96c2410b8760279a6df8ef
+  addTrailer ::
+    Language.Python.Common.AST.ExprSpan
+    -> [Language.Python.Common.ParserUtils.Trailer]
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 2,
+     Unfolding: (GHC.List.foldl'
+                   @ Language.Python.Common.ParserUtils.Trailer
+                   @ Language.Python.Common.AST.ExprSpan
+                   Language.Python.Common.ParserUtils.addTrailer1) -}
+077ab38da02dcc84426929e1acded958
+  addTrailer1 ::
+    Language.Python.Common.AST.ExprSpan
+    -> Language.Python.Common.ParserUtils.Trailer
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (e :: Language.Python.Common.AST.ExprSpan)
+                   (trail :: Language.Python.Common.ParserUtils.Trailer) ->
+                 case trail of wild {
+                   Language.Python.Common.ParserUtils.TrailerCall ds ds1
+                   -> Language.Python.Common.AST.Call
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        e
+                        ds
+                        (Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.AST.expr_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              e)
+                           ds1)
+                   Language.Python.Common.ParserUtils.TrailerSubscript ds ds1
+                   -> let {
+                        $j :: Language.Python.Common.AST.ExprSpan <join 0>
+                        = Language.Python.Common.AST.SlicedExpr
+                            @ Language.Python.Common.SrcLocation.SrcSpan
+                            e
+                            (GHC.Base.map
+                               @ Language.Python.Common.ParserUtils.Subscript
+                               @ (Language.Python.Common.AST.Slice
+                                    Language.Python.Common.SrcLocation.SrcSpan)
+                               Language.Python.Common.ParserUtils.subscriptToSlice
+                               ds)
+                            (Language.Python.Common.SrcLocation.combineSrcSpans
+                               (Language.Python.Common.AST.expr_annot
+                                  @ Language.Python.Common.SrcLocation.SrcSpan
+                                  e)
+                               ds1)
+                      } in
+                      let {
+                        lvl43 :: Language.Python.Common.AST.ExprSpan <join 0>
+                        = Language.Python.Common.AST.Subscript
+                            @ Language.Python.Common.SrcLocation.SrcSpan
+                            e
+                            (Language.Python.Common.ParserUtils.subscriptsToExpr ds)
+                            (Language.Python.Common.SrcLocation.combineSrcSpans
+                               (Language.Python.Common.AST.expr_annot
+                                  @ Language.Python.Common.SrcLocation.SrcSpan
+                                  e)
+                               ds1)
+                      } in
+                      letrec {
+                        go :: [Language.Python.Common.ParserUtils.Subscript]
+                              -> Language.Python.Common.AST.ExprSpan
+                          <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (ds2 :: [Language.Python.Common.ParserUtils.Subscript]) ->
+                          case ds2 of wild1 {
+                            [] -> lvl43
+                            : y ys
+                            -> case y of wild2 {
+                                 Language.Python.Common.ParserUtils.SubscriptExpr ipv ipv1 -> go ys
+                                 Language.Python.Common.ParserUtils.SubscriptSlice ds3 ds4 ds5 ds6
+                                 -> $j
+                                 Language.Python.Common.ParserUtils.SubscriptSliceEllipsis ds3
+                                 -> $j } }
+                      } in
+                      go ds
+                   Language.Python.Common.ParserUtils.TrailerDot ds ds1 ds2
+                   -> Language.Python.Common.AST.Dot
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        e
+                        ds
+                        (Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.AST.expr_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              e)
+                           ds2) }) -}
+cf312e27505fed7d47b23fad273693aa
+  checkArguments ::
+    [Language.Python.Common.AST.ArgumentSpan]
+    -> Language.Python.Common.ParserMonad.P
+         [Language.Python.Common.AST.ArgumentSpan]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (args :: [Language.Python.Common.AST.ArgumentSpan]) ->
+                 let {
+                   m1 :: Control.Monad.Trans.State.Strict.StateT
+                           Language.Python.Common.ParserMonad.ParseState
+                           (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+                           ()
+                   = Language.Python.Common.ParserUtils.checkArguments_check
+                       Language.Python.Common.ParserUtils.checkArguments1
+                       args
+                 } in
+                 (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                  case m1
+                         `cast`
+                       (Control.Monad.Trans.State.Strict.N:StateT[0]
+                            <Language.Python.Common.ParserMonad.ParseState>_N
+                            <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                            <()>_N)
+                         s1 of wild {
+                    Data.Either.Left l
+                    -> Data.Either.Left
+                         @ Language.Python.Common.ParseError.ParseError
+                         @ ([Language.Python.Common.AST.ArgumentSpan],
+                            Language.Python.Common.ParserMonad.ParseState)
+                         l
+                    Data.Either.Right r
+                    -> case r of wild1 { (,) a1 s' ->
+                       Data.Either.Right
+                         @ Language.Python.Common.ParseError.ParseError
+                         @ ([Language.Python.Common.AST.ArgumentSpan],
+                            Language.Python.Common.ParserMonad.ParseState)
+                         (args, s') } })
+                   `cast`
+                 (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                           <Language.Python.Common.ParserMonad.ParseState>_N
+                           <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                           <[Language.Python.Common.AST.ArgumentSpan]>_N))) -}
+61fd9385b7086db5645962fb57569d2a
+  checkArguments1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+814563eae1c825969e7366f6eebc484d
+  checkArguments_check ::
+    GHC.Types.Int
+    -> [Language.Python.Common.AST.ArgumentSpan]
+    -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+1cb0be1ffda8d8223327f6adb945d834
+  checkParameters ::
+    [Language.Python.Common.AST.ParameterSpan]
+    -> Language.Python.Common.ParserMonad.P
+         [Language.Python.Common.AST.ParameterSpan]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (params :: [Language.Python.Common.AST.ParameterSpan]) ->
+                 let {
+                   m1 :: Control.Monad.Trans.State.Strict.StateT
+                           Language.Python.Common.ParserMonad.ParseState
+                           (Data.Either.Either Language.Python.Common.ParseError.ParseError)
+                           ()
+                   = Language.Python.Common.ParserUtils.checkParameters_check
+                       Language.Python.Common.ParserUtils.checkArguments1
+                       params
+                 } in
+                 (\ (s1 :: Language.Python.Common.ParserMonad.ParseState) ->
+                  case m1
+                         `cast`
+                       (Control.Monad.Trans.State.Strict.N:StateT[0]
+                            <Language.Python.Common.ParserMonad.ParseState>_N
+                            <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                            <()>_N)
+                         s1 of wild {
+                    Data.Either.Left l
+                    -> Data.Either.Left
+                         @ Language.Python.Common.ParseError.ParseError
+                         @ ([Language.Python.Common.AST.ParameterSpan],
+                            Language.Python.Common.ParserMonad.ParseState)
+                         l
+                    Data.Either.Right r
+                    -> case r of wild1 { (,) a1 s' ->
+                       Data.Either.Right
+                         @ Language.Python.Common.ParseError.ParseError
+                         @ ([Language.Python.Common.AST.ParameterSpan],
+                            Language.Python.Common.ParserMonad.ParseState)
+                         (params, s') } })
+                   `cast`
+                 (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                           <Language.Python.Common.ParserMonad.ParseState>_N
+                           <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                           <[Language.Python.Common.AST.ParameterSpan]>_N))) -}
+68592441e1f0b6ad26617969a2191a48
+  checkParameters_check ::
+    GHC.Types.Int
+    -> [Language.Python.Common.AST.ParameterSpan]
+    -> Language.Python.Common.ParserMonad.P ()
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+ef973e6b3be4feb427a73c916f947bc0
+  dot_span ::
+    Language.Python.Common.ParserUtils.Trailer
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  RecSel Left Language.Python.Common.ParserUtils.Trailer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Trailer) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.ParserUtils.dot_span1
+                   Language.Python.Common.ParserUtils.TrailerDot ds1 ds2 ds3
+                   -> ds2 }) -}
+30f2ef23ec34a81c4536ec4d50748e81
+  dot_span1 :: Language.Python.Common.SrcLocation.SrcSpan
+  {- Strictness: x -}
+b29fb9266ad1dc44c6c86b934ee06e3e
+  fromEither :: Data.Either.Either a a -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: Data.Either.Either a a) ->
+                 case ds of wild {
+                   Data.Either.Left x -> x Data.Either.Right x -> x }) -}
+c0936629c2dabc85d7e9d233640f22bb
+  isProperSlice ::
+    Language.Python.Common.ParserUtils.Subscript -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Subscript) ->
+                 case ds of wild {
+                   Language.Python.Common.ParserUtils.SubscriptExpr ipv ipv1
+                   -> GHC.Types.False
+                   Language.Python.Common.ParserUtils.SubscriptSlice ds1 ds2 ds3 ds4
+                   -> GHC.Types.True
+                   Language.Python.Common.ParserUtils.SubscriptSliceEllipsis ds1
+                   -> GHC.Types.True }) -}
+cb1a140d52a04b8d1d4bdafd64b0d2ea
+  makeAnnAssignment ::
+    Language.Python.Common.AST.ExprSpan
+    -> (Language.Python.Common.AST.ExprSpan,
+        GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+    -> Language.Python.Common.AST.StatementSpan
+  {- Arity: 2, Strictness: <L,U><S,1*U(U,U)>m12, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.Python.Common.AST.ExprSpan)
+                   (w1 :: (Language.Python.Common.AST.ExprSpan,
+                           GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)) ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 Language.Python.Common.AST.AnnotatedAssign
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   ww1
+                   w
+                   ww2
+                   (case ww2 of wild {
+                      GHC.Base.Nothing
+                      -> Language.Python.Common.SrcLocation.combineSrcSpans
+                           Language.Python.Common.SrcLocation.SpanEmpty
+                           (Language.Python.Common.AST.expr_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              w)
+                      GHC.Base.Just x
+                      -> Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.AST.expr_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              x)
+                           (Language.Python.Common.AST.expr_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              w) }) }) -}
+97f878956b8bd3b94959e87cb2860c66
+  makeAssignmentOrExpr ::
+    Language.Python.Common.AST.ExprSpan
+    -> Data.Either.Either
+         [Language.Python.Common.AST.ExprSpan]
+         (Language.Python.Common.AST.AssignOpSpan,
+          Language.Python.Common.AST.ExprSpan)
+    -> Language.Python.Common.AST.StatementSpan
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (e :: Language.Python.Common.AST.ExprSpan)
+                   (ds :: Data.Either.Either
+                            [Language.Python.Common.AST.ExprSpan]
+                            (Language.Python.Common.AST.AssignOpSpan,
+                             Language.Python.Common.AST.ExprSpan)) ->
+                 case ds of wild {
+                   Data.Either.Left es
+                   -> Language.Python.Common.ParserUtils.makeNormalAssignment e es
+                   Data.Either.Right ope2
+                   -> Language.Python.Common.ParserUtils.makeAugAssignment
+                        e
+                        ope2 }) -}
+596a6bdae83a7c2f81904187c0954257
+  makeAugAssignment ::
+    Language.Python.Common.AST.ExprSpan
+    -> (Language.Python.Common.AST.AssignOpSpan,
+        Language.Python.Common.AST.ExprSpan)
+    -> Language.Python.Common.AST.StatementSpan
+  {- Arity: 2, Strictness: <L,U><S,1*U(U,U)>m11,
+     Unfolding: InlineRule (2, True, False)
+                (\ (e1 :: Language.Python.Common.AST.ExprSpan)
+                   (ds :: (Language.Python.Common.AST.AssignOpSpan,
+                           Language.Python.Common.AST.ExprSpan)) ->
+                 case ds of wild { (,) op e2 ->
+                 Language.Python.Common.AST.AugmentedAssign
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   e1
+                   op
+                   e2
+                   (Language.Python.Common.SrcLocation.combineSrcSpans
+                      (Language.Python.Common.AST.expr_annot
+                         @ Language.Python.Common.SrcLocation.SrcSpan
+                         e1)
+                      (Language.Python.Common.AST.expr_annot
+                         @ Language.Python.Common.SrcLocation.SrcSpan
+                         e2)) }) -}
+4b3de0832d665129e917a8d2b6620b88
+  makeBinOp ::
+    Language.Python.Common.AST.ExprSpan
+    -> [(Language.Python.Common.AST.OpSpan,
+         Language.Python.Common.AST.ExprSpan)]
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (e :: Language.Python.Common.AST.ExprSpan)
+                   (es :: [(Language.Python.Common.AST.OpSpan,
+                            Language.Python.Common.AST.ExprSpan)]) ->
+                 Language.Python.Common.ParserUtils.makeBinOp_go es e) -}
+d9b969bc61952dc6b1ad4d82d4b7acd7
+  makeBinOp_go ::
+    [(Language.Python.Common.AST.Op
+        Language.Python.Common.SrcLocation.SrcSpan,
+      Language.Python.Common.AST.Expr
+        Language.Python.Common.SrcLocation.SrcSpan)]
+    -> Language.Python.Common.AST.Expr
+         Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.AST.Expr
+         Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+6838f049b3e4626db412f1f91734b20f
+  makeComprehension ::
+    Language.Python.Common.AST.ExprSpan
+    -> Language.Python.Common.AST.CompForSpan
+    -> Language.Python.Common.AST.ComprehensionSpan
+  {- Arity: 2, Strictness: <L,U><L,U(U,U,U,U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (e :: Language.Python.Common.AST.ExprSpan)
+                   (for :: Language.Python.Common.AST.CompForSpan) ->
+                 Language.Python.Common.AST.Comprehension
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   (Language.Python.Common.AST.ComprehensionExpr
+                      @ Language.Python.Common.SrcLocation.SrcSpan
+                      e)
+                   for
+                   (case for of wild { Language.Python.Common.AST.CompFor ds1 ds2 ds3 ds4 ds5 ->
+                    Language.Python.Common.SrcLocation.combineSrcSpans
+                      (Language.Python.Common.AST.expr_annot
+                         @ Language.Python.Common.SrcLocation.SrcSpan
+                         e)
+                      ds5 })) -}
+0610b68e200c1a1bd60c7175e1f94f9b
+  makeConditionalExpr ::
+    Language.Python.Common.AST.ExprSpan
+    -> GHC.Base.Maybe
+         (Language.Python.Common.AST.ExprSpan,
+          Language.Python.Common.AST.ExprSpan)
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (e :: Language.Python.Common.AST.ExprSpan)
+                   (ds :: GHC.Base.Maybe
+                            (Language.Python.Common.AST.ExprSpan,
+                             Language.Python.Common.AST.ExprSpan)) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> e
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild1 { (,) cond false_branch ->
+                      Language.Python.Common.AST.CondExpr
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        e
+                        cond
+                        false_branch
+                        (Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.AST.expr_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              e)
+                           (Language.Python.Common.SrcLocation.combineSrcSpans
+                              (Language.Python.Common.AST.expr_annot
+                                 @ Language.Python.Common.SrcLocation.SrcSpan
+                                 cond)
+                              (Language.Python.Common.AST.expr_annot
+                                 @ Language.Python.Common.SrcLocation.SrcSpan
+                                 false_branch))) } }) -}
+73a336dd7ac2feaace9e51781b495727
+  makeDecorated ::
+    [Language.Python.Common.AST.DecoratorSpan]
+    -> Language.Python.Common.AST.StatementSpan
+    -> Language.Python.Common.AST.StatementSpan
+  {- Arity: 2, Strictness: <S,1*U><L,U>m13,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: [Language.Python.Common.AST.DecoratorSpan])
+                   (def :: Language.Python.Common.AST.StatementSpan) ->
+                 case ds of wild {
+                   [] -> Language.Python.Common.ParserUtils.makeDecorated1
+                   : d ds1
+                   -> Language.Python.Common.AST.Decorated
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        wild
+                        def
+                        (case d of wild1 { Language.Python.Common.AST.Decorator ds2 ds3 ds4 ->
+                         Language.Python.Common.SrcLocation.combineSrcSpans
+                           ds4
+                           (Language.Python.Common.AST.stmt_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              def) }) }) -}
+2ead9723f4f2b0ed8cf434aecb1a6597
+  makeDecorated1 :: Language.Python.Common.AST.StatementSpan
+  {- Strictness: x -}
+2c1f1e9b6ffbeeabb547f9c4b450c296
+  makeDecorator ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.AST.DottedNameSpan
+    -> [Language.Python.Common.AST.ArgumentSpan]
+    -> Language.Python.Common.AST.DecoratorSpan
+  {- Arity: 3, Strictness: <L,1*U><L,U><S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Language.Python.Common.Token.Token)
+                   (w1 :: Language.Python.Common.AST.DottedNameSpan)
+                   (w2 :: [Language.Python.Common.AST.ArgumentSpan]) ->
+                 case Language.Python.Common.ParserUtils.$wmakeDecorator
+                        w
+                        w1
+                        w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Language.Python.Common.AST.Decorator
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   ww1
+                   ww2
+                   ww3 }) -}
+08d45a90251ec6cc462ab616761dc88d
+  makeDecorator1 ::
+    [Language.Python.Common.AST.Ident
+       Language.Python.Common.SrcLocation.SrcSpan]
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [Language.Python.Common.AST.Ident
+                             Language.Python.Common.SrcLocation.SrcSpan]) ->
+                 case ds of wild {
+                   [] -> Language.Python.Common.SrcLocation.SpanEmpty
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> Language.Python.Common.AST.ident_annot
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             x
+                        : ipv ipv1
+                        -> case x of wild2 { Language.Python.Common.AST.Ident ds2 ds3 ->
+                           case Language.Python.Common.SrcLocation.$fSpan[]1
+                                  @ (Language.Python.Common.AST.Ident
+                                       Language.Python.Common.SrcLocation.SrcSpan)
+                                  wild
+                                  (GHC.List.lastError
+                                     @ (Language.Python.Common.AST.Ident
+                                          Language.Python.Common.SrcLocation.SrcSpan)) of wild3 { Language.Python.Common.AST.Ident ds4 ds5 ->
+                           Language.Python.Common.SrcLocation.combineSrcSpans
+                             ds3
+                             ds5 } } } }) -}
+12b3420e4fa8cf3e04152a9a97cddb63
+  makeDictionary ::
+    Data.Either.Either
+      (Language.Python.Common.AST.ExprSpan,
+       Language.Python.Common.AST.ExprSpan)
+      Language.Python.Common.AST.ExprSpan
+    -> Data.Either.Either
+         Language.Python.Common.AST.CompForSpan
+         [Data.Either.Either
+            (Language.Python.Common.AST.ExprSpan,
+             Language.Python.Common.AST.ExprSpan)
+            Language.Python.Common.AST.ExprSpan]
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Data.Either.Either
+                            (Language.Python.Common.AST.ExprSpan,
+                             Language.Python.Common.AST.ExprSpan)
+                            Language.Python.Common.AST.ExprSpan)
+                   (ds1 :: Data.Either.Either
+                             Language.Python.Common.AST.CompForSpan
+                             [Data.Either.Either
+                                (Language.Python.Common.AST.ExprSpan,
+                                 Language.Python.Common.AST.ExprSpan)
+                                Language.Python.Common.AST.ExprSpan]) ->
+                 case ds of wild {
+                   Data.Either.Left mapping
+                   -> case mapping of wild1 { (,) key val ->
+                      case ds1 of wild2 {
+                        Data.Either.Left compFor
+                        -> Language.Python.Common.AST.DictComp
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             (Language.Python.Common.AST.Comprehension
+                                @ Language.Python.Common.SrcLocation.SrcSpan
+                                (Language.Python.Common.AST.ComprehensionDict
+                                   @ Language.Python.Common.SrcLocation.SrcSpan
+                                   (Language.Python.Common.AST.DictMappingPair
+                                      @ Language.Python.Common.SrcLocation.SrcSpan
+                                      key
+                                      val))
+                                compFor
+                                (case compFor of wild3 { Language.Python.Common.AST.CompFor ds2 ds3 ds4 ds5 ds6 ->
+                                 Language.Python.Common.SrcLocation.combineSrcSpans
+                                   (Language.Python.Common.SrcLocation.combineSrcSpans
+                                      (Language.Python.Common.AST.expr_annot
+                                         @ Language.Python.Common.SrcLocation.SrcSpan
+                                         key)
+                                      (Language.Python.Common.AST.expr_annot
+                                         @ Language.Python.Common.SrcLocation.SrcSpan
+                                         val))
+                                   ds6 }))
+                        Data.Either.Right ipv
+                        -> Language.Python.Common.AST.Dictionary
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             (GHC.Base.map
+                                @ (Data.Either.Either
+                                     (Language.Python.Common.AST.ExprSpan,
+                                      Language.Python.Common.AST.ExprSpan)
+                                     Language.Python.Common.AST.ExprSpan)
+                                @ (Language.Python.Common.AST.DictKeyDatumList
+                                     Language.Python.Common.SrcLocation.SrcSpan)
+                                Language.Python.Common.ParserUtils.toKeyDatumList
+                                (GHC.Types.:
+                                   @ (Data.Either.Either
+                                        (Language.Python.Common.AST.ExprSpan,
+                                         Language.Python.Common.AST.ExprSpan)
+                                        Language.Python.Common.AST.ExprSpan)
+                                   wild
+                                   ipv)) } }
+                   Data.Either.Right unpacking
+                   -> case ds1 of wild1 {
+                        Data.Either.Left compFor
+                        -> Language.Python.Common.AST.DictComp
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             (Language.Python.Common.AST.Comprehension
+                                @ Language.Python.Common.SrcLocation.SrcSpan
+                                (Language.Python.Common.AST.ComprehensionDict
+                                   @ Language.Python.Common.SrcLocation.SrcSpan
+                                   (Language.Python.Common.AST.DictUnpacking
+                                      @ Language.Python.Common.SrcLocation.SrcSpan
+                                      unpacking))
+                                compFor
+                                (case compFor of wild2 { Language.Python.Common.AST.CompFor ds2 ds3 ds4 ds5 ds6 ->
+                                 Language.Python.Common.SrcLocation.combineSrcSpans
+                                   (Language.Python.Common.AST.expr_annot
+                                      @ Language.Python.Common.SrcLocation.SrcSpan
+                                      unpacking)
+                                   ds6 }))
+                        Data.Either.Right ipv
+                        -> Language.Python.Common.AST.Dictionary
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             (GHC.Base.map
+                                @ (Data.Either.Either
+                                     (Language.Python.Common.AST.ExprSpan,
+                                      Language.Python.Common.AST.ExprSpan)
+                                     Language.Python.Common.AST.ExprSpan)
+                                @ (Language.Python.Common.AST.DictKeyDatumList
+                                     Language.Python.Common.SrcLocation.SrcSpan)
+                                Language.Python.Common.ParserUtils.toKeyDatumList
+                                (GHC.Types.:
+                                   @ (Data.Either.Either
+                                        (Language.Python.Common.AST.ExprSpan,
+                                         Language.Python.Common.AST.ExprSpan)
+                                        Language.Python.Common.AST.ExprSpan)
+                                   wild
+                                   ipv)) } }) -}
+48abd41ce54458795bc4641fa2816e1c
+  makeFun ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.AST.IdentSpan
+    -> [Language.Python.Common.AST.ParameterSpan]
+    -> GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+    -> Language.Python.Common.AST.SuiteSpan
+    -> Language.Python.Common.AST.StatementSpan
+  {- Arity: 5, Strictness: <L,1*U><L,U><L,U><L,U><L,U>m6,
+     Unfolding: InlineRule (5, True, False)
+                (\ (t1 :: Language.Python.Common.Token.Token)
+                   (name :: Language.Python.Common.AST.IdentSpan)
+                   (params :: [Language.Python.Common.AST.ParameterSpan])
+                   (annot :: GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                   (body :: Language.Python.Common.AST.SuiteSpan) ->
+                 Language.Python.Common.AST.Fun
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   name
+                   params
+                   annot
+                   body
+                   (Language.Python.Common.SrcLocation.combineSrcSpans
+                      (Language.Python.Common.Token.token_span t1)
+                      (Language.Python.Common.ParserUtils.makeFun1 body))) -}
+855c845c92d5333627ac034c64938e88
+  makeFun1 ::
+    [Language.Python.Common.AST.Statement
+       Language.Python.Common.SrcLocation.SrcSpan]
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [Language.Python.Common.AST.Statement
+                             Language.Python.Common.SrcLocation.SrcSpan]) ->
+                 case ds of wild {
+                   [] -> Language.Python.Common.SrcLocation.SpanEmpty
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> Language.Python.Common.AST.stmt_annot
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             x
+                        : ipv ipv1
+                        -> Language.Python.Common.SrcLocation.combineSrcSpans
+                             (Language.Python.Common.AST.stmt_annot
+                                @ Language.Python.Common.SrcLocation.SrcSpan
+                                x)
+                             (Language.Python.Common.AST.stmt_annot
+                                @ Language.Python.Common.SrcLocation.SrcSpan
+                                (Language.Python.Common.SrcLocation.$fSpan[]1
+                                   @ (Language.Python.Common.AST.Statement
+                                        Language.Python.Common.SrcLocation.SrcSpan)
+                                   wild
+                                   (GHC.List.lastError
+                                      @ (Language.Python.Common.AST.Statement
+                                           Language.Python.Common.SrcLocation.SrcSpan)))) } }) -}
+767405c36a5fe6a398ce132f621b1e42
+  makeListForm ::
+    Language.Python.Common.SrcLocation.SrcSpan
+    -> Data.Either.Either
+         Language.Python.Common.AST.ExprSpan
+         Language.Python.Common.AST.ComprehensionSpan
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (span :: Language.Python.Common.SrcLocation.SrcSpan)
+                   (ds :: Data.Either.Either
+                            Language.Python.Common.AST.ExprSpan
+                            Language.Python.Common.AST.ComprehensionSpan) ->
+                 case ds of wild {
+                   Data.Either.Left tuple
+                   -> case tuple of wild1 {
+                        DEFAULT
+                        -> Language.Python.Common.AST.List
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             (GHC.Types.:
+                                @ (Language.Python.Common.AST.Expr
+                                     Language.Python.Common.SrcLocation.SrcSpan)
+                                wild1
+                                (GHC.Types.[]
+                                   @ (Language.Python.Common.AST.Expr
+                                        Language.Python.Common.SrcLocation.SrcSpan)))
+                             span
+                        Language.Python.Common.AST.Tuple ds1 ds2
+                        -> Language.Python.Common.AST.List
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             ds1
+                             span }
+                   Data.Either.Right comprehension
+                   -> Language.Python.Common.AST.ListComp
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        comprehension
+                        span }) -}
+6b6d2ab47114da63c3e905a30bacfbc9
+  makeNormalAssignment ::
+    Language.Python.Common.AST.ExprSpan
+    -> [Language.Python.Common.AST.ExprSpan]
+    -> Language.Python.Common.AST.StatementSpan
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (e :: Language.Python.Common.AST.ExprSpan)
+                   (ds :: [Language.Python.Common.AST.ExprSpan]) ->
+                 case ds of wild {
+                   []
+                   -> Language.Python.Common.AST.StmtExpr
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        e
+                        (Language.Python.Common.AST.expr_annot
+                           @ Language.Python.Common.SrcLocation.SrcSpan
+                           e)
+                   : ipv ipv1
+                   -> let {
+                        ds1 :: ([Language.Python.Common.AST.ExprSpan],
+                                [Language.Python.Common.AST.ExprSpan])
+                        = case GHC.List.$wlenAcc
+                                 @ (Language.Python.Common.AST.Expr
+                                      Language.Python.Common.SrcLocation.SrcSpan)
+                                 wild
+                                 0# of ww2 { DEFAULT ->
+                          let {
+                            x :: GHC.Prim.Int# = GHC.Prim.-# ww2 1#
+                          } in
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<=# x 0#) of wild1 {
+                            GHC.Types.False
+                            -> case x of ds2 {
+                                 DEFAULT
+                                 -> let {
+                                      ds3 :: ([Language.Python.Common.AST.ExprSpan],
+                                              [Language.Python.Common.AST.ExprSpan])
+                                      = case GHC.List.splitAt_$s$wsplitAt'
+                                               @ Language.Python.Common.AST.ExprSpan
+                                               ipv1
+                                               (GHC.Prim.-# ds2 1#) of ww { (#,#) ww1 ww4 ->
+                                        (ww1, ww4) }
+                                    } in
+                                    (GHC.Types.:
+                                       @ Language.Python.Common.AST.ExprSpan
+                                       ipv
+                                       (case ds3 of wild2 { (,) xs' xs'' -> xs' }),
+                                     case ds3 of wild2 { (,) xs' xs'' -> xs'' })
+                                 1#
+                                 -> (GHC.Types.:
+                                       @ Language.Python.Common.AST.ExprSpan
+                                       ipv
+                                       (GHC.Types.[] @ Language.Python.Common.AST.ExprSpan),
+                                     ipv1) }
+                            GHC.Types.True
+                            -> (GHC.Types.[] @ Language.Python.Common.AST.ExprSpan, wild) } }
+                      } in
+                      Language.Python.Common.AST.Assign
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        (GHC.Types.:
+                           @ Language.Python.Common.AST.ExprSpan
+                           e
+                           (case ds1 of wild1 { (,) front back -> front }))
+                        (case ds1 of wild1 { (,) front back ->
+                         GHC.List.head @ Language.Python.Common.AST.ExprSpan back })
+                        (Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.AST.expr_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              e)
+                           (Language.Python.Common.ParserUtils.makeNormalAssignment1
+                              wild)) }) -}
+52d27ed681d5858ede96f7e24e1a8f18
+  makeNormalAssignment1 ::
+    [Language.Python.Common.AST.Expr
+       Language.Python.Common.SrcLocation.SrcSpan]
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [Language.Python.Common.AST.Expr
+                             Language.Python.Common.SrcLocation.SrcSpan]) ->
+                 case ds of wild {
+                   [] -> Language.Python.Common.SrcLocation.SpanEmpty
+                   : x ds1
+                   -> case ds1 of wild1 {
+                        []
+                        -> Language.Python.Common.AST.expr_annot
+                             @ Language.Python.Common.SrcLocation.SrcSpan
+                             x
+                        : ipv ipv1
+                        -> Language.Python.Common.SrcLocation.combineSrcSpans
+                             (Language.Python.Common.AST.expr_annot
+                                @ Language.Python.Common.SrcLocation.SrcSpan
+                                x)
+                             (Language.Python.Common.AST.expr_annot
+                                @ Language.Python.Common.SrcLocation.SrcSpan
+                                (Language.Python.Common.SrcLocation.$fSpan[]1
+                                   @ (Language.Python.Common.AST.Expr
+                                        Language.Python.Common.SrcLocation.SrcSpan)
+                                   wild
+                                   (GHC.List.lastError
+                                      @ (Language.Python.Common.AST.Expr
+                                           Language.Python.Common.SrcLocation.SrcSpan)))) } }) -}
+60df0ef1254840cb9e4c569a0a991bb6
+  makeParam ::
+    (Language.Python.Common.AST.IdentSpan,
+     GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+    -> GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+    -> Language.Python.Common.AST.ParameterSpan
+  {- Arity: 2, Strictness: <S,1*U(U(U,U),U)><L,U>m1, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (Language.Python.Common.AST.IdentSpan,
+                          GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                   (w1 :: GHC.Base.Maybe Language.Python.Common.AST.ExprSpan) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case Language.Python.Common.ParserUtils.$wmakeParam
+                        ww1
+                        ww2
+                        w1 of ww3 { (#,,,#) ww4 ww5 ww6 ww7 ->
+                 Language.Python.Common.AST.Param
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   ww4
+                   ww5
+                   ww6
+                   ww7 } }) -}
+b1b5140858a029360cc4c155ead6e916
+  makeParenOrGenerator ::
+    Data.Either.Either
+      Language.Python.Common.AST.ExprSpan
+      Language.Python.Common.AST.ComprehensionSpan
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Data.Either.Either
+                            Language.Python.Common.AST.ExprSpan
+                            Language.Python.Common.AST.ComprehensionSpan)
+                   (span :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   Data.Either.Left e
+                   -> Language.Python.Common.AST.Paren
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        e
+                        span
+                   Data.Either.Right comp
+                   -> Language.Python.Common.AST.Generator
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        comp
+                        span }) -}
+dadca10e2fadc0eaf1a008897b56ab77
+  makePrint ::
+    GHC.Types.Bool
+    -> GHC.Base.Maybe
+         ([Language.Python.Common.AST.ExprSpan],
+          GHC.Base.Maybe Language.Python.Common.Token.Token)
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.AST.StatementSpan
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><S,1*U><L,U>m27,
+     Unfolding: InlineRule (3, True, False)
+                (\ (chevron :: GHC.Types.Bool)
+                   (ds :: GHC.Base.Maybe
+                            ([Language.Python.Common.AST.ExprSpan],
+                             GHC.Base.Maybe Language.Python.Common.Token.Token))
+                   (span :: Language.Python.Common.SrcLocation.SrcSpan) ->
+                 case ds of wild {
+                   GHC.Base.Nothing
+                   -> Language.Python.Common.AST.Print
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        chevron
+                        (GHC.Types.[]
+                           @ (Language.Python.Common.AST.Expr
+                                Language.Python.Common.SrcLocation.SrcSpan))
+                        GHC.Types.False
+                        span
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild1 { (,) args last_comma ->
+                      Language.Python.Common.AST.Print
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        chevron
+                        args
+                        (Data.Maybe.isJust @ Language.Python.Common.Token.Token last_comma)
+                        span } }) -}
+6ed1ef9c673f9745514dee79bd6bff40
+  makeRelative ::
+    [Data.Either.Either
+       Language.Python.Common.Token.Token
+       Language.Python.Common.AST.DottedNameSpan]
+    -> Language.Python.Common.AST.ImportRelativeSpan
+  {- Arity: 1, Strictness: <L,U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [Data.Either.Either
+                            Language.Python.Common.Token.Token
+                            Language.Python.Common.AST.DottedNameSpan]) ->
+                 case Language.Python.Common.ParserUtils.$wmakeRelative
+                        w of ww { (#,,#) ww1 ww2 ww3 ->
+                 Language.Python.Common.AST.ImportRelative
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   ww1
+                   ww2
+                   ww3 }) -}
+bb2d763872284d69baabf8ba38170d83
+  makeRelative1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+c58dd4ec8d999818488ae625b070311b
+  makeReturn ::
+    Language.Python.Common.Token.Token
+    -> GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+    -> Language.Python.Common.AST.StatementSpan
+  {- Arity: 2, Strictness: <L,1*U><S,1*U>m14, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.Python.Common.Token.Token)
+                   (w1 :: GHC.Base.Maybe Language.Python.Common.AST.ExprSpan) ->
+                 case w1 of wild {
+                   GHC.Base.Nothing
+                   -> Language.Python.Common.AST.Return
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        (GHC.Base.Nothing
+                           @ (Language.Python.Common.AST.Expr
+                                Language.Python.Common.SrcLocation.SrcSpan))
+                        (Language.Python.Common.Token.token_span w)
+                   GHC.Base.Just e
+                   -> Language.Python.Common.AST.Return
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        wild
+                        (Language.Python.Common.SrcLocation.combineSrcSpans
+                           (Language.Python.Common.Token.token_span w)
+                           (Language.Python.Common.AST.expr_annot
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              e)) }) -}
+4a3f1f0caada2b4dc2511b94f5089076
+  makeSet ::
+    Language.Python.Common.AST.ExprSpan
+    -> Data.Either.Either
+         Language.Python.Common.AST.CompForSpan
+         [Language.Python.Common.AST.ExprSpan]
+    -> Language.Python.Common.SrcLocation.SrcSpan
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (e :: Language.Python.Common.AST.ExprSpan)
+                   (ds :: Data.Either.Either
+                            Language.Python.Common.AST.CompForSpan
+                            [Language.Python.Common.AST.ExprSpan]) ->
+                 case ds of wild {
+                   Data.Either.Left compFor
+                   -> Language.Python.Common.AST.SetComp
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        (Language.Python.Common.AST.Comprehension
+                           @ Language.Python.Common.SrcLocation.SrcSpan
+                           (Language.Python.Common.AST.ComprehensionExpr
+                              @ Language.Python.Common.SrcLocation.SrcSpan
+                              e)
+                           compFor
+                           (case compFor of wild1 { Language.Python.Common.AST.CompFor ds1 ds2 ds3 ds4 ds5 ->
+                            Language.Python.Common.SrcLocation.combineSrcSpans
+                              (Language.Python.Common.AST.expr_annot
+                                 @ Language.Python.Common.SrcLocation.SrcSpan
+                                 e)
+                              ds5 }))
+                   Data.Either.Right es
+                   -> Language.Python.Common.AST.Set
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        (GHC.Types.: @ Language.Python.Common.AST.ExprSpan e es) }) -}
+0ca06e003965c8fe4edaa2b8a3cf7a96
+  makeStarParam ::
+    Language.Python.Common.Token.Token
+    -> GHC.Base.Maybe
+         (Language.Python.Common.AST.IdentSpan,
+          GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+    -> Language.Python.Common.AST.ParameterSpan
+  {- Arity: 2, Strictness: <L,1*U><S,1*U>,
+     Unfolding: (\ (t1 :: Language.Python.Common.Token.Token)
+                   (ds :: GHC.Base.Maybe
+                            (Language.Python.Common.AST.IdentSpan,
+                             GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)) ->
+                 case ds of wild {
+                   GHC.Base.Nothing
+                   -> Language.Python.Common.AST.EndPositional
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        (Language.Python.Common.Token.token_span t1)
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild1 { (,) name annot ->
+                      Language.Python.Common.AST.VarArgsPos
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        name
+                        annot
+                        (case annot of wild2 {
+                           GHC.Base.Nothing
+                           -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                (Language.Python.Common.Token.token_span t1)
+                                Language.Python.Common.SrcLocation.SpanEmpty
+                           GHC.Base.Just x
+                           -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                (Language.Python.Common.Token.token_span t1)
+                                (Language.Python.Common.AST.expr_annot
+                                   @ Language.Python.Common.SrcLocation.SrcSpan
+                                   x) }) } }) -}
+48cb6c11b7ddcb11666680d22612dd7d
+  makeStarStarParam ::
+    Language.Python.Common.Token.Token
+    -> (Language.Python.Common.AST.IdentSpan,
+        GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+    -> Language.Python.Common.AST.ParameterSpan
+  {- Arity: 2, Strictness: <L,1*U><S,1*U(U(U,U),U)>m3, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.Python.Common.Token.Token)
+                   (w1 :: (Language.Python.Common.AST.IdentSpan,
+                           GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)) ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 case Language.Python.Common.ParserUtils.$wmakeStarStarParam
+                        w
+                        ww1
+                        ww2 of ww3 { (#,,#) ww4 ww5 ww6 ->
+                 Language.Python.Common.AST.VarArgsKeyword
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   ww4
+                   ww5
+                   ww6 } }) -}
+179e1da577515e7123696d5d75e31cc7
+  makeTry ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.AST.SuiteSpan
+    -> ([Language.Python.Common.AST.HandlerSpan],
+        [Language.Python.Common.AST.StatementSpan],
+        [Language.Python.Common.AST.StatementSpan])
+    -> Language.Python.Common.AST.StatementSpan
+  {- Arity: 3, Strictness: <L,1*U><L,U><S,1*U(U,U,U)>m15,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Language.Python.Common.Token.Token)
+                   (w1 :: Language.Python.Common.AST.SuiteSpan)
+                   (w2 :: ([Language.Python.Common.AST.HandlerSpan],
+                           [Language.Python.Common.AST.StatementSpan],
+                           [Language.Python.Common.AST.StatementSpan])) ->
+                 case w2 of ww { (,,) ww1 ww2 ww3 ->
+                 case Language.Python.Common.ParserUtils.$wmakeTry
+                        w
+                        w1
+                        ww1
+                        ww2
+                        ww3 of ww4 { (#,,,,#) ww5 ww6 ww7 ww8 ww9 ->
+                 Language.Python.Common.AST.Try
+                   @ Language.Python.Common.SrcLocation.SrcSpan
+                   ww5
+                   ww6
+                   ww7
+                   ww8
+                   ww9 } }) -}
+8d2f4233a6a3e87fd6a4da4e246643e0
+  makeTupleOrExpr ::
+    [Language.Python.Common.AST.ExprSpan]
+    -> GHC.Base.Maybe Language.Python.Common.Token.Token
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (ds :: [Language.Python.Common.AST.ExprSpan])
+                   (ds1 :: GHC.Base.Maybe Language.Python.Common.Token.Token) ->
+                 case ds of wild {
+                   [] -> Language.Python.Common.ParserUtils.makeTupleOrExpr1
+                   : e ds2
+                   -> let {
+                        fail :: GHC.Prim.Void# -> Language.Python.Common.AST.ExprSpan
+                          <join 1> {- Arity: 1, Strictness: <L,A> -}
+                        = \ (ds3 :: GHC.Prim.Void#)[OneShot] ->
+                          case ds1 of wild1 {
+                            GHC.Base.Nothing
+                            -> Language.Python.Common.AST.Tuple
+                                 @ Language.Python.Common.SrcLocation.SrcSpan
+                                 wild
+                                 (Language.Python.Common.ParserUtils.makeNormalAssignment1 wild)
+                            GHC.Base.Just t
+                            -> Language.Python.Common.AST.Tuple
+                                 @ Language.Python.Common.SrcLocation.SrcSpan
+                                 wild
+                                 (Language.Python.Common.SrcLocation.combineSrcSpans
+                                    (Language.Python.Common.ParserUtils.makeNormalAssignment1 wild)
+                                    (Language.Python.Common.Token.token_span t)) }
+                      } in
+                      case ds2 of wild1 {
+                        []
+                        -> case ds1 of wild2 {
+                             GHC.Base.Nothing -> e GHC.Base.Just ipv -> fail GHC.Prim.void# }
+                        : ipv ipv1 -> fail GHC.Prim.void# } }) -}
+f343bce372aef754469397b19c4845b6
+  makeTupleOrExpr1 :: Language.Python.Common.AST.ExprSpan
+  {- Strictness: x -}
+50c1bed9daf5863febcea0f7b4e84a31
+  makeTupleParam ::
+    Language.Python.Common.AST.ParamTupleSpan
+    -> GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+    -> Language.Python.Common.AST.ParameterSpan
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (p :: Language.Python.Common.AST.ParamTupleSpan)
+                   (optDefault :: GHC.Base.Maybe
+                                    Language.Python.Common.AST.ExprSpan) ->
+                 case p of wild {
+                   Language.Python.Common.AST.ParamTupleName ds ds1
+                   -> Language.Python.Common.AST.Param
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        ds
+                        (GHC.Base.Nothing
+                           @ (Language.Python.Common.AST.Expr
+                                Language.Python.Common.SrcLocation.SrcSpan))
+                        optDefault
+                        (case optDefault of wild1 {
+                           GHC.Base.Nothing
+                           -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                ds1
+                                Language.Python.Common.SrcLocation.SpanEmpty
+                           GHC.Base.Just x
+                           -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                ds1
+                                (Language.Python.Common.AST.expr_annot
+                                   @ Language.Python.Common.SrcLocation.SrcSpan
+                                   x) })
+                   Language.Python.Common.AST.ParamTuple ds ds1
+                   -> Language.Python.Common.AST.UnPackTuple
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        wild
+                        optDefault
+                        ds1 }) -}
+3d8ce8c65f10a13587fb749b7ec04313
+  parseError ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.ParserMonad.P a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m1,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Common.ParserUtils.parseError1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Language.Python.Common.Token.Token>_R
+                 ->_R Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                               <Language.Python.Common.ParserMonad.ParseState>_N
+                               <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                               <a>_N)) -}
+81acbc101786529be1708b6ae109db26
+  parseError1 ::
+    Language.Python.Common.Token.Token
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (a, Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m1,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (x :: Language.Python.Common.Token.Token)
+                   (eta :: Language.Python.Common.ParserMonad.ParseState) ->
+                 Data.Either.Left
+                   @ Language.Python.Common.ParseError.ParseError
+                   @ (a, Language.Python.Common.ParserMonad.ParseState)
+                   (Language.Python.Common.ParseError.UnexpectedToken x)) -}
+790922db561e918acf8266e4dc9c6a04
+  subscriptToExpr ::
+    Language.Python.Common.ParserUtils.Subscript
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Subscript) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.ParserUtils.subscriptToExpr1
+                   Language.Python.Common.ParserUtils.SubscriptExpr ds1 ds2
+                   -> ds1 }) -}
+24b78b5c657670d0bc919e383b5aaac2
+  subscriptToExpr1 :: Language.Python.Common.AST.ExprSpan
+  {- Strictness: x -}
+db743f1a2411b4d69b756fc39c30efb3
+  subscriptToSlice ::
+    Language.Python.Common.ParserUtils.Subscript
+    -> Language.Python.Common.AST.SliceSpan
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Subscript) ->
+                 case ds of wild {
+                   Language.Python.Common.ParserUtils.SubscriptExpr e span
+                   -> Language.Python.Common.AST.SliceExpr
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        e
+                        span
+                   Language.Python.Common.ParserUtils.SubscriptSlice lower upper stride span
+                   -> Language.Python.Common.AST.SliceProper
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        lower
+                        upper
+                        stride
+                        span
+                   Language.Python.Common.ParserUtils.SubscriptSliceEllipsis span
+                   -> Language.Python.Common.AST.SliceEllipsis
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        span }) -}
+f269901d5307ea19b4068b66dc7636f3
+  subscript_slice_span1 ::
+    Language.Python.Common.ParserUtils.Subscript
+    -> GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+  RecSel Left Language.Python.Common.ParserUtils.Subscript
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Subscript) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.ParserUtils.subscript_slice_span4
+                   Language.Python.Common.ParserUtils.SubscriptSlice ds1 ds2 ds3 ds4
+                   -> ds1 }) -}
+f269901d5307ea19b4068b66dc7636f3
+  subscript_slice_span2 ::
+    Language.Python.Common.ParserUtils.Subscript
+    -> GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+  RecSel Left Language.Python.Common.ParserUtils.Subscript
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Subscript) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.ParserUtils.subscript_slice_span5
+                   Language.Python.Common.ParserUtils.SubscriptSlice ds1 ds2 ds3 ds4
+                   -> ds2 }) -}
+f269901d5307ea19b4068b66dc7636f3
+  subscript_slice_span3 ::
+    Language.Python.Common.ParserUtils.Subscript
+    -> GHC.Base.Maybe
+         (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+  RecSel Left Language.Python.Common.ParserUtils.Subscript
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Subscript) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.ParserUtils.subscript_slice_span6
+                   Language.Python.Common.ParserUtils.SubscriptSlice ds1 ds2 ds3 ds4
+                   -> ds3 }) -}
+aca3a3cc5f181001e6bd646fc959d873
+  subscript_slice_span4 ::
+    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+  {- Strictness: x -}
+09b026b5e20ee5488e86e1a9bb0487ed
+  subscript_slice_span5 ::
+    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan
+  {- Strictness: x -}
+5ba8e5a213b4b58ad36225f39f8e20ea
+  subscript_slice_span6 ::
+    GHC.Base.Maybe (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+  {- Strictness: x -}
+f269901d5307ea19b4068b66dc7636f3
+  subscript_span ::
+    Language.Python.Common.ParserUtils.Subscript
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  RecSel Left Language.Python.Common.ParserUtils.Subscript
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Subscript) ->
+                 case ds of wild {
+                   Language.Python.Common.ParserUtils.SubscriptExpr ds1 ds2 -> ds2
+                   Language.Python.Common.ParserUtils.SubscriptSlice ds1 ds2 ds3 ds4
+                   -> ds4
+                   Language.Python.Common.ParserUtils.SubscriptSliceEllipsis ds1
+                   -> ds1 }) -}
+f269901d5307ea19b4068b66dc7636f3
+  subscription ::
+    Language.Python.Common.ParserUtils.Subscript
+    -> Language.Python.Common.AST.ExprSpan
+  RecSel Left Language.Python.Common.ParserUtils.Subscript
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Subscript) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.ParserUtils.subscription1
+                   Language.Python.Common.ParserUtils.SubscriptExpr ds1 ds2
+                   -> ds1 }) -}
+3fc7ba777c15ce7e52e61c4f07282f5c
+  subscription1 :: Language.Python.Common.AST.ExprSpan
+  {- Strictness: x -}
+d332640e5832d6ab27fe479212396943
+  subscriptsToExpr ::
+    [Language.Python.Common.ParserUtils.Subscript]
+    -> Language.Python.Common.AST.ExprSpan
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (subs :: [Language.Python.Common.ParserUtils.Subscript]) ->
+                 case GHC.List.$wlenAcc
+                        @ Language.Python.Common.ParserUtils.Subscript
+                        subs
+                        0# of ww2 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># ww2 1#) of wild {
+                   GHC.Types.False
+                   -> case ww2 of ww1 {
+                        DEFAULT -> Language.Python.Common.ParserUtils.subscriptsToExpr1
+                        1#
+                        -> case subs of wild1 {
+                             []
+                             -> case GHC.List.badHead
+                                ret_ty (Language.Python.Common.AST.Expr
+                                          Language.Python.Common.SrcLocation.SrcSpan)
+                                of {}
+                             : x ds1
+                             -> case x of wild2 {
+                                  DEFAULT -> Language.Python.Common.ParserUtils.subscriptToExpr1
+                                  Language.Python.Common.ParserUtils.SubscriptExpr ds ds2
+                                  -> ds } } }
+                   GHC.Types.True
+                   -> Language.Python.Common.AST.Tuple
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        (GHC.Base.map
+                           @ Language.Python.Common.ParserUtils.Subscript
+                           @ (Language.Python.Common.AST.Expr
+                                Language.Python.Common.SrcLocation.SrcSpan)
+                           Language.Python.Common.ParserUtils.subscriptToExpr
+                           subs)
+                        (case subs of wild1 {
+                           [] -> Language.Python.Common.SrcLocation.SpanEmpty
+                           : x ds1
+                           -> case ds1 of wild2 {
+                                [] -> Language.Python.Common.ParserUtils.subscript_span x
+                                : ipv ipv1
+                                -> case x of wild3 {
+                                     Language.Python.Common.ParserUtils.SubscriptExpr ds ds2
+                                     -> case Language.Python.Common.SrcLocation.$fSpan[]1
+                                               @ Language.Python.Common.ParserUtils.Subscript
+                                               wild1
+                                               (GHC.List.lastError
+                                                  @ Language.Python.Common.ParserUtils.Subscript) of wild4 {
+                                          Language.Python.Common.ParserUtils.SubscriptExpr ds3 ds4
+                                          -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                               ds2
+                                               ds4
+                                          Language.Python.Common.ParserUtils.SubscriptSlice ds3 ds4 ds5 ds6
+                                          -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                               ds2
+                                               ds6
+                                          Language.Python.Common.ParserUtils.SubscriptSliceEllipsis ds3
+                                          -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                               ds2
+                                               ds3 }
+                                     Language.Python.Common.ParserUtils.SubscriptSlice ds ds2 ds3 ds4
+                                     -> case Language.Python.Common.SrcLocation.$fSpan[]1
+                                               @ Language.Python.Common.ParserUtils.Subscript
+                                               wild1
+                                               (GHC.List.lastError
+                                                  @ Language.Python.Common.ParserUtils.Subscript) of wild4 {
+                                          Language.Python.Common.ParserUtils.SubscriptExpr ds5 ds6
+                                          -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                               ds4
+                                               ds6
+                                          Language.Python.Common.ParserUtils.SubscriptSlice ds5 ds6 ds7 ds8
+                                          -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                               ds4
+                                               ds8
+                                          Language.Python.Common.ParserUtils.SubscriptSliceEllipsis ds5
+                                          -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                               ds4
+                                               ds5 }
+                                     Language.Python.Common.ParserUtils.SubscriptSliceEllipsis ds
+                                     -> case Language.Python.Common.SrcLocation.$fSpan[]1
+                                               @ Language.Python.Common.ParserUtils.Subscript
+                                               wild1
+                                               (GHC.List.lastError
+                                                  @ Language.Python.Common.ParserUtils.Subscript) of wild4 {
+                                          Language.Python.Common.ParserUtils.SubscriptExpr ds2 ds3
+                                          -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                               ds
+                                               ds3
+                                          Language.Python.Common.ParserUtils.SubscriptSlice ds2 ds3 ds4 ds5
+                                          -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                               ds
+                                               ds5
+                                          Language.Python.Common.ParserUtils.SubscriptSliceEllipsis ds2
+                                          -> Language.Python.Common.SrcLocation.combineSrcSpans
+                                               ds
+                                               ds2 } } } }) } }) -}
+b8a205885bfcc0c43e375667bf83fd84
+  subscriptsToExpr1 :: Language.Python.Common.AST.ExprSpan
+  {- Strictness: x -}
+a29aad1223d369d0defb3fe68642e104
+  toKeyDatumList ::
+    Data.Either.Either
+      (Language.Python.Common.AST.ExprSpan,
+       Language.Python.Common.AST.ExprSpan)
+      Language.Python.Common.AST.ExprSpan
+    -> Language.Python.Common.AST.DictKeyDatumList
+         Language.Python.Common.SrcLocation.SrcSpan
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Data.Either.Either
+                            (Language.Python.Common.AST.ExprSpan,
+                             Language.Python.Common.AST.ExprSpan)
+                            Language.Python.Common.AST.ExprSpan) ->
+                 case ds of wild {
+                   Data.Either.Left ds1
+                   -> case ds1 of wild1 { (,) key value ->
+                      Language.Python.Common.AST.DictMappingPair
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        key
+                        value }
+                   Data.Either.Right unpacking
+                   -> Language.Python.Common.AST.DictUnpacking
+                        @ Language.Python.Common.SrcLocation.SrcSpan
+                        unpacking }) -}
+ef973e6b3be4feb427a73c916f947bc0
+  trailer_call_args ::
+    Language.Python.Common.ParserUtils.Trailer
+    -> [Language.Python.Common.AST.ArgumentSpan]
+  RecSel Left Language.Python.Common.ParserUtils.Trailer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Trailer) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.ParserUtils.trailer_call_args1
+                   Language.Python.Common.ParserUtils.TrailerCall ds1 ds2 -> ds1 }) -}
+180dbb7b8d676148506a984c24bf6525
+  trailer_call_args1 :: [Language.Python.Common.AST.ArgumentSpan]
+  {- Strictness: x -}
+ef973e6b3be4feb427a73c916f947bc0
+  trailer_dot_ident ::
+    Language.Python.Common.ParserUtils.Trailer
+    -> Language.Python.Common.AST.IdentSpan
+  RecSel Left Language.Python.Common.ParserUtils.Trailer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Trailer) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.ParserUtils.trailer_dot_ident1
+                   Language.Python.Common.ParserUtils.TrailerDot ds1 ds2 ds3
+                   -> ds1 }) -}
+f116f558c8ea2e1517661f3e031fa63e
+  trailer_dot_ident1 :: Language.Python.Common.AST.IdentSpan
+  {- Strictness: x -}
+ef973e6b3be4feb427a73c916f947bc0
+  trailer_span ::
+    Language.Python.Common.ParserUtils.Trailer
+    -> Language.Python.Common.SrcLocation.SrcSpan
+  RecSel Left Language.Python.Common.ParserUtils.Trailer
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Trailer) ->
+                 case ds of wild {
+                   Language.Python.Common.ParserUtils.TrailerCall ds1 ds2 -> ds2
+                   Language.Python.Common.ParserUtils.TrailerSubscript ds1 ds2 -> ds2
+                   Language.Python.Common.ParserUtils.TrailerDot ds1 ds2 ds3
+                   -> ds3 }) -}
+ef973e6b3be4feb427a73c916f947bc0
+  trailer_subs ::
+    Language.Python.Common.ParserUtils.Trailer
+    -> [Language.Python.Common.ParserUtils.Subscript]
+  RecSel Left Language.Python.Common.ParserUtils.Trailer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.Python.Common.ParserUtils.Trailer) ->
+                 case ds of wild {
+                   DEFAULT -> Language.Python.Common.ParserUtils.trailer_subs1
+                   Language.Python.Common.ParserUtils.TrailerSubscript ds1 ds2
+                   -> ds1 }) -}
+851b03ad7b5f1cf94832ea3f28ac0892
+  trailer_subs1 :: [Language.Python.Common.ParserUtils.Subscript]
+  {- Strictness: x -}
+instance [safe] Language.Python.Common.SrcLocation.Span [Language.Python.Common.ParserUtils.Subscript]
+  = Language.Python.Common.ParserUtils.$fSpanSubscript
+instance [safe] Language.Python.Common.SrcLocation.Span [Language.Python.Common.ParserUtils.Trailer]
+  = Language.Python.Common.ParserUtils.$fSpanTrailer
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

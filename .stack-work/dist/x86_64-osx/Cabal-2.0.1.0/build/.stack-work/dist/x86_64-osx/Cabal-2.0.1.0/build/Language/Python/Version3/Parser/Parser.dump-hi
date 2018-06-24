@@ -1,0 +1,2548 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-23 10:44:05.36378 UTC
+
+interface language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y:Language.Python.Version3.Parser.Parser 8022
+  interface hash: bc5b778547f3fc8214e8962a4a28b210
+  ABI hash: 1a0dd0f304ac518d819249fe8d7089ef
+  export-list hash: 2a507ad7b784cb9d3a55e870d6c0af2b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 2926dbc3c188536a81cddb92d31ff440
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.Python.Version3.Parser.Parser.parseEval
+  Language.Python.Version3.Parser.Parser.parseFileInput
+  Language.Python.Version3.Parser.Parser.parseSingleInput
+module dependencies: Language.Python.Common.AST
+                     Language.Python.Common.LexerUtils Language.Python.Common.ParseError
+                     Language.Python.Common.ParserMonad
+                     Language.Python.Common.ParserUtils Language.Python.Common.Pretty
+                     Language.Python.Common.SrcLocation Language.Python.Common.Token
+                     Language.Python.Version3.Parser.Lexer
+package dependencies: array-0.5.2.0 base-4.10.1.0
+                      containers-0.5.10.2 deepseq-1.4.3.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0 monads-tf-0.1.0.3 pretty-1.1.3.3
+                      transformers-0.5.2.0 utf8-string-1.0.1.1
+orphans: transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Set.Internal
+                         monads-tf-0.1.0.3:Control.Monad.Error.Class
+                         monads-tf-0.1.0.3:Control.Monad.State.Class
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+import  -/  array-0.5.2.0:Data.Array 903f272bb288bfc910741fa057ba2284
+import  -/  base-4.10.1.0:Control.Applicative 99577a9c463ffe4790a1d37547a345bd
+import  -/  base-4.10.1.0:Control.Monad ebed2e8e7444944e0c1d827c6faf40a4
+import  -/  base-4.10.1.0:Data.Bits e0790a03e1e51e2d053ee3f563937f85
+import  -/  base-4.10.1.0:Data.Either d7dae5d9bf298dee616e465c14b5d60e
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Maybe 07738c5485acb328136bb15596f8b845
+import  -/  base-4.10.1.0:Data.Tuple 8fa1305aa5032ea35e2a54fa5f1e78f9
+import  -/  base-4.10.1.0:GHC.Arr cf4349fa30e5f82fdb67fa740927bec8
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.Exts 7dc7a2be934e058493541437800afa50
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  Language.Python.Common.AST 33488c541ff242f5692911095cbd1198
+  exports: f399fd5201b5af1a1d98fd75d096fbc1
+  And 51f82c4fbba1705499777b30ed480274
+  ArgExpr f573e6a264f49cc5da5b135421c1f399
+  ArgKeyword b3b9abedff38eb94a2fd07f9a423444c
+  ArgVarArgsKeyword ec4fb989922a9a84280f254467a4d281
+  ArgVarArgsPos 8d6d23e4667a2d4ecdf298d35b7b9b30
+  ArgumentSpan 94dde4ffceed0a2a13daed020b6576e1
+  Assert 2a01ff365c8dbfcc7b4f8eb45ec2f456
+  AssignOpSpan f55a81e56367dca5b5d86dd1548fd97f
+  AsyncFor 04b621fbfc45cb94f3db32130dd7fdd0
+  AsyncFun bcf5b86d1b4f3c62e415d50ad9baa3c6
+  AsyncWith 5d370f87de0656319c3d416096402d15
+  Await 3e6d8b99c4f5e27178f771003af2d168
+  BinAndAssign d25c6bd9721c3b26a66faa7ab9c16b94
+  BinOrAssign 310639512e2edd84baf67bdd3f75acc3
+  BinXorAssign 7df0eb0b1aa1bb249bee16b624e6530c
+  BinaryAnd e5e9fa4ef9ff3cee3f9d7142d8e1b337
+  BinaryOr 1084b81c43cf33636cfeb7df977da662
+  Bool 7d1a32bdcaca2a9c535ffaa4ae699a7a
+  Break 9c788428750d5bfb20ae989c86276354
+  ByteStrings c91587ea95aebd47412aba70c52edf2e
+  Class ab9067f77b0b64e960cb441cfa60c353
+  CompFor c75fa5d490111a6c2188a968704ecf0f
+  CompForSpan 94dde4ffceed0a2a13daed020b6576e1
+  CompIf 2b2d42dae734063459798c83210d406e
+  CompIfSpan 94dde4ffceed0a2a13daed020b6576e1
+  CompIterSpan 94dde4ffceed0a2a13daed020b6576e1
+  ComprehensionSpan 94dde4ffceed0a2a13daed020b6576e1
+  Conditional cb8fcc5df2c339b3407f4ce580051bc5
+  Continue c80d9f6d50d3985afee402395810062c
+  DecoratorSpan 6e1ab2fb537d2522edcf9b3f967431ea
+  Delete aba69b50f60b5ec37a06c660cd4ac0ee
+  Dictionary 69bc809ca8d2fe5012dcaa380c8bdbbf
+  DivAssign 928c84a9ef113a78ff0205fd1d6c7995
+  Divide 220260cd57ae15f7cd4b0c923435df3c
+  DottedNameSpan a5e20e92d1dd22978ba34ba5b6e7214b
+  Ellipsis c8d2c37c8a37d4a4ee792f6e160ffd9f
+  Equality 0d50ccc3706d66cb87c371a622a97e94
+  ExceptClause 6223ced3f6dab60461bf41b181e15210
+  ExceptClauseSpan 54ad83b54b9c0dd8bf180da8d82f4195
+  Exponent 5adbc0e412f37719e5f4754090d920ec
+  ExprSpan 94dde4ffceed0a2a13daed020b6576e1
+  Float c7df373b8e4833e69cb3138c7e929750
+  FloorDivAssign 6c92a793bfa316ebedb56004d85f3d6e
+  FloorDivide ebaf0d85800db21e616068648efe0972
+  For 45dcb16218c0382e69bbf51103aee3c7
+  FromImport cdff3b71f3c3d7ee22b2fc1494b865ca
+  FromItem 302fa9e6e7558f79d79c39d093f0e922
+  FromItemSpan 73d811e85ab4018f7789c4c4421a9fde
+  FromItems dfc1c1bbdf6934daa520e9dcfd1ae50c
+  FromItemsSpan e3cd8a0dc8214c8f5ef60ed5a9ac11ef
+  Generator c431efb34c44170d0594c43525fb873b
+  Global 1429f98820c974fcdfe6f8ad8f1cd94b
+  GreaterThan c87281eb602bf9c1674a7be8ba9f22c4
+  GreaterThanEquals ae74127d658bab636df48f5c8cdaf87d
+  Handler 1077bfa458ddf95d8d64d590c7f7f593
+  HandlerSpan cf431e64d114ff48b3a5eb8fda819c32
+  Ident c5dd5cb7cc6c45b3f8a1e4797f357a9b
+  IdentSpan 6aab1d6f902c3e0dbc09c99c8605e197
+  Imaginary 1a04b13ab867413c955d52accb4cdc99
+  Import 35d5fd7a06cf3bcd75235c9572a33105
+  ImportEverything fcba412422d650d600f9d0e50d5a5bb7
+  ImportItem cf1f0f2bdb44723a6a3c88b456992eb9
+  ImportItemSpan 283607fc44cb0ad26a76914defc72d00
+  ImportRelativeSpan 01a50092e1f9a1aefabdff796e5265a4
+  In 45ff596788ad98383b1505d37ff1ade7
+  Int d1fb0f5c7da4e5e7f6c48d7cff862a9d
+  Invert ebb5ee48bd20676ddf11c12df347b840
+  Is 83bc3512dd70e343ac077fb627f3363d
+  IsNot 051069b5ae7a54d6a254b7ed90943dd2
+  IterFor 0f1c0bcaacdbf4ae43e623a48f9e93ca
+  IterIf ef8fac6b5100cf952d91acbcb67a5fe9
+  Lambda a586ac894cb842e51b5b652373727cdb
+  LeftShiftAssign 7930bedc1ee424d9a43ba0aea0a131c4
+  LessThan c8ed55e41860dda024da880271ecca51
+  LessThanEquals bd1c77effc4e35bc9ca594fb68c0d5df
+  List 11b8e83c1b5ca19d76b016f6486d088c
+  MatrixMult 79ac431cb60de4e7042578a557144d78
+  MatrixMultAssign bbef0084b8a8d04fd15487480d312301
+  Minus eeade8cede53659f7208079699f800f8
+  MinusAssign e337b878384b35d54d6b1024b98a5799
+  ModAssign 7a40aef6b4fa9104520489f933e314a5
+  Module f1d03aee723924696a2ae6c69e86c1a4
+  ModuleSpan 86810320d90325ede6ee77588677d73d
+  Modulo fc1ac085cf71d9724507056088b2e190
+  MultAssign 7c95d2af1e7400e5e4a97b7fed700dad
+  Multiply 50e1028882c21443daf63f89d5d18910
+  NonLocal 0db1023b4dba2e7fe10d87edd30177e2
+  None 4f1f7a94194f9fa83d680628a617f730
+  Not f9f7ceb18ab82e37ada821c6975ea513
+  NotEquals abe36c43a094363d3303b907f3ec75ef
+  NotIn f08fe0f3847cb11886d14abae1808caa
+  OpSpan 3e80c1212dbae482ce637a5dc72042ac
+  Or b64688f0061c5a4097b76aeb42c2caec
+  ParameterSpan 94dde4ffceed0a2a13daed020b6576e1
+  Paren ffdb4e442edc88bc0a62076087c49146
+  Pass 2f4970c70e3d20edcbd9ac08ff9ee449
+  Plus da587f581d1642c0cf29630d6101f6de
+  PlusAssign 2228cb646507ab9e769ea1df91b373c8
+  PowAssign c975e5d1f49a4008def285e91d61fa27
+  Raise 550e547bd36220c7f92e7791cd92bd35
+  RaiseV3 8bde63aaaec46c5badb3efcb4cf0a7a1
+  RightShiftAssign 4df10160a308030e8bd17ab83494dd5e
+  ShiftLeft 526e914af1206afef12d2e3026e742e6
+  ShiftRight 87d7da6aac44dbdf57d10a35a150655d
+  Starred dd112618fb5f92f28083d6c2417ea92c
+  StatementSpan cf431e64d114ff48b3a5eb8fda819c32
+  StmtExpr aab63600bbff35086c75728f925bb3b3
+  Strings 8717ee9a003ddbe81762bf932e73727e
+  Tuple 2bb6cf88877f9f7dbea0aa0d6b3de88c
+  UnaryOp 22fd54dfaf3c9c3bb8ce5fa3accadccb
+  UnicodeStrings 00cd34cc2704f7559774e32e2d4c93c6
+  Var fccfc994f1c2754feff1a20e8d489eb0
+  While 6f9852ffe7f40ab9de79a6f838502362
+  With 122fa74a2b82606a9a92be2831fc8f09
+  Xor 86413e771bfc9bad908bf9caa08b0316
+  Yield eaebfa460dc3353f02c32e061319adda
+  YieldArgSpan 94dde4ffceed0a2a13daed020b6576e1
+  YieldExpr 1bc175319ad5e3cadfcbff6c177ec614
+  YieldFrom 4d5a84bc759719c537ba58f8a3b5a118
+import  -/  Language.Python.Common.ParserMonad 5c66e785c6954a72ef7262d195f9a0e8
+  exports: e5cf6b15983cfb8cebe91f296cfdd496
+  P dbdcfebcbc6e82e600f0bd328659de1e
+  returnP 060cfabff07ce993d9fe4b082686171a
+  thenP 59844d9f1d6f01a27d0fc299a12afec7
+import  -/  Language.Python.Common.ParserUtils f6ceab7a6002acca13c3320339993201
+  exports: 72077ae1de29739027f58c2d5f3e84de
+  Subscript f269901d5307ea19b4068b66dc7636f3
+  SubscriptExpr 1a22c17c3bf957427cd9944af6d6bd93
+  SubscriptSlice 19b43c3e38c456b593d0c4b5d8e49d9d
+  Trailer ef973e6b3be4feb427a73c916f947bc0
+  TrailerCall af64bc32c8b03d5d7f2500564f95b152
+  TrailerDot 5f68c883fc04041dca82f99fb78225a1
+  TrailerSubscript 51b2a3a33b8ff4051d7c3e0fe5693da0
+  addTrailer 9c0a29652f96c2410b8760279a6df8ef
+  checkArguments cf312e27505fed7d47b23fad273693aa
+  checkParameters 1cb0be1ffda8d8223327f6adb945d834
+  makeAnnAssignment cb1a140d52a04b8d1d4bdafd64b0d2ea
+  makeAugAssignment 596a6bdae83a7c2f81904187c0954257
+  makeBinOp 4b3de0832d665129e917a8d2b6620b88
+  makeComprehension 6838f049b3e4626db412f1f91734b20f
+  makeConditionalExpr 0610b68e200c1a1bd60c7175e1f94f9b
+  makeDecorated 73a336dd7ac2feaace9e51781b495727
+  makeDecorator 2c1f1e9b6ffbeeabb547f9c4b450c296
+  makeDictionary 12b3420e4fa8cf3e04152a9a97cddb63
+  makeFun 48abd41ce54458795bc4641fa2816e1c
+  makeListForm 767405c36a5fe6a398ce132f621b1e42
+  makeNormalAssignment 6b6d2ab47114da63c3e905a30bacfbc9
+  makeParam 60df0ef1254840cb9e4c569a0a991bb6
+  makeRelative 6ed1ef9c673f9745514dee79bd6bff40
+  makeReturn c58dd4ec8d999818488ae625b070311b
+  makeSet 4a3f1f0caada2b4dc2511b94f5089076
+  makeStarParam 0ca06e003965c8fe4edaa2b8a3cf7a96
+  makeStarStarParam 48cb6c11b7ddcb11666680d22612dd7d
+  makeTry 179e1da577515e7123696d5d75e31cc7
+  makeTupleOrExpr 8d2f4233a6a3e87fd6a4da4e246643e0
+  parseError 3d8ce8c65f10a13587fb749b7ec04313
+import  -/  Language.Python.Common.SrcLocation 8f143931064eb388f1f2a6dd7f644740
+  exports: 53449eeea761b903564548d6dcb5e6f4
+  SrcSpan 7855650ba5477745c617b1d6a2c60117
+  getSpan 705afb86514220eddda721f71e34f0d3
+  spanning 6745f4d7f5c89ca40c260953253bdbce
+import  -/  Language.Python.Common.Token d5076ddbfa147a7adfa845a047c4ec2b
+  exports: 989971a82f568d9688304166d774cea9
+  AndToken bce9c8edbcd5d465728823cc1739c7d4
+  AsToken 96fe3cfeeb967cf06a19b6fd80ee37d6
+  AssertToken 08d8a31a9b4b360cc5d40baed79a4b99
+  AssignToken 90cbda14cc6f27aba58cfa7b0f9046a0
+  AsyncToken 214c4822294d4e3df0cd338379ddfff8
+  AtToken a7dfe1d1ac7e5b0c7d4b45e79e184b11
+  AwaitToken 1c7ac69630ff851811c7844c62f8b76e
+  BinAndAssignToken 3b81f90aa225d174e94965452db18408
+  BinOrAssignToken 6643a8a78e786cbd2ea2837cfa7b85ec
+  BinXorAssignToken 7db12eb04e29f0985627f222ef8ff1e3
+  BinaryAndToken 5eb4e410690fe57750202406133ccae9
+  BinaryOrToken 7ae5c405bd25cb154d4d51b43ebf120e
+  BreakToken 59f6f60850766e0ffbcb5afe044e8d5a
+  ByteStringToken 8ed71ca430d8fd81a65296b0f242d1d6
+  ClassToken 0f70c7bc21536d33024932e7d1aff301
+  ColonToken 4061513d4dbaa88f2737a77ef56094d4
+  CommaToken 44ada8e9df755fe79ff3e5629d7e534d
+  ContinueToken 16fd641b346eaa8a19d028223660a14a
+  DedentToken d88ae81e5dfafe5f22e03615b3b9afb9
+  DefToken b6e057e6167e5f1d735d9b5b98c07fd0
+  DeleteToken 3297524c3afb0e0f2158d84e9f45224e
+  DivAssignToken c310d8f2db30124c9c5f0502c0146065
+  DivToken 462b17bee82838812bc02a64f1a0025e
+  DotToken 003d9d4564a536435f9e80722ec86d3d
+  EOFToken 1cf80df53c67e36853da3c226a40c5e4
+  ElifToken 839e2a6d8ef776ba99a451112af7dfee
+  EllipsisToken d57d66112d934a9c41a298d428d79716
+  ElseToken 72c3434d31abb473ddf34e4261a06332
+  EqualityToken 08ddde846ce980c8c499db4ae68fc0c6
+  ExceptToken 238220cc11ce851dba08933f15363c33
+  ExponentToken 09f697be60b198fbfaf81cd79a2ce779
+  FalseToken 1f17dbac4445d041fdfca052e81ee897
+  FinallyToken ea75a81465ef50606e4bd90787e7c8a3
+  FloatToken c6c8144ddb699972c1b74dddc504c056
+  FloorDivAssignToken dcddffde2042e303c8cea3a925581f88
+  FloorDivToken 6e99009a41ace8a74730d51bd8327b2c
+  ForToken 59b1001aea44b8dc5cc23a1748e1d070
+  FromToken bea75cc33171ebc3c4c60a9d553de8b9
+  GlobalToken efac6585447e4190333d8352ea1f80bf
+  GreaterThanEqualsToken e783d490b095d815e947711cb5b6f5ec
+  GreaterThanToken e1e05bf37deccd8c8592cdd36cb16e73
+  IdentifierToken 8b13c0eed3b80d89b71ea9f79ae411b6
+  IfToken 3a93e34ef185993f7f4c6a91dbb2e1d3
+  ImaginaryToken 146a73d5fbc8ec23fda5be0442442cdc
+  ImportToken 8b9680cc98e8aa033fcc878f16016fb3
+  InToken 5447463b85d1aff2c356cc5227b3677b
+  IndentToken 3977f1b73d2288983e72233470a4e6bd
+  IntegerToken e71a57281f42e20860c67b540ddee222
+  IsToken a086e4d09c866c5a18db0cf2bc950d89
+  LambdaToken 1461fc1dbc0359ab4fc369875531e6d5
+  LeftBraceToken b95fd072d7d2e01fe836cd003b745326
+  LeftRoundBracketToken d11dbcb5363be70a2bdf7bdeac7f2ebc
+  LeftShiftAssignToken 6b47708d246959d20acdc54339528adc
+  LeftSquareBracketToken cdebfdc78e4d0d70ef126d6f2401a811
+  LessThanEqualsToken 13b1a5252b0ba146ce8c2cb210c89227
+  LessThanToken 5e4b00ed35a51458495ed70494d2d463
+  MatrixMultAssignToken 61f35f01d85e42cc35b163ffdef8dcf7
+  MinusAssignToken 23f36baf1e86a827390308cb2544e4da
+  MinusToken 59c24c04f0c25f648a42bf63de9d4189
+  ModAssignToken 234024f2c69436a80b46aeb42dbbf307
+  ModuloToken fc6bc20aa6094c9326578a984c8a7748
+  MultAssignToken 7c93f1a0c17b335cd511ad8482e53807
+  MultToken 135814f3f60efd00a5dde7bf307dfafa
+  NewlineToken 3f56dcc8b6ff151ce5b76ce9e3b85a30
+  NonLocalToken 1b517f2e00d22f07134c9805ff8bbaf4
+  NoneToken 20318e326a3cf81919f09221483bf9f8
+  NotEqualsToken 8af1806ae11edf967c2a42f0008b0946
+  NotToken 1c1cb07b5238197fdf5d5016137f4050
+  OrToken 985b136ccee4dca9a24bdc602e5b3c14
+  PassToken a8acbbe3beebd423550d138b1d7b4a8d
+  PlusAssignToken 0454620aac0fd884e1176ede19bc7ef3
+  PlusToken 0d32b186967ad92c09457859ab4f303a
+  PowAssignToken 62bd64d1983fbfb6497f32bfa56de95b
+  RaiseToken d140aa3452518956bbf4d83c2a34943d
+  ReturnToken ff37467b6350979db788622ac3544224
+  RightArrowToken 6eeabdd23ad0885b1b3c1f607b894a1f
+  RightBraceToken 51416014b5288d7c6afbcc85099d8959
+  RightRoundBracketToken 651ae74c861ba43e674e18bf027ad9b6
+  RightShiftAssignToken 85116790f81adf1ac2fb57817d8f5602
+  RightSquareBracketToken 7620f90150ae1e3424d4dc9789df6a05
+  SemiColonToken c4783ac1a071940cf6848e4e0db24e79
+  ShiftLeftToken e01211439acde9e9a86fe3849b57df64
+  ShiftRightToken 5bd4c7bd5a78aeab44f44c78b9841241
+  StringToken a7ab32c6550b6c4e156e55510a109386
+  TildeToken 52e829bdee3f547795b44c1a0cf842c6
+  Token c26478989c7eb45d7c7d423358c5d58e
+  TrueToken d17639c7dbb8b81810b37a56eacc2369
+  TryToken 3eb8bb7324c5b5c0a7e54321738e550a
+  UnicodeStringToken 3a20dd20048b280b2b0ac129f0fa84b6
+  WhileToken 1b61ed17fd5df953b4d8715261f2dfe7
+  WithToken 575acef2dbf2f6c01be41be312faf9ea
+  XorToken a10af18317051a3c40da57e95a4dfd43
+  YieldToken 9bee54a9d91101a07c0b1532a02b0a4f
+  token_double c26478989c7eb45d7c7d423358c5d58e
+  token_integer c26478989c7eb45d7c7d423358c5d58e
+  token_literal c26478989c7eb45d7c7d423358c5d58e
+import  -/  Language.Python.Version3.Parser.Lexer 396764c0f5f504316b88251e9f75508e
+  exports: 7e1506f13bdcce57bdba9463f320e629
+  lexCont 80d8055fab4ab4b66c5afe37674a8c4d
+addDependentFile "/Users/jaiyalas/.stack/programs/x86_64-osx/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+fixities infixr 9 HappyStk, infixr 9 HappyStk
+3e85c0d214a13530ea6bbe3088c933c4
+  $tc'HappyA# :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18274985102441581336##
+                   18075736160729506900##
+                   Language.Python.Version3.Parser.Parser.$trModule
+                   Language.Python.Version3.Parser.Parser.$tc'HappyA#2
+                   0#
+                   Language.Python.Version3.Parser.Parser.$tc'HappyA#1) -}
+c632e873ae306aa469495cadb17317fd
+  $tc'HappyA#1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+56d661369c33f429aaf03f77aea7f610
+  $tc'HappyA#2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Parser.$tc'HappyA#3) -}
+cb6b3a511dfe406b470668019bf2ecb2
+  $tc'HappyA#3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HappyA#"#) -}
+d17e9bff7d56082ce4cbe49e675b656a
+  $tc'HappyCons :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14331758861643228239##
+                   10983987711417887322##
+                   Language.Python.Version3.Parser.Parser.$trModule
+                   Language.Python.Version3.Parser.Parser.$tc'HappyCons2
+                   0#
+                   Language.Python.Version3.Parser.Parser.$tc'HappyCons1) -}
+361473b69c3de6b1997b8259c3f9cafd
+  $tc'HappyCons1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+7b22101ce484014ee3293cbc7b4fa2f6
+  $tc'HappyCons2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Parser.$tc'HappyCons3) -}
+e90486cd8c29a3ede28e93f89c18a230
+  $tc'HappyCons3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HappyCons"#) -}
+7274ebbe1679019dc6477ddd62036ee7
+  $tc'HappyStk :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   828887936212985333##
+                   6625728802653627745##
+                   Language.Python.Version3.Parser.Parser.$trModule
+                   Language.Python.Version3.Parser.Parser.$tc'HappyStk2
+                   1#
+                   Language.Python.Version3.Parser.Parser.$tc'HappyStk1) -}
+c63f7dbe009e4f40acb99f086ba288af
+  $tc'HappyStk1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+fe723c5f6ad456549423fcd4e79ab94b
+  $tc'HappyStk2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Parser.$tc'HappyStk3) -}
+f4ee84c1083c7f3c1f757ccc425df578
+  $tc'HappyStk3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HappyStk"#) -}
+527f8bc5c13ba784da66c2425a990b4d
+  $tcHappyAbsSyn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5695266553936820350##
+                   1081564553344839060##
+                   Language.Python.Version3.Parser.Parser.$trModule
+                   Language.Python.Version3.Parser.Parser.$tcHappyAbsSyn2
+                   0#
+                   Language.Python.Version3.Parser.Parser.$tcHappyAbsSyn1) -}
+8862d5f843b98f8ddcce6efee9b1ad73
+  $tcHappyAbsSyn1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+eea2115bd87366d96e97d7bb074d4385
+  $tcHappyAbsSyn2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Parser.$tcHappyAbsSyn3) -}
+67e85e5b75c518e9c3eda9d880843eec
+  $tcHappyAbsSyn3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HappyAbsSyn"#) -}
+b9199a58e455774eecf26da0bdc9bf18
+  $tcHappyAddr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11856985658855943280##
+                   3011146469211962999##
+                   Language.Python.Version3.Parser.Parser.$trModule
+                   Language.Python.Version3.Parser.Parser.$tcHappyAddr1
+                   0#
+                   GHC.Types.krep$*) -}
+eab151bb873d79e6f869ece30ed9d263
+  $tcHappyAddr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Parser.$tcHappyAddr2) -}
+3d76253420ac50d026203611c9c21cc9
+  $tcHappyAddr2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HappyAddr"#) -}
+57a249122dc010964765caa4e3ed6ceb
+  $tcHappyStk :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2245519053592076254##
+                   16097209188202351288##
+                   Language.Python.Version3.Parser.Parser.$trModule
+                   Language.Python.Version3.Parser.Parser.$tcHappyStk1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+7903a315bd2bf7c21f221dab197ecba9
+  $tcHappyStk1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Parser.$tcHappyStk2) -}
+4dda17938c5a2501de47b23fb3dcd819
+  $tcHappyStk2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HappyStk"#) -}
+d6fd6f864910bf41c7650c2652945546
+  $tcHappy_IntList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11138705989691579731##
+                   14275712176082973280##
+                   Language.Python.Version3.Parser.Parser.$trModule
+                   Language.Python.Version3.Parser.Parser.$tcHappy_IntList1
+                   0#
+                   GHC.Types.krep$*) -}
+21971358318d12d9261c75d1d2db400d
+  $tcHappy_IntList1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Parser.$tcHappy_IntList2) -}
+23d14db94f7a5ef71fd34fb748335ce9
+  $tcHappy_IntList2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Happy_IntList"#) -}
+a9286504d55563b196383a6d14cd72b3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.Python.Version3.Parser.Parser.$trModule3
+                   Language.Python.Version3.Parser.Parser.$trModule1) -}
+141a2b060c7d636920f327c77eb6ce06
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Parser.$trModule2) -}
+9fff45ea165c15797286c3b4ddf6f0a0
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Language.Python.Version3.Parser.Parser"#) -}
+8a318cb113957c2879f90bbe09c669c2
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.Python.Version3.Parser.Parser.$trModule4) -}
+8aebbda31df93fdc832d6407f399513c
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("language-python-0.5.5-551ZWmiBNZ181NDEMfok7Y"#) -}
+7683fd9461d97445cf5d8007644cf5a1
+  type role HappyAbsSyn phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom
+  newtype HappyAbsSyn t134
+                      t143
+                      t144
+                      t145
+                      t146
+                      t147
+                      t148
+                      t149
+                      t150
+                      t151
+                      t152
+                      t153
+                      t154
+                      t155
+                      t156
+                      t157
+                      t158
+                      t159
+                      t160
+                      t161
+                      t162
+                      t163
+                      t164
+                      t165
+                      t166
+                      t167
+                      t168
+                      t169
+                      t170
+                      t171
+                      t172
+                      t173
+                      t174
+                      t175
+                      t176
+                      t177
+                      t178
+                      t179
+                      t180
+                      t181
+                      t182
+                      t183
+                      t184
+                      t185
+                      t186
+                      t187
+                      t188
+                      t189
+                      t190
+                      t191
+                      t192
+                      t193
+                      t194
+                      t195
+                      t196
+                      t197
+                      t198
+                      t199
+                      t200
+                      t201
+                      t202
+                      t203
+                      t204
+                      t205
+                      t206
+                      t207
+                      t208
+                      t209
+                      t210
+                      t211
+                      t212
+                      t213
+                      t214
+                      t215
+                      t216
+                      t217
+                      t218
+                      t219
+                      t220
+                      t221
+                      t222
+                      t223
+                      t224
+                      t225
+                      t226
+                      t227
+                      t228
+                      t229
+                      t230
+                      t231
+                      t232
+                      t233
+                      t234
+                      t235
+                      t236
+                      t237
+                      t238
+                      t239
+                      t240
+                      t241
+                      t242
+                      t243
+                      t244
+                      t245
+                      t246
+                      t247
+                      t248
+                      t249
+                      t250
+                      t251
+                      t252
+                      t253
+                      t254
+                      t255
+                      t256
+                      t257
+                      t258
+                      t259
+                      t260
+                      t261
+                      t262
+                      t263
+                      t264
+                      t265
+                      t266
+                      t267
+                      t268
+                      t269
+                      t270
+                      t271
+                      t272
+                      t273
+    = HappyAbsSyn Language.Python.Version3.Parser.Parser.HappyAny
+485c79531fa33f8ff57e0c8ffd270dc7
+  data HappyAddr = HappyA# GHC.Prim.Addr#
+7b48cde76f61a295ba89c76fc7fb6ac2
+  type HappyAny = GHC.Types.Any
+ddf829ba133817af20b3d0707fc49275
+  data HappyStk a
+    = HappyStk a (Language.Python.Version3.Parser.Parser.HappyStk a)
+42a87410d53f5f67f6bd89f930538ddb
+  data Happy_IntList
+    = HappyCons GHC.Prim.Int#
+                Language.Python.Version3.Parser.Parser.Happy_IntList
+0a0b1d8304445a81bc88d4f426e5e138
+  notHappyAtAll :: a
+  {- Strictness: x -}
+30f35446a9997373c13861101f350cc5
+  parseEval ::
+    Language.Python.Common.ParserMonad.P
+      Language.Python.Common.AST.ExprSpan
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Version3.Parser.Parser.parseEval1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <Language.Python.Common.AST.ExprSpan>_N)) -}
+d0fccbd4d69665ee6873955748fa0f32
+  parseEval1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (Language.Python.Common.AST.ExprSpan,
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case Language.Python.Version3.Parser.Parser.parseEval2
+                        2#
+                        (Language.Python.Version3.Parser.Parser.notHappyAtAll
+                           @ Language.Python.Version3.Parser.Parser.Happy_IntList)
+                        (Language.Python.Version3.Parser.Parser.notHappyAtAll
+                           @ (Language.Python.Version3.Parser.Parser.HappyStk
+                                (Language.Python.Version3.Parser.Parser.HappyAbsSyn
+                                   (Language.Python.Common.AST.Argument
+                                      Language.Python.Common.SrcLocation.SrcSpan)
+                                   (Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.StatementSpan])
+                                   [Language.Python.Common.Token.Token]
+                                   [Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.Statement
+                                         Language.Python.Common.SrcLocation.SrcSpan]]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     [Language.Python.Common.AST.StatementSpan])]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Trailer]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.AST.DecoratorSpan]
+                                   [Language.Python.Common.AST.HandlerSpan]
+                                   [[Language.Python.Common.AST.StatementSpan]]
+                                   (GHC.Base.Maybe Language.Python.Common.Token.Token)
+                                   (GHC.Base.Maybe Language.Python.Common.Token.Token)
+                                   (GHC.Base.Maybe [Language.Python.Common.AST.ArgumentSpan])
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.CompIter
+                                         Language.Python.Common.SrcLocation.SrcSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.OpSpan,
+                                       Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.ExprSpan,
+                                       GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.ExprSpan,
+                                       GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe
+                                      ([Language.Python.Common.AST.ArgumentSpan],
+                                       Language.Python.Common.SrcLocation.SrcSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.IdentSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.ExprSpan,
+                                       Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.IdentSpan,
+                                       GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+                                   (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+                                   (GHC.Base.Maybe Language.Python.Common.AST.YieldArgSpan)
+                                   Language.Python.Common.AST.OpSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.StatementSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.ExprSpan,
+                                    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.ExprSpan,
+                                    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.ExprSpan,
+                                    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.IdentSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.IdentSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ImportItemSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.AST.FromItem
+                                      Language.Python.Common.SrcLocation.SrcSpan]
+                                   [Language.Python.Common.AST.ArgumentSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Subscript]
+                                   [(Language.Python.Common.AST.Expr
+                                       Language.Python.Common.SrcLocation.SrcSpan,
+                                     GHC.Base.Maybe
+                                       (Language.Python.Common.AST.Expr
+                                          Language.Python.Common.SrcLocation.SrcSpan))]
+                                   [Language.Python.Common.Token.Token]
+                                   [Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.StatementSpan]]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     [Language.Python.Common.AST.StatementSpan])]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Trailer]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.AST.DecoratorSpan]
+                                   [Language.Python.Common.AST.HandlerSpan]
+                                   [[Language.Python.Common.AST.StatementSpan]]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ImportItemSpan]
+                                   [Language.Python.Common.AST.FromItemSpan]
+                                   [Language.Python.Common.AST.ArgumentSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Subscript]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.Token.Token]
+                                   [Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.StatementSpan]]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     [Language.Python.Common.AST.StatementSpan])]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Trailer])))
+                        (Language.Python.Common.ParserMonad.ParseState
+                           ww1
+                           ww2
+                           ww3
+                           ww4
+                           ww5
+                           ww6
+                           ww7
+                           ww8) of wild1 {
+                   Data.Either.Left l1
+                   -> Data.Either.Left
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (Language.Python.Common.AST.ExprSpan,
+                           Language.Python.Common.ParserMonad.ParseState)
+                        l1
+                   Data.Either.Right r
+                   -> case r of wild2 { (,) a1 s' ->
+                      Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (Language.Python.Common.AST.ExprSpan,
+                           Language.Python.Common.ParserMonad.ParseState)
+                        (a1
+                           `cast`
+                         (UnsafeCo representational (Language.Python.Version3.Parser.Parser.HappyAbsSyn
+                                                       (Language.Python.Common.AST.Argument
+                                                          Language.Python.Common.SrcLocation.SrcSpan)
+                                                       (Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.StatementSpan])
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.Statement
+                                                             Language.Python.Common.SrcLocation.SrcSpan]]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         [Language.Python.Common.AST.StatementSpan])]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Trailer]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.AST.DecoratorSpan]
+                                                       [Language.Python.Common.AST.HandlerSpan]
+                                                       [[Language.Python.Common.AST.StatementSpan]]
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.Token.Token)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.Token.Token)
+                                                       (GHC.Base.Maybe
+                                                          [Language.Python.Common.AST.ArgumentSpan])
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.CompIter
+                                                             Language.Python.Common.SrcLocation.SrcSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.OpSpan,
+                                                           Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.ExprSpan,
+                                                           GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.ExprSpan,
+                                                           GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          ([Language.Python.Common.AST.ArgumentSpan],
+                                                           Language.Python.Common.SrcLocation.SrcSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.IdentSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.ExprSpan,
+                                                           Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.IdentSpan,
+                                                           GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          [Language.Python.Common.AST.ParameterSpan])
+                                                       (GHC.Base.Maybe
+                                                          [Language.Python.Common.AST.ParameterSpan])
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.YieldArgSpan)
+                                                       Language.Python.Common.AST.OpSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.StatementSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.ExprSpan,
+                                                        GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.ExprSpan,
+                                                        GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.ExprSpan,
+                                                        GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.IdentSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.IdentSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ImportItemSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.AST.FromItem
+                                                          Language.Python.Common.SrcLocation.SrcSpan]
+                                                       [Language.Python.Common.AST.ArgumentSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Subscript]
+                                                       [(Language.Python.Common.AST.Expr
+                                                           Language.Python.Common.SrcLocation.SrcSpan,
+                                                         GHC.Base.Maybe
+                                                           (Language.Python.Common.AST.Expr
+                                                              Language.Python.Common.SrcLocation.SrcSpan))]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.StatementSpan]]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         [Language.Python.Common.AST.StatementSpan])]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Trailer]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.AST.DecoratorSpan]
+                                                       [Language.Python.Common.AST.HandlerSpan]
+                                                       [[Language.Python.Common.AST.StatementSpan]]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ImportItemSpan]
+                                                       [Language.Python.Common.AST.FromItemSpan]
+                                                       [Language.Python.Common.AST.ArgumentSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Subscript]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         GHC.Base.Maybe
+                                                           Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.StatementSpan]]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         [Language.Python.Common.AST.StatementSpan])]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Trailer]) Language.Python.Common.AST.ExprSpan),
+                         s') } } }) -}
+ce60a527a442805360c279f6d65d771b
+  parseEval2 ::
+    GHC.Prim.Int#
+    -> Language.Python.Version3.Parser.Parser.Happy_IntList
+    -> Language.Python.Version3.Parser.Parser.HappyStk
+         (Language.Python.Version3.Parser.Parser.HappyAbsSyn
+            (Language.Python.Common.AST.Argument
+               Language.Python.Common.SrcLocation.SrcSpan)
+            (Data.Either.Either
+               Language.Python.Common.Token.Token
+               [Language.Python.Common.AST.StatementSpan])
+            [Language.Python.Common.Token.Token]
+            [Data.Either.Either
+               Language.Python.Common.Token.Token
+               [Language.Python.Common.AST.Statement
+                  Language.Python.Common.SrcLocation.SrcSpan]]
+            [(Language.Python.Common.AST.ExprSpan,
+              [Language.Python.Common.AST.StatementSpan])]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Trailer]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.AST.DecoratorSpan]
+            [Language.Python.Common.AST.HandlerSpan]
+            [[Language.Python.Common.AST.StatementSpan]]
+            (GHC.Base.Maybe Language.Python.Common.Token.Token)
+            (GHC.Base.Maybe Language.Python.Common.Token.Token)
+            (GHC.Base.Maybe [Language.Python.Common.AST.ArgumentSpan])
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.CompIter
+                  Language.Python.Common.SrcLocation.SrcSpan))
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.OpSpan,
+                Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.ExprSpan,
+                GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.ExprSpan,
+                GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe
+               ([Language.Python.Common.AST.ArgumentSpan],
+                Language.Python.Common.SrcLocation.SrcSpan))
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.IdentSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.ExprSpan,
+                Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.IdentSpan,
+                GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+            (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+            (GHC.Base.Maybe Language.Python.Common.AST.YieldArgSpan)
+            Language.Python.Common.AST.OpSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.StatementSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.ExprSpan,
+             GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.ExprSpan,
+             GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.ExprSpan,
+             GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.IdentSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.IdentSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ImportItemSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.AST.FromItem
+               Language.Python.Common.SrcLocation.SrcSpan]
+            [Language.Python.Common.AST.ArgumentSpan]
+            [Language.Python.Common.AST.ParameterSpan]
+            [Language.Python.Common.AST.ParameterSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Subscript]
+            [(Language.Python.Common.AST.Expr
+                Language.Python.Common.SrcLocation.SrcSpan,
+              GHC.Base.Maybe
+                (Language.Python.Common.AST.Expr
+                   Language.Python.Common.SrcLocation.SrcSpan))]
+            [Language.Python.Common.Token.Token]
+            [Data.Either.Either
+               Language.Python.Common.Token.Token
+               [Language.Python.Common.AST.StatementSpan]]
+            [(Language.Python.Common.AST.ExprSpan,
+              [Language.Python.Common.AST.StatementSpan])]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Trailer]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.AST.DecoratorSpan]
+            [Language.Python.Common.AST.HandlerSpan]
+            [[Language.Python.Common.AST.StatementSpan]]
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ImportItemSpan]
+            [Language.Python.Common.AST.FromItemSpan]
+            [Language.Python.Common.AST.ArgumentSpan]
+            [Language.Python.Common.AST.ParameterSpan]
+            [Language.Python.Common.AST.ParameterSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Subscript]
+            [Language.Python.Common.AST.ExprSpan]
+            [(Language.Python.Common.AST.ExprSpan,
+              GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)]
+            [Language.Python.Common.Token.Token]
+            [Data.Either.Either
+               Language.Python.Common.Token.Token
+               [Language.Python.Common.AST.StatementSpan]]
+            [(Language.Python.Common.AST.ExprSpan,
+              [Language.Python.Common.AST.StatementSpan])]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Trailer])
+    -> Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (Language.Python.Version3.Parser.Parser.HappyAbsSyn
+            (Language.Python.Common.AST.Argument
+               Language.Python.Common.SrcLocation.SrcSpan)
+            (Data.Either.Either
+               Language.Python.Common.Token.Token
+               [Language.Python.Common.AST.StatementSpan])
+            [Language.Python.Common.Token.Token]
+            [Data.Either.Either
+               Language.Python.Common.Token.Token
+               [Language.Python.Common.AST.Statement
+                  Language.Python.Common.SrcLocation.SrcSpan]]
+            [(Language.Python.Common.AST.ExprSpan,
+              [Language.Python.Common.AST.StatementSpan])]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Trailer]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.AST.DecoratorSpan]
+            [Language.Python.Common.AST.HandlerSpan]
+            [[Language.Python.Common.AST.StatementSpan]]
+            (GHC.Base.Maybe Language.Python.Common.Token.Token)
+            (GHC.Base.Maybe Language.Python.Common.Token.Token)
+            (GHC.Base.Maybe [Language.Python.Common.AST.ArgumentSpan])
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.CompIter
+                  Language.Python.Common.SrcLocation.SrcSpan))
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.OpSpan,
+                Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.ExprSpan,
+                GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.ExprSpan,
+                GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe
+               ([Language.Python.Common.AST.ArgumentSpan],
+                Language.Python.Common.SrcLocation.SrcSpan))
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.IdentSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.ExprSpan,
+                Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (GHC.Base.Maybe
+               (Language.Python.Common.AST.IdentSpan,
+                GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+            (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+            (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+            (GHC.Base.Maybe Language.Python.Common.AST.YieldArgSpan)
+            Language.Python.Common.AST.OpSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.StatementSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.OpSpan,
+             Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.ExprSpan,
+             GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.ExprSpan,
+             GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            (Language.Python.Common.AST.ExprSpan,
+             GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.IdentSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.IdentSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            Language.Python.Common.AST.ExprSpan
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ImportItemSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.AST.FromItem
+               Language.Python.Common.SrcLocation.SrcSpan]
+            [Language.Python.Common.AST.ArgumentSpan]
+            [Language.Python.Common.AST.ParameterSpan]
+            [Language.Python.Common.AST.ParameterSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Subscript]
+            [(Language.Python.Common.AST.Expr
+                Language.Python.Common.SrcLocation.SrcSpan,
+              GHC.Base.Maybe
+                (Language.Python.Common.AST.Expr
+                   Language.Python.Common.SrcLocation.SrcSpan))]
+            [Language.Python.Common.Token.Token]
+            [Data.Either.Either
+               Language.Python.Common.Token.Token
+               [Language.Python.Common.AST.StatementSpan]]
+            [(Language.Python.Common.AST.ExprSpan,
+              [Language.Python.Common.AST.StatementSpan])]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Trailer]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.Token.Token]
+            [Language.Python.Common.AST.DecoratorSpan]
+            [Language.Python.Common.AST.HandlerSpan]
+            [[Language.Python.Common.AST.StatementSpan]]
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ImportItemSpan]
+            [Language.Python.Common.AST.FromItemSpan]
+            [Language.Python.Common.AST.ArgumentSpan]
+            [Language.Python.Common.AST.ParameterSpan]
+            [Language.Python.Common.AST.ParameterSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Subscript]
+            [Language.Python.Common.AST.ExprSpan]
+            [(Language.Python.Common.AST.ExprSpan,
+              GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)]
+            [Language.Python.Common.Token.Token]
+            [Data.Either.Either
+               Language.Python.Common.Token.Token
+               [Language.Python.Common.AST.StatementSpan]]
+            [(Language.Python.Common.AST.ExprSpan,
+              [Language.Python.Common.AST.StatementSpan])]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [(Language.Python.Common.AST.OpSpan,
+              Language.Python.Common.AST.ExprSpan)]
+            [Language.Python.Common.AST.IdentSpan]
+            [Language.Python.Common.AST.ExprSpan]
+            [Language.Python.Common.ParserUtils.Trailer],
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 4,
+     Strictness: <L,U><L,U><L,U(U,U(U,U))><S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)> -}
+fa074ff3944458f920bd628da2629baf
+  parseFileInput ::
+    Language.Python.Common.ParserMonad.P
+      Language.Python.Common.AST.ModuleSpan
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Version3.Parser.Parser.parseFileInput1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <Language.Python.Common.AST.ModuleSpan>_N)) -}
+674918eee8ba9ef736728c711305a9ba
+  parseFileInput1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         (Language.Python.Common.AST.ModuleSpan,
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case Language.Python.Version3.Parser.Parser.parseEval2
+                        0#
+                        (Language.Python.Version3.Parser.Parser.notHappyAtAll
+                           @ Language.Python.Version3.Parser.Parser.Happy_IntList)
+                        (Language.Python.Version3.Parser.Parser.notHappyAtAll
+                           @ (Language.Python.Version3.Parser.Parser.HappyStk
+                                (Language.Python.Version3.Parser.Parser.HappyAbsSyn
+                                   (Language.Python.Common.AST.Argument
+                                      Language.Python.Common.SrcLocation.SrcSpan)
+                                   (Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.StatementSpan])
+                                   [Language.Python.Common.Token.Token]
+                                   [Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.Statement
+                                         Language.Python.Common.SrcLocation.SrcSpan]]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     [Language.Python.Common.AST.StatementSpan])]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Trailer]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.AST.DecoratorSpan]
+                                   [Language.Python.Common.AST.HandlerSpan]
+                                   [[Language.Python.Common.AST.StatementSpan]]
+                                   (GHC.Base.Maybe Language.Python.Common.Token.Token)
+                                   (GHC.Base.Maybe Language.Python.Common.Token.Token)
+                                   (GHC.Base.Maybe [Language.Python.Common.AST.ArgumentSpan])
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.CompIter
+                                         Language.Python.Common.SrcLocation.SrcSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.OpSpan,
+                                       Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.ExprSpan,
+                                       GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.ExprSpan,
+                                       GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe
+                                      ([Language.Python.Common.AST.ArgumentSpan],
+                                       Language.Python.Common.SrcLocation.SrcSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.IdentSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.ExprSpan,
+                                       Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.IdentSpan,
+                                       GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+                                   (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+                                   (GHC.Base.Maybe Language.Python.Common.AST.YieldArgSpan)
+                                   Language.Python.Common.AST.OpSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.StatementSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.ExprSpan,
+                                    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.ExprSpan,
+                                    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.ExprSpan,
+                                    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.IdentSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.IdentSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ImportItemSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.AST.FromItem
+                                      Language.Python.Common.SrcLocation.SrcSpan]
+                                   [Language.Python.Common.AST.ArgumentSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Subscript]
+                                   [(Language.Python.Common.AST.Expr
+                                       Language.Python.Common.SrcLocation.SrcSpan,
+                                     GHC.Base.Maybe
+                                       (Language.Python.Common.AST.Expr
+                                          Language.Python.Common.SrcLocation.SrcSpan))]
+                                   [Language.Python.Common.Token.Token]
+                                   [Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.StatementSpan]]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     [Language.Python.Common.AST.StatementSpan])]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Trailer]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.AST.DecoratorSpan]
+                                   [Language.Python.Common.AST.HandlerSpan]
+                                   [[Language.Python.Common.AST.StatementSpan]]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ImportItemSpan]
+                                   [Language.Python.Common.AST.FromItemSpan]
+                                   [Language.Python.Common.AST.ArgumentSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Subscript]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.Token.Token]
+                                   [Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.StatementSpan]]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     [Language.Python.Common.AST.StatementSpan])]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Trailer])))
+                        (Language.Python.Common.ParserMonad.ParseState
+                           ww1
+                           ww2
+                           ww3
+                           ww4
+                           ww5
+                           ww6
+                           ww7
+                           ww8) of wild1 {
+                   Data.Either.Left l1
+                   -> Data.Either.Left
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (Language.Python.Common.AST.ModuleSpan,
+                           Language.Python.Common.ParserMonad.ParseState)
+                        l1
+                   Data.Either.Right r
+                   -> case r of wild2 { (,) a1 s' ->
+                      Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ (Language.Python.Common.AST.ModuleSpan,
+                           Language.Python.Common.ParserMonad.ParseState)
+                        (a1
+                           `cast`
+                         (UnsafeCo representational (Language.Python.Version3.Parser.Parser.HappyAbsSyn
+                                                       (Language.Python.Common.AST.Argument
+                                                          Language.Python.Common.SrcLocation.SrcSpan)
+                                                       (Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.StatementSpan])
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.Statement
+                                                             Language.Python.Common.SrcLocation.SrcSpan]]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         [Language.Python.Common.AST.StatementSpan])]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Trailer]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.AST.DecoratorSpan]
+                                                       [Language.Python.Common.AST.HandlerSpan]
+                                                       [[Language.Python.Common.AST.StatementSpan]]
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.Token.Token)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.Token.Token)
+                                                       (GHC.Base.Maybe
+                                                          [Language.Python.Common.AST.ArgumentSpan])
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.CompIter
+                                                             Language.Python.Common.SrcLocation.SrcSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.OpSpan,
+                                                           Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.ExprSpan,
+                                                           GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.ExprSpan,
+                                                           GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          ([Language.Python.Common.AST.ArgumentSpan],
+                                                           Language.Python.Common.SrcLocation.SrcSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.IdentSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.ExprSpan,
+                                                           Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.IdentSpan,
+                                                           GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          [Language.Python.Common.AST.ParameterSpan])
+                                                       (GHC.Base.Maybe
+                                                          [Language.Python.Common.AST.ParameterSpan])
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.YieldArgSpan)
+                                                       Language.Python.Common.AST.OpSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.StatementSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.ExprSpan,
+                                                        GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.ExprSpan,
+                                                        GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.ExprSpan,
+                                                        GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.IdentSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.IdentSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ImportItemSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.AST.FromItem
+                                                          Language.Python.Common.SrcLocation.SrcSpan]
+                                                       [Language.Python.Common.AST.ArgumentSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Subscript]
+                                                       [(Language.Python.Common.AST.Expr
+                                                           Language.Python.Common.SrcLocation.SrcSpan,
+                                                         GHC.Base.Maybe
+                                                           (Language.Python.Common.AST.Expr
+                                                              Language.Python.Common.SrcLocation.SrcSpan))]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.StatementSpan]]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         [Language.Python.Common.AST.StatementSpan])]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Trailer]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.AST.DecoratorSpan]
+                                                       [Language.Python.Common.AST.HandlerSpan]
+                                                       [[Language.Python.Common.AST.StatementSpan]]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ImportItemSpan]
+                                                       [Language.Python.Common.AST.FromItemSpan]
+                                                       [Language.Python.Common.AST.ArgumentSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Subscript]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         GHC.Base.Maybe
+                                                           Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.StatementSpan]]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         [Language.Python.Common.AST.StatementSpan])]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Trailer]) Language.Python.Common.AST.ModuleSpan),
+                         s') } } }) -}
+eaa808511e2c56931360504e98e2bda7
+  parseSingleInput ::
+    Language.Python.Common.ParserMonad.P
+      [Language.Python.Common.AST.StatementSpan]
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.Python.Version3.Parser.Parser.parseSingleInput1
+                  `cast`
+                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                          <Language.Python.Common.ParserMonad.ParseState>_N
+                          <Data.Either.Either Language.Python.Common.ParseError.ParseError>_R
+                          <[Language.Python.Common.AST.StatementSpan]>_N)) -}
+832191405e6088a5e74dce85f28e7f17
+  parseSingleInput1 ::
+    Language.Python.Common.ParserMonad.ParseState
+    -> Data.Either.Either
+         Language.Python.Common.ParseError.ParseError
+         ([Language.Python.Common.AST.StatementSpan],
+          Language.Python.Common.ParserMonad.ParseState)
+  {- Arity: 1, Strictness: <S(SSSSLLSL),1*U(U,U,U,1*U,U,U,U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Language.Python.Common.ParserMonad.ParseState) ->
+                 case w of ww { Language.Python.Common.ParserMonad.ParseState ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ->
+                 case Language.Python.Version3.Parser.Parser.parseEval2
+                        1#
+                        (Language.Python.Version3.Parser.Parser.notHappyAtAll
+                           @ Language.Python.Version3.Parser.Parser.Happy_IntList)
+                        (Language.Python.Version3.Parser.Parser.notHappyAtAll
+                           @ (Language.Python.Version3.Parser.Parser.HappyStk
+                                (Language.Python.Version3.Parser.Parser.HappyAbsSyn
+                                   (Language.Python.Common.AST.Argument
+                                      Language.Python.Common.SrcLocation.SrcSpan)
+                                   (Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.StatementSpan])
+                                   [Language.Python.Common.Token.Token]
+                                   [Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.Statement
+                                         Language.Python.Common.SrcLocation.SrcSpan]]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     [Language.Python.Common.AST.StatementSpan])]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Trailer]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.AST.DecoratorSpan]
+                                   [Language.Python.Common.AST.HandlerSpan]
+                                   [[Language.Python.Common.AST.StatementSpan]]
+                                   (GHC.Base.Maybe Language.Python.Common.Token.Token)
+                                   (GHC.Base.Maybe Language.Python.Common.Token.Token)
+                                   (GHC.Base.Maybe [Language.Python.Common.AST.ArgumentSpan])
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.CompIter
+                                         Language.Python.Common.SrcLocation.SrcSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.OpSpan,
+                                       Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.ExprSpan,
+                                       GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.ExprSpan,
+                                       GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe
+                                      ([Language.Python.Common.AST.ArgumentSpan],
+                                       Language.Python.Common.SrcLocation.SrcSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.IdentSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.ExprSpan,
+                                       Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (GHC.Base.Maybe
+                                      (Language.Python.Common.AST.IdentSpan,
+                                       GHC.Base.Maybe Language.Python.Common.AST.ExprSpan))
+                                   (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+                                   (GHC.Base.Maybe [Language.Python.Common.AST.ParameterSpan])
+                                   (GHC.Base.Maybe Language.Python.Common.AST.YieldArgSpan)
+                                   Language.Python.Common.AST.OpSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.StatementSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.OpSpan,
+                                    Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.ExprSpan,
+                                    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.ExprSpan,
+                                    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   (Language.Python.Common.AST.ExprSpan,
+                                    GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.IdentSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.IdentSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   Language.Python.Common.AST.ExprSpan
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ImportItemSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.AST.FromItem
+                                      Language.Python.Common.SrcLocation.SrcSpan]
+                                   [Language.Python.Common.AST.ArgumentSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Subscript]
+                                   [(Language.Python.Common.AST.Expr
+                                       Language.Python.Common.SrcLocation.SrcSpan,
+                                     GHC.Base.Maybe
+                                       (Language.Python.Common.AST.Expr
+                                          Language.Python.Common.SrcLocation.SrcSpan))]
+                                   [Language.Python.Common.Token.Token]
+                                   [Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.StatementSpan]]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     [Language.Python.Common.AST.StatementSpan])]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Trailer]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.Token.Token]
+                                   [Language.Python.Common.AST.DecoratorSpan]
+                                   [Language.Python.Common.AST.HandlerSpan]
+                                   [[Language.Python.Common.AST.StatementSpan]]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ImportItemSpan]
+                                   [Language.Python.Common.AST.FromItemSpan]
+                                   [Language.Python.Common.AST.ArgumentSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ParameterSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Subscript]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     GHC.Base.Maybe Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.Token.Token]
+                                   [Data.Either.Either
+                                      Language.Python.Common.Token.Token
+                                      [Language.Python.Common.AST.StatementSpan]]
+                                   [(Language.Python.Common.AST.ExprSpan,
+                                     [Language.Python.Common.AST.StatementSpan])]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [(Language.Python.Common.AST.OpSpan,
+                                     Language.Python.Common.AST.ExprSpan)]
+                                   [Language.Python.Common.AST.IdentSpan]
+                                   [Language.Python.Common.AST.ExprSpan]
+                                   [Language.Python.Common.ParserUtils.Trailer])))
+                        (Language.Python.Common.ParserMonad.ParseState
+                           ww1
+                           ww2
+                           ww3
+                           ww4
+                           ww5
+                           ww6
+                           ww7
+                           ww8) of wild1 {
+                   Data.Either.Left l1
+                   -> Data.Either.Left
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ ([Language.Python.Common.AST.StatementSpan],
+                           Language.Python.Common.ParserMonad.ParseState)
+                        l1
+                   Data.Either.Right r
+                   -> case r of wild2 { (,) a1 s' ->
+                      Data.Either.Right
+                        @ Language.Python.Common.ParseError.ParseError
+                        @ ([Language.Python.Common.AST.StatementSpan],
+                           Language.Python.Common.ParserMonad.ParseState)
+                        (a1
+                           `cast`
+                         (UnsafeCo representational (Language.Python.Version3.Parser.Parser.HappyAbsSyn
+                                                       (Language.Python.Common.AST.Argument
+                                                          Language.Python.Common.SrcLocation.SrcSpan)
+                                                       (Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.StatementSpan])
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.Statement
+                                                             Language.Python.Common.SrcLocation.SrcSpan]]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         [Language.Python.Common.AST.StatementSpan])]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Trailer]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.AST.DecoratorSpan]
+                                                       [Language.Python.Common.AST.HandlerSpan]
+                                                       [[Language.Python.Common.AST.StatementSpan]]
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.Token.Token)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.Token.Token)
+                                                       (GHC.Base.Maybe
+                                                          [Language.Python.Common.AST.ArgumentSpan])
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.CompIter
+                                                             Language.Python.Common.SrcLocation.SrcSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.OpSpan,
+                                                           Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.ExprSpan,
+                                                           GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.ExprSpan,
+                                                           GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          ([Language.Python.Common.AST.ArgumentSpan],
+                                                           Language.Python.Common.SrcLocation.SrcSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.IdentSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.ExprSpan,
+                                                           Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (GHC.Base.Maybe
+                                                          (Language.Python.Common.AST.IdentSpan,
+                                                           GHC.Base.Maybe
+                                                             Language.Python.Common.AST.ExprSpan))
+                                                       (GHC.Base.Maybe
+                                                          [Language.Python.Common.AST.ParameterSpan])
+                                                       (GHC.Base.Maybe
+                                                          [Language.Python.Common.AST.ParameterSpan])
+                                                       (GHC.Base.Maybe
+                                                          Language.Python.Common.AST.YieldArgSpan)
+                                                       Language.Python.Common.AST.OpSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.StatementSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.OpSpan,
+                                                        Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.ExprSpan,
+                                                        GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.ExprSpan,
+                                                        GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       (Language.Python.Common.AST.ExprSpan,
+                                                        GHC.Base.Maybe
+                                                          Language.Python.Common.AST.ExprSpan)
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.IdentSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.IdentSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       Language.Python.Common.AST.ExprSpan
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ImportItemSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.AST.FromItem
+                                                          Language.Python.Common.SrcLocation.SrcSpan]
+                                                       [Language.Python.Common.AST.ArgumentSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Subscript]
+                                                       [(Language.Python.Common.AST.Expr
+                                                           Language.Python.Common.SrcLocation.SrcSpan,
+                                                         GHC.Base.Maybe
+                                                           (Language.Python.Common.AST.Expr
+                                                              Language.Python.Common.SrcLocation.SrcSpan))]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.StatementSpan]]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         [Language.Python.Common.AST.StatementSpan])]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Trailer]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Language.Python.Common.AST.DecoratorSpan]
+                                                       [Language.Python.Common.AST.HandlerSpan]
+                                                       [[Language.Python.Common.AST.StatementSpan]]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ImportItemSpan]
+                                                       [Language.Python.Common.AST.FromItemSpan]
+                                                       [Language.Python.Common.AST.ArgumentSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ParameterSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Subscript]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         GHC.Base.Maybe
+                                                           Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.Token.Token]
+                                                       [Data.Either.Either
+                                                          Language.Python.Common.Token.Token
+                                                          [Language.Python.Common.AST.StatementSpan]]
+                                                       [(Language.Python.Common.AST.ExprSpan,
+                                                         [Language.Python.Common.AST.StatementSpan])]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [(Language.Python.Common.AST.OpSpan,
+                                                         Language.Python.Common.AST.ExprSpan)]
+                                                       [Language.Python.Common.AST.IdentSpan]
+                                                       [Language.Python.Common.AST.ExprSpan]
+                                                       [Language.Python.Common.ParserUtils.Trailer]) [Language.Python.Common.AST.StatementSpan]),
+                         s') } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
